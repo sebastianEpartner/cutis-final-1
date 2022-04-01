@@ -1,0 +1,47 @@
+.productHighlightWrapper--collection {
+  position: absolute;
+  top: 0px;
+  left: 5px;
+  width: 200px;
+}
+
+.productHighlightText{
+  display: block;
+  margin-left: 5px;
+  font-size: 0;
+  background: transparent;
+
+}
+.productHighlightText[data-highlight-id="139"]::before{
+  content: "";
+  background: url(/arquivos/SolLogo.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  z-index: 9;
+  display: block;
+}
+.productHighlightText[data-highlight-id="137"]::before{
+  content: "";
+  background: url(/arquivos/newFlag.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 49px;
+  height: 18px;
+  font-size: 0;
+  z-index: 9;
+  display: block;
+}
+.productHighlightText[data-highlight-id="140"]::before{
+  content: "";
+  background: url(/arquivos/flagNueva.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 39px;
+  height: 46px;
+  font-size: 0;
+  z-index: 9;
+  display: block;
+}

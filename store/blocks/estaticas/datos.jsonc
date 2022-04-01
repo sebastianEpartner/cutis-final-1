@@ -1,0 +1,649 @@
+{
+    "store.custom#datos": {
+        "children": [
+            "image#datosImg",
+            "rich-text#datos",
+            "flex-layout.row#datos"
+        ]
+    },
+    // titulo de la pagina
+    "rich-text#datos": {
+        "props": {
+        "blockClass":"faqsTitulo",
+        "text": "## protección de datos"
+        }
+    },
+    "image#datosImg": {
+        "props": {
+          "src": "https://cutis.vtexassets.com/arquivos/banner.png",
+          "blockClass": "faqsImg"
+        }
+    },
+    "flex-layout.row#datos": {
+        "props": {
+          "blockClass": "faq"
+        },
+        "children": [
+          "flex-layout.col#datos",
+          "flex-layout.col#datos-1"
+        ]
+    },
+     // Primera columna de los datoss
+     "flex-layout.col#datos": {
+        "props":{
+        "width":"30%",
+        "blockClass":"columna1"
+        },
+        "children": [
+            "disclosure-layout-group#datos"
+        ]
+    },
+    "disclosure-layout-group#datos": {
+        "children": [
+            "disclosure-layout#derechoDatos"
+        ]
+    },
+    // primer disclousare
+    "disclosure-layout#derechoDatos": {
+        "children": ["disclosure-trigger#derechoDatos", "disclosure-content#derechoDatos"]
+    },
+    "disclosure-trigger#derechoDatos": {
+        "props": {
+            "blockClass": "question",
+        "as": "div"
+        },
+        "children": ["rich-text#datos-titulo"]
+    },
+    "disclosure-content#derechoDatos": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": ["rich-text#datos-content"]
+    },
+    "rich-text#datos-titulo": {
+        "props": {
+            "text": "Protección de datos"
+        }
+    },
+    "rich-text#datos-content": {
+        "props": {
+            "text": "Call us at the number (212) 1234-1234."
+        }
+    },
+    // columna 2
+    "flex-layout.col#datos-1": {
+        "props":{
+            "width":"70%",
+            "blockClass":"columna2"
+        },
+        "children": [
+            "flex-layout.col#datosContent"
+        ]
+    },
+    // contenido del tab 1
+    "flex-layout.col#datosContent": {
+        "children": [
+            "rich-text#datos1",
+            "rich-text#datos2",
+            "rich-text#datos3",
+            "rich-text#datos4",
+            "rich-text#datos5",
+            "rich-text#datos6",
+            "rich-text#datos7",
+            "rich-text#datos8",
+            "rich-text#datos9",
+            "rich-text#datos10",
+            "rich-text#datos11",
+            "rich-text#datos12",
+            "rich-text#datos13",
+            "rich-text#datos14",
+            "rich-text#datos15",
+            "flex-layout.row#datos-content-1",
+            "rich-text#datos16",
+            "rich-text#datos17",
+            "rich-text#datos18",
+            "rich-text#datos19",
+            "rich-text#datos20",
+            "rich-text#datos21",
+            "rich-text#datos22",
+            "rich-text#datos23",
+            "rich-text#datos24",
+            "rich-text#datos25",
+            "rich-text#datos26",
+            "rich-text#datos27",
+            "rich-text#datos28",
+            "rich-text#datos29",
+            "rich-text#datos30",
+            "rich-text#datos31",
+            "rich-text#datos32",
+            "rich-text#datos33",
+            "rich-text#datos34",
+            "rich-text#datos35",
+            "rich-text#datos36",
+            "rich-text#datos37",
+            "rich-text#datos38",
+            "rich-text#datos39",
+            "rich-text#datos40",
+            "rich-text#datos41",
+            "rich-text#datos42",
+            "rich-text#datos43",
+            "rich-text#datos44",        
+            "rich-text#datos45",
+            "rich-text#datos46",
+            "rich-text#datos47",
+            "rich-text#datos48",
+            "rich-text#datos49",
+            "rich-text#datos50",
+            "rich-text#datos51",
+            "rich-text#datos52",
+            "rich-text#datos53",
+            "rich-text#datos54",
+            "rich-text#datos55",
+            "rich-text#datos56",
+            "rich-text#datos57",
+            "rich-text#datos58",
+            "rich-text#datos59",
+            "rich-text#datos60",
+            "rich-text#datos61",
+            "rich-text#datos62",
+            "rich-text#datos63",
+            "rich-text#datos64",
+            "rich-text#datos65",
+            "rich-text#datos66",
+            "rich-text#datos67",
+            "rich-text#datos68",
+            "rich-text#datos69",
+            "rich-text#datos70",
+            "rich-text#datos71",
+            "rich-text#datos72",
+            "rich-text#datos73",
+            "rich-text#datos74",
+            "rich-text#datos75"
+        ],
+        "props": {
+            "blockClass": "politicaContenedor"
+        }
+    },
+    "rich-text#datos1": {
+        "props": {
+            "text": "Contenido",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#datos2": {
+        "props": {
+            "text": "1. Objetivo ",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos3": {
+        "props": {
+            "text": "2.  Ámbito de aplicación",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos4": {
+        "props": {
+            "text": "3. Definiciones",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos5": {
+        "props": {
+            "text": "4. Tratamiento y finalidades",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos6": {
+        "props": {
+            "text": "5. Derechos de los titulares de la información",
+            "blockClass": ["contenidofaqs"]
+        }
+    }
+    ,
+    "rich-text#datos7": {
+        "props": {
+            "text": "6. Deberes de Cutis respecto de las bases de datos con información personal de terceros cuando actúe como responsable y encargado",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos8": {
+        "props": {
+            "text": "7. Procedimiento para la atención de solicitudes y reclamos por parte de los titulares de la información",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos9": {
+        "props": {
+            "text": "8. Canal designado para la recepción de peticiones y reclamos en ejercicio de los derechos de los titulares de la información",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos10": {
+        "props": {
+            "text": "9. Prohibiciones",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos11": {
+        "props": {
+            "text": "10. Temporalidad de los datos",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos12": {
+        "props": {
+            "text": "11. Medidas de seguridad",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos13": {
+        "props": {
+            "text": "12. Entrega de datos personales a autoridades administrativas y judiciales",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos14": {
+        "props": {
+            "text": "13. Vigencia",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos15": {
+        "props": {
+            "text": "CUTIS S.A. (En adelante Cutis), sociedad constituida en Colombia y domiciliada en la ciudad de Cali, Valle, en la calle 7 No. 31 - 41, oficina 205, con Teléfono 4870040, identificada con el NIT No. 805.017.506-1 y correo electrónico calidad@cutiscol.com.co; por medio de la presente se permite establecer los principios y parámetros mediante los cuales tratará los datos personales que recolecte en desarrollo de su objeto social, cuando actúe tanto como Responsable como Encargado de la información:",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "flex-layout.row#datos-content-1":{
+        "props": {
+            "blockClass": "content-datos"
+        },
+        "children": [
+              "flex-layout.col#datos-content-1"
+        ]
+    },
+    "flex-layout.col#datos-content-1": {
+        "props":{
+        "width":"100%",
+        "blockClass":"columna1"
+        },
+        "children": [
+            
+        ]
+    },
+    "rich-text#datos16": {
+        "props": {
+            "text": "Objetivo",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#datos17": {
+        "props": {
+            "text": "Por medio de la presente política de tratamiento de datos CUTIS S.A. pretende establecer las reglas aplicables al tratamiento de datos personales recolectados, usados y almacenados por esta compañía en desarrollo de su objeto social; en las calidades de responsable y/o encargado del tratamiento de la información según sea el caso.\n Todo lo anterior tiene como fundamento la ley estatutaria 1581 de 2012, reglamentada por el Decreto Nacional 1377 de 2013, el Decreto 1074 de 2015 y sus fundamentos constitucionales respecto a la protección de la intimidad, protección de los datos de las personas y el derecho al habeas data",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos18": {
+        "props": {
+            "text": "Ámbito de aplicación",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#datos19": {
+        "props": {
+            "text": "La presente política se aplicará al tratamiento de datos personales efectuado en territorio colombiano, o cuando le sean aplicables las normas sobre protección de datos personales al responsable y/o encargado ubicado fuera del territorio colombiano, en virtud de tratados internacionales, relaciones contractuales, entre otros.\n Las disposiciones contenidas en esta política se aplicarán a cualquier base de datos personales que se encuentren en custodia de CUTIS S.A., bien sea en calidad de responsable y/o encargado del tratamiento.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos20": {
+        "props": {
+            "text": "Definiciones",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#datos21": {
+        "props": {
+            "text": " De conformidad con la ley 1581 de 2012, para los efectos de la presente política, se entiende por:\n\n a. Autorizaciones: Consentimiento previo, expreso e informado del titular para tratar sus datos personales que no tengan la característica de públicos.\n\n  b. Base de datos personales: Conjunto organizado de datos que es objeto de tratamiento de la empresa. Puede ser automatizada o física de acuerdo a su forma de almacenamiento.\n\n c. Dato Personal: Es cualquier información vinculada o que pueda asociarse a una o varias personas naturales, identificándolas.\n\n  d. Dato personal sensible: Aquellos que afectan la intimidad del titular o cuyo uso indebido puede generar su discriminación. Razón por la cual gozan de una protección especial, en específico se refieren a la salud, sexo, filiación política, raza u origen étnico, huellas biométricas, pertenencia a sindicatos, entre otros.\n\n f. Encargado del tratamiento: Persona natural o jurídica, pública o privada que por sí misma o en asocio con otra realice el tratamiento de datos personales por cuenta del responsable del tratamiento.\n\n  g. Finalidades del tratamiento: Forma legítima de utilización de los datos personales recogidos para su tratamiento.\n\n h. Titular del dato personal: Es la persona natural cuyos datos sean objeto de tratamiento. a. Tratamiento de datos: Cualquier operación o conjunto de operaciones que se realizan sobre datos personales tales como recolección, almacenamiento, uso, supresión, etc. \n\n  j. Área encargada: Persona o grupo de personas que tienen bajo su custodia y responsabilidad al interior de la empresa las bases de datos personales.\n\n k. Habeas data: Derecho fundamental de toda persona para conocer, actualizar, rectificar y/o cancelar en cualquier momento la información de su propiedad, que manejen terceros.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos22": {
+        "props": {
+            "text": "Deberes como Responsable del tratamiento.",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#datos23": {
+        "props": {
+            "text": "El tratamiento que realizará Cutis actuando como responsable y/o encargado será el de recolectar, almacenar, procesar, usar, administrar, y circular, si es el caso, los datos personales, atendiendo de forma estricta los lineamientos establecidos por la ley, con las siguientes finalidades según sea el caso:",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos24": {
+        "props": {
+            "text": "Datos de clientes:",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos25": {
+        "props": {
+            "text": "Comercialización de productos y servicios que, en desarrollo de su objeto social, Cutis suele ofrecer en el mercado.  ",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos26": {
+        "props": {
+            "text": "Expedición de facturas de venta generadas a partir de la compra de productos por parte del cliente.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos27": {
+        "props": {
+            "text": "Realizar seguimientos o estudios encaminados al mejoramiento del servicio que presta, así como de los productos que           comercializa CUTIS S.A.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos28": {
+        "props": {
+            "text": "Atención a peticiones, inquietudes, quejas y solicitudes elevadas por los clientes.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos29": {
+        "props": {
+            "text": "Informar por cualquier medio, las promociones, novedades, productos y servicios actuales y futuros relacionados con los eventos, concursos, actividades de promoción y otras finalidades comerciales directa o indirectamente relacionadas con la actividad propia de Cutis, y/o promociones, novedades, productos y servicios promovidos directamente por aliados estratégicos de Cutis que les generen valores agregados a los usuarios y/o clientes.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos30": {
+        "props": {
+            "text": "Cumplimiento de obligaciones contractuales.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos31": {
+        "props": {
+            "text": "Cumplimiento de obligaciones de carácter administrativo, contable y/o tributario.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos32": {
+        "props": {
+            "text": "Si es el caso, Adelantar gestiones de cobranza en caso de existir saldos vencidas o capital en mora por parte de los clientes.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos33": {
+        "props": {
+            "text": "Invitación a eventos promovidos u organizados por Cutis, con el fin de promocionar e impulsar nuevos productos y servicios.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos34": {
+        "props": {
+            "text": "Registro y control biométrico y de video con el fin de salvaguardar la seguridad de los bienes y personas que se encuentran al interior de los establecimientos de comercio propiedad de Cutis.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos35": {
+        "props": {
+            "text": "Datos de proveedores:",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#datos36": {
+        "props": {
+            "text": "Contacto para cotizaciones y solicitud de nuevos servicios y productos requeridos por la empresa con el fin de desarrollar en debida forma su objeto social.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },    
+    "rich-text#datos37": {
+        "props": {
+            "text": "Contacto de proveedores para seguimiento de cumplimiento de servicios y productos contratados por Cutis en desarrollo de su objeto social.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },    
+    "rich-text#datos38": {
+        "props": {
+            "text": "Generación de órdenes de compra.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },    
+    "rich-text#datos39": {
+        "props": {
+            "text": "Registros y Contabilidad interna con el fin de adelantar pagos a favor de los proveedores con los que contrata la empresa.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },    
+    "rich-text#datos40": {
+        "props": {
+            "text": "Cumplimiento de obligaciones Administrativas, tributarias y/o contables.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },    
+    "rich-text#datos41": {
+        "props": {
+            "text": "Verificación de referencias comerciales.",
+            "blockClass": ["contenidofaqs"]
+        }
+    }
+    ,    
+    "rich-text#datos42": {
+        "props": {
+            "text": "Entrega de información pertinente para el desarrollo de las relaciones contractuales.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },    
+    "rich-text#datos43": {
+        "props": {
+            "text": "Generación y envío de correspondencia en los casos que CUTIS S.A. decida impulsar campañas para dar a conocer sus productos, servicios y otros.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos44": {
+        "props": {
+            "text": "Empleados:",
+            "blockClass": ["tituloFaqs"]
+        }
+    },    
+    "rich-text#datos45": {
+        "props": {
+            "text": "Cumplimiento de las obligaciones contraídas por CUTIS S.A. en desarrollo del contrato de vinculación suscrito con el empleado.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },    
+    "rich-text#datos46": {
+        "props": {
+            "text": "Adelantar las afiliaciones de los empleados y los beneficiarios que este designe, dirigidas al cumplimiento las obligaciones determinadas por la ley laboral generadas como consecuencia de la vinculación del empleado con CUTIS S.A.\n\n Generación y envío de correspondencia en desarrollo del contrato suscrito entre el trabajador y CUTIS S.A.\n\n Consulta y custodia del historial académico y laboral del empleado con el fin de llevar un registro de los trabajadores que ingresan a la empresa, así como para entregar referencias en caso de ser requeridas.\n\n Pago de Nómina y parafiscales causados a favor del empleado.\n\n Manejo de información contable y laboral para el cumplimiento requerimientos contractuales y legales.\n\n Respecto a ex empleados, se conservará la información en caso de ser requerida por alguna autoridad judicial o administrativa.\n\n Respecto a candidatos presentados en procesos de selección con el fin de trabajar para la empresa se conservará su información para efectos de contacto en caso abrirse una nueva vacante en el futuro.\n\n Registro y control biométrico y de video con el fin de salvaguardar las personas y los bienes que se encuentran al interior de los establecimientos de comercio propiedad de la CUTIS S.A.",
+            "blockClass": ["contenidofaqs"]
+        }
+    }
+    ,    
+    "rich-text#datos47": {
+        "props": {
+            "text": "Niños y adolescentes menores de edad:",
+            "blockClass": ["tituloFaqs"]
+        }
+    },    
+    "rich-text#datos48": {
+        "props": {
+            "text": "En cumplimiento con lo dispuesto por la ley 1581 de 2012 y el decreto 1074 de 2015, estos datos siempre serán solicitados bajo el consentimiento del representante del menor quien estará previamente informado sobre el tratamiento que se les dará, las finalidades, y en pleno conocimiento que no se encuentra en la obligación de entregar los mismos.\n\n De igual forma se tratarán de conformidad con lo desarrollado por la Corte Constitucional Colombiana, esto es, siempre respetando sus derechos fundamentales y buscando la consecución de su bienestar y el desarrollo de sus intereses superiores.\n\n Si bien CUTIS S.A. evita el tratamiento de datos de menores de edad en virtud del desarrollo de su objeto social, estos pueden llegar a ser solicitados excepcionalmente para:\n\n Afiliaciones como beneficiarios de los servicios vinculados a las prestaciones sociales a solicitud de su representante.\n\n Actividades que ocasionalmente decida adelantar CUTIS S.A. con el fin de afianzar el bienestar laboral de sus empleados.\n\n Control y registro biométrico y de video instalado en los establecimientos de comercio propiedad de la empresa con el fin de salvaguardar la seguridad de los bienes y las personas que se encuentran a interior de los mismos.",
+            "blockClass": ["contenidofaqs"]
+        }
+    } ,    
+    "rich-text#datos49": {
+        "props": {
+            "text": "Datos Biométricos:",
+            "blockClass": ["tituloFaqs"]
+        }
+    },    
+    "rich-text#datos50": {
+        "props": {
+            "text": "CUTIS S.A. ha decidido implementar sistemas de seguridad en sus instalaciones y en la de todos sus establecimientos de comercio con el fin de evitar ser objeto de actividades delictivas, así como para salvaguardar la integridad y seguridad de las personas y bienes que allí se encuentren.\n\n Por último y en concreto, las demás finalidades que CUTIS S.A. considere pertinentes para el correcto y normal desarrollo de su objeto social, siempre y cuando sean previamente informadas al titular de la información.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos51": {
+        "props": {
+            "text": "Derechos de los titulares de la información.",
+            "blockClass": ["tituloFaqs"]
+        }
+    },    
+    "rich-text#datos52": {
+        "props": {
+            "text": "Los titulares de la información contenida en las bases de datos que trate CUTIS S.A. sea como responsable, o como encargado del tratamiento tienen los derechos que a continuación se relacionan de conformidad con lo dispuesto por la Constitución Política de Colombia y la normativa aplicable y vigente.\n\n El ejercicio de dichos derechos solo podrá adelantarse de forma exclusiva por el titular del dato o por las personas que este autorice de conformidad con lo establecido por la ley, y se describen sin limitarse, a continuación:",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos53": {
+        "props": {
+            "text": "- Conocer, actualizar y rectificar sus datos personales frente a los Responsables del Tratamiento o Encargados del Tratamiento. Este derecho se podrá ejercer, entre otros frente a datos parciales, inexactos, incompletos, fraccionados, que induzcan a error, o aquellos cuyo Tratamiento esté expresamente prohibido o no haya sido autorizado.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos54": {
+        "props": {
+            "text": "- Solicitar prueba de la autorización otorgada al Responsable del Tratamiento.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos55": {
+        "props": {
+            "text": "- Ser informado por el Responsable o Encargado del Tratamiento, previa solicitud debidamente diligenciada, respecto del uso que le da a sus datos personales.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos56": {
+        "props": {
+            "text": "- Presentar ante la Superintendencia de Industria y Comercio quejas por infracciones a lo dispuesto en la presente política y las leyes que regulan la materia, una vez cumplido el requisito previo de arreglo directo, dispuesto en el punto 10 de la presente política.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos57": {
+        "props": {
+            "text": "- Revocar la autorización y/o solicitar la supresión del dato cuando en el Tratamiento no se respeten los principios, derechos y garantías constitucionales y legales. Este derecho en todo caso se encuentra sujeta a una evaluación previa del Responsable quien definirá si de acuerdo al caso en particular dicha solicitud es procedente.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos58": {
+        "props": {
+            "text": "- Acceder en forma gratuita a sus datos personales que hayan sido objeto de Tratamiento, así como a los derechos consignados en este numeral.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos59": {
+        "props": {
+            "text": "Deberes de Cutis respecto de las bases de datos con información personal de terceros cuando actúe como responsable y encargado.",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#datos60": {
+        "props": {
+            "text": "6.1. Deberes como Responsable del tratamiento.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos61": {
+        "props": {
+            "text": "Cuando Cutis asuma la calidad de responsable del tratamiento de datos personales adelantará tal gestión en cumplimiento de los siguientes deberes, sin perjuicio claro está de las demás disposiciones previstas en la ley.\n\n Garantizar al titular de la información en cualquier momento y de forma gratuita el pleno y efectivo ejercicio de los derechos que tiene a conocer, actualizar, modificar y rectificar sus datos.\n\n Solicitar, y conservar en los casos que sea necesario copia de la respectiva autorización otorgada por el titular.\n\n Conservar la información bajo las condiciones de seguridad necesarias para impedir su uso, acceso, adulteración, consulta no autorizada o fraudulenta, adulteración o pérdida.\n\n Actualizar la información y en caso de efectuar cambios sustanciales en el tratamiento de las bases de datos, informarlo tanto a los titulares como al encargado en caso de existir.\n\n Rectificar la información cuando sea incorrecta y en caso de existir un encargado del manejo de la misma, informárselo.\n\n En caso de existir un encargado del tratamiento de la información, suministrarle únicamente datos cuyo tratamiento este previamente autorizado por el titular.\n\n Tramitar las consultas y reclamos formulados por titulares de la información dentro de los términos señalados la ley y replicados en esta política de tratamiento.\n\n Socializar con las áreas encargadas al interior de la empresa los procedimientos y políticas para garantizar el adecuado cumplimiento de la ley que regula la materia.\n\n Socializar con las áreas encargadas al interior de la empresa los procedimientos y políticas para garantizar el adecuado cumplimiento de la ley que regula la materia.\n\n Informar a la autoridad de protección de datos personales cuando se presenten violaciones a los estándares de seguridad de la información y por ende existan riesgos en la administración de la información de los titulares.\n\n Cumplir las instrucciones y requerimientos que imparta la Superintendencia de Industria y Comercio respecto el tratamiento de datos personales.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos62": {
+        "props": {
+            "text": "6.2. Deberes como Encargado del tratamiento.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos63": {
+        "props": {
+            "text": "Cuando CUTIS S.A. asuma la calidad de encargado del tratamiento de datos personales bajo su custodia, deberá cumplir los siguientes deberes, sin perjuicio claro está de las demás disposiciones previstas en la ley.\n\n Garantizar al titular, en todo tiempo, el pleno y efectivo ejercicio del derecho de habeas data.\n\n Conservar la información bajo las condiciones de seguridad necesarias para impedir su adulteración, perdida, consulta, uso o acceso no autorizado o fraudulento.\n\n Realizar oportunamente la actualización, rectificación o supresión de los datos en los términos de la ley.\n\n Actualizar la información reportada por los responsables del tratamiento de acuerdo a los términos que se hayan pactado en los contratos con estos.\n\n Tramitar las consultas y los reclamos formulados por los titulares en los términos señalados en esta política y la ley que rige la materia.\n\n Socializar con las áreas encargadas al interior de la empresa los procedimientos y políticas para garantizar el adecuado cumplimiento de la ley que regula la materia.\n\n Abstenerse de circular información que este siendo controvertida por el titular y cuyo bloqueo haya sido ordenado por la Superintendencia de Industria y Comercio.\n\n Permitir el acceso a la información únicamente a las personas que puedan tener acceso a ella.\n\n Informar a la autoridad de protección de datos personales cuando se presenten violaciones a los estándares de seguridad de la información y por ende existan riesgos en la administración de la información de los titulares.\n\n Cumplir las instrucciones y requerimientos que imparta la Superintendencia de Industria y Comercio respecto el tratamiento de datos personales.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos64": {
+        "props": {
+            "text": "Procedimiento para la atención de solicitudes y reclamos por parte de los titulares de la información.",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#datos65": {
+        "props": {
+            "text": "En desarrollo del derecho fundamental de los titulares al Habeas Data respecto de los derechos de acceso, consulta, actualización, rectificación, o cancelación se seguirá el siguiente procedimiento:",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos66": {
+        "props": {
+            "text": "- Los derechos sobre los datos personales solo podrán ser ejercidos directamente por el titular, o por un tercero habilitado legalmente de acuerdo a lo establecido por la ley 1581 de 2012. Esta condición se acreditará mediante copia del documento de identidad, y en caso de ser autorizado, el poder debidamente otorgado.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos67": {
+        "props": {
+            "text": "- La solicitud para ejercer cualquiera de estos derechos deberá hacerse a través del canal determinado por Cutis dentro de la presente Política de Tratamiento de datos personales.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos68": {
+        "props": {
+            "text": "- La solicitud de ejercicio de los derechos deberá contener:\n\n - Nombre del titular del dato, y de ser el caso de su apoderado. \n\n - Petición concreta y precisa del derecho que pretende ejercer. En cada caso, la petición deberá estar razonablemente fundamentada para que CUTIS S.A. proceda como responsable de la base de datos a dar respuesta. \n\n - Dirección para notificaciones.\n\n - Documentos que soportan la solicitud. \n\n - Firma de la solicitud.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos69": {
+        "props": {
+            "text": "En caso de faltar alguno de los requisitos indicados, CUTIS S.A. lo comunicará al solicitante dentro de los 5 días siguientes a la recepción de la solicitud, para que los mismos sean completados. Transcurridos dos meses sin que se presente la información requerida se entiende que se ha desistido de la solicitud.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos70": {
+        "props": {
+            "text": "CUTIS S.A. internamente se encargará de crear una base de datos sobre Peticiones y reclamos.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos71": {
+        "props": {
+            "text": "En caso de que CUTIS S.A. actúe como responsable de la información atenderá el reclamo o petición en un máximo de 15 días hábiles contados a partir del día siguiente a la fecha de su recibo. Cuando no fuera posible atender el reclamo dentro de dicho término, se informará al interesado los motivos de la demora y la fecha en que se atenderá su reclamo, la cual no puede superar en ningún caso los 8 días hábiles siguientes al vencimiento del primer término.\n\n A su turno, en caso de que CUTIS S.A. actúe como encargado del tratamiento informará tal situación al titular o interesado en la petición o reclamo, y comunicará al responsable del tratamiento de la información la solicitud, con el fin de que éste de la respuesta a la solicitud de consulta o reclamo presentado, lo cual será informado al titular para que tenga conocimiento sobre la identidad del responsable de la información y en consecuencia el obligado principal de garantizar el ejercicio de su derecho. \n\n De conformidad con lo establecido por la ley, en caso de pretender acudir a la Superintendencia de Industria y Comercio en ejercicio de las acciones legales contempladas para los titulares de datos o interesados, se deberá agotar previamente el trámite acá descrito.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos72": {
+        "props": {
+            "text": "Canal designado para la recepción de peticiones y reclamos en ejercicio de los derechos de los titulares de la información.",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#datos73": {
+        "props": {
+            "text": "En todo caso, CUTIS S.A. actuando como encargado o como titular de la información según sea el caso recibirá peticiones y reclamos en ejercicio de los derechos de los titulares de la información en el correo electrónico:\n\n - calidad@cutiscol.com.co \n\n Cualquier cambio en este canal será informado en debida forma a los titulares de la información.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos74": {
+        "props": {
+            "text": "Prohibiciones",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#datos75": {
+        "props": {
+            "text": "En desarrollo de la presente Política de Tratamiento de Datos Personales, y su correcta aplicación, se establecen las siguientes prohibiciones:\n\n CUTIS S.A. prohíbe el acceso, uso, gestión, transmisión, comunicación, almacenamiento y cualquier otro tratamiento de datos personales de carácter sensible sin autorización previa del titular del dato y de CUTIS S.A.\n\n CUTIS S.A. prohíbe la transmisión, comunicación o circulación de datos personales, sin el consentimiento previo, escrito y expreso del titular del dato o sin autorización de la empresa.\n \n CUTIS S.A.  evita el tratamiento de datos personales de niños y adolescentes menores de edad, salvo autorización expresa de sus representantes legales. Todo tratamiento que se llegare a hacer respecto de este tipo de datos, se deberá hacer asegurando los derechos prevalentes que la constitución política reconoce a estos, y para las finalidades específicamente informados previos a la entrega de los mismos.\n\n Está prohibida la transferencia internacional de datos personales a terceros países que no proporcionen niveles adecuados de protección de datos de conformidad con lo establecido por la ley 1581 de 2012 y los estándares fijados por la Superintendencia de Industria y Comercio, aplicando las excepciones que se han establecido para estos casos.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#datos76": {
+        "props": {
+            "text": "Temporalidad de los datos",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#datos77": {
+        "props": {
+            "text": "La permanencia de los datos tratados por CUTIS S.A. sea como responsable o como encargado del tratamiento estará determinada por la finalidad por la cual dichos datos fueron recogidos o entregados a CUTIS S.A. Según sea el caso.\n\n Por lo tanto, una vez se agote la finalidad CUTIS S.A. Procederá a su destrucción o devolución según sea el caso.\n\n De todas formas, CUTIS S.A. es consciente que existen obligaciones de carácter legal que le obligan a conservar por cierto tiempo determinado algunos datos, por lo que se compromete a conservarlos solo y únicamente para tal efecto, adoptando las medidas técnicas y de seguridad que impidan un tratamiento adecuado.",
+            "blockClass": ["contenidofaqs"]
+        }
+    }
+}

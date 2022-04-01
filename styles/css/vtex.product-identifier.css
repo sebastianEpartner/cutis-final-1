@@ -1,0 +1,11 @@
+.product-identifier--productReference {
+  margin-bottom: 1rem;
+  color: #D3D3D3;
+}
+.product-identifier__label{
+  font-size: 0;
+}
+.product-identifier__label::before{
+  font-size: 14px;
+  content: "REF";
+}

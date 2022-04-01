@@ -1,0 +1,420 @@
+{
+    "vtex.menu@2.x:submenu#more": {
+        "props": {
+          "width": "100%",
+          "blockClass": "menuMarcas"
+        },
+        "children": [
+          "flex-layout.row#menu-more"
+        ]
+      },
+      "flex-layout.row#menu-more": {
+        "props": {
+          "blockClass": "menuMarcas"
+        },
+        "children": [
+          "flex-layout.col#menu-more-1"
+        ]
+      },
+      "flex-layout.col#menu-more-1": {
+        "props": {
+          "blockClass": "menuMarcas"
+        },
+        "children": [
+          "vtex.menu@2.x:menu#more"
+        ]
+      },
+      "vtex.menu@2.x:menu#more": {
+        "props": {
+          "orientation": "vertical",
+          "blockclass": "menuMarcas"
+        },
+        "children": [
+          "menu-item#marcas-destacadas",
+          "menu-item#marcas-all"
+        ]
+      },
+      "menu-item#marcas-destacadas": {
+        "props": {
+          "id": "menu-item#marcas-destacadas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "category-item",
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": true,
+            "tagTitle": "Marcas destacadas",
+            "text": "Marcas destacadas"
+          }
+        },
+        "blocks": [
+          "vtex.menu@2.x:submenu#marcas-destacadas"
+        ]
+      },
+      "menu-item#marcas-all": {
+        "props": {
+          "id": "menu-item#marcas-all",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "category-item",
+          "itemProps": {
+            "type": "internal",
+            "href": "/faq",
+            "noFollow": true,
+            "tagTitle": "Todas Marcas",
+            "text": "Todas Marcas"
+          }
+        },
+        "blocks": [
+          "vtex.menu@2.x:submenu#marcas-all"
+        ]
+      },
+      // marcas destadas menu
+      "vtex.menu@2.x:submenu#marcas-destacadas": {
+        "props": {
+          "width": "60%",
+          "blockClass": "menuMarcasLv2"
+        },
+        "children": [
+          "flex-layout.row#marcas-destacadas"
+        ]
+      },
+      "flex-layout.row#marcas-destacadas": {
+        "children": [
+          "flex-layout.col#marcas-destacadas"
+        ]
+      },
+      "flex-layout.col#marcas-destacadas": {
+        "children": [
+          "vtex.menu@2.x:menu#marcas-destacadas-1",
+          "vtex.menu@2.x:menu#marcas-destacadas-2"
+        ]
+      },
+      "vtex.menu@2.x:menu#marcas-destacadas-1": {
+        "props": {
+          "orientation": "horizontal",
+          "blockclass": "menuMarcasLv2"
+        },
+        "children": [
+          "image#marca-1",
+          "image#marca-2",
+          "image#marca-3",
+          "image#marca-4",
+          "image#marca-5",
+          "image#marca-6",
+          "image#marca-7",
+          "image#marca-8"
+        ]
+      },
+      "vtex.menu@2.x:menu#marcas-destacadas-2": {
+        "props": {
+          "orientation": "horizontal",
+          "blockclass": "menuMarcasLv2"
+        },
+        "children": [
+          "image#marca-9",
+          "image#marca-10",
+          "image#marca-11",
+          "image#marca-12",
+          "image#marca-13",
+          "image#marca-14",
+          "image#marca-15",
+          "image#marca-16"
+        ]
+      },
+      "image#marca-1": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/avene.png"
+        }
+      },
+      "image#marca-2": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/bioderma.png"
+        }
+      },
+      "image#marca-3": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/almay.png"
+        }
+      },
+      "image#marca-4": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/uriage.png"
+        }
+      },
+      "image#marca-5": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/pharma.png"
+        }
+      },
+      "image#marca-6": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/laroche.png"
+        }
+      },
+      "image#marca-7": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/heliocare.png"
+        }
+      },
+      "image#marca-8": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/be.png"
+        }
+      },
+      "image#marca-9": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/medihealth.png"
+        }
+      },
+      "image#marca-10": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/saderma.png"
+        }
+      },
+      "image#marca-11": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/sesderma.png"
+        }
+      },
+      "image#marca-12": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/isdin.png"
+        }
+      },
+      "image#marca-13": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/vichy.png"
+        }
+      },
+      "image#marca-14": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/dhems.png"
+        }
+      },
+      "image#marca-15": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/eucarin.png"
+        }
+      },
+      "image#marca-16": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/cetaph.png"
+        }
+      },
+      
+  // Marcas all
+  "vtex.menu@2.x:submenu#marcas-all": {
+    "props": {
+        "width": "100%",
+        "blockClass": "menuMarcasLv2"
+    },
+    "children": [
+        "flex-layout.row#marcas-all"
+    ]
+  },
+  "flex-layout.row#marcas-all": {
+    "props":{
+      "blockClass": "menuMarcasLv2"
+    },
+    "children": [
+        "flex-layout.row#marcas-premium-columnas",
+        "flex-layout.col#marcas-premium1"
+    ]
+  },
+  "flex-layout.row#marcas-premium-columnas": {
+    "props":{
+        "width": "60%",
+        "blockclass":"categoriasMenu"
+    },
+    "children": [
+        "flex-layout.col#marcas-premium-columnas1",
+        "flex-layout.col#marcas-premium-columnas2",
+        "flex-layout.col#marcas-premium-columnas3",
+        "flex-layout.col#marcas-premium-columnas4"
+    ]
+  },
+  // columnas 
+  "flex-layout.col#marcas-premium-columnas1": {
+    "props":{
+        "width": "70%",
+        "blockclass":"categoriasMenu"
+    },
+    "children": [
+        "vtex.menu@2.x:menu#marcas-premium-1"
+    ]
+  },
+  "flex-layout.col#marcas-premium-columnas2": {
+      "props":{
+          "width": "70%",
+          "blockclass":"categoriasMenu"
+      },
+      "children": [
+          "vtex.menu@2.x:menu#marcas-premium-2"
+      ]
+  },
+  "flex-layout.col#marcas-premium-columnas3": {
+      "props":{
+          "width": "70%",
+          "blockclass":"categoriasMenu"
+      },
+      "children": [
+          "vtex.menu@2.x:menu#marcas-premium-3"
+      ]
+  },
+  "flex-layout.col#marcas-premium-columnas4": {
+      "props":{
+          "width": "70%",
+          "blockclass":"categoriasMenu"
+      },
+      "children": [
+          "vtex.menu@2.x:menu#marcas-premium-4"
+      ]
+  },
+  // banners en categoria
+  "flex-layout.col#marcas-premium1":{
+    "title":"banner1",
+    "props":{
+        "blockclass": "categoriasMenu"
+    },
+    "children": [
+      "image#marca-all"
+    ]
+  },
+  "image#marca-all": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/todasLasMarcas.png"
+    }
+  },
+  // COlumnas en la del primer sub menu CATEGORIAS
+  "vtex.menu@2.x:menu#marcas-premium-1": {
+    "props": {
+        "orientation": "vertical",
+        "blockclass": "ColumnasMenuCategoria"
+    },
+    "children": [
+        "menu-item#category-marcas-premium-1",
+        "menu-item#category-marcas-premium-2",
+        "menu-item#category-marcas-premium-3",
+        "menu-item#category-marcas-premium-4",
+        "menu-item#category-marcas-premium-5"     
+    ]
+},
+"vtex.menu@2.x:menu#marcas-premium-2": {
+    "props": {
+        "orientation": "vertical",
+        "blockclass": "ColumnasMenuCategoria"
+    },
+    "children": [
+      "menu-item#category-marcas-premium-1",
+      "menu-item#category-marcas-premium-2",
+      "menu-item#category-marcas-premium-3",
+      "menu-item#category-marcas-premium-4",
+      "menu-item#category-marcas-premium-5"
+    ]
+  },
+  "vtex.menu@2.x:menu#marcas-premium-3": {
+      "props": {
+          "orientation": "vertical",
+          "blockclass": "ColumnasMenuCategoria"
+      },
+      "children": [
+        "menu-item#category-marcas-premium-1",
+        "menu-item#category-marcas-premium-2",
+        "menu-item#category-marcas-premium-3",
+        "menu-item#category-marcas-premium-4",
+        "menu-item#category-marcas-premium-5"
+      ]
+  },
+  "vtex.menu@2.x:menu#marcas-premium-4": {
+      "props": {
+          "orientation": "vertical",
+          "blockclass": "ColumnasMenuCategoria"
+      },
+      "children": [
+        "menu-item#category-marcas-premium-1",
+        "menu-item#category-marcas-premium-2",
+        "menu-item#category-marcas-premium-3",
+        "menu-item#category-marcas-premium-4",
+        "menu-item#category-marcas-premium-5"
+      ]
+  },
+  "menu-item#category-marcas-premium-1": {
+    "props": {
+        "id": "menu-item-category-apparel-clothing",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+            "type": "internal",
+            "href": "/apparel---accessories/clothing/",
+            "noFollow": false,
+            "tagTitle": "Marca 1",
+            "text": "Marca 1"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-2": {
+      "props": {
+          "id": "menu-item-category-apparel-accessories",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+          "type": "internal",
+          "href": "/apparel---accessories/accessories/",
+          "noFollow": false,
+          "tagTitle": "Marca 2",
+          "text": "Marca 2"
+          }
+      }
+  },
+  "menu-item#category-marcas-premium-3": {
+      "props": {
+          "id": "menu-item-category-apparel-eyeglasses",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+          "type": "internal",
+          "href": "/apparel---accessories/eyeglasses/",
+          "noFollow": false,
+          "tagTitle": "Marca 3",
+          "text": "Marca 3"
+          }
+      }
+  },
+  "menu-item#category-marcas-premium-4": {
+          "props": {
+              "id": "menu-item-category-apparel-category4",
+              "type": "custom",
+              "iconId": null,
+              "highlight": false,
+              "itemProps": {
+              "type": "internal",
+              "href": "/apparel---accessories/eyeglasses/",
+              "noFollow": false,
+              "tagTitle": "Marca 4",
+              "text": "Marca 4"
+              }
+          }
+  },
+  "menu-item#category-marcas-premium-5": {
+      "props": {
+          "id": "menu-item-category-apparel-category5",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+          "type": "internal",
+          "href": "/apparel---accessories/eyeglasses/",
+          "noFollow": false,
+          "tagTitle": "Marca 5",
+          "text": "Marca 5"
+          }
+      }
+  }
+}

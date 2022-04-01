@@ -1,0 +1,471 @@
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#demo",
+      "list-context.image-list#promo",
+      "__fold__.experimentalLazyAssets",
+      "slider-layout#principalSliderHomeCate",
+      "rich-text#shelf-title",
+      "tab-layout#tabsCatego",
+      "rich-text#NUESTRAS-MARCAS",
+      "list-context.image-list#marcas",
+      "responsive-layout.desktop#InfoProduct",
+      "responsive-layout.phone#InfoProduct",
+      "flex-layout.row#vitrinaDestacada",
+      "flex-layout.row#Bannerdos",
+      "rich-text#shelf-tittle-Vitrinafinal",
+      "responsive-layout.desktop#vitrinaTres",
+      "responsive-layout.mobile#vitrinaTres",
+      "info-card#home",
+      "responsive-layout.phone"
+    ]
+  },
+  // banners principales
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height":720,
+      "images": [
+        {
+          "image": "https://cutis.vteximg.com.br/arquivos/banner-principal-desk.png",
+          "mobileImage": "https://cutis.vteximg.com.br/arquivos/banner-principal-mobile.png",
+          "link":{
+            "url":"/"
+          }
+        },
+        {
+          "image": "https://cutis.vteximg.com.br/arquivos/banner-principal-desk.png",
+          "mobileImage": "https://cutis.vteximg.com.br/arquivos/banner-principal-mobile.png",
+          "link":{
+            "url":"/"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay":{
+        "timeout": 3000,
+        "stopOnHover": true
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots":"false",
+      "blockClass": "carousel"
+    }
+  },
+  // banners slider descuento
+  "list-context.image-list#promo": {
+    "children": ["slider-layout#promo-images"],
+    "props": {
+      "height":720,
+      "images": [
+        {
+          "image": "https://cutis.vteximg.com.br/arquivos/banner-descuento-desk.png",
+          "mobileImage": "https://cutis.vteximg.com.br/arquivos/banner-descuento-mobile.png",
+          "link":{
+            "url":"/"
+          }
+        },
+        {
+          "image": "https://cutis.vteximg.com.br/arquivos/banner-descuento-desk.png",
+          "mobileImage": "https://cutis.vteximg.com.br/arquivos/banner-descuento-mobile.png",
+          "link":{
+            "url":"/"
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#promo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay":{
+        "timeout": 3000,
+        "stopOnHover": true
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "showPaginationDots":"false",
+      "blockClass": "promo-carousel"
+    }
+  },
+  // titulo principal
+  "rich-text#shelf-title": {
+    "props": {
+      "text": "## Productos Nuevos",
+      "blockClass": "shelfTitle"
+    }
+  },
+
+  "info-card#home": {
+    "props": {
+      "id": "info-card-home",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://cutis.vteximg.com.br/arquivos/Group%201202.png",
+      "mobileImageUrl":"https://cutis.vteximg.com.br/arquivos/infocardHome.png",
+      "headline": "ABSORB-K 30 GR",
+      "subhead": "Ejerce una acción protectora y\n restaurdora del equilibrio natural de\n la estructura dérmica\n",
+      "callToActionText": "Comprar ahora",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-home",
+      "textAlignment": "left"
+    }
+  },
+  // CONTENEDOR FLEX PRODUCTO
+  "responsive-layout.phone#InfoProduct": {
+    "children": ["flex-layout.row#ProductoInfoM"]
+  },
+  "responsive-layout.desktop#InfoProduct": {
+    "children": ["flex-layout.row#ProductoInfo"]
+  },
+  "flex-layout.row#ProductoInfoM": {
+    "children": [
+        "flex-layout.col#infoProduct3",
+        "flex-layout.col#infoProduct1"
+    ],
+    "props": {
+      "blockClass": "ProductInfoHome"
+    }
+  },
+  "flex-layout.row#ProductoInfo": {
+    "children": [
+        "flex-layout.col#infoProduct1",
+        "flex-layout.col#infoProduct2",
+        "flex-layout.col#infoProduct3"
+    ],
+    "props": {
+      "blockClass": "ProductInfoHome"
+    }
+  },
+  "flex-layout.col#infoProduct1": {
+    "children": [
+      "image#productImageInfo1"
+    ],
+    "props": {
+      "blockClass": "infoProductColumn"
+    }
+  },
+  "image#productImageInfo1": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/productoDestacado.png",
+      "blockClass": "imgInfoProduct"
+    }
+  },
+  "flex-layout.col#infoProduct2": {
+    "children": [
+      "image#productImageInfo2"
+    ],
+    "props": {
+      "blockClass": "infoProductColumn"
+    }
+  },
+  "image#productImageInfo2": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/Rectangle-446.png",
+      "blockClass": "imgInfoProduct"
+    }
+  },
+  "flex-layout.col#infoProduct3": {
+    "children": [
+      "rich-text#infoProductTitle",
+      "rich-text#infoProductStep1",
+      "rich-text#infoProductStep2",
+      "rich-text#infoProductStep3",
+      "rich-text#infoProductCallAction"
+    ],
+    "props": {
+      "blockClass": "infoProductColumn"
+    }
+  },
+  "rich-text#infoProductTitle": {
+    "props": {
+      "text": "Cicalfate +",
+      "blockClass": ["tituloSlideCategory", "titulosInfoProduct"]
+    }
+  },
+  "rich-text#infoProductStep1": {
+      "props": {
+        "text": "Paso 1\n Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto",
+        "blockClass": ["contenidoSlideCategory", "infoProductContent"]
+      }
+  },
+  "rich-text#infoProductStep2": {
+    "props": {
+      "text": "Paso 2\n Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto",
+      "blockClass": ["contenidoSlideCategory", "infoProductContent"]
+    }
+  },
+  "rich-text#infoProductStep3": {
+    "props": {
+      "text": "Paso 3\n Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto",
+      "blockClass": ["contenidoSlideCategory", "infoProductContent"]
+    }
+  },
+  "rich-text#infoProductCallAction": {
+    "props": {
+      "text": "[Comprar ahora](/)",
+      "blockClass": ["contenidoSlideCategory", "infoProductContent"]
+    }
+  },
+  // Vitrinas en categoria destacada
+  "flex-layout.row#vitrinaDestacada": {
+    "children": [
+        "flex-layout.col#vitrinaDestacada1",
+        "flex-layout.col#vitrinaDestacada2"
+    ],
+    "props": {
+      "blockClass": "vitrinadestacada1"
+    }
+  },
+  "flex-layout.col#vitrinaDestacada1": {
+    "children": [
+      "responsive-layout.desktop#imagenDestacada",
+      "responsive-layout.mobile#imagenDestacadaM"
+    ],
+    "props": {
+      "width":"20%",
+      "blockClass": "infoProductColumn"
+    }
+  },
+  "image#vitrinaDestacada1": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/cuidadoPiel-1.png",
+      "blockClass": "imgInfoProduct"
+    }
+  },
+  "image#vitrinaDestacada1M": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/Rectangle-49.png",
+      "blockClass": "imgInfoProduct"
+    }
+  },
+  "responsive-layout.desktop#imagenDestacada": {
+    "children": ["image#vitrinaDestacada1"]
+  },
+  "responsive-layout.mobile#imagenDestacadaM": {
+      "children": ["image#vitrinaDestacada1M"]
+  },
+  "flex-layout.col#vitrinaDestacada2": {
+    "children": [
+      "rich-text#vitrinaDestacada1",
+      "rich-text#vitrinaDestacada2",
+      "shelf#demo10"
+    ],
+    "props": {
+      "paddingLeft": "20px",
+      "width":"80%",
+      "blockClass": "column2vitrinaDestacado2"
+    }
+  },
+  "rich-text#vitrinaDestacada1": {
+    "props": {
+      "text": "Cuidado en la piel",
+      "blockClass": ["tituloSlideCategory", "tituloVitrinaDestacada"]
+    }
+  },
+  "rich-text#vitrinaDestacada2": {
+    "props": {
+      "text": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y\n archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las \n industrias desde el año 1500",
+      "blockClass": ["contenidoSlideCategory","vitrinaDestacada"]
+    }
+  },
+  "shelf#demo10": {
+    "blocks": ["product-summary.shelf#2"],
+    "props": {
+      "id": "coleccion7",
+      "productList": {
+        "maxItems": 10,
+        "itemsPerPage": 4,
+        "minItemsPerPage": 2,
+        "scroll": "BY_PAGE",
+        "arrows": "true",
+        "blockClass": "vitrinaDestacada1",
+        "showPaginationDots": "never"
+      }
+    }
+  },
+  // BANNER DOS 
+  "flex-layout.row#Bannerdos": {
+    "children": [
+      "slider-layout#banner2"
+    ],
+    "props": {
+      "blockClass": "vitrinadestacada1"
+    }
+  },
+  "slider-layout#banner2": {
+    "props": {
+      "height": 720,
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": "banner2Carousel",
+      "showPaginationDots":"false",
+      "showNavigationArrows":"mobileOnly"
+    },
+    "children": ["image#bannerdos-1","image#bannerdos-2"]
+  },
+  "image#bannerdos-1": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/Banner2-1.png",
+      "blockClass": "imgBanner-2",
+      "link":{
+        "url":"/"
+      }
+    }
+  },
+  "image#bannerdos-2": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/imagenbanner2-2.png",
+      "blockClass": "imgBanner-2",
+      "link":{
+        "url":"/"
+      }
+    }
+  },
+  "rich-text#shelf-tittle-Vitrinafinal": {
+    "props": {
+      "text": "## Productos destacados",
+      "blockClass": "shelfTitle"
+    }
+  },
+  // VITRINA TRES PRODUCTOS
+  "responsive-layout.desktop#vitrinaTres": {
+    "children": ["flex-layout.row#vitrinasTres"]
+  },
+
+  "flex-layout.row#vitrinasTres": {
+    "children": [
+      "flex-layout.col#vitrina1",
+      "flex-layout.col#vitrina2"
+    ],
+    "props": {
+      "blockClass": "vitrinadestacada1"
+    }
+  },
+  "flex-layout.col#vitrina1": {
+    "children": [
+      "list-context.product-list#vitrineDest3"
+    ],
+    "props": {
+      "paddingLeft": "20px",
+      "width":"50%",
+      "blockClass": "column2vitrinaDestacado2"
+    }
+  },
+  "list-context.product-list#vitrineDest3": {
+    "blocks": ["product-summary.shelf#2"],
+    "children": ["slider-layout#demo-vitrine-dest"]
+  },
+  "slider-layout#demo-vitrine-dest": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": ["shelf","vitrinaGigante"],
+      "showPaginationDots":"false",
+      "showNavigationArrows": "never"
+    }
+  },
+  "flex-layout.col#vitrina2": {
+    "children": [
+      "list-context.product-list#vitrineDest3-2",
+      "list-context.product-list#vitrineDest3-3"
+    ],
+    "props": {
+      "paddingLeft": "20px",
+      "width":"50%",
+      "blockClass": "column2vitrinaDestacado2"
+    }
+  },
+  "list-context.product-list#vitrineDest3-2": {
+    "blocks": ["product-summary.shelf#2"],
+    "children": ["slider-layout#demo-vitrine-dest-2"]
+  },
+  "slider-layout#demo-vitrine-dest-2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showPaginationDots":"false",
+      "showNavigationArrows": "nerver"
+    }
+  },
+  "list-context.product-list#vitrineDest3-3": {
+    "blocks": ["product-summary.shelf#2"],
+    "children": ["slider-layout#demo-vitrine-dest-3"]
+  },
+  "slider-layout#demo-vitrine-dest-3": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showPaginationDots":"false",
+      "showNavigationArrows": "never"
+    }
+  },
+  // Vitrina tres mobile
+  "responsive-layout.mobile#vitrinaTres": {
+    "children": ["shelf#mobileVitrina-1","rich-text#shelf-tittle-Vitrinafinal","shelf#mobileVitrina2"]
+  },
+  "shelf#mobileVitrina-1": {
+    "blocks": ["product-summary.shelf#2"],
+    "props": {
+      "id": "coleccion7",
+      "productList": {
+        "maxItems": 1,
+        "itemsPerPage": 1,
+        "minItemsPerPage": 1,
+        "scroll": "BY_PAGE",
+        "arrows": "true",
+        "blockClass": "mobileVitrina",
+        "showPaginationDots": "never"
+      }
+    }
+  },
+  "shelf#mobileVitrina2": {
+    "blocks": ["product-summary.shelf#2"],
+    "props": {
+      "id": "coleccion7",
+      "productList": {
+        "maxItems": 2,
+        "itemsPerPage": 2,
+        "minItemsPerPage": 2,
+        "scroll": "BY_PAGE",
+        "arrows": "true",
+        "showNavigationArrows":"never",
+        "blockClass": "mobileVitrina",
+        "showPaginationDots": "never"
+      }
+    }
+  }
+}

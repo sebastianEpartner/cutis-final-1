@@ -1,0 +1,140 @@
+{
+    "store.custom#corpotativo": {
+        "children": [
+            "image#corporativImg",
+            "rich-text#corporativo",
+            "flex-layout.row#corporativo"
+        ]
+    },
+    // titulo de la pagina
+    "rich-text#corporativo": {
+        "props": {
+        "blockClass":"faqsTitulo",
+        "text": "## Acceso corporativo"
+        }
+    },
+    "image#corporativImg": {
+        "props": {
+          "src": "https://cutis.vtexassets.com/arquivos/banner.png",
+          "blockClass": "faqsImg"
+        }
+    },
+    "flex-layout.row#corporativo": {
+        "props": {
+          "blockClass": "faq"
+        },
+        "children": [
+          "flex-layout.col#corporativos",
+          "flex-layout.col#corporativos-1"
+        ]
+    },
+     // Primera columna de los corporativoss
+     "flex-layout.col#corporativos": {
+        "props":{
+        "width":"30%",
+        "blockClass":"columna1"
+        },
+        "children": [
+            "disclosure-layout-group#corporativos"
+        ]
+    },
+    "disclosure-layout-group#corporativos": {
+        "children": [
+            "disclosure-layout#derechocorporativos"
+        ]
+    },
+    // primer disclousare
+    "disclosure-layout#derechocorporativos": {
+        "children": ["disclosure-trigger#derechocorporativos", "disclosure-content#derechocorporativos"]
+    },
+    "disclosure-trigger#derechocorporativos": {
+        "props": {
+            "blockClass": "question",
+        "as": "div"
+        },
+        "children": ["rich-text#corporativos-titulo"]
+    },
+    "disclosure-content#derechocorporativos": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": ["rich-text#corporativos-content"]
+    },
+    "rich-text#corporativos-titulo": {
+        "props": {
+            "text": "Protección de corporativos"
+        }
+    },
+    "rich-text#corporativos-content": {
+        "props": {
+            "text": "Call us at the number (212) 1234-1234."
+        }
+    },
+    // columna 2
+    "flex-layout.col#corporativos-1": {
+        "props":{
+            "width":"70%",
+            "blockClass":"columna2"
+        },
+        "children": [
+            "flex-layout.col#corporativosContent"
+        ]
+    },
+    // contenido del tab 1
+    "flex-layout.col#corporativosContent": {
+        "children": [
+            "rich-text#corporativos1",
+            "rich-text#corporativos2",
+            "image#corporativo1",
+            "rich-text#corporativos3",
+            "image#corporativo2",
+            "rich-text#corporativos4",
+            "image#corporativo3"
+        ],
+        "props": {
+            "blockClass": "politicaContenedor"
+        }
+    },
+    "rich-text#corporativos1": {
+        "props": {
+            "text": "Para realizar el ingreso a acceso corporativo de CUTIS debe realizar los pasos descritos a continuación:",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#corporativos2": {
+        "props": {
+            "text": "1. ingresar a www.cutis.com.co/acceso-corporativo",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "image#corporativo1": {
+        "props": {
+          "src": "https://cutis.vtexassets.com/arquivos/banner.png",
+          "blockClass": "imgContent"
+        }
+    },
+    "rich-text#corporativos3": {
+        "props": {
+            "text": "2. ingresar sus datos personales: correo con el que está inscrito y contraseña",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "image#corporativo2": {
+        "props": {
+          "src": "https://cutis.vtexassets.com/arquivos/banner.png",
+          "blockClass": "imgContent"
+        }
+    },
+    "rich-text#corporativos4": {
+        "props": {
+            "text": "3. Disfrutar de nuestros beneficios",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "image#corporativo3": {
+        "props": {
+          "src": "https://cutis.vtexassets.com/arquivos/banner.png",
+          "blockClass": "imgContent"
+        }
+    }
+}

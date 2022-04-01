@@ -1,0 +1,195 @@
+{
+    // Todas las sale sub menu
+    "disclosure-layout#saleAll": {
+        "children": ["disclosure-trigger#saleAll","disclosure-content#saleAll"],
+        "props": {
+            "blockClass": "subMneusM"
+        }
+    },
+    "disclosure-trigger#saleAll": {
+        "children": ["menu-item#saleMobile"],
+        "props": {
+            "blockClass": "subMneusMTrigger"
+        }
+    },
+    "disclosure-content#saleAll": {
+        "children": ["disclosure-trigger#saleAll","flex-layout.row#saleM"],
+        "props": {
+            "blockClass": "subMneusMContent"
+        }
+    },
+    "flex-layout.row#saleM": {
+        "children": [
+            "flex-layout.col#saleItem1",
+            "flex-layout.col#saleItem2",
+            "flex-layout.col#saleItem3",
+            "flex-layout.col#saleItem4",
+            "flex-layout.col#saleItem5",
+            "flex-layout.col#saleItem6"
+        ],
+        "props": {
+        "blockClass": "allsales"
+        }
+    },
+    // oferta 1
+    "flex-layout.col#saleItem1": {
+        "children": [
+        "image#saleItem1",
+        "rich-text#saleItem1"
+
+        ],
+        "props": {
+        "width":"50%",
+        "blockClass": "itemMarcas"
+        }
+    },
+    "image#saleItem1": {
+        "props": {
+        "src": "https://cutis.vteximg.com.br/arquivos/avene.png",
+        "link": {
+            "url": "/"
+        },
+        "blockClass":"categoryIMG"
+        }
+    },
+    "rich-text#saleItem1": {
+        "props": {
+        "text": "Avene",
+        "blockClass": ["SubMenuItems"]
+        }
+    },
+    // Categpria 2
+    "flex-layout.col#saleItem2": {
+        "children": [
+        "image#saleItem2",
+        "rich-text#saleItem2"
+        ],
+        "props": {
+        "width":"50%",
+        "blockClass": "itemMarcas"
+        }
+    },
+    "image#saleItem2": {
+        "props": {
+        "src": "https://cutis.vteximg.com.br/arquivos/bioderma.png",
+        "link": {
+            "url": "/"
+        },
+        "blockClass":"categoryIMG"
+        }
+    },
+    "rich-text#saleItem2": {
+        "props": {
+        "text": "Bioderma",
+        "blockClass": ["SubMenuItems"]
+        }
+    },
+    // Categpria 3
+    "flex-layout.col#saleItem3": {
+        "children": [
+        "image#saleItem3",
+        "rich-text#saleItem3"
+
+        ],
+        "props": {
+        "width":"50%",
+        "blockClass": "itemMarcas"
+        }
+    },
+    "image#saleItem3": {
+        "props": {
+        "src": "https://cutis.vteximg.com.br/arquivos/almay.png",
+        "link": {
+            "url": "/"
+        },
+        "blockClass":"categoryIMG"
+        }
+    },
+    "rich-text#saleItem3": {
+        "props": {
+        "text": "Alway",
+        "blockClass": ["SubMenuItems"]
+        }
+    },
+    // Categpria 4
+    "flex-layout.col#saleItem4": {
+        "children": [
+        "image#saleItem4",
+        "rich-text#saleItem4"
+
+        ],
+        "props": {
+        "width":"50%",
+        "blockClass": "itemMarcas"
+        }
+    },
+    "image#saleItem4": {
+        "props": {
+        "src": "https://cutis.vteximg.com.br/arquivos/uriage.png",
+        "link": {
+            "url": "/"
+        },
+        "blockClass":"categoryIMG"
+        }
+    },
+    "rich-text#saleItem4": {
+        "props": {
+        "text": "Uriage",
+        "blockClass": ["SubMenuItems"]
+        }
+    },
+    // Categpria 5
+    "flex-layout.col#saleItem5": {
+        "children": [
+        "image#saleItem5",
+        "rich-text#saleItem5"
+
+        ],
+        "props": {
+        "width":"50%",
+        "blockClass": "itemMarcas"
+        }
+    },
+    "image#saleItem5": {
+        "props": {
+        "src": "https://cutis.vteximg.com.br/arquivos/pharma.png",
+        "link": {
+            "url": "/"
+        },
+        "blockClass":"categoryIMG"
+        }
+    },
+    "rich-text#saleItem5": {
+        "props": {
+        "text": "PharmaDerm",
+        "blockClass": ["SubMenuItems"]
+        }
+    },
+    // Categpria 6
+    "flex-layout.col#saleItem6": {
+        "children": [
+        "image#saleItem6",
+        "rich-text#saleItem6"
+
+        ],
+        "props": {
+        "width":"50%",
+        "blockClass": "itemMarcas"
+        }
+    },
+    "image#saleItem6": {
+        "props": {
+        "src": "https://cutis.vteximg.com.br/arquivos/laroche.png",
+        "link": {
+            "url": "/"
+        },
+        "blockClass":"categoryIMG"
+        }
+    },
+    "rich-text#saleItem6": {
+        "props": {
+        "text": "La Roche Porsay",
+        "blockClass": ["SubMenuItems"]
+        }
+    }
+}

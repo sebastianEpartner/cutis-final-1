@@ -1,0 +1,89 @@
+{
+    //Tap footer categoria
+    "tab-layout#footerM": {
+        "children": [
+            "flex-layout.row#tabbersfooterM"
+        ],
+        "props": {
+            "blockClass": "footerTabbersM",
+            "defaultActiveTabId": "tabbersfooterM-2"
+        }
+    },
+    "flex-layout.row#tabbersfooterM": {
+        "children": [
+            "tab-list#tabbersfooterM",
+            "tab-content#tabbersfooterM"
+        ],
+        "props": {
+            "blockClass": "tabbersFooter"
+        }
+    },
+    "tab-list#tabbersfooterM":{
+      "children":[
+        "tab-list.item#tabbersfooterM-1",
+        "tab-list.item#tabbersfooterM-2",
+        "tab-list.item#tabbersfooterM-3"
+      ],
+      "props":{
+        "blockClass": "tabbersHome"
+      }
+    },
+    "tab-list.item#tabbersfooterM-1":{
+      "props":{
+        "id": "tab1",
+        "tabId": "tabbersfooterM-1",
+        "label": "Sobre Nosotros",
+        "blockClass": "tabberFooter"
+      }
+    },
+    "tab-list.item#tabbersfooterM-2":{
+      "props":{
+        "id": "tab2",
+        "tabId": "tabbersfooterM-2",
+        "label": "Categorías",
+        "blockClass": "tabberFooter"
+      }
+    },
+    "tab-list.item#tabbersfooterM-3":{
+      "props":{
+        "id": "tab3",
+        "tabId": "tabbersfooterM-3",
+        "label": "Más Información",
+        "blockClass": "tabberFooter"
+      }
+    },
+    "tab-content#tabbersfooterM":{
+      "children":[
+        "tab-content.item#tabbersfooterM-1",
+        "tab-content.item#tabbersfooterM-2",
+        "tab-content.item#tabbersfooterM-3"
+      ]
+    },
+    "tab-content.item#tabbersfooterM-1": {
+      "children": [
+        "vtex.menu@2.x:menu#Products"
+      ],
+      "props": {
+        "tabId": "tabbersfooterM-1",
+        "blockClass": "footersColumn"
+      }
+    },
+    "tab-content.item#tabbersfooterM-2": {
+      "children": [
+        "vtex.menu@2.x:menu#Products"
+      ],
+      "props": {
+        "tabId": "tabbersfooterM-2",
+        "blockClass": "footersColumn"
+      }
+    },
+    "tab-content.item#tabbersfooterM-3": {
+      "children": [
+        "vtex.menu@2.x:menu#Products"
+      ],
+      "props": {
+        "tabId": "tabbersfooterM-3", 
+        "blockClass": "footersColumn"
+      }
+    }
+}

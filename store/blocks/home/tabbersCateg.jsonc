@@ -1,0 +1,278 @@
+{
+    //Tap producto
+    "tab-layout#tabsCatego": {
+        "children": [
+          "responsive-layout.desktop",
+          "responsive-layout.mobile#categoruiasMobile",
+          "tab-content#tabsCatego"
+        ],
+        "props": {
+            "blockClass": "home",
+            "defaultActiveTabId": "home2"
+        }
+    },
+    "responsive-layout.desktop": {
+        "children": ["tab-list#tabsCatego"]
+    },
+    "responsive-layout.mobile#categoruiasMobile": {
+        "children": ["tab-list#tabsCategoM"]
+    },
+    "slider-layout#categoriasSliderTab": {
+        "props": {
+          "height": 720,
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 4,
+            "phone": 2
+          },
+          "infinite": true,
+          "blockClass": "categoriasCarousel",
+          "showPaginationDots":"true",
+          "showNavigationArrows": "never"
+        },
+        "children": [
+            "tab-list.item#tabsCatego1",
+            "tab-list.item#tabsCatego2",
+            "tab-list.item#tabsCatego3",
+            "tab-list.item#tabsCatego4",
+            "tab-list.item#tabsCatego5",
+            "tab-list.item#tabsCatego6"
+        ]
+    },
+    "tab-list#tabsCategoM":{
+        "children":[
+            "slider-layout#categoriasSliderTab"
+        ],
+        "props":{
+            "blockClass": "tabbersCategory"
+        }
+    },
+    "tab-list#tabsCatego":{
+        "children":[
+            "tab-list.item#tabsCatego1",
+            "tab-list.item#tabsCatego2",
+            "tab-list.item#tabsCatego3",
+            "tab-list.item#tabsCatego4",
+            "tab-list.item#tabsCatego5",
+            "tab-list.item#tabsCatego6"
+        ],
+        "props":{
+            "blockClass": "tabbersCategory"
+        }
+    },
+    "tab-list.item#tabsCatego1":{
+        "props":{
+            "id": "tab1",
+            "tabId": "home2",
+            "label": "Rostro"
+        }
+    },
+    "tab-list.item#tabsCatego2":{
+        "props":{
+            "id": "tab2",
+            "tabId": "home3",
+            "label": "Solar"
+        }
+    },
+    "tab-list.item#tabsCatego3":{
+        "props":{
+            "id": "tab3",
+            "tabId": "home4",
+            "label": "Maquillaje"
+        }
+    },
+    "tab-list.item#tabsCatego4":{
+        "props":{
+            "id": "tab4",
+            "tabId": "home5",
+            "label": "Capilar"
+        }
+    },
+    "tab-list.item#tabsCatego5":{
+        "props":{
+            "id": "tab5",
+            "tabId": "home6",
+            "label": "Corporal"
+        }
+    },
+    "tab-list.item#tabsCatego6":{
+        "props":{
+            "id": "tab6",
+            "tabId": "home7",
+            "label": "Medicamentos"
+        }
+    },
+    "tab-content#tabsCatego":{
+        "children":[
+            "tab-content.item#tabsCatego1",
+            "tab-content.item#tabsCatego2",
+            "tab-content.item#tabsCatego3",
+            "tab-content.item#tabsCatego4",
+            "tab-content.item#tabsCatego5",
+            "tab-content.item#tabsCatego6"
+        ]
+    },
+    "tab-content.item#tabsCatego1": {
+        "children": [
+            "list-context.product-list#demo1"
+        ],
+        "props": {
+            "tabId": "home2",
+            "blockClass": "tabbersVitrina"
+        }
+    },
+    "tab-content.item#tabsCatego2": {
+        "children": [
+            "list-context.product-list#demo2"
+        ],
+        "props": {
+            "tabId": "home3",
+            "blockClass": "tabbersVitrina"
+        }
+    },
+    "tab-content.item#tabsCatego3": {
+        "children": [
+            "list-context.product-list#demo3"
+        ],
+        "props": {
+            "tabId": "home4", 
+            "blockClass": "tabbersVitrina"
+        }
+    },
+    "tab-content.item#tabsCatego4": {
+        "children": [
+            "list-context.product-list#demo4"
+        ],
+        "props": {
+            "tabId": "home5", 
+            "blockClass": "tabbersVitrina"
+        }
+    },
+    "tab-content.item#tabsCatego5": {
+        "children": [
+            "list-context.product-list#demo5"
+        ],
+        "props": {
+            "tabId": "home6", 
+            "blockClass": "tabbersVitrina"
+        }
+    },
+    "tab-content.item#tabsCatego6": {
+        "children": [
+            "list-context.product-list#demo6"
+        ],
+        "props": {
+            "tabId": "home7", 
+            "blockClass": "tabbersVitrina"
+        }
+    },
+    "list-context.product-list#demo1": {
+        "blocks": ["product-summary.shelf#2"],
+        "children": ["slider-layout#demo-products-1"]
+      },
+      "slider-layout#demo-products-1": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 3,
+            "phone": 2
+          },
+          "infinite": true,
+          "fullWidth": false,
+          "blockClass": "shelf",
+          "showPaginationDots":"false",
+          "showNavigationArrows": "desktopOnly"
+        }
+    },
+     
+    "list-context.product-list#demo2": {
+        "blocks": ["product-summary.shelf#2"],
+        "children": ["slider-layout#demo-products-2"]
+      },
+      "slider-layout#demo-products-2": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 3,
+            "phone": 2
+          },
+          "infinite": true,
+          "fullWidth": false,
+          "blockClass": "shelf",
+          "showPaginationDots":"false",
+          "showNavigationArrows": "desktopOnly"
+        }
+    },
+    "list-context.product-list#demo3": {
+        "blocks": ["product-summary.shelf#2"],
+        "children": ["slider-layout#demo-products-3"]
+      },
+      "slider-layout#demo-products-3": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 3,
+            "phone": 2
+          },
+          "infinite": true,
+          "fullWidth": false,
+          "blockClass": "shelf",
+          "showPaginationDots":"false",
+          "showNavigationArrows": "desktopOnly"
+        }
+    },
+    "list-context.product-list#demo4": {
+        "blocks": ["product-summary.shelf#2"],
+        "children": ["slider-layout#demo-products-4"]
+    },
+    "slider-layout#demo-products-4": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 3,
+            "phone": 2
+          },
+          "infinite": true,
+          "fullWidth": false,
+          "blockClass": "shelf",
+          "showPaginationDots":"false",
+          "showNavigationArrows": "desktopOnly"
+        }
+    },
+    "list-context.product-list#demo5": {
+        "blocks": ["product-summary.shelf#2"],
+        "children": ["slider-layout#demo-products-5"]
+    },
+    "slider-layout#demo-products-5": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 3,
+            "phone": 2
+          },
+          "infinite": true,
+          "fullWidth": false,
+          "blockClass": "shelf",
+          "showPaginationDots":"false",
+          "showNavigationArrows": "desktopOnly"
+        }
+    },
+    "list-context.product-list#demo6": {
+        "blocks": ["product-summary.shelf#2"],
+        "children": ["slider-layout#demo-products-6"]
+    },
+    "slider-layout#demo-products-6": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 3,
+            "phone": 2
+          },
+          "infinite": true,
+          "fullWidth": false,
+          "blockClass": "shelf",
+          "showPaginationDots":"false",
+          "showNavigationArrows": "desktopOnly"
+        }
+    }
+}

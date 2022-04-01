@@ -1,0 +1,37 @@
+{
+    "product-summary.shelf#2": {
+        "children": [
+          "add-to-list-btn",
+          "stack-layout#prodsum",
+          "flex-layout.row#productInfo2"
+        ]
+    },
+    "flex-layout.row#productInfo2": {
+        "children": [
+          "flex-layout.col#productInfo2"
+        ],
+        "props": {
+          "blockClass": ["ProductInfo2","preciosVitrine2"]
+        }
+    },
+      "flex-layout.col#productInfo2": {
+        "props": {
+          "blockClass": "productInfo2"
+        },
+        "children": [
+          "product-summary-brand",
+          "product-summary-name",
+          "product-summary-sku-selector",
+          "flex-layout.row#priceButton"
+        ]
+    },
+    "flex-layout.row#priceButton": {
+        "children": [
+            "product-summary-price",
+            "add-to-cart-button"
+        ],
+        "props": {
+          "blockClass": ["ProductInfo2","priceInfo"]
+        }
+    }
+}

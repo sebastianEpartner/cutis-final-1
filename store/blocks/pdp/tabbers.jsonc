@@ -1,0 +1,234 @@
+{
+    "tab-layout#product": {
+        "children": [
+          "tab-list#product",
+          "tab-content#product"
+        ],
+          "props": {
+            "blockClass": "product",
+            "defaultActiveTabId": "product1"
+          }
+    },
+    "tab-list#product":{
+        "children":[
+            "tab-list.item#product1",
+            "tab-list.item#product2",
+            "tab-list.item#product5"
+        ]
+    },
+    "tab-list.item#product1":{
+        "props":{
+        "tabId": "product2",
+        "label": "Descripción",
+        "blockClass": "descript"
+        }
+    },
+    "tab-list.item#product2":{
+        "props":{
+        "tabId": "product1",
+        "label": "Detalles",
+        "blockClass": "detail"
+        }
+    },
+    "tab-list.item#product5":{
+        "props":{
+        "tabId": "product5",
+        "label": "Caracteristicas",
+        "blockClass": "caracteristicas"
+        }
+    },
+    //contenido de los tabbers
+    "tab-content#product":{
+        "children":[
+        "tab-content.item#product1",
+        "tab-content.item#product2", 
+        "tab-content.item#product5"
+        ],
+        "props": {
+        "blocblockClass": "productContent"
+        }
+    },
+    //contenido del tabber 1
+    "tab-content.item#product1": {
+        "children": [
+        "flex-layout.row#product1"
+        ],
+        "props": {
+        "tabId": "product2"
+        }
+    },
+    "flex-layout.row#product1":{
+        "children": [
+        "flex-layout.col#productEsepecificacion"
+        ],
+        "props":{
+        "tabId": "product2",
+        "blockClass": "InformacionDos"
+        }
+    },
+    "flex-layout.col#productEsepecificacion":{
+        "children": [
+            "product-specification-text#specification",
+            "flex-layout.row#description",
+            "product-specification-group#tap1"
+        ],
+        "props":{
+        "blockClass": "infoPrimerTab"
+        }
+    },
+    "product-specification-group#tap1": {
+        "children": ["product-specification-text#group", "product-specification"],
+        "props":{
+        "blockClass": "producttap1"
+        }
+    },
+    "product-specification": {
+        "children": [
+        "product-specification-values"
+        ]
+    },
+    "product-specification-values": {
+        "children": ["product-specification-text#value"]
+    },
+    "product-specification-text#group": {
+        "props": {
+        "message": "{groupName}",
+        "blockClass": "especificacionesUno"
+        }
+    },
+    "product-specification-text#specification": {
+        "props": {
+        "message": "{specificationName}",
+        "blockClass": "especificacionesUno"
+        }
+    },
+    "product-specification-text#value": {
+        "props": {
+        "message": "{specificationValue}",
+        "blockClass": "especificacionesUno"
+        }
+    },
+      
+      
+    //Contenido del segundo tabber
+    "tab-content.item#product2": {
+        "children": [
+        "flex-layout.row#product2"
+        ],
+        "props": {
+            "tabId": "product1"
+        }
+    },
+    "flex-layout.row#product2":{
+        "children": [
+            "flex-layout.col#productEsepecificacion2"
+        ],
+        "props":{
+        "tabId": "product1",
+        "blockClass": "informacionTabDos"
+        }
+    },
+    "flex-layout.col#productEsepecificacion2":{
+        "children": [
+            "product-specification-text#specification",
+            "flex-layout.row#description",
+            "product-specification-group#tap2"
+        ],
+        "props":{
+        "blockClass": "InformacionBENEFICIOS"
+        }
+    },
+    "product-specification-group#tap2": {
+        "children": ["product-specification-text#group2", "product-specification#2"],
+        "props":{
+        "blockClass": "producttap1"
+        }
+    },
+    "product-specification#2": {
+        "children": [
+            "product-specification-values#2"
+        ]
+    },
+    "product-specification-values#2": {
+        "children": ["product-specification-text#value2"]
+    },
+    "product-specification-text#group2": {
+        "props": {
+        "message": "{groupName}",
+        "blockClass": "especificacionesBENE"
+        }
+    },
+    "product-specification-text#specification2": {
+        "props": {
+        "message": "{specificationName}",
+        "blockClass": "especificacionesBENE"
+        }
+    },
+    "product-specification-text#value2": {
+        "props": {
+        "message": "{specificationValue}",
+        "blockClass": "especificacionesBENE"
+        }
+    },
+    //Contenido del ultimo tabber
+    "tab-content.item#product5": {
+        "children": [
+          "flex-layout.row#product5"
+        ],
+         "props": {
+          "tabId": "product5"
+        }
+    },
+    "flex-layout.row#product5":{
+        "children": [
+          "flex-layout.col#productEsepecificacion5"
+        ],
+        "props":{
+          "tabId": "product5",
+          "blockClass": "InformacionTabTres"
+        }
+    },
+    "flex-layout.col#productEsepecificacion5":{
+        "children": [
+            "flex-layout.row#specifications-title",
+            "flex-layout.row#description",
+            "product-specification-group#tap5"
+        ],
+        "props":{
+          "blockClass": "InformacionRECOMENDADOS"
+        }
+      },
+    "product-specification-group#tap5": {
+        "children": ["product-specification-text#group5", "product-specification#5"],
+        "props":{
+          "blockClass": "producttap5"
+        }
+      },
+    "product-specification#5": {
+        "children": [
+          "product-specification-text#specification5",
+          "product-specification-values#5"
+        ]
+    },
+    "product-specification-values#5": {
+        "children": ["product-specification-text#value5"]
+    },
+    "product-specification-text#group5": {
+        "props": {
+          "message": "{groupName}",
+          "blockClass": "especificacionesRECO"
+        }
+    },
+    "product-specification-text#specification5": {
+        "props": {
+          "message": "{specificationName}",
+          "blockClass": "especificacionesRECO"
+        }
+      },
+      "product-specification-text#value5": {
+        "props": {
+          "message": "{specificationValue}",
+          "blockClass": "especificacionesRECO"
+        }
+    }
+}

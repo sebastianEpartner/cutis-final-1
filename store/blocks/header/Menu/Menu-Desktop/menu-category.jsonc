@@ -1,0 +1,795 @@
+{
+    "vtex.menu@2.x:submenu#category-apparel": {
+        "props": {
+            "width": "100%",
+            "blockclass": "categoriasMenu"
+        },
+        "children": [
+            "flex-layout.row#columnasCategorias"
+        ]
+    },
+    "flex-layout.row#columnasCategorias": {
+        "props":{
+            "blockclass":"categoriassubmenu"
+        },
+        "children": [
+            "flex-layout.row#columnasCategorias1",
+            "flex-layout.col#banner1Categorias"
+        ]
+    },
+    "flex-layout.row#columnasCategorias1": {
+        "props":{
+            "width": "80%",
+            "blockClass":"categoriasMenu"
+        },
+        "children": [
+            "flex-layout.col#columnasCategorias1",
+            "flex-layout.col#columnasCategorias2",
+            "flex-layout.col#columnasCategorias3",
+            "flex-layout.col#columnasCategorias4",
+            "flex-layout.col#columnasCategorias5",
+            "flex-layout.col#columnasCategorias6"
+        ]
+    },
+    // columnas 
+    "flex-layout.col#columnasCategorias1": {
+        "props":{
+            "width": "70%",
+            "blockclass":"categoriasMenu"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#category-apparel-1"
+        ]
+    },
+    "flex-layout.col#columnasCategorias2": {
+        "props":{
+            "width": "70%",
+            "blockclass":"categoriasMenu"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#category-apparel-2"
+        ]
+    },
+    "flex-layout.col#columnasCategorias3": {
+        "props":{
+            "width": "70%",
+            "blockclass":"categoriasMenu"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#category-apparel-3"
+        ]
+    },
+    "flex-layout.col#columnasCategorias4": {
+        "props":{
+            "width": "70%",
+            "blockclass":"categoriasMenu"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#category-apparel-4"
+        ]
+    },
+    "flex-layout.col#columnasCategorias5": {
+        "props":{
+            "width": "70%",
+            "blockclass":"categoriasMenu"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#category-apparel-5"
+        ]
+    },
+    "flex-layout.col#columnasCategorias6": {
+        "props":{
+            "width": "70%",
+            "blockclass":"categoriasMenu"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#category-apparel-6"
+        ]
+    },
+    // banners en categoria
+    "flex-layout.col#banner1Categorias":{
+        "title":"banner1",
+        "props":{
+            "blockclass": "categoriasMenu"
+        },
+        "children": [
+            "image#categoriaDestacada",
+            "rich-text#title-bannerCategory"
+        ]
+    },
+    "image#categoriaDestacada": {
+        "props": {
+            "blockClass": "imagenMenuCategory",
+            "src": "https://cutis.vteximg.com.br/arquivos/MenuImage.png"
+        }
+    },
+    "rich-text#title-bannerCategory": {
+        "props": {
+          "text": "[Ver categoría](/)",
+          "blockClass": ["subcategory-item","categoryLink"]
+        }
+    },
+    // COlumnas en la del primer sub menu CATEGORIAS
+    "vtex.menu@2.x:menu#category-apparel-1": {
+        "props": {
+            "orientation": "vertical",
+            "blockclass": "ColumnasMenuCategoria"
+        },
+        "children": [
+            "menu-item#category-apparel-rostro",
+            "menu-item#category-apparel-hidratante",
+            "menu-item#category-apparel-exfoliante",
+            "menu-item#category-apparel-mascarillas",
+            "menu-item#category-apparel-limpiadora",
+            "menu-item#category-apparel-Despigmentante",
+            "menu-item#category-apparel-Antiedad",
+            "menu-item#category-apparel-Reparadores",
+            "menu-item#category-apparel-labiosRostro",
+            "menu-item#category-apparel-acne",
+            "menu-item#category-apparel-Imperfecciones"
+        ]
+    },
+    "vtex.menu@2.x:menu#category-apparel-2": {
+        "props": {
+            "orientation": "vertical",
+            "blockclass": "ColumnasMenuCategoria"
+        },
+        "children": [
+            "menu-item#category-apparel-solares",
+            "menu-item#category-apparel-conColor",
+            "menu-item#category-apparel-sincolor",
+            "menu-item#category-apparel-conColorSolar"
+        ]
+    },
+    "vtex.menu@2.x:menu#category-apparel-3": {
+        "props": {
+            "orientation": "vertical",
+            "blockclass": "ColumnasMenuCategoria"
+        },
+        "children": [
+            "menu-item#category-apparel-maquillajes",
+            "menu-item#category-apparel-labios",
+            "menu-item#category-apparel-ojos",
+            "menu-item#category-apparel-pestanas",
+            "menu-item#category-apparel-rostros"
+        ]
+    },
+    "vtex.menu@2.x:menu#category-apparel-4": {
+        "props": {
+            "orientation": "vertical",
+            "blockclass": "ColumnasMenuCategoria"
+        },
+        "children": [
+            "menu-item#category-apparel-capilar",
+            "menu-item#category-apparel-anticaida",
+            "menu-item#category-apparel-anticaspa",
+            "menu-item#category-apparel-reparadores",
+            "menu-item#category-apparel-cuero-sensible"
+        ]
+    },
+    "vtex.menu@2.x:menu#category-apparel-5": {
+        "props": {
+            "orientation": "vertical",
+            "blockclass": "ColumnasMenuCategoria"
+        },
+        "children": [
+            "menu-item#category-apparel-corporal",
+            "menu-item#category-apparel-acne-cor",
+            "menu-item#category-apparel-antiestris",
+            "menu-item#category-apparel-cicatrices",
+            "menu-item#category-apparel-desodorante",
+            "menu-item#category-apparel-hidratantes",
+            "menu-item#category-apparel-limpiadoras",
+            "menu-item#category-apparel-manos",
+            "menu-item#category-apparel-una"
+        ]
+    },
+    "vtex.menu@2.x:menu#category-apparel-6": {
+        "props": {
+            "orientation": "vertical",
+            "blockclass": "ColumnasMenuCategoria"
+        },
+        "children": [
+            "menu-item#category-apparel-medicamentos",
+            "menu-item#category-apparel-venta-libre",
+            "menu-item#category-apparel-formulados"
+        ]
+    },
+    "menu-item#category-apparel-rostro": {
+        "props": {
+            "id": "menu-item-category-apparel-clothing",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": ["category-item","category-item-1"],
+            "itemProps": {
+                "type": "internal",
+                "href": "/rostro",
+                "noFollow": false,
+                "tagTitle": "Rostro",
+                "text": "Rostro"
+            }
+        }
+    },
+    "menu-item#category-apparel-acne": {
+        "props": {
+            "id": "menu-item-category-apparel-eyeglasses",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+            "type": "internal",
+            "href": "/rostro/acne",
+            "noFollow": false,
+            "tagTitle": "Acné",
+            "text": "Acné rostro"
+            }
+        }
+    },
+    "menu-item#category-apparel-Antiedad": {
+        "props": {
+            "id": "menu-item-category-apparel-accessories",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+            "type": "internal",
+            "href": "/rostro/antiedad",
+            "noFollow": false,
+            "tagTitle": "Antiedad",
+            "text": "Antiedad"
+            }
+        }
+    },
+    "menu-item#category-apparel-labiosRostro": {
+            "props": {
+                "id": "menu-item-category-apparel-cicatrizante",
+                "type": "custom",
+                "iconId": null,
+                "highlight": false,
+                "blockClass": "subcategory-item",
+                "itemProps": {
+                "type": "internal",
+                "href": "/rostro/labios",
+                "noFollow": false,
+                "tagTitle": "Labios",
+                "text": "Labios"
+                }
+            }
+    },
+    "menu-item#category-apparel-Despigmentante": {
+        "props": {
+            "id": "menu-item-category-apparel-category5",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+            "type": "internal",
+            "href": "/rostro/despigmentante",
+            "noFollow": false,
+            "tagTitle": "Despigmentante rostro",
+            "text": "Despigmentante rostro"
+            }
+        }
+    },
+    "menu-item#category-apparel-exfoliante": {
+        "props": {
+            "id": "menu-item-category-apparel-exfoliante",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+            "type": "internal",
+            "href": "/rostro/exfoliante",
+            "noFollow": false,
+            "tagTitle": "Exfoliante",
+            "text": "Exfoliante"
+            }
+        }
+    },
+    "menu-item#category-apparel-hidratante": {
+        "props": {
+            "id": "menu-item-category-apparel-hidratante",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+            "type": "internal",
+            "href": "/rostro/hidratante",
+            "noFollow": false,
+            "tagTitle": "Hidratante rostro",
+            "text": "Hidratante rostro"
+            }
+        }
+    },
+    "menu-item#category-apparel-Imperfecciones": {
+        "props": {
+            "id": "menu-item-category-apparel-exfoliante",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+            "type": "internal",
+            "href": "/apparel---accessories/eyeglasses/",
+            "noFollow": false,
+            "tagTitle": "Imperfecciones",
+            "text": "Imperfecciones"
+            }
+        }
+    },
+    "menu-item#category-apparel-limpiadora": {
+        "props": {
+            "id": "menu-item-category-apparel-exfoliante",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+            "type": "internal",
+            "href": "/rostro/limpiadora",
+            "noFollow": false,
+            "tagTitle": "Limpiadora rostro",
+            "text": "Limpiadora rostro"
+            }
+        }
+    },
+    "menu-item#category-apparel-mascarillas": {
+        "props": {
+            "id": "menu-item-category-apparel-mascarillas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+            "type": "internal",
+            "href": "/rostro/mascarillas",
+            "noFollow": false,
+            "tagTitle": "Mascarillas",
+            "text": "Mascarillas"
+            }
+        }
+    },
+    "menu-item#category-apparel-Reparadores": {
+        "props": {
+            "id": "menu-item-category-apparel-Reparadores",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+            "type": "internal",
+            "href": "/rostro/reparadores",
+            "noFollow": false,
+            "tagTitle": "Reparadores",
+            "text": "Reparadores"
+            }
+        }
+    },
+    // menu items solares
+    "menu-item#category-apparel-solares": {
+        "props": {
+            "id": "menu-item-category-apparel-solare",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": ["category-item","category-item-2"],
+            "itemProps": {
+                "type": "internal",
+                "href": "/solares",
+                "noFollow": false,
+                "tagTitle": "Solares",
+                "text": "Solares"
+            }
+        }
+    },
+    "menu-item#category-apparel-conColor": {
+        "props": {
+            "id": "menu-item-category-apparel-concolor",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+            "type": "internal",
+            "href": "/solares/con-color",
+            "noFollow": false,
+            "tagTitle": "Con color",
+            "text": "Con color"
+            }
+        }
+    },
+    "menu-item#category-apparel-sincolor": {
+        "props": {
+            "id": "menu-item-category-apparel-sincolor",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+            "type": "internal",
+            "href": "/solares/sin-color",
+            "noFollow": false,
+            "tagTitle": "Sin color",
+            "text": "Sin color"
+            }
+        }
+    },
+    "menu-item#category-apparel-conColorSolar": {
+        "props": {
+            "id": "menu-item-category-apparel-conColorSolar",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+            "type": "internal",
+            "href": "/solares/after-sun",
+            "noFollow": false,
+            "tagTitle": "Cin color Solar",
+            "text": "After sun"
+            }
+        }
+    },
+    // maquillaje menu items
+    "menu-item#category-apparel-maquillajes": {
+        "props": {
+            "id": "menu-item-category-apparel-maquillajes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": ["category-item","category-item-3"],
+            "itemProps": {
+                "type": "internal",
+                "href": "/maquillaje",
+                "noFollow": false,
+                "tagTitle": "Maquillajes",
+                "text": "Maquillaje"
+            }
+        }
+    },
+    "menu-item#category-apparel-labios": {
+        "props": {
+            "id": "menu-item-category-apparel-labios",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/maquillaje/labios",
+                "noFollow": false,
+                "tagTitle": "Labios",
+                "text": "Labios"
+            }
+        }
+    },
+    "menu-item#category-apparel-ojos": {
+        "props": {
+            "id": "menu-item-category-apparel-ojos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/maquillaje/ojos-y-pestañas",
+                "noFollow": false,
+                "tagTitle": "Ojos",
+                "text": "Ojos"
+            }
+        }
+    },
+    "menu-item#category-apparel-pestanas": {
+        "props": {
+            "id": "menu-item-category-apparel-pestanas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/maquillaje/ojos-y-pestañas",
+                "noFollow": false,
+                "tagTitle": "Pestañas",
+                "text": "Pestañas"
+            }
+        }
+    },
+    "menu-item#category-apparel-rostros": {
+        "props": {
+            "id": "menu-item-category-apparel-rostros",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/maquillaje/rostro",
+                "noFollow": false,
+                "tagTitle": "Rostros",
+                "text": "Rostros"
+            }
+        }
+    },
+    // capilar menu items
+    "menu-item#category-apparel-capilar": {
+        "props": {
+            "id": "menu-item-category-apparel-capilar",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": ["category-item","category-item-4"],
+            "itemProps": {
+                "type": "internal",
+                "href": "/capilar",
+                "noFollow": false,
+                "tagTitle": "Capilar",
+                "text": "Capilar"
+            }
+        }
+    },
+    "menu-item#category-apparel-anticaida": {
+        "props": {
+            "id": "menu-item-category-apparel-anticaoda",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/capilar/anticaida",
+                "noFollow": false,
+                "tagTitle": "Anticaida",
+                "text": "Anticaida"
+            }
+        }
+    },
+    "menu-item#category-apparel-anticaspa": {
+        "props": {
+            "id": "menu-item-category-apparel-anticaspa",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/capilar/anticaspa",
+                "noFollow": false,
+                "tagTitle": "Anticaspa",
+                "text": "Anticaspa"
+            }
+        }
+    },
+    "menu-item#category-apparel-reparadores": {
+        "props": {
+            "id": "menu-item-category-apparel-reparadores",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/capilar/reparadores",
+                "noFollow": false,
+                "tagTitle": "Reparadors",
+                "text": "Reparadores"
+            }
+        }
+    },
+    "menu-item#category-apparel-cuero-sensible": {
+        "props": {
+            "id": "menu-item-category-apparel-cuero-sensible",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/capilar/cuero-cabelludo-sensible",
+                "noFollow": false,
+                "tagTitle": "Cuero cabelludo sensible",
+                "text": "Cuero cabelludo sensible"
+            }
+        }
+    },
+    // menu items corporal
+    "menu-item#category-apparel-corporal": {
+        "props": {
+            "id": "menu-item-category-apparel-corporal",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": ["category-item","category-item-5"],
+            "itemProps": {
+                "type": "internal",
+                "href": "/corporal",
+                "noFollow": false,
+                "tagTitle": "Corporal",
+                "text": "Corporal"
+            }
+        }
+    },
+    "menu-item#category-apparel-acne-cor": {
+        "props": {
+            "id": "menu-item-category-apparel-acne-cor",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/corporal/acne",
+                "noFollow": false,
+                "tagTitle": "acne",
+                "text": "Acné"
+            }
+        }
+    },
+    "menu-item#category-apparel-antiestris": {
+        "props": {
+            "id": "menu-item-category-apparel-antiestria",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/corporal/antiestrias",
+                "noFollow": false,
+                "tagTitle": "Antiestrias",
+                "text": "Antiestrias"
+            }
+        }
+    },
+    "menu-item#category-apparel-cicatrices": {
+        "props": {
+            "id": "menu-item-category-apparel-cicatrises",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/corporal/cicatrices",
+                "noFollow": false,
+                "tagTitle": "Cicatrices",
+                "text": "Cicatrices"
+            }
+        }
+    },
+    "menu-item#category-apparel-desodorante": {
+        "props": {
+            "id": "menu-item-category-apparel-desodorante",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/corporal/desodorante",
+                "noFollow": false,
+                "tagTitle": "Desodorante",
+                "text": "Desodorante"
+            }
+        }
+    },
+    "menu-item#category-apparel-hidratantes": {
+        "props": {
+            "id": "menu-item-category-apparel-hidratantes",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/corporal/hidratante",
+                "noFollow": false,
+                "tagTitle": "Hidratantes",
+                "text": "Hidratantes"
+            }
+        }
+    },
+    "menu-item#category-apparel-limpiadoras": {
+        "props": {
+            "id": "menu-item-category-apparel-limpiadoras",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/corporal/limpiadora",
+                "noFollow": false,
+                "tagTitle": "Limpiadora",
+                "text": "Limpiadora"
+            }
+        }
+    },
+    "menu-item#category-apparel-manos": {
+        "props": {
+            "id": "menu-item-category-apparel-manos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/corporal/manos-y-pies",
+                "noFollow": false,
+                "tagTitle": "Manos y pies",
+                "text": "Manos y pies"
+            }
+        }
+    },
+    "menu-item#category-apparel-una": {
+        "props": {
+            "id": "menu-item-category-apparel-unas",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/corporal/uñas-corporal",
+                "noFollow": false,
+                "tagTitle": "Uñas",
+                "text": "Uñas"
+            }
+        }
+    },
+    // medicamentos menu items
+    "menu-item#category-apparel-medicamentos": {
+        "props": {
+            "id": "menu-item-category-apparel-medicamentos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": ["category-item","category-item-6"],
+            "itemProps": {
+                "type": "internal",
+                "href": "/medicamentos",
+                "noFollow": false,
+                "tagTitle": "Medicamentos",
+                "text": "Medicamentos"
+            }
+        }
+    },
+    "menu-item#category-apparel-venta-libre": {
+        "props": {
+            "id": "menu-item-category-apparel-vemnta",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/medicamentos/venta-libre",
+                "noFollow": false,
+                "tagTitle": "Venta Libre",
+                "text": "Vente Libre"
+            }
+        }
+    },
+    "menu-item#category-apparel-formulados": {
+        "props": {
+            "id": "menu-item-category-apparel-formmulados",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+                "type": "internal",
+                "href": "/medicamentos/formulados",
+                "noFollow": false,
+                "tagTitle": "Formulados",
+                "text": "Formulados"
+            }
+        }
+    }
+}

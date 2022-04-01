@@ -1,0 +1,38 @@
+.newsletterForm {
+    width: 100%;
+}
+.nameInputContainer{
+    border-radius: 0;
+    margin-bottom: 10px;
+    background: #E1E1E1;
+}
+.emailInputContainer{
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+
+.emailInputContainer :global(.vtex-styleguide-9-x-input){
+    background: rgba(249,249,249,0.5);
+    border: 1px solid;
+}
+.emailInputContainer :global(.vtex-input-prefix__group){
+    width: 70%;
+    height: 50px;
+}
+.confirmationCheckboxContainer :global(.vtex-checkbox__label){
+    font-size: 10px;
+    color: #808080;
+}
+.formSubmitContainer{
+    position: absolute;
+    right: 10px;
+    margin-top: -60px;
+}
+.formSubmitContainer :global(.vtex-button){
+    height: 50px;
+    background: #27AFE5;
+    border: 0;
+}
+.formSubmitContainer :global(.vtex-button):hover{
+    background: #27AFE5;
+}

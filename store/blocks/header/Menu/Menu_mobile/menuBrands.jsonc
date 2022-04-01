@@ -1,0 +1,496 @@
+{
+    // Todas las marcas sub menu
+    "disclosure-layout#braandAll": {
+        "children": ["disclosure-trigger#braandAll","disclosure-content#braandAll"],
+        "props": {
+        "blockClass": "subMneusM"
+        }
+    },
+    "disclosure-trigger#braandAll": {
+        "children": ["menu-item#brandMobile"],
+        "props": {
+        "blockClass": "subMneusMTrigger"
+        }
+    },
+    "disclosure-content#braandAll": {
+        "children": ["disclosure-trigger#braandAll","flex-layout.row#brandsM"],
+        "props": {
+        "blockClass": "subMneusMContent"
+        }
+    },
+    //  inicio de contenido 
+    "flex-layout.row#brandsM": {
+        "children": [
+            "flex-layout.col#brandSection1",
+            "flex-layout.col#brandSection2"
+        ],
+        "props": {
+          "blockClass": "brandsContainer"
+        }
+    },
+    // slider de marcas
+    "flex-layout.col#brandSection1": {
+        "children": [
+            "rich-text#tituloMarcas1",
+            "list-context.image-list#marcas2"
+        ],
+        "props": {
+          "blockClass": "brandSlider"
+        }
+    },
+    "rich-text#tituloMarcas1": {
+        "props": {
+          "text": "Marcas destacadas",
+          "blockClass": ["marcasTitle"]
+        }
+    },
+    "list-context.image-list#marcas2": {
+        "children": ["slider-layout#marcas-images2"],
+        "props": {
+            "images": [
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/avene.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/avene.png"
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/bioderma.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/bioderma.png"
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/almay.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/almay.png"
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/uriage.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/uriage.png"
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/pharma.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/pharma.png"
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/laroche.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/laroche.png"
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/heliocare.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/heliocare.png"
+                },
+                {
+                  "image": "https://cutis.vteximg.com.br/arquivos/be.png",
+                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/be.png"
+                },
+                {
+                  "image": "https://cutis.vteximg.com.br/arquivos/medihealth.png",
+                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/medihealth.png"
+                },
+                {
+                  "image": "https://cutis.vteximg.com.br/arquivos/saderma.png",
+                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/saderma.png"
+                },
+                {
+                  "image": "https://cutis.vteximg.com.br/arquivos/sesderma.png",
+                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/sesderma.png"
+                },
+                {
+                  "image": "https://cutis.vteximg.com.br/arquivos/isdin.png",
+                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/isdin.png"
+                },
+                {
+                  "image": "https://cutis.vteximg.com.br/arquivos/saderma.png",
+                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/saderma.png"
+                },
+                {
+                  "image": "https://cutis.vteximg.com.br/arquivos/vichy.png",
+                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/vichy.png"
+                },
+                {
+                  "image": "https://cutis.vteximg.com.br/arquivos/dhems.png",
+                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/dhems.png"
+                },
+                {
+                  "image": "https://cutis.vteximg.com.br/arquivos/eucarin.png",
+                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/eucarin.png"
+                },
+                {
+                  "image": "https://cutis.vteximg.com.br/arquivos/cetaph.png",
+                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/cetaph.png"
+                }
+            ]
+        }
+    },
+    "slider-layout#marcas-images2": {
+        "props": {
+            "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 5,
+            "phone": 4
+            },
+            "infinite": true,
+            "showNavigationArrows": "never",
+            "showPaginationDots": "never",
+            "blockClass":[ "marcas-carousel","marcas-sliderMenu"]
+        }
+    },
+    // Marcas
+    "flex-layout.col#brandSection2": {
+        "children": [
+            "rich-text#tituloMarcas2",
+            "flex-layout.row#brandsubSection2"
+        ],
+        "props": {
+          "blockClass": "brandSlider"
+        }
+    },
+    "rich-text#tituloMarcas2": {
+        "props": {
+          "text": "Todas las marcas",
+          "blockClass": ["marcasTitle"]
+        }
+    },
+    "flex-layout.row#brandsubSection2": {
+        "children": [
+            "flex-layout.col#brandsColum1",
+            "flex-layout.col#brandsColum2"
+        ],
+        "props": {
+          "blockClass": "allCategorys"
+        }
+    },
+    "flex-layout.col#brandsColum1": {
+        "children": [
+            "menu-item#brand1",
+            "menu-item#brand2",
+            "menu-item#brand3",
+            "menu-item#brand4",
+            "menu-item#brand5",
+            "menu-item#brand6",
+            "menu-item#brand7",
+            "menu-item#brand8",
+            "menu-item#brand9",
+            "menu-item#brand10"
+        ],
+        "props": {
+          "width":"50%",
+          "blockClass": "itemCategory"
+        }
+    },
+    "menu-item#brand1":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "noFollow": false,
+          "tagTitle": "Categoria 1",
+          "text": "Categaria 1"
+          }
+        }
+    },
+    "menu-item#brand2":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "noFollow": false,
+          "tagTitle": "Categoria 2",
+          "text": "Categaria 2"
+          }
+        }
+    },
+    "menu-item#brand3":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "noFollow": false,
+          "tagTitle": "Categoria 3",
+          "text": "Categaria 3"
+          }
+        }
+    },
+    "menu-item#brand4":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "noFollow": false,
+          "tagTitle": "Categoria 4",
+          "text": "Categaria 4"
+          }
+        }
+    },
+    "menu-item#brand5":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "noFollow": false,
+          "tagTitle": "Categoria 5",
+          "text": "Categaria 5"
+          }
+        }
+    },
+    "menu-item#brand6":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "noFollow": false,
+          "tagTitle": "Categoria 6",
+          "text": "Categaria 6"
+          }
+        }
+    },
+    "menu-item#brand7":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "noFollow": false,
+          "tagTitle": "Categoria 7",
+          "text": "Categaria 7"
+          }
+        }
+    },
+    "menu-item#brand8":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "noFollow": false,
+          "tagTitle": "Categoria 8",
+          "text": "Categaria 8"
+          }
+        }
+    },
+    "menu-item#brand9":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "noFollow": false,
+          "tagTitle": "Categoria 9",
+          "text": "Categaria 9"
+          }
+        }
+    },
+    "menu-item#brand10":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "noFollow": false,
+          "tagTitle": "Categoria 10",
+          "text": "Categaria 10"
+          }
+        }
+    },
+    "flex-layout.col#brandsColum2": {
+        "children": [
+            "menu-item#brand11",
+            "menu-item#brand12",
+            "menu-item#brand13",
+            "menu-item#brand14",
+            "menu-item#brand15",
+            "menu-item#brand16",
+            "menu-item#brand17",
+            "menu-item#brand18",
+            "menu-item#brand19",
+            "menu-item#brand20"
+        ],
+        "props": {
+          "width":"50%",
+          "blockClass": "itemCategory"
+        }
+    },
+    "menu-item#brand11":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "noFollow": false,
+          "tagTitle": "Categoria 1",
+          "text": "Categaria 1"
+          }
+        }
+    },
+    "menu-item#brand12":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "noFollow": false,
+          "tagTitle": "Categoria 2",
+          "text": "Categaria 2"
+          }
+        }
+    },
+    "menu-item#brand13":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "noFollow": false,
+          "tagTitle": "Categoria 3",
+          "text": "Categaria 3"
+          }
+        }
+    },
+    "menu-item#brand14":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "noFollow": false,
+          "tagTitle": "Categoria 4",
+          "text": "Categaria 4"
+          }
+        }
+    },
+    "menu-item#brand15":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "noFollow": false,
+          "tagTitle": "Categoria 5",
+          "text": "Categaria 5"
+          }
+        }
+    },
+    "menu-item#brand16":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "noFollow": false,
+          "tagTitle": "Categoria 6",
+          "text": "Categaria 6"
+          }
+        }
+    },
+    "menu-item#brand17":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "noFollow": false,
+          "tagTitle": "Categoria 7",
+          "text": "Categaria 7"
+          }
+        }
+    },
+    "menu-item#brand18":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "noFollow": false,
+          "tagTitle": "Categoria 8",
+          "text": "Categaria 8"
+          }
+        }
+    },
+    "menu-item#brand19":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "noFollow": false,
+          "tagTitle": "Categoria 9",
+          "text": "Categaria 9"
+          }
+        }
+    },
+    "menu-item#brand20":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "noFollow": false,
+          "tagTitle": "Categoria 10",
+          "text": "Categaria 10"
+          }
+        }
+    }
+}

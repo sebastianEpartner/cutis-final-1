@@ -1,0 +1,318 @@
+{
+    "store.custom#retracto": {
+        "children": [
+            "image#retraactoImg",
+            "rich-text#retracto",
+            "flex-layout.row#retracto"
+        ]
+    },
+    // titulo de la pagina
+    "rich-text#retracto": {
+        "props": {
+        "blockClass":"faqsTitulo",
+        "text": "## Derecho al retracto"
+        }
+    },
+    "image#retraactoImg": {
+        "props": {
+          "src": "https://cutis.vtexassets.com/arquivos/banner.png",
+          "blockClass": "faqsImg"
+        }
+    },
+    "flex-layout.row#retracto": {
+        "props": {
+          "blockClass": "faq"
+        },
+        "children": [
+          "flex-layout.col#retracto",
+          "flex-layout.col#retracto-1"
+        ]
+    },
+     // Primera columna de los retractos
+    "flex-layout.col#retracto": {
+        "props":{
+        "width":"30%",
+        "blockClass":"columna1"
+        },
+        "children": [
+            "disclosure-layout-group#retracto"
+        ]
+    },
+    "disclosure-layout-group#retracto": {
+        "children": [
+            "disclosure-layout#derechoRetracto"
+        ]
+    },
+    // primer disclousare
+    "disclosure-layout#derechoRetracto": {
+        "children": ["disclosure-trigger#derechoRetracto", "disclosure-content#derechoRetracto"]
+    },
+    "disclosure-trigger#derechoRetracto": {
+        "props": {
+            "blockClass": "question",
+        "as": "div"
+        },
+        "children": ["rich-text#retracto-titulo"]
+    },
+    "disclosure-content#derechoRetracto": {
+        "props": {
+            "blockClass": "answer"
+        },
+        "children": ["rich-text#retracto-content"]
+    },
+    "rich-text#retracto-titulo": {
+        "props": {
+            "text": "Derecho al retracto"
+        }
+    },
+    "rich-text#retracto-content": {
+        "props": {
+            "text": "Call us at the number (212) 1234-1234."
+        }
+    },
+    // columna 2
+    "flex-layout.col#retracto-1": {
+        "props":{
+            "width":"70%",
+            "blockClass":"columna2"
+        },
+        "children": [
+            "flex-layout.col#retractoContent"
+        ]
+    },
+    // contenido del tab 1
+    "flex-layout.col#retractoContent": {
+        "children": [
+            "rich-text#retracto1",
+            "rich-text#retracto2",
+            "rich-text#retracto3",
+            "rich-text#retracto4",
+            "rich-text#retracto5",
+            "rich-text#retract6",
+            "rich-text#retract7",
+            "rich-text#retract8",
+            "rich-text#retract9",
+            "rich-text#retract10",
+            "rich-text#retract11",
+            "rich-text#retract12",
+            "rich-text#retract13",
+            "rich-text#retract14",
+            "rich-text#retract15",
+            "rich-text#retract16",
+            "rich-text#retract17",
+            "rich-text#retract18",
+            "rich-text#retract19",
+            "rich-text#retract20",
+            "flex-layout.row#retracto-content",
+            "rich-text#retract21",
+            "rich-text#retract22",
+            "rich-text#retract23",
+            "rich-text#retract24",
+            "rich-text#retract25",
+            "rich-text#retract26",
+            "rich-text#retract27",
+            "rich-text#retract28"
+        ],
+        "props": {
+            "blockClass": "politicaContenedor"
+        }
+    },
+    "rich-text#retracto1": {
+        "props": {
+            "text": "El derecho de retracto es la posibilidad que se le brinda al cliente de solicitar la devolución de la totalidad del dinero pagado como también realizar la devolución del producto recibido, dentro de un término de cinco (5) días hábiles siguientes a la entrega del producto. Cualquier solicitud para devolución o cambio de productos deberá cumplir con las disposiciones sanitarias y garantías para los clientes, cuando los productos a que se refiere sean objeto de inconveniencia sanitaria o restricción legal o reglamentaria.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#retracto2": {
+        "props": {
+            "text": "El derecho de retracto deberá ser solicitado mediante una PQRS (Preguntas, quejas, reclamos, sugerencias) dispuesto en nuestra página web.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#retracto3": {
+        "props": {
+            "text": "1.Condiciones Generales Para Un Retracto",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#retracto4": {
+        "props": {
+            "text": "- El producto no debe estar averiado o deteriorado por acciones correspondientes a los clientes.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#retracto5": {
+        "props": {
+            "text": "- El producto debe tener etiquetas, factura de venta, accesorios y empaques originales.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#retract6": {
+        "props": {
+            "text": "- l producto no debe mostrar señales de uso, suciedad o desgaste. ",
+            "blockClass": ["contenidofaqs"]
+        }
+    }
+    ,
+    "rich-text#retract7": {
+        "props": {
+            "text": "- El producto no debe tener más de CINCO (5) días hábiles de entregado",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#retract8": {
+        "props": {
+            "text": "- El producto adquirido no debe ser de uso personal o íntimo.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#retract9": {
+        "props": {
+            "text": "2 Condiciones De Logística Del Retracto ",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#retract10": {
+        "props": {
+            "text": "- Si el producto ya fue entregado al cliente y el domiciliario aún está presente al momento de la solicitud de retracto, el cliente deberá entregar al domiciliario el producto para devolución.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#retract11": {
+        "props": {
+            "text": "- Si el producto ya fue entregado al cliente y el domiciliario ya no se encuentra presente al momento de la solicitud de retracto, el cliente debe diligenciar PQRS para la solicitud de retracto.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#retract12": {
+        "props": {
+            "text": "- El personal encargado de la recolección del producto no se encuentra facultado para desarmar ni manipular el producto, su única función será la de recogerlo.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#retract13": {
+        "props": {
+            "text": "-  Si el producto no se encuentra empacado en su empaque original, no se procederá con la recolección.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#retract14": {
+        "props": {
+            "text": "3 Reversión de Pago",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#retract15": {
+        "props": {
+            "text": "La Reversión de Pago aplica cuando la adquisición de productos se hubiere realizado a través de mecanismos de comercio electrónico tales como internet, PSE, Call Center y, para tal efecto, se hubiere utilizado tarjetas de crédito, débito o cualquier otro instrumento de pago electrónico.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#retract16": {
+        "props": {
+            "text": "La reversión de pago se debe solicitar dentro de un término de cinco (5) días hábiles siguientes a la entrega del producto. La reversión se puede presentar por cinco causales:",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#retract17": {
+        "props": {
+            "text": "-  Cliente sea objeto de fraude.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#retract18": {
+        "props": {
+            "text": "-  Producto adquirido no sea recibido.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#retract19": {
+        "props": {
+            "text": "-  Producto entregado no sea el solicitado.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#retract20": {
+        "props": {
+            "text": "-  Producto sea defectuoso.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "flex-layout.row#retracto-content": {
+        "props": {
+          "blockClass": "content-retracto"
+        },
+        "children": [
+            "flex-layout.col#retracto-content",
+            "flex-layout.col#retracto-content-2"
+        ]
+    },
+    "flex-layout.col#retracto-content": {
+        "props":{
+        "width":"45%",
+        "blockClass":"columna1"
+        },
+        "children": [
+            
+        ]
+    },
+    "flex-layout.col#retracto-content-2": {
+        "props":{
+            "width":"55%",
+            "blockClass":"retracto-content-2"
+        },
+        "children": [
+            "rich-text#retract21",
+            "rich-text#retract22",
+            "rich-text#retract23"
+        ]
+    },
+    "rich-text#retract21": {
+        "props": {
+            "text": "La solicitud de reversión de pago, deberá ser solicitado diligenciando una PQRS (Preguntas, quejas, reclamos, sugerencias) dispuesto en nuestra página web.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#retract22": {
+        "props": {
+            "text": "Una vez interpuesta la solicitud y esta es procedente se le emitirá constancia dentro de los diez (15) días hábiles siguientes a la verificación de su solicitud.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#retract23": {
+        "props": {
+            "text": "El cliente debe garantizar en la información suministrada en la PQRS (Preguntas, quejas, reclamos, sugerencias) que el bien se encuentra en las mismas condiciones en que se recibió, sellado, en perfecto estado, sin usar, en su empaque original, con todos sus accesorios y a disposición para recogerlo.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#retract24": {
+        "props": {
+            "text": "Conforme al Estatuto del Consumidor el Cliente podrá ejercer el derecho de retracto del producto adquirido dentro de los (5) cinco días hábiles posteriores a la recepción del bien, siempre y cuando lo permita su naturaleza y el estado del bien y su empaque sea el mismo en el que lo recibió. Las reversiones se harán por el valor del producto pagado por el Cliente en la respectiva transacción. En ningún caso www.cutis.com.co. Hará reversiones parciales del valor de un producto.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#retract25": {
+        "props": {
+            "text": "El Cliente podrá realizar la devolución a través del operador logístico Coordinadora para lo cual, deberá ingresar el número de pedido en la Guía que se le proporcione en el punto de servicio de Coordinadora, en aras de garantizar el seguimiento de la devolución del pedido.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#retract26": {
+        "props": {
+            "text": "Los Productos que por sus características y condiciones de uso no serán susceptibles de ser devueltos mediante el ejercicio del Derecho de Retracto son los siguientes productos: maquillaje.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#retract27": {
+        "props": {
+            "text": "RECUERDA:",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#retract28": {
+        "props": {
+            "text": "Señor consumidor recuerde en caso de ser demostrada la mala fe la superintendencia de industria y comercio podrá imponer sanciones pecuniarias hasta por 50 salarios mínimos mensuales legales vigentes (smmlv).",
+            "blockClass": ["contenidofaqs"]
+        }
+    }
+}

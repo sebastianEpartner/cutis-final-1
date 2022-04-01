@@ -1,0 +1,154 @@
+.listContainer  {
+    height: 26%;
+}
+.contentItem--footersColumn :global(.vtex-menu-2-x-menuContainerNav){
+    width: 50%;
+}
+.contentItem--footersColumn{
+    flex-wrap: wrap;
+    display: inline-flex;
+}
+.listContainer--tabbersHome {
+    justify-content: flex-start;
+}
+
+.contentItem--footersColumn :global(.vtex-menu-2-x-menuContainerNav){
+    width: 38%;
+}
+.listItem--tabberFooter :global(.vtex-button__label){
+    color: #B8B8B8;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.listItemActive--tabberFooter :global(.vtex-button__label){
+    color: #27AFE5;
+    font-size: 25px;
+    font-weight: bold;
+}
+.listItemActive--tabberFooter {
+    background: #E4F7FF;
+    border-radius: 5px;
+    width: 100%;
+    display: block;
+}
+.listItemActive--tabberFooter :global(.vtex-button){
+    background: transparent;
+    border: 0;
+}
+.listContainer--tabbersCategory {
+    margin-bottom: 20px;
+}
+.listContainer--tabbersCategory .listItemActive  :global(.vtex-button){
+    background: #343434;
+    border: 0;
+}
+.listContainer--tabbersCategory .listItem  :global(.vtex-button__label){
+    color: white;
+    font-size: 15px;
+    padding: 50px;
+    text-transform: capitalize;
+}
+.container--product{
+    margin: 0 100px;
+    border: 1px solid #D3D3D3;
+    border-radius: 18px;
+    overflow: hidden;
+}
+.container--product .listItem  {
+    width: 33.33% !important;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #D3D3D3;
+    border-left: 1px solid #D3D3D3;
+
+}
+.container--product .listItem :global(.vtex-button) {
+    width: 100%;
+}
+.container--product .contentContainer {
+    padding: 20px 30px;
+}
+.contentItem--tabbersVitrina {
+    padding: 0 100px;
+}
+.listContainer--tabbersCategory .listItem{
+    width: 13.8%;
+    padding: 0;
+}
+.listContainer--tabbersCategory .listItem :global(.vtex-button){
+    width: 100%;
+}
+.listContainer--tabbersCategory .listItemActive :global(.vtex-button){
+    background: #27AFE5 !important;
+}
+.listContainer--tabbersCategory .listItem :global(.vtex-button){
+    background: white;
+    border: 1px solid #E7EEF1;
+}
+.listContainer--tabbersCategory .listItem :global(.vtex-button__label){
+    color: #808080;
+}
+.listContainer--tabbersCategory .listItemActive :global(.vtex-button__label){
+    color: white;
+}
+.listContainer--tabbersCategory .listItem :global(.vtex-button){
+    transition: 400ms all;
+}
+.listContainer--tabbersCategory .listItem  :global(.vtex-button):hover{
+    background: #27AFE5;
+}
+.listContainer--tabbersCategory .listItem  :global(.vtex-button):hover :global(.vtex-button__label){
+    color: white;
+}
+@media (max-width: 600px) {
+    .listItem--tabberFooter :global(.vtex-button__label){
+        text-transform: capitalize;
+        padding: 0;
+    }
+    .listItemActive--tabberFooter :global(.vtex-button__label){
+        text-transform: capitalize;
+        font-size: 35px;
+        padding: 0;
+    }
+    .listContainer--tabbersHome{
+        flex-wrap: initial;
+    }
+    .contentItem--footersColumn :global(.vtex-menu-2-x-menuContainerNav){
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+    }
+    .listItem  {
+        width: 100%;
+    }
+    .listContainer--tabbersCategory .listItem :global(.vtex-button__label){
+        padding: 0;
+    }
+    .listContainer--tabbersCategory .listItem :global(.vtex-button){
+        width: 100%;
+    }
+    .container--product {
+        margin: 0 30px;
+    }
+    .container--product .listItem :global(.vtex-button__label ){
+        text-transform: capitalize;
+    }
+    .container--product .listItem--descript {
+        width: 35% !important;
+    }
+    .container--product .listItem--detail {
+        width: 25% !important;
+    }
+    .container--product .listItem--caracteristicas   {
+        width: 40% !important;
+    }
+    .contentItem--tabbersVitrina {
+        padding: 0 0 0 0px;
+    }
+    .listContainer--tabbersCategory .listItem{
+        width: 100%;
+        padding: 0;
+    }
+
+}

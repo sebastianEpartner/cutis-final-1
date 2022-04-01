@@ -1,0 +1,279 @@
+{
+  // sub Menu todas las categorias
+  "disclosure-layout#categoryAll": {
+    "children": ["disclosure-trigger#categoryAll","disclosure-content#categoryAll"],
+    "props": {
+      "blockClass": "subMneusM"
+    }
+  },
+  "disclosure-trigger#categoryAll": {
+    "children": ["menu-item#categoryMobile"],
+    "props": {
+      "blockClass": "subMneusMTrigger"
+    }
+  },
+  "disclosure-content#categoryAll": {
+    "children": ["disclosure-trigger#categoryAll","flex-layout.row#allCategorys"],
+    "props": {
+      "blockClass": "subMneusMContent"
+    }
+  },
+  "flex-layout.row#allCategorys": {
+    "children": [
+        "flex-layout.col#category1",
+        "flex-layout.col#category2",
+        "flex-layout.col#category3",
+        "flex-layout.col#category4",
+        "flex-layout.col#category5",
+        "flex-layout.col#category6",
+        "flex-layout.col#category7",
+        "flex-layout.col#category8",
+        "flex-layout.col#category9"
+    ],
+    "props": {
+      "blockClass": "allCategorys"
+    }
+  },
+  // Categpria 1
+  "flex-layout.col#category1": {
+    "children": [
+      "image#categoryMenu1",
+      "rich-text#categoryMenu1"
+
+    ],
+    "props": {
+      "width":"50%",
+      "blockClass": "itemCategory"
+    }
+  },
+  "image#categoryMenu1": {
+    "props": {
+      "src": "https://storecomponents.vtexassets.com/arquivos/banner-infocard2.png",
+      "link": {
+        "url": "/"
+      },
+      "blockClass":"categoryIMG"
+    }
+  },
+  "rich-text#categoryMenu1": {
+    "props": {
+      "text": "Categoria 1",
+      "blockClass": ["SubMenuItems"]
+    }
+  },
+  // Categpria 2
+  "flex-layout.col#category2": {
+    "children": [
+      "image#categoryMenu2",
+      "rich-text#categoryMenu2"
+
+    ],
+    "props": {
+      "width":"50%",
+      "blockClass": "itemCategory"
+    }
+  },
+  "image#categoryMenu2": {
+    "props": {
+      "src": "https://storecomponents.vtexassets.com/arquivos/banner-infocard2.png",
+      "link": {
+        "url": "/"
+      },
+      "blockClass":"categoryIMG"
+    }
+  },
+  "rich-text#categoryMenu2": {
+    "props": {
+      "text": "Categoria 2",
+      "blockClass": ["SubMenuItems"]
+    }
+  },
+  // Categpria 3
+  "flex-layout.col#category3": {
+    "children": [
+      "image#categoryMenu3",
+      "rich-text#categoryMenu3"
+
+    ],
+    "props": {
+      "width":"50%",
+      "blockClass": "itemCategory"
+    }
+  },
+  "image#categoryMenu3": {
+    "props": {
+      "src": "https://storecomponents.vtexassets.com/arquivos/banner-infocard2.png",
+      "link": {
+        "url": "/"
+      },
+      "blockClass":"categoryIMG"
+    }
+  },
+  "rich-text#categoryMenu3": {
+    "props": {
+      "text": "Categoria 3",
+      "blockClass": ["SubMenuItems"]
+    }
+  },
+  // Categpria 4
+  "flex-layout.col#category4": {
+    "children": [
+      "image#categoryMenu4",
+      "rich-text#categoryMenu4"
+
+    ],
+    "props": {
+      "width":"50%",
+      "blockClass": "itemCategory"
+    }
+  },
+  "image#categoryMenu4": {
+    "props": {
+      "src": "https://storecomponents.vtexassets.com/arquivos/banner-infocard2.png",
+      "link": {
+        "url": "/"
+      },
+      "blockClass":"categoryIMG"
+    }
+  },
+  "rich-text#categoryMenu4": {
+    "props": {
+      "text": "Categoria 4",
+      "blockClass": ["SubMenuItems"]
+    }
+  },
+  // Categpria 5
+  "flex-layout.col#category5": {
+    "children": [
+      "image#categoryMenu5",
+      "rich-text#categoryMenu5"
+
+    ],
+    "props": {
+      "width":"50%",
+      "blockClass": "itemCategory"
+    }
+  },
+  "image#categoryMenu5": {
+    "props": {
+      "src": "https://storecomponents.vtexassets.com/arquivos/banner-infocard2.png",
+      "link": {
+        "url": "/"
+      },
+      "blockClass":"categoryIMG"
+    }
+  },
+  "rich-text#categoryMenu5": {
+    "props": {
+      "text": "Categoria 5",
+      "blockClass": ["SubMenuItems"]
+    }
+  },
+  // Categpria 6
+  "flex-layout.col#category6": {
+    "children": [
+      "image#categoryMenu6",
+      "rich-text#categoryMenu6"
+
+    ],
+    "props": {
+      "width":"50%",
+      "blockClass": "itemCategory"
+    }
+  },
+  "image#categoryMenu6": {
+    "props": {
+      "src": "https://storecomponents.vtexassets.com/arquivos/banner-infocard2.png",
+      "link": {
+        "url": "/"
+      },
+      "blockClass":"categoryIMG"
+    }
+  },
+  "rich-text#categoryMenu6": {
+    "props": {
+      "text": "Categoria 6",
+      "blockClass": ["SubMenuItems"]
+    }
+  },
+  // Categpria 7
+  "flex-layout.col#category7": {
+    "children": [
+      "image#categoryMenu7",
+      "rich-text#categoryMenu7"
+
+    ],
+    "props": {
+      "width":"50%",
+      "blockClass": "itemCategory"
+    }
+  },
+  "image#categoryMenu7": {
+    "props": {
+      "src": "https://storecomponents.vtexassets.com/arquivos/banner-infocard2.png",
+      "link": {
+        "url": "/"
+      },
+      "blockClass":"categoryIMG"
+    }
+  },
+  "rich-text#categoryMenu7": {
+    "props": {
+      "text": "Categoria 7",
+      "blockClass": ["SubMenuItems"]
+    }
+  },// Categpria 8
+  "flex-layout.col#category8": {
+    "children": [
+      "image#categoryMenu8",
+      "rich-text#categoryMenu8"
+
+    ],
+    "props": {
+      "width":"50%",
+      "blockClass": "itemCategory"
+    }
+  },
+  "image#categoryMenu8": {
+    "props": {
+      "src": "https://storecomponents.vtexassets.com/arquivos/banner-infocard2.png",
+      "link": {
+        "url": "/"
+      },
+      "blockClass":"categoryIMG"
+    }
+  },
+  "rich-text#categoryMenu8": {
+    "props": {
+      "text": "Categoria 8",
+      "blockClass": ["SubMenuItems"]
+    }
+  },
+  // Categpria 9
+  "flex-layout.col#category9": {
+    "children": [
+      "image#categoryMenu9",
+      "rich-text#categoryMenu9"
+
+    ],
+    "props": {
+      "width":"50%",
+      "blockClass": "itemCategory"
+    }
+  },
+  "image#categoryMenu9": {
+    "props": {
+      "src": "https://storecomponents.vtexassets.com/arquivos/banner-infocard2.png",
+      "link": {
+        "url": "/"
+      },
+      "blockClass":"categoryIMG"
+    }
+  },
+  "rich-text#categoryMenu9": {
+    "props": {
+      "text": "Categoria 9",
+      "blockClass": ["SubMenuItems"]
+    }
+  }
+}

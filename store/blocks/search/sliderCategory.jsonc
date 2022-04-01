@@ -1,0 +1,47 @@
+{
+    "list-context.image-list#categorysSearch": {
+        "children": ["slider-layout#categorysSearch"],
+        "props": {
+            "height": 720,
+            "images": [
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/rostroCategory.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/rostroCategory.png"
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/solaresCategory.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/solaresCategory.png"
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/maquillajeCategory.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/maquillajeCategory.png"
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/capilarCategory.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/capilarCategory.png"
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/corporalCategory.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/corporalCategory.png"
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/medicamentosCategory.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/medicamentosCategory.png"
+                }
+            ]
+        }
+    },
+    "slider-layout#categorysSearch": {
+        "props": {
+            "itemsPerPage": {
+            "desktop": 6,
+            "tablet": 5,
+            "phone": 3
+            },
+            "infinite": true,
+            "showNavigationArrows": "always",
+            "showPaginationDots": "never",
+            "blockClass": "category-carousel"
+        }
+    }
+}

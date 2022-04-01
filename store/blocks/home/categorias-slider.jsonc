@@ -1,0 +1,181 @@
+{
+    "slider-layout#principalSliderHomeCate": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "autoplay":{
+                "timeout": 3000,
+                "stopOnHover": true
+            },
+            "infinite": true,
+            "blockClass": "carousel",
+            "showPaginationDots":"mobileOnly",
+            "showNavigationArrows": "desktopOnly"
+        },
+        "children": [
+            "flex-layout.row#categoriaSlide1",
+            "flex-layout.row#categoriaSlide2"
+        ]
+    },
+    // Primer SLIDE
+    "flex-layout.row#categoriaSlide1": {
+        "children": [
+            "flex-layout.col#categoriaSlide1-1",
+            "flex-layout.col#categoriaSlide1-2"
+        ],
+        "props": {
+          "blockClass": "slideCategory"
+        }
+    },
+    "flex-layout.col#categoriaSlide1-1": {
+        "children": [
+            "rich-text#slideCate-title",
+            "rich-text#slideCate-text",
+            "flex-layout.row#categoriaSlide1-img-COLUMN1"
+        ],
+        "props": {
+          "blockClass": "slideColumn1"
+        }
+    },
+    // columna 1
+    "rich-text#slideCate-title": {
+        "props": {
+          "text": "Conoce nuestras categorías",
+          "blockClass": "tituloSlideCategory"
+        }
+    },
+    "rich-text#slideCate-text": {
+        "props": {
+          "text": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.\n Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500",
+          "blockClass": "contenidoSlideCategory"
+        }
+    },
+    // Imagenes columna 1
+    "flex-layout.row#categoriaSlide1-img-COLUMN1": {
+        "children": [
+            "image#slide1category-1",
+            "image#slide2category-2"
+        ],
+        "props": {
+          "blockClass": "imagesColumn1"
+        }
+    },
+    "image#slide1category-1": {
+        "props": {
+          "src": "https://cutis.vtexassets.com/arquivos/categoria1-home.png",
+          "blockClass": ["slideCategoryColumn1","bannerSlides"],
+          "link":{
+            "url":"/"
+          }
+        }
+    },
+    "image#slide2category-2": {
+        "props": {
+          "src": "https://cutis.vtexassets.com/arquivos/categoria2-home.png",
+          "blockClass": ["slideCategoryColumn1","bannerSlides"],
+          "link":{
+            "url":"/"
+          }
+        }
+    },
+    // Columna 2
+    "flex-layout.col#categoriaSlide1-2": {
+        "children": [
+            "image#imageColumn-2"
+        ],
+        "props": {
+          "blockClass": "slideColumn2"
+        }
+    },
+    "image#imageColumn-2": {
+        "props": {
+          "src": "https://cutis.vtexassets.com/arquivos/principalCategoria.png",
+          "blockClass": ["slideCategoryColumn2","bannerSlides"],
+          "link":{
+            "url":"/"
+          }
+        }
+    },
+    // SEGUNDA SLIDE
+    "flex-layout.row#categoriaSlide2": {
+        "children": [
+            "flex-layout.col#categoriaSlide2-1",
+            "flex-layout.col#categoriaSlide2-2"
+        ],
+        "props": {
+          "blockClass": "slideCategory"
+        }
+    },
+    "flex-layout.col#categoriaSlide2-1": {
+        "children": [
+            "rich-text#slide2Cate-title",
+            "rich-text#slide2Cate-text",
+            "flex-layout.row#categoriaSlide2-img-COLUMN1"
+        ],
+        "props": {
+          "blockClass": "slideColumn1"
+        }
+    },
+    // columna 1
+    "rich-text#slide2Cate-title": {
+        "props": {
+          "text": "Soy una categoria",
+          "blockClass": "tituloSlideCategory"
+        }
+    },
+    "rich-text#slide2Cate-text": {
+        "props": {
+          "text": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.\n Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500",
+          "blockClass": "contenidoSlideCategory"
+        }
+    },
+    // Imagenes columna 1
+    "flex-layout.row#categoriaSlide2-img-COLUMN1": {
+        "children": [
+            "image#slide2category-1",
+            "image#slide2category-3"
+        ],
+        "props": {
+          "blockClass": "imagesColumn1"
+        }
+    },
+    "image#slide2category-1": {
+        "props": {
+          "src": "https://storecomponents.vtexassets.com/arquivos/banner-infocard2.png",
+          "blockClass": ["slideCategoryColumn1","bannerSlides"],
+          "link":{
+            "url":"/"
+          }
+        }
+    },
+    "image#slide2category-3": {
+        "props": {
+          "src": "https://storecomponents.vtexassets.com/arquivos/banner-infocard2.png",
+          "blockClass": ["slideCategoryColumn1","bannerSlides"],
+          "link":{
+            "url":"/"
+          }
+        }
+    },
+    // Columna 2
+    "flex-layout.col#categoriaSlide2-2": {
+        "children": [
+            "image#image2Column-2"
+        ],
+        "props": {
+          "blockClass": "slideColumn2"
+        }
+    },
+    "image#image2Column-2": {
+        "props": {
+          "src": "https://storecomponents.vtexassets.com/arquivos/banner-infocard2.png",
+          "blockClass": ["slideCategoryColumn2","bannerSlides"],
+          "link":{
+            "url":"/"
+          }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+{
+    // Vitrinas en categoria destacada search result
+  "flex-layout.row#vitrinaDestacadaSearch": {
+    "children": [
+        "flex-layout.col#vitrinaDestacadaSearch",
+        "flex-layout.col#vitrinaDestacadaSearch-2"
+    ],
+    "props": {
+      "blockClass": "searchVitrinadest"
+    }
+  },
+  // Primera columna
+  "flex-layout.col#vitrinaDestacadaSearch": {
+    "children": [
+      "responsive-layout.desktop#promocionesCategory",
+      "responsive-layout.phone#promocionesCategory"
+    ],
+    "props": {
+      "width":"40%",
+      "blockClass": "columna1SearchShelf"
+    }
+  },
+  // imagenes con respecto al layout
+  "responsive-layout.desktop#promocionesCategory": {
+    "children": ["image#vitrinaDestacadaSearch"]
+  },
+  "image#vitrinaDestacadaSearch": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/promocionesdelmes.png",
+      "blockClass": "imgInfoProduct"
+    }
+  },
+  "responsive-layout.phone#promocionesCategory": {
+    "children": ["image#vitrinaDestacadaSearchM"]
+  },
+  "image#vitrinaDestacadaSearchM": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/promocionesMobile.png",
+      "blockClass": "imgInfoProduct"
+    }
+  },
+  // vitrina columan 2
+  "flex-layout.col#vitrinaDestacadaSearch-2": {
+    "children": [
+      "list-context.product-list#promo-1"
+    ],
+    "props": {
+      "paddingLeft": "20px",
+      "width":"60%",
+      "blockClass": "columna2SearchShelf"
+    }
+  },
+  "list-context.product-list#promo-1": {
+    "blocks": ["product-summary.shelf#2"],
+    "children": ["slider-layout#demo-promo-1"]
+  },
+  "slider-layout#demo-promo-1": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 5,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showPaginationDots":"false",
+      "showNavigationArrows": "desktopOnly"
+    }
+  }
+}

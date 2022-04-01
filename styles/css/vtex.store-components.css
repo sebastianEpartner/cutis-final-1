@@ -1,0 +1,428 @@
+:global(.vtex-store__template){
+  background: #F7F9FB;
+}
+.notificationBarContainer {
+  background-color: #e6f1e6;
+  color: #03034e;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.infoCardContainer--info-card-home {
+  max-width: 1520px;
+  margin: 0 auto;
+  background: url(/arquivos/imagenFondoPrueba.png) no-repeat;
+  background-size: 100%;
+  padding: 0px;
+}
+
+.newsletter {
+  background-color: #03054e;
+  max-width: 1528px;
+  margin: 0 auto;
+}
+.notificationBarInner {
+  min-height: 2rem;
+}
+
+.newsletter .container {
+  padding: 60px 10px;
+}
+
+.label {
+  color: #fff;
+  font-size: 26px;
+}
+
+.inputGroup {
+  padding-bottom: 4px;
+  display: flex;
+  color: #fff;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
+  color: #fff;
+  font-size: 16px;
+}
+
+.inputGroup :global(.vtex-button) {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  margin-right: -24px;
+}
+
+.buttonContainer {
+  padding-top: 0px;
+}
+
+.imageElement--storePrint {
+  max-height: 300px;
+  margin-bottom: 20px;
+}
+
+.skuSelectorContainer {
+  margin: 1rem 0;
+}
+
+.infoCardContainer--info-card-example{
+  width: 100%;
+  height: 95%;
+  border-radius: 5px;
+}
+
+.infoCardContainer--info-card-example.infoCardContainer--segundoBanner {
+  margin-left: 10px;
+}
+
+@media only screen and (min-width: 640px) {
+  .newsletter .container {
+    padding: 140px;
+  }
+
+  .label {
+    font-size: 40px;
+  }
+
+  .infoCardContainer--info-card-home .infoCardTextContainer {
+    width: 30%;
+  }
+
+  .infoCardContainer--info-card-home .infoCardImageContainer {
+    width: 70%;
+  }
+
+  .imageElement--storePrint {
+    margin-bottom: 0px;
+    max-height: 600px;
+  }
+}
+
+.productImagesContainer--quickview .carouselContainer {
+  justify-content: flex-start;
+}
+
+.productImagesContainer--quickview .productImageTag {
+  object-fit: cover !important;
+}
+
+.productImagesContainer--quickview .carouselGaleryThumbs {
+  display: none;
+}
+
+.productImagesContainer--quickview .carouselGaleryCursor {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.productNameContainer {
+  color: #3f3f40;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.skuSelectorSubcontainer .skuSelectorNameContainer {
+  width: 50% !important;
+}
+
+.skuSelectorSelectContainer {
+  width: 100%;
+}
+.skuSelectorTextContainer {
+  text-align: center;
+  text-transform: capitalize;
+  color: #9c9c9c;
+}
+
+.skuSelectorOptionsList :global(.vtex-styleguide-9-x-container){
+  background: transparent;
+  color: #9c9c9c;
+  border: 2px solid #9c9c9c;
+  border-radius: 10px;
+}
+
+.searchResultContainer {
+  padding: 0 100px;
+}
+
+.searchBarContainer{
+  width: 500px;
+  margin: 0 140px;
+}
+.infoCardContainer--Mio {
+  width: 100%;
+  height: 450px;
+}
+.sizeDesktop {
+  padding: 0 !important;
+}
+.infoCardCallActionText--Mio {
+  padding: 20px 15px;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #343434;
+}
+.infoCardCallActionContainer--Mio {
+  text-decoration: none;
+}
+.infoCardTextContainer--Mio {
+  width: 30%;
+  margin-left: 10%;
+}
+.infoCardCallActionContainer--Mio {
+  margin-top: 10px;
+}
+.infoCardSubhead--Mio {
+  line-height: 20px;
+}
+
+.imageElement--slideCategoryColumn1 {
+  width: 84%;
+  height: 100%;
+}
+.imageElement--slideCategoryColumn1 {
+  border-radius: 5px;
+}
+.imageElement--slideCategoryColumn2 {
+  border-radius: 5px;
+  height: 100%;
+}
+
+.imageElement--imgInfoProduct {
+  height: 100%;
+  border-radius: 5px;
+}
+.carouselGaleryThumbs {
+  position: absolute;
+  bottom: 43px;
+  width: 70%;
+  left: 20%;
+}
+.productImagesThumb {
+  margin: 8px;
+}
+:global(.vtex-wish-list-1-x-wishlistIconContainer--addListProduct){
+  position: relative;
+}
+.imageElement--imgCategoriaSlider{
+  height: 95%;
+  border-radius: 5px;
+}
+.logoImage--logo {
+  width: 85px;
+}
+.searchBarInnerContainer :global(.vtex-input-prefix__group){
+  border-radius: 20px;
+}
+.searchIcon{
+  color: white;
+}
+.searchBarInnerContainer :global(.vtex-input__suffix){
+  background: #27AFE5;
+  border-radius: 50%;
+  padding: 0 9px;
+}
+.searchBarIcon--search {
+  padding: 0;
+}
+.notificationBarContainer--barNotification {
+  background-color: #F6F9E8;
+}
+.imageElement--bannerSlides {
+  transition: 400ms all;
+}
+.imageElement--bannerSlides:hover{
+  filter: brightness(0.5);
+}
+.infoCardContainer--info-card-home {
+  margin: 0 100px;
+  border-radius: 10px;
+}
+.imageElement--imgSucces {
+  width: 100%;
+  margin-bottom: 80px;
+}
+.productBrand--quickview {
+  color: #27AFE5;
+}
+/* quienes somos estilos */
+.infoCardContainer--info-card-quienes-somos {
+  height: 297px;
+  justify-content: center;
+  align-items: end;
+}
+.infoCardTextContainer--info-card-quienes-somos {
+  background: rgba(249,249,249,0.8);
+  width: 70%;
+  padding: 20px 40px;
+}
+.infoCardCallActionContainer--info-card-quienes-somos {
+  display: none;
+}
+.infoCardSubhead--info-card-quienes-somos {
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 20px;
+}
+.infoCardHeadline--info-card-quienes-somos {
+  color: #27AFE5;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+.imageElement--mosaicoImagenes{
+  margin: 10px;
+}
+.infoCardCallActionContainer--info-card-mision {
+  display: none;
+}
+.infoCardCallActionContainer--info-card-vision {
+  display: none;
+}
+.infoCardContainer--info-card-mision {
+  margin: 0 260px;
+  padding: 0;
+}
+.infoCardContainer--info-card-vision {
+  margin: 40px 336px;
+  padding: 0;
+}
+.infoCardImage--info-card-mision{
+  width: 279px;
+}
+.infoCardImage--info-card-vision{
+  width: 279px;
+}
+.infoCardTextContainer--info-card-mision {
+  width: 90% !important;
+  padding: 0 25px;
+}
+.infoCardTextContainer--info-card-vision {
+  width: 90% !important;
+  padding: 0 25px;
+}
+.infoCardImageContainer--info-card-mision {
+  width: 279px !important;
+}
+.infoCardImageContainer--info-card-vision {
+  width: 279px !important;
+}
+.infoCardHeadline {
+  color: #27AFE5;
+  margin: 0px 0 0 0;
+}
+.imageElement--imagenCard{
+  width: 100%;
+  margin: 0;
+}
+.imageElement--faqsImg{
+  width: 100%;
+}
+.infoCardImage--info-card-home {
+  margin-left: 18px;
+}
+.infoCardHeadline--info-card-home {
+  font-size: 25px;
+  color:  rgba(128, 128, 128, 0.3);
+
+}
+.infoCardCallActionContainer--info-card-home :global(.vtex-button){
+  background: #27AFE5;
+  transition: 400ms all;
+  border: 0;
+}
+.infoCardTextContainer--info-card-home {
+  padding: 40px;
+}
+
+.infoCardCallActionContainer--info-card-home :global(.vtex-button):hover{
+  background: #1B7BA1;
+}
+.imageElementLink--imgBanner-2{
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.imageElement--imgBanner-2 {
+  transition: 400ms all;
+  height: 100%;
+  width: 100%;
+}
+.imageElement--imgBanner-2:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 600px) {
+  .imageElement--LupaImagen {
+    width: 21px;
+    max-height: 20px;
+    margin-top: 3px;
+  }
+  .infoCardHeadline--Mio {
+    font-size: 30px;
+  }
+  .infoCardTextContainer--Mio {
+    width: 80%;
+    margin-left: 8%;
+    position: absolute;
+    bottom: 0;
+  }
+  .infoCardCallActionContainer--Mio {
+    margin-bottom: 0;
+  }
+  .infoCardContainer--Mio {
+    width: 100%;
+    height: 540px;
+  }
+  .imageElement--slideCategoryColumn1 {
+    width: 95%;
+  }
+  .imageElement--imgInfoProduct {
+    width: 100%;
+  }
+  .imageElement--ImagCategoriaDest {
+    width: 95%;
+    height: 100%;
+    border-radius: 5px;
+  }
+  .imageElement--categoryIMG {
+    border-radius: 5px;
+  }
+  .productNameContainer {
+    color: #808080;
+    font-weight: bold;
+    font-size: 19px;
+  }
+  .logoImage {
+    margin-left: -15px;
+  }
+  .searchBarContainer{
+    margin: 0;
+  }
+  .searchBarContainer{
+    width: 100%;
+  }
+  .infoCardContainer--info-card-home{
+    margin: 0;
+  }
+  .imageElement--imgfooter {
+    width: 53%;
+  }
+  .logoLink{
+    margin-left: 2px;
+  }
+  .infoCardImage--info-card-home{
+    margin-left: 0;
+  }
+}

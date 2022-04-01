@@ -1,0 +1,206 @@
+.sliderLayoutContainer {
+  justify-content: center;
+}
+
+.sliderTrackContainer {
+  max-width: 1520px;
+}
+
+.paginationDotsContainer {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.layoutContainer--shelf {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 96rem;
+}
+
+.slide--shelf {
+  margin-bottom: 25px;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+.dotsContainer {
+  display: none;
+}
+.sliderLayoutContainer--marcas-carousel{
+  padding: 0 100px;
+  margin: 0 0 50px 0;
+}
+:global(.vtex-slider-layout-0-x-imageElement--marcas-carousel) {
+  width: 119px!important;
+  border-radius: 5px;
+}
+
+:global(.vtex-slider-0-x-dotsContainer){
+  display: none;
+}
+
+.slide--banner2Carousel :global(.vtex-store-components-3-x-infoCardTextContainer--Mio){
+  width: 60%;
+}
+.slide--banner2Carousel :global(.vtex-store-components-3-x-infoCardContainer--Mio){
+  border-radius: 10px;
+}
+.slide--banner2Carousel :global(.vtex-store-components-3-x-infoCardContainer--Mio){
+  height: 350px;
+}
+.slideChildrenContainer--banner2Carousel {
+  padding: 10px;
+}
+.sliderLayoutContainer--category-carousel{
+  margin-top: 70px;
+  padding: 0 100px;
+  margin-bottom: 70px;
+}
+.imageElement--category-carousel {
+  width: 120px !important;
+  height: 120px !important;
+  border-radius: 50%;
+}
+.slideChildrenContainer--shelf {
+  transition: 400ms all;
+  border-radius: 5px;
+  padding: 5px;
+}
+.slideChildrenContainer--shelf:hover {
+  border: 1px solid;
+}
+.sliderLayoutContainer--shelf {
+  height: 100%;
+}
+.sliderTrackContainer--shelf {
+  max-width: 1520px;
+  height: 100%;
+}
+.sliderTrack--shelf {
+  height: 100%;
+}
+.slideChildrenContainer--shelf {
+  background: white;
+}
+.sliderLayoutContainer--shelf{
+  padding: 0 !important;
+}
+/* Vitrina gigante en el home */
+.slideChildrenContainer--vitrinaGigante :global(.vtex-product-summary-2-x-element){
+  align-items: center;
+}
+.slideChildrenContainer--vitrinaGigante :global(.vtex-product-summary-2-x-image){
+  max-height: 100% !important;
+}
+.slideChildrenContainer--vitrinaGigante :global(.vtex-stack-layout-0-x-stackContainer){
+  width: 100%;
+  height: 100%;
+}
+.slideChildrenContainer--vitrinaGigante :global(.vtex-stack-layout-0-x-stackItem ){
+  height: 100%;
+}
+.slideChildrenContainer--vitrinaGigante :global(.vtex-product-summary-2-x-imageContainer){
+  height: 100%;
+}
+/* Fin estilos vitrina gigante */
+.caretIcon {
+  display: none;
+}
+.imageElementLink--carousel {
+  width: 100%;
+}
+.imageElementLink--promo-carousel {
+  width: 100%;
+}
+.sliderLeftArrow::before {
+  content: "";
+  background: url(https://cutis.vteximg.com.br/arquivos/eva_arrow-ios-back-outline.png)no-repeat;
+  background-size: 100% !important;
+  display: block;
+  width: 39px;
+  height: 39px;
+  transition: all 40ms;
+  left: 63px;
+  position: absolute;
+  transition: 400ms all;
+}
+.sliderRightArrow::before {
+  content: "";
+  background: url(https://cutis.vteximg.com.br/arquivos/desk-arrow-2.png)no-repeat;
+  background-size: 100% !important;
+  display: block;
+  width: 39px;
+  height: 39px;
+  margin-top: 0;
+  transition: all 40ms;
+  margin-right: 5px;
+  position: absolute;
+  left: -93px;
+  transition: 400ms all;
+}
+.sliderLeftArrow:hover::before {
+  background: url(https://cutis.vteximg.com.br/arquivos/desk-arrow-hover-2.png)no-repeat;
+}
+.sliderRightArrow:hover::before {
+  background: url(https://cutis.vteximg.com.br/arquivos/eva_arrow-ios-back-outline-1.png)no-repeat;
+}
+.sliderLayoutContainer--shelf .sliderLeftArrow::before {
+  left: -17px;
+  position: absolute;
+}
+.sliderLayoutContainer--shelf .sliderRightArrow::before {
+  position: relative;
+  left: 0;
+  right: 0;
+}
+.sliderRightArrow--shelf {
+  margin-right: -26px;
+}
+.slide--shelf.slide--category {
+  padding: 0 20px;
+}
+.slideChildrenContainer--slider-info {
+  padding: 0 20px;
+}
+.slide--shelf {
+  padding: 0 20px;
+}
+@media (max-width: 600px) {
+  .sliderLayoutContainer--marcas-carousel {
+    padding: 0 0px 0 30px;
+    margin: 0 0 50px 0;
+  } 
+  .slideChildrenContainer--categoriasCarousel {
+    justify-content: center;
+  }
+  .sliderTrackContainer--categoriasCarousel {
+    padding: 0 30px;
+  }
+  .sliderLayoutContainer--marcas-carousel.sliderLayoutContainer--marcas-sliderMenu{
+    padding: 0 19px;
+    margin: 0 0 30px 0;
+  } 
+  .sliderLayoutContainer--shelf{
+    padding: 0 0 0 10px !important;
+  }
+  .sliderLeftArrow::before {
+    left: -31px;
+  }
+  .sliderRightArrow::before {
+    left: 0px;
+  }
+  .slide--banner2Carousel :global(.vtex-store-components-3-x-infoCardContainer--Mio){
+    height: 200px;
+  }
+  .sliderLayoutContainer--category-carousel{
+    padding: 0 30px;
+    margin: 20px 0;
+  }
+  .imageElement--category-carousel {
+    width: 95px!important;
+    height: 93px!important;
+    border-radius: 50%;
+  }
+  .slide--shelf {
+    padding: 0 5px;
+  }
+}

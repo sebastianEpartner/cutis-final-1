@@ -1,0 +1,61 @@
+{
+    "rich-text#NUESTRAS-MARCAS": {
+        "props": {
+          "text": "## Nuestras marcas",
+          "blockClass": "shelfTitle"
+        }
+    },
+    "list-context.image-list#marcas": {
+        "children": ["slider-layout#marcas-images"],
+        "props": {
+            "height": 720,
+            "images": [
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/larocheNew.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/larocheNew.png"
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/biodermNew.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/biodermNew.png"
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/aveneNew.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/aveneNew.png"
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/phanadermNew.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/phanadermNew.png"
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/uriageNew.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/uriageNew.png"
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/phanadermNew.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/phanadermNew.png"
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/phanadermNew.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/phanadermNew.png"
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/aveneNew.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/aveneNew.png"
+                }
+            ]
+        }
+    },
+    "slider-layout#marcas-images": {
+        "props": {
+            "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 5,
+            "phone": 4
+            },
+            "infinite": true,
+            "showNavigationArrows": "desktopOnly",
+            "showPaginationDots": "mobileOnly",
+            "blockClass": "marcas-carousel"
+        }
+    }
+}

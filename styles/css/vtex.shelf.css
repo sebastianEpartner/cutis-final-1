@@ -1,0 +1,36 @@
+.title {
+    font-size: 0;
+    display: none;
+}
+.sliderContainer {
+    padding: 0 100px;
+}
+.arrowRight {
+    right: 78px;
+}
+.arrowLeft {
+    left: 78px;
+}
+.sliderContainer{
+    padding: 0 !important;
+}
+@media (max-width: 600px) {
+    .sliderContainer {
+        padding: 0 0 0 !important;
+    }  
+    .arrowRight {
+        right: 10px;
+    }
+    .arrowLeft {
+        left: 10px;
+    }
+    .arrowRight {
+        display: none;
+    }
+    .arrowLeft {
+        display: none;
+    }
+    .paragraph--tituloVitrinaDestacada{
+        display: none;
+    }
+}

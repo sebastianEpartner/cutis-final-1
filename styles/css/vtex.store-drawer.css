@@ -1,0 +1,12 @@
+.drawer {
+    width: 100% !important;
+    background: white;
+}
+:global(.vtex-store-drawer-0-x-closeIconButton){
+    top: -68px;
+    z-index: 99999999;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: white;
+}

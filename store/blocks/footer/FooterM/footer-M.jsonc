@@ -1,0 +1,76 @@
+{
+    "footer-layout.mobile": {
+        "children": [
+            "flex-layout.row#1-footer-mobile",
+            "tab-layout#footerM",
+            "flex-layout.row#2-footer-mobile",
+            "flex-layout.row#3-footer-mobile"
+        ]
+    },
+    "flex-layout.row#1-footer-mobile": {
+        "props": {
+            "paddingTop": 4,
+            "paddingBottom": 4
+        },
+        "children": ["flex-layout.col#footer-1-desktop"]
+    },
+    "rich-text#footer-mobile": {
+        "props": {
+            "text": "All stock and product photos are from photos.icons8.com",
+            "blockClass": "footer"
+        }
+    },
+    "flex-layout.row#2-footer-mobile": {
+        "children": ["flex-layout.col#footer-1-mobile"],
+        "props": {
+            "blockClass": "payment-methods",
+            "paddingTop": 4,
+            "paddingBottom": 4
+        }
+    },
+    "flex-layout.col#footer-1-mobile": {
+        "children": [
+            "social-networks"
+        ],
+        "props": {
+            "blockClass": "payment-methods",
+            "paddingTop": 4,
+            "paddingBottom": 4,
+            "rowGap": 4
+        }
+    },
+    "flex-layout.row#3-footer-mobile": {
+        "children": [
+            "flex-layout.col#footer-medios-mobile"
+        ],
+        "props": {
+            "blockClass": "medios-Pago",
+            "paddingTop": 4,
+            "paddingBottom": 4
+        }
+    },
+    "flex-layout.col#mediosPago-footer-mobile": {
+        "children": [
+            "flex-layout.col#footer-medios-mobile"
+        ],
+        "props": {
+            "blockClass": "payment-methods"
+        }
+    },
+    "flex-layout.col#footer-medios-mobile": {
+        "children": [
+            "rich-text#tituloMedios"
+        ],
+        "props": {
+          "blockClass": "mediosColumn"
+        }
+    },
+    "rich-text#tituloMedios": {
+        "props": {
+          "textAlignment": "LEFT",
+          "textPosition": "LEFT",
+          "text": "Medios de pago",
+          "blockClass": "titulosFooter"
+        }
+    }
+}

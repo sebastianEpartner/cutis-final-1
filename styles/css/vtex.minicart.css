@@ -1,0 +1,121 @@
+.minicartIconContainer::before{
+    content: "";
+    background: url(https://cutis.vteximg.com.br/arquivos/carritoAzul.png)no-repeat;
+    background-size: 100%;
+    font-size: 10px;
+    display: block;
+    width: 20px;
+    height: 24px;
+    margin-top: 0;
+    transition: all 40ms;
+    margin-right: 5px;
+}
+.minicartQuantityBadgeDefault {
+    background: #1CE6B1;
+}
+.minicartIconContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.cartIcon{
+    display: none;
+}
+.openIconContainer{
+    padding: 0;
+}
+.drawer.opened{
+    max-width: 35% !important;
+}
+.opened .closeIconButton {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-left: -32px;
+    position: absolute;
+    padding: 14px;
+    background: white;
+}
+.childrenContainer {
+    margin-top: 13px;
+    height: 100%;
+}
+.minicartTitle {
+    padding: 0 40px;
+}
+.minicartProductListContainer {
+    margin: 0 20px;
+    width: 90%;
+}
+.minicartCheckoutButton--finalizarPedido :global(.vtex-button__label){
+    font-size: 0;
+}
+.minicartCheckoutButton--finalizarPedido :global(.vtex-button__label)::before{
+    content: "Finalizar Compra";
+    font-size: 15px;
+}
+.minicartCheckoutButton--verCarrito :global(.vtex-button__label){
+    font-size: 0;
+}
+.minicartCheckoutButton--verCarrito :global(.vtex-button__label)::before{
+    content: "Ver carrito";
+    font-size: 15px;
+    color: #27AFE5;
+}
+.minicartCheckoutButton--finalizarPedido {
+    padding: 0;
+    width: 88% !important;
+}
+.minicartCheckoutButton--verCarrito {
+    padding: 0;
+    width: 88% !important;
+}
+.drawerContent {
+    height: 100%;
+    overflow: hidden;
+}
+:global(.vtex-shelf-1-x-arrowLeft ){
+    left: 20px !important;
+}
+:global(.vtex-shelf-1-x-arrowRight) {
+    right: 20px !important;
+}
+:global(.vtex-shelf-1-x-sliderContainer) {
+    padding: 0 50px !important;
+}
+.minicartSideBarContentWrapper {
+    height: 100% !important;
+}
+.minicartTitle {
+    font-size: 0;
+}
+.minicartTitle::before {
+    font-size: 35px;
+    content: "Mi carrito";
+    color: #27AFE5;
+    margin-bottom: 20px;
+    display: block;
+}
+.minicartCheckoutButton--finalizarPedido :global(.vtex-button){
+    background: #27AFE5;
+    border: 0;
+    text-transform: initial;
+}
+.minicartCheckoutButton--verCarrito :global(.vtex-button){
+    background: white;
+    border: 1px solid #27AFE5;
+    text-transform: initial;
+    color: white;
+}
+.minicartCheckoutButton--verCarrito :global(.vtex-button__label){
+    color: white;
+}
+.minicartProductListContainer--rowProduct::-webkit-scrollbar{
+   background: #D3D3D3;
+   width: 5px;
+   border-radius: 5px; 
+}
+.minicartProductListContainer--rowProduct::-webkit-scrollbar-thumb{
+    background: #27AFE5;
+    border-radius: 5px;
+}

@@ -1,0 +1,46 @@
+.flexRow--orderByAndSwitcher {
+  padding-right: 1.5em;
+}
+
+.flexRowContent--savingsSummaryListDesktop {
+  justify-content: flex-start;
+}
+
+.flexCol--summaryRightListDesktop {
+  justify-content: space-around;
+}
+
+.flexRow--buyNowButton :global(.vtex-button) {
+  background: #eef3f7;
+  border-color:#eef3f7;
+  color: #0f3e99;
+}
+
+.flexRow--buyNowButton:hover :global(.vtex-button) {
+  background: #dbe9fd;
+  border-color:#dbe9fd;
+}
+
+.flexCol--productRating {
+  margin-bottom: 3rem;
+}
+
+.flexCol--summaryDetailsListMobile {
+  justify-content: space-between;
+}
+
+.flexCol--summaryUpDetailsListMobile {
+  margin-bottom: 0.25rem
+}
+.flexRowContent--searchVitrinadest {
+  align-items: center;
+}
+.flexRowContent--searchVitrinadest :global(.vtex-shelf-1-x-container){
+  padding: 0;
+}
+:global(.vtex-shelf-1-x-slide){
+  width: 20% !important;
+}
+.flexRow--ProductInfo2{
+  position: relative;
+}

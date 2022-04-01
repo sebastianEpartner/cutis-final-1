@@ -1,0 +1,5 @@
+.profileSummary::before{
+    content: "Datos";
+    color: #27AFE5;
+    font-size: 20px;
+}

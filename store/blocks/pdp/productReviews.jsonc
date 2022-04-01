@@ -1,0 +1,36 @@
+{
+    "flex-layout.row#productReviews": {
+        "props": {
+          "marginTop": 4,
+          "blockClass": "product-reviews"
+        },
+        "children": ["flex-layout.col#productReviews1","flex-layout.col#productReviews2"]
+    },
+    "flex-layout.col#productReviews1": {
+        "props": {
+          "width":"30%",
+          "blockClass":"column1"
+        },
+        "children": ["product-reviews#1"]
+    },
+    "flex-layout.col#productReviews2": {
+        "props": {
+          "width":"70%",
+          "blockClass":"column2"
+        },
+        "children": ["product-reviews#2"]
+    },
+    "product-reviews#1":{
+        "props":{
+          "blockClass":"ColumnComentary"
+        }
+    },
+    "product-reviews#2":{
+        "props":{
+          "blockClass":"ColumnOpinion"
+        }
+    },
+    "flex-layout.row#specifications-title": {
+        "children": ["rich-text#specifications"]
+    }   
+}

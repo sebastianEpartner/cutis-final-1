@@ -1,0 +1,277 @@
+{
+  "store.custom#quienes-somos": {
+    "blocks": [
+      "flex-layout.row#quienes-somos"
+    ]
+  },
+  // contenedor pagina
+  "flex-layout.row#quienes-somos": {
+    "children": [
+      "flex-layout.col#quienes-somos"
+    ]
+  },
+  "flex-layout.col#quienes-somos": {
+    "children": [
+      "info-card#quienesSomos",
+      "flex-layout.row#mosaico-quienes-somos",
+      "info-card#mision",
+      "info-card#vision",
+      "flex-layout.row#sliderInfo"
+    ]
+  },
+  // Imagenes de cabecera 
+  "info-card#quienesSomos": {
+    "props": {
+      "id": "info-card-somos",
+      "isFullModeStyle": true,
+      "textPosition": "left",
+      "imageUrl": "https://cutis.vteximg.com.br/arquivos/quienes-Somos.png",
+      "headline": "¿Quienes somos?",
+      "subhead": "Somos una empresa apasionada por el cuidado de la piel. Creemos en la belleza natural, nuestro propósito es asesorarte y enseñarte a crear buenos hábitos para la salud y belleza de tu piel, reunimos un amplio portafolio con las mejores marcas dermatológicas y dermocosméticas disponibles también en cualquiera de nuestras tiendas físicas ubicadas en diferentes ciudades del territorio nacional.",
+      "mobileImageUrl":"https://cutis.vteximg.com.br/arquivos/quienes-somos-m.png",
+      "blockClass": "info-card-quienes-somos",
+      "textAlignment": "center"
+    }
+  },
+  // mosaico imagenes
+  "flex-layout.row#mosaico-quienes-somos": {
+    "children": [
+      "flex-layout.col#mosaico-1",
+      "flex-layout.col#mosaico-2"
+    ],
+    "props":{
+      "blockClass":"mosaico-quienes"
+    }
+  },
+  // columna 1 del mosaico
+  "flex-layout.col#mosaico-1": {
+    "children": [
+      "responsive-layout.desktop#mosaico-desk-1",
+      "responsive-layout.mobile#mosaico-mobile-1"
+    ]
+  },
+  // reponsive layout 
+  "responsive-layout.desktop#mosaico-desk-1": {
+    "children": ["image#imagen1","image#imagen2"]
+  },
+  "responsive-layout.mobile#mosaico-mobile-1": {
+    "children": ["image#imagen1","image#imagen4"]
+  },
+  // columna dos mosaico
+  "flex-layout.col#mosaico-2": {
+    "children": [
+      "responsive-layout.desktop#mosaico-desk-2",
+      "responsive-layout.mobile#mosaico-mobile-2"
+    ]
+  },
+  // responsive layout
+  "responsive-layout.desktop#mosaico-desk-2": {
+    "children": ["image#imagen3","image#imagen4"]
+  },
+  "responsive-layout.mobile#mosaico-mobile-2": {
+    "children": ["image#imagen5","image#imagen3"]
+  },
+  // imagenes del mosaico
+  "image#imagen5": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/imagen5.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "mosaicoImagenes"
+    }
+  },
+  "image#imagen1": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/imagen1.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "mosaicoImagenes"
+    }
+  },
+  "image#imagen2": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/imagen2.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "mosaicoImagenes"
+    }
+  },
+  "image#imagen3": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/imagen3.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "mosaicoImagenes"
+    }
+  },
+  "image#imagen4": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/imagen4.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "mosaicoImagenes"
+    }
+  },
+  // info card mision vision
+  "info-card#mision": {
+    "props": {
+      "id": "info-card-somos",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://cutis.vteximg.com.br/arquivos/misionDesk.png",
+      "headline": "Misión",
+      "subhead": "Nos especializamos en el desarrollo, comercialización y asesoría para el uso de productos dermatológicos y dermocosméticos  de alta calidad para la salud y belleza de la piel.",
+      "mobileImageUrl":"https://cutis.vteximg.com.br/arquivos/misionMobile.png",
+      "blockClass": "info-card-mision",
+      "textAlignment": "left"
+    }
+  },
+  "info-card#vision": {
+    "props": {
+      "id": "info-card-somos",
+      "isFullModeStyle": false,
+      "textPosition": "left",
+      "imageUrl": "https://cutis.vteximg.com.br/arquivos/visiondesk.png",
+      "headline": "Visión",
+      "subhead": "Llegar a ser en el año 2023 la cadena de droguerías dermatológicas preferida en todo el país.",
+      "mobileImageUrl":"https://cutis.vteximg.com.br/arquivos/visionMobile.png",
+      "blockClass": "info-card-vision",
+      "textAlignment": "right"
+    }
+  },
+  // contenedor slider info
+  "flex-layout.row#sliderInfo": {
+    "children": [
+      "slider-layout#sliderInfo"
+    ],
+    "props":{
+      "blockClass":"slider-info"
+    }
+  },
+  "slider-layout#sliderInfo": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "blockClass": ["carousel","slider-info"],
+      "showPaginationDots":"false",
+      "showNavigationArrows": "mobileOnly"
+    },
+    "children": ["flex-layout.col#cards-1","flex-layout.col#cards-2","flex-layout.col#cards-3","flex-layout.col#cards-4"]
+  },
+  // Tarjetas 
+  "flex-layout.col#cards-1": {
+    "children": [
+      "image#cards-1",
+      "rich-text#cards-1",
+      "rich-text#cards-content-1"
+    ]
+  },
+  "image#cards-1": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/cards-1.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "imagenCard"
+    }
+  },
+  "rich-text#cards-1": {
+    "props": {
+      "text": "Protección solar",
+      "blockClass": "titulosCards"
+    }
+  },
+  "rich-text#cards-content-1": {
+    "props": {
+      "text": "Encuentra el bloqueador ideal para tu tipo de piel.",
+      "blockClass": "contenidoInfocards"
+    }
+  },
+  // card 2
+  "flex-layout.col#cards-2": {
+    "children": [
+      "image#cards-2",
+      "rich-text#cards-2",
+      "rich-text#cards-content-2"
+    ]
+  },
+  "image#cards-2": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/cards2.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "imagenCard"
+    }
+  },
+  "rich-text#cards-2": {
+    "props": {
+      "text": "Cuidado de la piel",
+      "blockClass": "titulosCards"
+    }
+  },
+  "rich-text#cards-content-2": {
+    "props": {
+      "text": "Manejamos toda la linea de cuidado de tu piel al mejor precio.",
+      "blockClass": "contenidoInfocards"
+    }
+  },
+  // card 3
+  "flex-layout.col#cards-3": {
+    "children": [
+      "image#cards-3",
+      "rich-text#cards-3",
+      "rich-text#cards-content-3"
+    ]
+  },
+  "image#cards-3": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/cards-3.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "imagenCard"
+    }
+  },
+  "rich-text#cards-3": {
+    "props": {
+      "text": "Medicamentos",
+      "blockClass": "titulosCards"
+    }
+  },
+  "rich-text#cards-content-3": {
+    "props": {
+      "text": "Los mejores medicamentos para mantener tu piel saludable.",
+      "blockClass": "contenidoInfocards"
+    }
+  },
+  // card 4
+  "flex-layout.col#cards-4": {
+    "children": [
+      "image#cards-4",
+      "rich-text#cards-4",
+      "rich-text#cards-content-4"
+    ]
+  },
+  "image#cards-4": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/cards-4.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "imagenCard"
+    }
+  },
+  "rich-text#cards-4": {
+    "props": {
+      "text": "Maquillaje",
+      "blockClass": "titulosCards"
+    }
+  },
+  "rich-text#cards-content-4": {
+    "props": {
+      "text": "Mantente radiante con nuestra linea de maquillaje.",
+      "blockClass": "contenidoInfocards"
+    }
+  }
+}

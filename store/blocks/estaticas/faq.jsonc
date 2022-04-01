@@ -1,0 +1,238 @@
+{
+  "store.custom#faq": {
+    "children": [
+      "image#faqsImg",
+      "rich-text#faq",
+      "flex-layout.row#faq"
+    ]
+  },
+  // titulo de la pagina
+  "rich-text#faq": {
+    "props": {
+      "blockClass":"faqsTitulo",
+      "text": "## Politicas de privacidad"
+    }
+  },
+  // iamgenes en el top
+  "image#faqsImg": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/banner.png",
+      "blockClass": "faqsImg"
+    }
+  },
+  "flex-layout.row#faq": {
+    "props": {
+      "blockClass": "faq"
+    },
+    "children": [
+      "flex-layout.col#faq",
+      "flex-layout.col#faq1"
+    ]
+  },
+  // Primera columna de los faqs
+  "flex-layout.col#faq": {
+    "props":{
+      "width":"30%",
+      "blockClass":"columna1"
+    },
+    "children": [
+      "disclosure-layout-group#group"
+    ]
+  },
+
+  "disclosure-layout-group#group": {
+    "children": [
+      "disclosure-layout#first",
+      "disclosure-layout#second",
+      "disclosure-layout#third",
+      "disclosure-layout#fourth"
+    ]
+  },
+  // primer disclousare
+  "disclosure-layout#first": {
+    "children": ["disclosure-trigger#first", "disclosure-content#first"]
+  },
+  "disclosure-trigger#first": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question1","disclosure-state-indicator"]
+  },
+  "disclosure-content#first": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer1"]
+  },
+  "rich-text#question1": {
+    "props": {
+      "text": "FAQ"
+    }
+  },
+  "rich-text#answer1": {
+    "props": {
+      "text": "Call us at the number (212) 1234-1234."
+    }
+  },
+  // Segundo disclousare
+  "disclosure-layout#second": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#second", "disclosure-content#second"]
+  },
+  "disclosure-trigger#second": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question2","disclosure-state-indicator"]
+  },
+  "disclosure-content#second": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer2"]
+  },
+  "rich-text#question2": {
+    "props": {
+      "text": "Comprar"
+    }
+  },
+  "rich-text#answer2": {
+    "props": {
+      "text": "After logging into your account, you can find this info at the link Orders."
+    }
+  },
+  // tercer discluosarecompra
+  "disclosure-layout#third": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#third", "disclosure-content#third"]
+  },
+  "disclosure-trigger#third": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question3","disclosure-state-indicator"]
+  },
+  "disclosure-content#third": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": [
+      
+    ]
+  },
+  "rich-text#question3": {
+    "props": {
+      "text": "Politicas de comprar"
+    }
+  },
+  // agrupacion de los items
+  // disclouare dos 
+  "disclosure-layout#fourth": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#fourth", "disclosure-content#fourth"]
+  },
+  "disclosure-trigger#fourth": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": ["rich-text#question4","disclosure-state-indicator"]
+  },
+  "disclosure-content#fourth": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer2"]
+  },
+  "rich-text#question4": {
+    "props": {
+      "text": "Habeas data"
+    }
+  },
+  "rich-text#answer4": {
+    "props": {
+      "text": "After logging into your account, you can find this info at the link Orders."
+    }
+  },
+  // columna 2
+  "flex-layout.col#faq1": {
+    "props":{
+      "width":"70%",
+      "blockClass":"columna2"
+    },
+    "children": [
+      "flex-layout.col#devolver1"
+    ]
+  },
+  // contenido del tab 1
+  "flex-layout.col#devolver1": {
+    "children": [
+      "rich-text#devolver1",
+      "rich-text#devolver2",
+      "rich-text#devolver3",
+      "rich-text#devolver4",
+      "rich-text#devolver5"
+    ],
+    "props": {
+      "blockClass": "politicaContenedor"
+    }
+  },
+  "rich-text#devolver1": {
+    "props": {
+      "text": "FAQ´S",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver2": {
+    "props": {
+      "text": "¿Cómo podemos ayudarte?",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver3": {
+    "props": {
+      "text": "COMPRAS",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver4": {
+    "props": {
+      "text": "¿PUEDO USAR MÚLTIPLES MEDIOS DE PAGO?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver5": {
+    "props": {
+      "text": " Si, puedes utilizar diferentes métodos de pago: Tarjetas crédito: American Express, VISA Diners, MasterCard, Tarjetas débito, Baloto, Efecty, PSE. También puedes pagar a través de Pago Referenciado a los Bancos (Bancolombia, Banco de Bogotá, Banco de Occidente) Matrix Red de Apuestas y Giros (GANA-GANA, GANA, PAGA TODO, JER, APUESTAS UNIDAS, ACERTEMOS, APUESTAS CUCUTA 75, LA PERLA, SU CHANCE).",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  // tabber 2
+  "tab-content.item#comoComprar": {
+    "children": [
+      "flex-layout.col#devolver1"
+    ],
+    "props": {
+      "tabId": "cambios"
+    }
+  },
+  // tabber 2
+  "tab-content.item#reembolsos": {
+      "children": [
+        "flex-layout.col#devolver1"
+      ],
+      "props": {
+        "tabId": "Reembolsos"
+      }
+  }
+
+}

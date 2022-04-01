@@ -1,0 +1,112 @@
+.trigger--fitroTrigger{
+    background: transparent;
+    border: 1px solid #27AFE5;
+    height: 51px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 52%!important;
+    margin-left: 13px;
+    padding: 8px 0;
+}
+.content--filtroContent--visible{
+    position: fixed;
+    top: 0px;
+    z-index: 99999;
+    height: 100%;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100% !important;
+    opacity: 1;
+    transition: 1s all;
+}
+.content--filtroContent--hidden{
+    opacity: 0;
+}
+.trigger--fitroTrigger2--visible{
+    border: 0;
+    width: 100% !important;
+    border-radius: 0;
+    position: relative;
+}
+.trigger--fitroTrigger2--visible::after{
+    content: "X";
+    font-size: 22px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+.trigger--question {
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.trigger--question--visible{
+    background: #E4F7FF;
+}
+.trigger--question::after{
+    content: "";
+    background: url(/arquivos/flechaAbajoFaqs.png)no-repeat;
+    background-size: 100%;
+    width: 13px;
+    height: 9px;
+    display: block;
+    position: absolute;
+    right: 21px;
+}
+
+.trigger--question--visible::after{
+    background: url(/arquivos/flechaAzulFaqs.png)no-repeat;
+}
+.trigger--question--visible :global(.vtex-rich-text-0-x-paragraph){
+    color: #27AFE5;
+}
+.trigger--question :global(.vtex-rich-text-0-x-paragraph){
+    margin-left: 25px;
+    font-size: 15px;
+    font-weight: 400 !important;
+}
+@media (max-width: 600px) {
+    .trigger--subMneusMTrigger{
+        border: 0;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .content--subMneusMContent--visible{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        background: white;
+        overflow: scroll;
+        padding-bottom: 10px;
+    }
+    .content--subMneusMContent :global(.vtex-menu-2-x-menuItem--itemsPrincipales){
+        background: transparent;
+        padding: 0 0 0 30px;
+    }
+    .content--subMneusMContent :global(.vtex-menu-2-x-styledLinkContainer--itemsPrincipales)::before{
+        left: -16px;
+        transform: rotate(180deg);
+        top: 5px;
+    }
+    .content--lupaContent {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 78%;
+        background: white;
+        padding: 7px 10px;
+    }
+    .trigger--lupaTrigger {
+        height: 31px;
+        background: transparent;
+        border: 0;
+    }
+    .trigger--subMneusMTrigger {
+        background: #F7F9FB;
+    }
+}

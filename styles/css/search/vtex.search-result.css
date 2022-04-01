@@ -1,0 +1,28 @@
+.orderByText {
+    display: none;
+}
+.orderBy--layout{
+    border: 1px solid #27AFE5;
+    width: 240px;
+    height: 100%;
+    border-radius: 10px;
+}
+.orderByDropdown {
+    height: 100%;
+}
+
+.orderByButton {
+    justify-content: center;
+}
+.orderByButton {
+    padding: 9px;
+    background: transparent;
+    height: 100%;
+}
+.filterPopupArrowIcon {
+    color: #27AFE5;
+    padding: 0 0px 0 15px;
+}
+.filterPopupTitle {
+    color: #27AFE5;
+}

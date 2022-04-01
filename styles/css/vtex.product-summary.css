@@ -1,0 +1,139 @@
+.skuSelectorContainer--quickview .skuSelectorItemImage .frameAround, .skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
+  border-radius: 50%;
+}
+
+.container :global(.vtex-modal-layout-0-x-triggerContainer) {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+.container:hover :global(.vtex-modal-layout-0-x-triggerContainer) {
+  opacity: 1;
+}
+
+
+@media screen and (max-width: 40em) {
+  .container :global(.vtex-modal-layout-0-x-triggerContainer) {
+    display: none;
+  }
+}
+
+.nameContainer {
+  justify-content: start;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.brandName {
+  font-weight: 600;
+  font-size: 18px;
+  color: #2E2E2E;
+}
+
+.container {
+  text-align: start;
+}
+
+.imageContainer {
+  text-align: center;
+}
+
+.image {
+  border-radius: 0.25rem;
+}
+.nameWrapper {
+  
+  text-align: left;
+  min-height: 38px;
+  max-height: 38px;
+
+}
+
+.brandName {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.productBrandContainer{
+  text-align: left;
+}
+
+.productBrandName {
+  font-size: 13px;
+  margin-bottom: 7px;
+  color: #9c9c9c;
+  display: block;
+}
+
+.installmentContainer {
+  display: none;
+}
+.containerNormal {
+  position: relative;
+}
+.SKUSelectorContainer{
+  background-color: #eeee;
+  border-radius: 20px;
+}
+.element {
+  padding-bottom: 0;
+}
+:global(.vtex-wish-list-1-x-wishlistIconContainer){
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  z-index: 99;
+  right: 12px;
+  top: 4px;
+}
+.price_sellingPriceLabel{
+  display: none;
+}
+.price_listPriceLabel {
+  display: none;
+}
+.priceContainer {
+  width: 100%;
+}
+.productPriceClass {
+  width: 100%;
+}
+.SKUSelectorContainer{
+  opacity: 0;
+  position: absolute;
+}
+.nameContainer {
+  padding: 0;
+}
+.priceContainer {
+  padding: 0;
+}
+.currencyDecimal{
+  display: none;
+}
+.currencyFraction{
+  display: none;
+}
+.price_listPrice .currencyContainer{
+  font-size: 11.59px
+}
+.containerNormal {
+  max-width: 100% !important;
+}
+.SKUSelectorContainer{
+  display: none;
+}
+.element {
+  padding-bottom: 0;
+  position: relative;
+}
+.productBrandName{
+  padding-top: 10px;
+  border-top: 1px solid #D3D3D3;
+}
+@media (max-width: 600px) {
+  .element {
+    background: white;
+  }
+}

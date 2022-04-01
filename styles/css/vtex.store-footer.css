@@ -1,0 +1,40 @@
+.row--menu-row {
+  padding-right: 24px;
+}
+
+.row--menu-row .rowContainer {
+  align-items: flex-start;
+}
+
+.row--payment-methods {
+  padding-top: 16px;
+}
+
+.footerLayout {
+  padding: 0 100px;
+  position: relative;
+  margin-top: 60px;
+  background: white;
+}
+.socialNetworksContainer {
+  display: block;
+}
+.socialNetworkLink {
+  margin-bottom: 10px;
+}
+@media (max-width: 600px) {
+  .footerLayout {
+    padding: 0 0px;
+    margin-top: 287px;
+    padding-top: 47px;
+    background: #EBEBEB;
+  }
+  .socialNetworksContainer {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  :global(.vtex-menu-2-x-styledLinkContent){
+    justify-content: center;
+  }
+}

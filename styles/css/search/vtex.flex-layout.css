@@ -33,7 +33,7 @@
   margin-bottom: 0.25rem
 }
 .flexRowContent--searchVitrinadest {
-  align-items: center;
+  align-items: flex-start;
 }
 .flexRowContent--searchVitrinadest :global(.vtex-shelf-1-x-container){
   padding: 0;

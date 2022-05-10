@@ -1,0 +1,233 @@
+{
+    "store.custom#privacidad": {
+        "children": [
+            "image#privacidadImg",
+            "rich-text#privacidad",
+            "flex-layout.row#privacidad"
+        ]
+    },
+    // titulo de la pagina
+    "rich-text#privacidad": {
+        "props": {
+        "blockClass":"faqsTitulo",
+        "text": "## Politicas de privacidad"
+        }
+    },
+    "image#privacidadImg": {
+        "props": {
+          "src": "https://cutis.vtexassets.com/arquivos/banner.png",
+          "blockClass": "faqsImg"
+        }
+    },
+    "flex-layout.row#privacidad": {
+        "props": {
+          "blockClass": "faq"
+        },
+        "children": [
+          "flex-layout.col#privacidad",
+          "flex-layout.col#privacidad-1"
+        ]
+    },
+     // Primera columna de los privacidads
+     "flex-layout.col#privacidad": {
+        "props":{
+        "width":"30%",
+        "blockClass":"columna1"
+        },
+        "children": [
+            "disclosure-layout-group#privacidad"
+        ]
+    },
+    "disclosure-layout-group#privacidad": {
+        "children": [
+            "disclosure-layout#derechoprivacidad"
+        ]
+    },
+    // primer disclousare
+    "disclosure-layout#derechoprivacidad": {
+        "children": ["disclosure-trigger#derechoprivacidad", "disclosure-content#derechoprivacidad"]
+    },
+    "disclosure-trigger#derechoprivacidad": {
+        "props": {
+            "blockClass": "question",
+        "as": "div"
+        },
+        "children": ["rich-text#privacidad-titulo"]
+    },
+    "disclosure-content#derechoprivacidad": {
+        "props": {
+            "blockClass": "contenidoPoliticas"
+        },
+        "children": [
+            "rich-text#privacidad-content-1",
+            "rich-text#privacidad-content-2",
+            "rich-text#privacidad-content-3",
+            "rich-text#privacidad-content-4",
+            "rich-text#privacidad-content-5",
+            "rich-text#privacidad-content-6",
+            "rich-text#privacidad-content-7",
+            "rich-text#privacidad-content-8"
+        ]
+    },
+    "rich-text#privacidad-titulo": {
+        "props": {
+            "text": "Politicas de privacidad"
+        }
+    },
+    // contenido de los terminos y condiciones
+    "rich-text#privacidad-content-1": {
+        "props": {
+            "text": "[Terminos y condiciones](/terminos-y-condiciones)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#privacidad-content-2": {
+        "props": {
+            "text": "[Restablecer contraseña](/restablecer-contrasena)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#privacidad-content-3": {
+        "props": {
+            "text": "[Politica de privacidad](/politica-privacidad)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#privacidad-content-4": {
+        "props": {
+            "text": "[Accesos corporativos](/accesos-corporativos)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#privacidad-content-5": {
+        "props": {
+            "text": "[Protección de datos](/proteccion-datos)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#privacidad-content-6": {
+        "props": {
+            "text": "[Derecho al retracto](/derecho-de-retracto)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#privacidad-content-7": {
+        "props": {
+            "text": "[Faqs](/faq)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#privacidad-content-8": {
+        "props": {
+            "text": "[Quienes somos](/quienes-somos)",
+            "blockClass":"link-politicas"
+        }
+    },
+    // columna 2
+    "flex-layout.col#privacidad-1": {
+        "props":{
+            "width":"70%",
+            "blockClass":"columna2"
+        },
+        "children": [
+            "flex-layout.col#privacidadContent"
+        ]
+    },
+    // contenido del tab 1
+    "flex-layout.col#privacidadContent": {
+        "children": [
+            "flex-layout.row#rowPrivacidad",
+            "rich-text#privacidad-7",
+            "rich-text#privacidad-8"
+        ],
+        "props": {
+            "blockClass": "politicaContenedor"
+        }
+    },
+    "flex-layout.row#rowPrivacidad": {
+        "children": [
+            "flex-layout.col#row1",
+            "flex-layout.col#row2"
+        ],
+        "props": {
+          "blockClass": "contenedorPirvacidad"
+        }
+    },
+    "flex-layout.col#row1": {
+        "children": [
+            "rich-text#privacidad-1",
+            "rich-text#privacidad-2",
+            "rich-text#privacidad-3",
+            "rich-text#privacidad-4",
+            "rich-text#privacidad-5",
+            "rich-text#privacidad-6"
+        ],
+        "props": {
+          "blockClass": "contenedorPirvacidad"
+        }
+    },
+    "flex-layout.col#row2": {
+        "children": [
+            "image#imagenColumna-privacidad"
+        ],
+        "props": {
+            "width":"30%",
+            "blockClass": "contenedorPirvacidad"
+        }
+    },
+    // texto en columnas
+    "rich-text#privacidad-1": {
+        "props": {
+            "text": "CUTIS S.A.",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#privacidad-2": {
+        "props": {
+            "text": "en cumplimiento de la Ley 1581 de 2012, Decreto 1377 de 2013 y demás normas concordantes, es responsable del tratamiento de sus datos personales, en razón de ello, la información de carácter personal que CUTIS S.A. la solicita, serán utilizados entre otros, para los siguientes fines:",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#privacidad-3": {
+        "props": {
+            "text": "- Envío por cualquier medio (correo físico o electrónico, mensaje de whatsapp, mensaje de texto, redes sociales y similares) de: publicidad, mercadeo, información, comunicados, campañas, solicitudes, cotizaciones, productos, bienes y/o servicios, promoción de eventos.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#privacidad-4": {
+        "props": {
+            "text": "- Para el desarrollo de estadísticas, encuestas, sondeos de opinión, evaluaciones de calidad, auditorias, reportes e informes.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#privacidad-5": {
+        "props": {
+            "text": "- Registrar con fines de medición, estadísticos, control y de mejora en el rendimiento de la página web, todas las acciones que realicen los titulares, incluyendo visitas al sitio web, tiempo de permanencia, enlaces seleccionados, términos de búsqueda introducidos, y en general cualquier acción realizada dentro de la página web.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#privacidad-6": {
+        "props": {
+            "text": " - Las demás finalidades que surjan en el transcurso de las relaciones sostenidas con  CUTIS S.A. Según el tipo de información y vinculación y las que se encuentran descritas en la Política de Tratamiento y Protección de Datos Personales.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#privacidad-7": {
+        "props": {
+            "text": "Como titular de información tiene derecho a conocer, actualizar y rectificar sus datos personales y, sólo en los casos en que sea procedente, a suprimirlos o revocar la autorización otorgada para su tratamiento.",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#privacidad-8": {
+        "props": {
+            "text": "Si desea presentar una consulta, reclamo o petición de información relacionada con la protección de datos personales puede enviar comunicación escrita al correo electrónico calidad@cutiscol.com.co y mercadeo@cutiscol.com.co, o ingresar a la página web www.cutis.com.co en la opción de “Contáctenos” o comunicarse al teléfono en Cali (032) (4870040 opción extensión 210), o en la Sede Principal, Calle 7 # 31 - 41 en la ciudad de Cali",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "image#imagenColumna-privacidad": {
+        "props": {
+          "src": "https://storecomponents.vteximg.com.br/arquivos/box.png",
+          "maxHeight": 24
+        }
+    }
+}

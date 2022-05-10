@@ -3,22 +3,21 @@
   "menu#drawer": {
     "children": [
       "rich-text#tituloCategoriasDes",
-      "flex-layout.row#categoriaDestacada-1",
-      "flex-layout.row#categoriaDestacada-2",
-      "flex-layout.row#categoriaDestacada-3",
+      "flex-layout.row#allCategorys",
       "flex-layout.col#menus-items"
     ],
     "props": {
+      "blockClass":"menu-m",
       "orientation": "vertical"
     }
   },
   // Menus items
   "flex-layout.col#menus-items": {
     "children": [
-      "disclosure-layout#categoryAll",
+      "disclosure-layout#saleAll",
       "disclosure-layout#braandAll",
       "disclosure-layout#kitsAll",
-      "disclosure-layout#saleAll"
+      "disclosure-layout#iniciarSesionAll"
     ],
     "props": {
       "blockClass": "subMneusM"
@@ -27,188 +26,8 @@
   // Menus 
   "rich-text#tituloCategoriasDes": {
     "props": {
-      "text": "Categorías Destacadas",
+      "text": "Todas las categorías",
       "blockClass": "TItuloMenu"
-    }
-  },
-//   Imagenes categorias destacadas
-  "flex-layout.row#categoriaDestacada-1": {
-    "children": [
-        "flex-layout.col#categoriaDestacada-1",
-        "flex-layout.col#categoriaDestacada-2"
-    ],
-    "props": {
-      "blockClass": "categoriasDestacada"
-    }
-  },
-  "flex-layout.row#categoriaDestacada-2": {
-    "children": [
-        "flex-layout.col#categoriaDestacada2-1",
-        "flex-layout.col#categoriaDestacada2-2"
-    ],
-    "props": {
-      "blockClass": ["categoriasDestacada", "segundaFila"]
-    }
-  },
-  "flex-layout.row#categoriaDestacada-3": {
-    "children": [
-        "flex-layout.col#categoriaDestacada3-1",
-        "flex-layout.col#categoriaDestacada3-2"
-    ],
-    "props": {
-      "blockClass": ["categoriasDestacada", "terceraFila"]
-    }
-  },
-  "flex-layout.col#categoriaDestacada-1": {
-    "children": [
-      "image#PrimeraDestacada",
-      "rich-text#hombreCategory"
-    ],
-    "props": {
-      "width": "50%", 
-      "blockClass": "categoriasDestacada"
-    }
-  },
-  "rich-text#hombreCategory": {
-    "props": {
-      "text": "## Solar",
-      "blockClass": "tittleCategory"
-    }
-  },
-  "image#PrimeraDestacada": {
-    "props": {
-
-      "src": "https://cutis.vteximg.com.br/arquivos/solar-1.png",
-      "blockClass": "ImagCategoriaDest",
-      "link":{
-        "url":"/solares"
-      }
-    }
-  },
-  "flex-layout.col#categoriaDestacada-2": {
-    "children": [
-      "image#SegundaDestacada",
-      "rich-text#mujerCategory"
-    ],
-    "props": {
-        "width": "50%",
-        "blockClass": "categoriasDestacada"
-    }
-  },
-  "rich-text#mujerCategory": {
-    "props": {
-      "text": "## Capilar",
-      "blockClass": "tittleCategory"
-    }
-  },
-  "image#SegundaDestacada": {
-    "props": {
-      "src": "https://cutis.vteximg.com.br/arquivos/Capilar-1.png",
-      "blockClass": "ImagCategoriaDest",
-      "link":{
-        "url":"/capilar"
-      }
-    }
-  },
-  "flex-layout.col#categoriaDestacada2-1": {
-    "children": [
-      "image#TerceraDestacada",
-      "rich-text#Category1"
-    ],
-    "props": {
-        "width": "50%",
-        "blockClass": "categoriasDestacada"
-    }
-  },
-  "rich-text#Category1": {
-    "props": {
-      "text": "## Corporal",
-      "blockClass": "tittleCategory"
-    }
-  },
-  "image#TerceraDestacada": {
-    "props": {
-      "src": "https://cutis.vteximg.com.br/arquivos/corporal-1.png",
-      "blockClass": "ImagCategoriaDest",
-      "link":{
-        "url":"/corporal"
-      }
-    }
-  },
-  "flex-layout.col#categoriaDestacada2-2": {
-    "children": [
-      "image#cuartaDestacada",
-      "rich-text#Category2"
-    ],
-    "props": {
-        "width": "50%",
-        "blockClass": "categoriasDestacada"
-    }
-  },
-  "rich-text#Category2": {
-    "props": {
-      "text": "## Antiedad",
-      "blockClass": "tittleCategory"
-    }
-  },
-  "image#cuartaDestacada": {
-    "props": {
-      "src": "https://cutis.vteximg.com.br/arquivos/antiedad.png",
-      "blockClass": "ImagCategoriaDest",
-      "link":{
-        "url":"/rostro/antiedad"
-      }
-    }
-  },
-  // tercera linea 
-  "flex-layout.col#categoriaDestacada3-1": {
-    "children": [
-      "image#quintaDestacado",
-      "rich-text#Category-3-1"
-    ],
-    "props": {
-        "width": "50%",
-        "blockClass": "categoriasDestacada"
-    }
-  },
-  "rich-text#Category-3-1": {
-    "props": {
-      "text": "## Medicamentos",
-      "blockClass": "tittleCategory"
-    }
-  },
-  "image#quintaDestacado": {
-    "props": {
-      "src": "https://cutis.vteximg.com.br/arquivos/Medicamentos-1.png",
-      "blockClass": "ImagCategoriaDest",
-      "link":{
-        "url":"/medicamentos"
-      }
-    }
-  },
-  "flex-layout.col#categoriaDestacada3-2": {
-    "children": [
-      "image#sextaDestacada",
-      "rich-text#Category-3-2"
-    ],
-    "props": {
-        "width": "50%",
-        "blockClass": "categoriasDestacada"
-    }
-  },
-  "rich-text#Category-3-2": {
-    "props": {
-      "text": "## Maquillaje",
-      "blockClass": "tittleCategory"
-    }
-  },
-  "image#sextaDestacada": {
-    "props": {
-      "src": "https://cutis.vteximg.com.br/arquivos/maquillaje-1.png",
-      "blockClass": "ImagCategoriaDest",
-      "link":{
-        "url":"/maquillaje"
-      }
     }
   },
 //   Menu Items
@@ -233,10 +52,11 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "itemsPrincipales",
+      "blockClass": "sinFlecha",
       "itemProps": {
       "type": "internal",
       "noFollow": false,
+      "href":"/kits",
       "tagTitle": "Kits",
       "text": "Kits"
       }
@@ -272,21 +92,56 @@
       }
     }
   },
+  "menu-item#iniciarSesion":{
+    "props": {
+      "id": "menu-item-sale-home",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": [ "sinFlecha","iniciarSes"],
+      "itemProps": {
+      "type": "internal",
+      "noFollow": false,
+      "href":"/login",
+      "tagTitle": "sesion",
+      "text": "Iniciar Sesión"
+      }
+    }
+  },
   // Todas las kitd sub menu
   "disclosure-layout#kitsAll": {
     "children": ["disclosure-trigger#kitsAll","disclosure-content#kitsAll"],
     "props": {
-      "blockClass": "subMneusM"
+      "blockClass": ["subMneusM"]
     }
   },
   "disclosure-trigger#kitsAll": {
     "children": ["menu-item#kits"],
     "props": {
-      "blockClass": "subMneusMTrigger"
+      "blockClass": ["subMneusMTrigger"]
     }
   },
   "disclosure-content#kitsAll": {
     "children": ["disclosure-trigger#kitsAll"],
+    "props": {
+      "blockClass": "subMneusMContent"
+    }
+  },
+   // Todas las iniciar sesion sub menu
+   "disclosure-layout#iniciarSesionAll": {
+    "children": ["disclosure-trigger#iniciarSesionAll","disclosure-content#iniciarSesionAll"],
+    "props": {
+      "blockClass": ["subMneusM"]
+    }
+  },
+  "disclosure-trigger#iniciarSesionAll": {
+    "children": ["menu-item#iniciarSesion"],
+    "props": {
+      "blockClass": ["subMneusMTrigger"]
+    }
+  },
+  "disclosure-content#iniciarSesionAll": {
+    "children": ["disclosure-trigger#iniciarSesionAll"],
     "props": {
       "blockClass": "subMneusMContent"
     }

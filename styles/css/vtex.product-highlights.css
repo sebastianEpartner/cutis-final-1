@@ -7,7 +7,7 @@
 
 .productHighlightText{
   display: block;
-  margin-left: 5px;
+  margin-left: 0px;
   font-size: 0;
   background: transparent;
 
@@ -17,31 +17,201 @@
   background: url(/arquivos/SolLogo.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 30px;
-  height: 30px;
+  width: 26px;
+  height: 26px;
   font-size: 0;
   z-index: 9;
   display: block;
+  margin-top: -10px;
+}
+.productHighlightText[data-highlight-id="139"]::after{
+  content: "Aplicación en el día";
+  font-size: 11px;
+  opacity: 0;
+  transition: 400ms all;
+  background: #F6F9E8;
+  padding: 5px 5px;
+  position: absolute;
+  z-index: 0;
+  visibility: hidden;
+}
+.productHighlightText[data-highlight-id="139"]:hover::after {
+  opacity: 1;
+  visibility: visible;
+  z-index: 999;
+}
+.productHighlightText[data-highlight-id="138"]::before{
+  content: "";
+  background: url(/arquivos/akar-icons_moon-1.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 26px;
+  height: 26px;
+  font-size: 0;
+  z-index: 9;
+  display: block;
+  margin-top: -10px;
+}
+.productHighlightText[data-highlight-id="138"]::after{
+  content: "Aplicación en la noche";
+  font-size: 11px;
+  opacity: 0;
+  transition: 400ms all;
+  background: #F6F9E8;
+  padding: 5px 5px;
+  position: absolute;
+  z-index: 0;
+  visibility: hidden;
+}
+.productHighlightText[data-highlight-id="138"]:hover::after {
+  opacity: 1;
+  visibility: visible;
+  z-index: 999;
 }
 .productHighlightText[data-highlight-id="137"]::before{
   content: "";
-  background: url(/arquivos/newFlag.png);
+  background: url(/arquivos/nuevonewtag.png);
   background-repeat: no-repeat;
   background-size: 100%;
-  width: 49px;
-  height: 18px;
+  width: 53px;
+  height: 21px;
   font-size: 0;
   z-index: 9;
   display: block;
 }
 .productHighlightText[data-highlight-id="140"]::before{
   content: "";
-  background: url(/arquivos/flagNueva.png);
+  background: url(/arquivos/50Newtag.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  width: 39px;
+  background-size: 100%;
+  width: 45px;
   height: 46px;
   font-size: 0;
   z-index: 9;
   display: block;
+}
+/* cualquier momento */
+.productHighlightText[data-highlight-id="141"]::before{
+  content: "";
+  background: url(/arquivos/bi_sun.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  z-index: 9;
+  display: block;
+  margin-top: -10px;
+}
+.productHighlightText[data-highlight-id="141"]::after{
+  content: "Aplicación en cualquier momento";
+  font-size: 11px;
+  opacity: 0;
+  transition: 400ms all;
+  background: #F6F9E8;
+  padding: 5px 5px;
+  position: absolute;
+  z-index: 0;
+  visibility: hidden;
+}
+.productHighlightText[data-highlight-id="141"]:hover::after {
+  opacity: 1;
+  visibility: visible;
+  z-index: 999;
+}
+/* pluma */
+.productHighlightText[data-highlight-id="142"]::before{
+  content: "";
+  background: url(/arquivos/pluma.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  z-index: 9;
+  display: block;
+  margin-top: -10px;
+}
+.productHighlightText[data-highlight-id="142"]::after{
+  content: "Muestra";
+  font-size: 11px;
+  opacity: 0;
+  transition: 400ms all;
+  background: #F6F9E8;
+  padding: 5px 5px;
+  position: absolute;
+  z-index: 0;
+  visibility: hidden;
+}
+.productHighlightText[data-highlight-id="142"]:hover::after {
+  opacity: 1;
+  visibility: visible;
+  z-index: 999;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--contenedorImagenes) .productHighlightText[data-highlight-id="137"]::before{
+  display: none;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--contenedorImagenes) .productHighlightText[data-highlight-id="141"]::before{
+  display: none;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--contenedorImagenes) .productHighlightText[data-highlight-id="142"]::before{
+  display: none;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--contenedorImagenes) .productHighlightText[data-highlight-id="140"]::before{
+  width: 55px;
+  height: 52px;
+  margin-top: 15px;
+}
+@media (max-width: 600px) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--contenedorImagenesM) .productHighlightWrapper[data-highlight-id="137"]{
+    display: none;
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--contenedorImagenesM) .productHighlightWrapper[data-highlight-id="141"]{
+    display: none;
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--contenedorImagenesM) .productHighlightWrapper[data-highlight-id="142"]{
+    display: none;
+  }
+  :global(.vtex-flex-layout-0-x-flexRowContent--contenedorImagenesM) .productHighlightText[data-highlight-id="140"]::before{
+    width: 55px;
+    height: 52px;
+    margin-top: 15px;
+  }
+  .productHighlightWrapper--collection {
+    position: relative;
+  }
+  .productHighlightText{
+    margin-left: 0px;
+  }
+  .productHighlightText[data-highlight-id="137"]::before{
+    margin-left: -3px;
+  }
+  .productHighlightWrapper--collection[data-highlight-id="141"]:hover {
+    background: red;
+  }
+  .productHighlightText[data-highlight-id="139"]:hover::after {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+  }
+  .productHighlightText[data-highlight-id="142"]:hover::after {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+  }
+  .productHighlightText[data-highlight-id="141"]:hover::after {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+  }
+  .productHighlightText[data-highlight-id="138"]:hover::after {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+  }
+  :global(.vtex-product-summary-2-x-clearLink--vitrineCarrito) .productHighlightText[data-highlight-id="140"] {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 999;
+  }
 }

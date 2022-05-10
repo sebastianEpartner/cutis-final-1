@@ -3,19 +3,19 @@
     "disclosure-layout#saleAll": {
         "children": ["disclosure-trigger#saleAll","disclosure-content#saleAll"],
         "props": {
-            "blockClass": "subMneusM"
+            "blockClass": ["subMneusM","ofertas"]
         }
     },
     "disclosure-trigger#saleAll": {
         "children": ["menu-item#saleMobile"],
         "props": {
-            "blockClass": "subMneusMTrigger"
+            "blockClass": ["subMneusMTrigger","menusPrincipal","ofertas"]
         }
     },
     "disclosure-content#saleAll": {
         "children": ["disclosure-trigger#saleAll","flex-layout.row#saleM"],
         "props": {
-            "blockClass": "subMneusMContent"
+            "blockClass":[ "subMneusMContent","menuOfertas"]
         }
     },
     "flex-layout.row#saleM": {
@@ -45,9 +45,9 @@
     },
     "image#saleItem1": {
         "props": {
-        "src": "https://cutis.vteximg.com.br/arquivos/avene.png",
+        "src": "https://cutis.vteximg.com.br/arquivos/aveneNewIcon.png",
         "link": {
-            "url": "/"
+            "url": "/avene"
         },
         "blockClass":"categoryIMG"
         }
@@ -71,9 +71,9 @@
     },
     "image#saleItem2": {
         "props": {
-        "src": "https://cutis.vteximg.com.br/arquivos/bioderma.png",
+        "src": "https://cutis.vteximg.com.br/arquivos/bioderma2-newlogo.png",
         "link": {
-            "url": "/"
+            "url": "/biodermas"
         },
         "blockClass":"categoryIMG"
         }
@@ -98,9 +98,9 @@
     },
     "image#saleItem3": {
         "props": {
-        "src": "https://cutis.vteximg.com.br/arquivos/almay.png",
+        "src": "https://cutis.vteximg.com.br/arquivos/almayNewIcon.png",
         "link": {
-            "url": "/"
+            "url": "/almay"
         },
         "blockClass":"categoryIMG"
         }
@@ -125,9 +125,9 @@
     },
     "image#saleItem4": {
         "props": {
-        "src": "https://cutis.vteximg.com.br/arquivos/uriage.png",
+        "src": "https://cutis.vteximg.com.br/arquivos/uriageNewIcon.png",
         "link": {
-            "url": "/"
+            "url": "/uriage"
         },
         "blockClass":"categoryIMG"
         }
@@ -152,9 +152,9 @@
     },
     "image#saleItem5": {
         "props": {
-        "src": "https://cutis.vteximg.com.br/arquivos/pharma.png",
+        "src": "https://cutis.vteximg.com.br/arquivos/pharmadermNewicon.png",
         "link": {
-            "url": "/"
+            "url": "/pharna"
         },
         "blockClass":"categoryIMG"
         }
@@ -179,9 +179,9 @@
     },
     "image#saleItem6": {
         "props": {
-        "src": "https://cutis.vteximg.com.br/arquivos/laroche.png",
+        "src": "https://cutis.vteximg.com.br/arquivos/larocheposayNewIcon.png",
         "link": {
-            "url": "/"
+            "url": "/la-roche-posey"
         },
         "blockClass":"categoryIMG"
         }

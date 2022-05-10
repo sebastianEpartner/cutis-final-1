@@ -1,12 +1,44 @@
-.drawer {
-    width: 100% !important;
+.drawer--menu-m  {
+    width: 100%!important;
+    background: transparent;
+    height: 100%;
+    top: 0px;
+    z-index: 999999999;
+}
+.drawer--menu-m .closeIconButton {
+    background: white;
+    margin-top: 6px;
+}
+.closeIcon--menu-m{
+    color: black;
+}
+.openIconContainer{
+    margin-right: 10px;
+}
+.overlay--visible {
+    height: 100%;
+    bottom: 0!important;
+    top: 0px;
+}
+.childrenContainer {
     background: white;
 }
-:global(.vtex-store-drawer-0-x-closeIconButton){
-    top: -68px;
+.openIconContainer::before {
+    content: "";
+    background: url(/arquivos/Group.png) no-repeat;
+    background-size: 100%;
+    display: block;
+    width: 30px;
+    height: 26px;
+}
+.menuIcon {
+    display: none;
+}
+/* .closeIconContainer {
+    top: -30px;
     z-index: 99999999;
-    position: absolute;
-    width: 40px;
-    height: 40px;
+    position: fixed;
+    width: 51px;
+    height: 47px;
     background: white;
-}
+} */

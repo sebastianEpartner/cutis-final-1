@@ -27,15 +27,15 @@
       "height":720,
       "images": [
         {
-          "image": "https://cutis.vteximg.com.br/arquivos/banner-principal-desk.png",
-          "mobileImage": "https://cutis.vteximg.com.br/arquivos/banner-principal-mobile.png",
+          "image": "https://cutis.vteximg.com.br/arquivos/banner-principal1-desk.jpg",
+          "mobileImage": "https://cutis.vteximg.com.br/arquivos/banner-principal1-mobile.jpg",
           "link":{
             "url":"/"
           }
         },
         {
-          "image": "https://cutis.vteximg.com.br/arquivos/banner-principal-desk.png",
-          "mobileImage": "https://cutis.vteximg.com.br/arquivos/banner-principal-mobile.png",
+          "image": "https://cutis.vteximg.com.br/arquivos/banner-principal2-desk.jpg",
+          "mobileImage": "https://cutis.vteximg.com.br/arquivos/banner-principal2-mobile.jpg",
           "link":{
             "url":"/"
           }
@@ -57,7 +57,7 @@
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
       "showPaginationDots":"false",
-      "blockClass": "carousel"
+      "blockClass": ["carousel","principalCarousel"]
     }
   },
   // banners slider descuento
@@ -67,7 +67,7 @@
       "height":720,
       "images": [
         {
-          "image": "https://cutis.vteximg.com.br/arquivos/banner-descuento-desk.png",
+          "image": "https://cutis.vteximg.com.br/arquivos/descuentosNewBanner.png",
           "mobileImage": "https://cutis.vteximg.com.br/arquivos/banner-descuento-mobile.png",
           "link":{
             "url":"/"
@@ -90,10 +90,6 @@
         "tablet": 1,
         "phone": 1
       },
-      "autoplay":{
-        "timeout": 3000,
-        "stopOnHover": true
-      },
       "infinite": true,
       "showNavigationArrows": "never",
       "showPaginationDots":"false",
@@ -104,7 +100,7 @@
   "rich-text#shelf-title": {
     "props": {
       "text": "## Productos Nuevos",
-      "blockClass": "shelfTitle"
+      "blockClass": ["shelfTitle","decorativo"]
     }
   },
 
@@ -115,8 +111,8 @@
       "textPosition": "left",
       "imageUrl": "https://cutis.vteximg.com.br/arquivos/Group%201202.png",
       "mobileImageUrl":"https://cutis.vteximg.com.br/arquivos/infocardHome.png",
-      "headline": "ABSORB-K 30 GR",
-      "subhead": "Ejerce una acción protectora y\n restaurdora del equilibrio natural de\n la estructura dérmica\n",
+      "headline": "Fotoprotector ISDIN Fusion Water",
+      "subhead": "El fotoprotector ideal para disfrutar del sol durante las actividades al aire libre.",
       "callToActionText": "Comprar ahora",
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-home",
@@ -130,15 +126,74 @@
   "responsive-layout.desktop#InfoProduct": {
     "children": ["flex-layout.row#ProductoInfo"]
   },
+
+  // vitrina prodyyucto destacado producto
+  // version Mobile
   "flex-layout.row#ProductoInfoM": {
     "children": [
-        "flex-layout.col#infoProduct3",
-        "flex-layout.col#infoProduct1"
+      "flex-layout.col#ProductoInfoM"
     ],
     "props": {
       "blockClass": "ProductInfoHome"
     }
   },
+  // contenedor 1
+  "flex-layout.col#ProductoInfoM": {
+    "children": [
+      "flex-layout.row#ImagenesPasos"
+    ],
+    "props": {
+      "blockClass": "ProductInfoHome"
+    }
+  },
+  "flex-layout.row#ImagenesPasos": {
+    "children": [
+      "rich-text#infoProductTitle",
+      "flex-layout.row#contenedorRow",
+      "rich-text#infoProductCallAction"
+    ],
+    "props": {
+      "blockClass": "ProductInfoHomeM"
+    }
+  },
+  "flex-layout.row#contenedorRow": {
+    "children": [
+      "flex-layout.col#infoProduct1M",
+      "flex-layout.col#infoProduct2M"
+    ],
+    "props": {
+      "blockClass": "flexContenedor"
+    }
+  },
+  // columna 1
+  "flex-layout.col#infoProduct1M": {
+    "children": [
+      "image#productImageInfo1M"
+    ],
+    "props": {
+      "blockClass": "infoProductColumn1"
+    }
+  },
+  "image#productImageInfo1M": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/imagenbordeada.png",
+      "blockClass": "imgInfoProductM"
+    }
+  },
+  // columna 2
+  "flex-layout.col#infoProduct2M": {
+    "children": [
+      "rich-text#infoProductTitle",
+      "rich-text#infoProductStep2",
+      "rich-text#infoProductStep1",
+      "rich-text#infoProductStep3"
+    ],
+    "props": {
+      "blockClass": "infoProductColumn"
+    }
+  },
+
+  // estructura para desktop
   "flex-layout.row#ProductoInfo": {
     "children": [
         "flex-layout.col#infoProduct1",
@@ -154,6 +209,7 @@
       "image#productImageInfo1"
     ],
     "props": {
+      "width":"35%",
       "blockClass": "infoProductColumn"
     }
   },
@@ -168,20 +224,21 @@
       "image#productImageInfo2"
     ],
     "props": {
+      "width":"35%",
       "blockClass": "infoProductColumn"
     }
   },
   "image#productImageInfo2": {
     "props": {
-      "src": "https://cutis.vtexassets.com/arquivos/Rectangle-446.png",
+      "src": "https://cutis.vtexassets.com/arquivos/sesvitamin-desk2-1111.png",
       "blockClass": "imgInfoProduct"
     }
   },
   "flex-layout.col#infoProduct3": {
     "children": [
       "rich-text#infoProductTitle",
-      "rich-text#infoProductStep1",
       "rich-text#infoProductStep2",
+      "rich-text#infoProductStep1",
       "rich-text#infoProductStep3",
       "rich-text#infoProductCallAction"
     ],
@@ -191,31 +248,31 @@
   },
   "rich-text#infoProductTitle": {
     "props": {
-      "text": "Cicalfate +",
+      "text": "Sesvitamin C Liposomal Serum 30 ml Sesderma",
       "blockClass": ["tituloSlideCategory", "titulosInfoProduct"]
     }
   },
   "rich-text#infoProductStep1": {
       "props": {
-        "text": "Paso 1\n Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto",
+        "text": "Paso 2\n A continuación, aplica unas gotas de C-VIT Liposomal Serum con un suave masaje, por todo el rostro, el cuello y el escote.",
         "blockClass": ["contenidoSlideCategory", "infoProductContent"]
       }
   },
   "rich-text#infoProductStep2": {
     "props": {
-      "text": "Paso 2\n Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto",
+      "text": "Paso 1\n Limpia la piel con tu Sensyses favorito o Hidraven crema espumosa sin jabón, si prefieres limpieza con agua.",
       "blockClass": ["contenidoSlideCategory", "infoProductContent"]
     }
   },
   "rich-text#infoProductStep3": {
     "props": {
-      "text": "Paso 3\n Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto",
+      "text": "Paso 3 \nPuedes usarlo tanto por la mañana como por la noche, durante todo el año, incluso en verano.",
       "blockClass": ["contenidoSlideCategory", "infoProductContent"]
     }
   },
   "rich-text#infoProductCallAction": {
     "props": {
-      "text": "[Comprar ahora](/)",
+      "text": "[Comprar producto ahora](/)",
       "blockClass": ["contenidoSlideCategory", "infoProductContent"]
     }
   },
@@ -226,7 +283,7 @@
         "flex-layout.col#vitrinaDestacada2"
     ],
     "props": {
-      "blockClass": "vitrinadestacada1"
+      "blockClass": "vitrinadestacada1-1"
     }
   },
   "flex-layout.col#vitrinaDestacada1": {
@@ -242,7 +299,7 @@
   "image#vitrinaDestacada1": {
     "props": {
       "src": "https://cutis.vtexassets.com/arquivos/cuidadoPiel-1.png",
-      "blockClass": "imgInfoProduct"
+      "blockClass": "cuidadoPiel"
     }
   },
   "image#vitrinaDestacada1M": {
@@ -261,49 +318,64 @@
     "children": [
       "rich-text#vitrinaDestacada1",
       "rich-text#vitrinaDestacada2",
-      "shelf#demo10"
+      "list-context.product-list#destacados"
     ],
     "props": {
       "paddingLeft": "20px",
-      "width":"80%",
+      "width":"79%",
       "blockClass": "column2vitrinaDestacado2"
     }
   },
   "rich-text#vitrinaDestacada1": {
     "props": {
-      "text": "Cuidado en la piel",
+      "text": "Productos para cuidar tu piel",
       "blockClass": ["tituloSlideCategory", "tituloVitrinaDestacada"]
     }
   },
   "rich-text#vitrinaDestacada2": {
     "props": {
-      "text": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y\n archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las \n industrias desde el año 1500",
+      "text": "Conoce todos nuestros productos para el cuidado facial",
       "blockClass": ["contenidoSlideCategory","vitrinaDestacada"]
     }
   },
-  "shelf#demo10": {
+  "list-context.product-list#destacados": {
     "blocks": ["product-summary.shelf#2"],
-    "props": {
-      "id": "coleccion7",
-      "productList": {
-        "maxItems": 10,
-        "itemsPerPage": 4,
-        "minItemsPerPage": 2,
-        "scroll": "BY_PAGE",
-        "arrows": "true",
-        "blockClass": "vitrinaDestacada1",
-        "showPaginationDots": "never"
+    "children": ["slider-layout#demo-destacados"]
+  },
+  "slider-layout#demo-destacados": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 4,
+          "tablet": 3,
+          "phone": 2
+        },
+        "infinite": true,
+        "fullWidth": false,
+        "blockClass": ["shelf","destacados"],
+        "showPaginationDots":"mobileOnly",
+        "showNavigationArrows": "desktopOnly"
       }
-    }
   },
   // BANNER DOS 
   "flex-layout.row#Bannerdos": {
     "children": [
-      "slider-layout#banner2"
-    ],
+      "flex-layout.col#Bannerdos"
+    ],  
+    "props": {
+      "blockClass": "vitrinadestacada1-1"
+    }
+  },
+  "flex-layout.col#Bannerdos": {
+    "children": [
+      "responsive-layout.desktop#bannerdos",
+      "responsive-layout.phone#bannerDosm"
+    ],  
     "props": {
       "blockClass": "vitrinadestacada1"
     }
+  },
+  "responsive-layout.desktop#bannerdos": {
+    "children": ["slider-layout#banner2"]
   },
   "slider-layout#banner2": {
     "props": {
@@ -323,7 +395,7 @@
   "image#bannerdos-1": {
     "props": {
       "src": "https://cutis.vteximg.com.br/arquivos/Banner2-1.png",
-      "blockClass": "imgBanner-2",
+      "blockClass": ["imgBanner-2","imagen2-1"],
       "link":{
         "url":"/"
       }
@@ -331,8 +403,44 @@
   },
   "image#bannerdos-2": {
     "props": {
-      "src": "https://cutis.vteximg.com.br/arquivos/imagenbanner2-2.png",
-      "blockClass": "imgBanner-2",
+      "src": "https://cutis.vteximg.com.br/arquivos/bannder-secundario1-desk-new.png",
+      "blockClass": ["imgBanner-2","imagen2-2"],
+      "link":{
+        "url":"/"
+      }
+    }
+  },
+  "responsive-layout.phone#bannerDosm": {
+    "children": ["slider-layout#banner2M"]
+  },
+  "slider-layout#banner2M": {
+    "props": {
+      "height": 720,
+      "itemsPerPage": {
+        "desktop": 2,
+        "tablet": 2,
+        "phone": 1
+      },
+      "infinite": true,
+      "blockClass": "banner2Carousel",
+      "showPaginationDots":"false",
+      "showNavigationArrows":"mobileOnly"
+    },
+    "children": ["image#bannerdos-1M","image#bannerdos-2M"]
+  },
+  "image#bannerdos-1M": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/bannder-secundario1-mobile.png",
+      "blockClass": ["imgBanner-2","imagen2-1"],
+      "link":{
+        "url":"/"
+      }
+    }
+  },
+  "image#bannerdos-2M": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/bannder-secundario1-mobile-new.png",
+      "blockClass": ["imgBanner-2","imagen2-2"],
       "link":{
         "url":"/"
       }
@@ -340,8 +448,8 @@
   },
   "rich-text#shelf-tittle-Vitrinafinal": {
     "props": {
-      "text": "## Productos destacados",
-      "blockClass": "shelfTitle"
+      "text": "## Rutinas destacados",
+      "blockClass": ["shelfTitle","decorativo"]
     }
   },
   // VITRINA TRES PRODUCTOS
@@ -435,7 +543,7 @@
   },
   // Vitrina tres mobile
   "responsive-layout.mobile#vitrinaTres": {
-    "children": ["shelf#mobileVitrina-1","rich-text#shelf-tittle-Vitrinafinal","shelf#mobileVitrina2"]
+    "children": ["shelf#mobileVitrina-1","list-context.product-list#mobileDest2"]
   },
   "shelf#mobileVitrina-1": {
     "blocks": ["product-summary.shelf#2"],
@@ -447,25 +555,27 @@
         "minItemsPerPage": 1,
         "scroll": "BY_PAGE",
         "arrows": "true",
-        "blockClass": "mobileVitrina",
         "showPaginationDots": "never"
-      }
+      },
+      "blockClass": "mobileVitrinaTres"
     }
   },
-  "shelf#mobileVitrina2": {
-    "blocks": ["product-summary.shelf#2"],
-    "props": {
-      "id": "coleccion7",
-      "productList": {
-        "maxItems": 2,
-        "itemsPerPage": 2,
-        "minItemsPerPage": 2,
-        "scroll": "BY_PAGE",
-        "arrows": "true",
-        "showNavigationArrows":"never",
-        "blockClass": "mobileVitrina",
-        "showPaginationDots": "never"
+  "list-context.product-list#mobileDest2": {
+    "blocks": ["product-summary.shelf#3"],
+    "children": ["slider-layout#mobileDest2"]
+  },
+  "slider-layout#mobileDest2": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true,
+        "fullWidth": false,
+        "blockClass": ["shelf","horizontalVitrine"],
+        "showPaginationDots":"mobileOnly",
+        "showNavigationArrows": "never"
       }
-    }
   }
 }

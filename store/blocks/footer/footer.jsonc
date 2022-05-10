@@ -5,7 +5,8 @@
   "footer-layout.desktop": {
     "children": [
       "flex-layout.row#footer-1-desktop",
-      "flex-layout.row#footer-2-desktop"
+      "flex-layout.row#footer-3-desktop",
+      "flex-layout.row#columnasSticky"
     ]
   },
   "flex-layout.row#footer-1-desktop": {
@@ -23,7 +24,8 @@
   "flex-layout.col#footer-0-desktop": {
     "children": [
       "image#logoNews",
-      "tab-layout#home"
+      "tab-layout#home",
+      "flex-layout.row#footer-2-desktop"
     ],
     "props": {
       "blockClass": ["firstColumn"]
@@ -60,7 +62,7 @@
   "image#logoNews": {
     "props": {
       "src": "https://cutis.vtexassets.com/arquivos/LogoNews.png",
-      "blockClass": ["imgInfoProduct","imgfooter"]
+      "blockClass": ["imgfooter"]
     }
   },
   "newsletter-submit":{
@@ -140,8 +142,7 @@
     },
     "tab-content.item#home2": {
       "children": [
-        "vtex.menu@2.x:menu#Products",
-        "vtex.menu@2.x:menu#footer-bags"
+        "vtex.menu@2.x:menu#quienes-somos"
       ],
       "props": {
         "tabId": "home2",
@@ -160,8 +161,8 @@
     },
     "tab-content.item#home4": {
       "children": [
-        "vtex.menu@2.x:menu#Products",
-        "vtex.menu@2.x:menu#footer-bags"
+        "vtex.menu@2.x:menu#mas-info",
+        "vtex.menu@2.x:menu#mas-info-2"
       ],
       "props": {
         "tabId": "home4", 
@@ -191,17 +192,91 @@
       ]
     }
   },
-
+  // llamados para el institucional
   "flex-layout.row#footer-2-desktop": {
-    "children": ["rich-text#footer"],
+    "children": ["rich-text#footer-1","rich-text#footer-2","rich-text#footer-3","rich-text#footer-4"],
     "props": {
       "blockClass": "credits"
     }
   },
-  "rich-text#footer": {
+  "rich-text#footer-1": {
     "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
+      "text": "[Términos y condiciones](/terminos-y-condiciones)",
       "blockClass": "footer"
+    }
+  },
+  "rich-text#footer-2": {
+    "props": {
+      "text": "[Protección de datos](/proteccion-datos)",
+      "blockClass": "footer"
+    }
+  },
+  "rich-text#footer-3": {
+    "props": {
+      "text": "[Politicas de privacidad](/politica-privacidad)",
+      "blockClass": "footer"
+    }
+  },
+  "rich-text#footer-4": {
+    "props": {
+      "text": "[Acceso corporativo](/accesos-corporativos)",
+      "blockClass": "footer"
+    }
+  },
+  // flex row medios de pagos
+  "flex-layout.row#footer-3-desktop": {
+    "children": ["rich-text#reservados","image#medios"],
+    "props": {
+      "blockClass": "mediosPagos"
+    }
+  },
+  "rich-text#reservados": {
+    "props": {
+      "text": "Todos los derechos reservados",
+      "blockClass": "footer"
+    }
+  },
+  "image#medios": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/pagosFinal.png",
+      "blockClass": ["pagosMedios"]
+    }
+  },
+  // sticky footer para whastApp y descuento
+  "flex-layout.row#columnasSticky":{
+    "props":{
+        "blockClass": "bannersFooter"
+    },
+    "children": [
+      "flex-layout.col#columnasSticky"
+    ]
+  },
+  "flex-layout.col#columnasSticky":{
+    "props":{
+      "blockClass": "bannersFooter"
+    },
+    "children": [
+      "image#banner-desct-1",
+      "image#banner-whats"
+    ]
+  },
+  "image#banner-desct-1": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/bannergratis.png",
+      "link":{
+        "url":"https://api.whatsapp.com/send?phone=573505388657",
+        "newTab":true
+      }
+    }
+  },
+  "image#banner-whats": {
+    "props": {
+      "blockClass":"Whast",
+      "src": "https://cutis.vteximg.com.br/arquivos/bi_whatsapp.png",
+      "link":{
+        "url":"https://api.whatsapp.com/send?phone=573505388657",
+        "newTab":true
+      }
     }
   }
 }

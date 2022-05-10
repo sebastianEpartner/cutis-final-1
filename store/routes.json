@@ -16,5 +16,20 @@
   },
   "store.custom#corpotativo": {
     "path": "/accesos-corporativos"
+  },
+  "store.custom#tyc": {
+    "path": "/terminos-y-condiciones"
+  },
+  "store.custom#contrasena": {
+    "path": "/restablecer-contrasena"
+  },
+  "store.custom#privacidad": {
+    "path": "/politica-privacidad"
+  },
+  "store.custom#tiendas": {
+    "path": "/nuestras-tiendas"
+  },
+  "store.custom#product-comparison-list": {
+    "path": "/product-comparison"
   }
 }

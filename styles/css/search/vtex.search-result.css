@@ -26,3 +26,81 @@
 .filterPopupTitle {
     color: #27AFE5;
 }
+.galleryLayoutOptionButton--selected{
+    background: transparent;
+}
+.galleryLayoutOptionButton{
+    background: transparent;
+    padding: 0;
+    margin: 0 5px;
+}
+.galleryLayoutOptionButton.galleryLayoutOptionButton--selected:first-child::before{
+    content: "";
+    background: url(/arquivos/LogoCincoSelect-hover.png);
+    background-size: cover;
+    width: 43px;
+    height: 17px;
+    display: block;
+}
+.galleryLayoutOptionButton:first-child::before{
+    content: "";
+    background: url(/arquivos/LogoCincoSelect.png);
+    background-size: cover;
+    width: 43px;
+    height: 17px;
+    display: block;
+}
+.galleryLayoutOptionButton:last-child::before{
+    content: "";
+    background: url(/arquivos/logoCuatroSelect.png);
+    background-size: cover;
+    width: 34px;
+    height: 17px;
+    display: block;
+}
+.galleryLayoutOptionButton.galleryLayoutOptionButton--selected:last-child::before{
+    content: "";
+    background: url(/arquivos/logoCuatroSelect-hover.png);
+    background-size: 100%;
+    width: 34px;
+    height: 17px;
+    display: block;
+}
+@media (max-width: 700px) {
+    .galleryLayoutOptionButton:first-child::before{
+        content: "";
+        background: url(https://epartner.vteximg.com.br/arquivos/mobileDosNewIcon.png);
+        background-size: cover;
+        width: 24px;
+        height: 27px;
+        display: block;
+    }
+    .galleryLayoutOptionButton:last-child::before{
+        content: "";
+        background: url(https://epartner.vteximg.com.br/arquivos/mobileUnoNewIcon.png);
+        background-size: cover;
+        width: 23px;
+        height: 27px;
+        display: block;
+    } 
+    .galleryLayoutOptionButton.galleryLayoutOptionButton--selected:first-child::before{
+        content: "";
+        background: url(https://epartner.vteximg.com.br/arquivos/mobileDosAzulNewIcon.png);
+        background-size: cover;
+        width: 24px;
+        height: 27px;
+        display: block;
+    }
+    .galleryLayoutOptionButton.galleryLayoutOptionButton--selected:last-child::before{
+        content: "";
+        background: url(https://epartner.vteximg.com.br/arquivos/mobileUnoAzulNewicon.png);
+        background-size: 100%;
+        width: 23px;
+        height: 27px;
+        display: block;
+    }
+    .galleryTitle--layout {
+        font-size: 25px;
+        margin-top: 0;
+    }
+}

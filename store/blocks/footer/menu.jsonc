@@ -1,0 +1,507 @@
+{
+  "vtex.menu@2.x:menu#Products": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#rostro",
+      "menu-item#solares",
+      "menu-item#maquillaje",
+      "menu-item#capilar",
+      "menu-item#corporal",
+      "menu-item#Medicamentos"
+    ]
+  },
+  "menu-item#rostro": {
+    "props": {
+      "id": "menu-item-rostro",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/rostro",
+        "noFollow": false,
+        "tagTitle": "Rostro",
+        "text": "Rostro"
+      }
+    }
+  },
+  "menu-item#solares": {
+    "props": {
+      "id": "menu-item-black-solares",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/solares",
+        "noFollow": false,
+        "tagTitle": "Solares",
+        "text": "Solares"
+      }
+    }
+  },
+  "menu-item#maquillaje": {
+    "props": {
+      "id": "menu-item-maquillaje",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/maquillaje",
+        "noFollow": false,
+        "tagTitle": "Maquillaje",
+        "text": "Maquillaje"
+      }
+    }
+  },
+  "menu-item#capilar": {
+    "props": {
+      "id": "menu-item-capilar",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/capilar",
+        "noFollow": false,
+        "tagTitle": "Capilar",
+        "text": "Capilar"
+      }
+    }
+  },
+  "menu-item#corporal": {
+    "props": {
+      "id": "menu-item-corporal",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/corporal",
+        "noFollow": false,
+        "tagTitle": "Corporal",
+        "text": "Corporal"
+      }
+    }
+  },
+  "menu-item#Medicamentos": {
+    "props": {
+      "id": "menu-item-medicamentos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/medicamentos",
+        "noFollow": false,
+        "tagTitle": "Medicamentos",
+        "text": "Medicamentos"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-bags": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#kitsDesk",
+      "menu-item#marcasdesk",
+      "menu-item#nuevos",
+      "menu-item#destacados"
+    ]
+  },
+
+  "menu-item#kitsDesk": {
+    "props": {
+      "id": "menu-item-kits",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/kits",
+        "noFollow": true,
+        "tagTitle": "Kits",
+        "text": "Kits"
+      }
+    }
+  },
+
+  "menu-item#marcasdesk": {
+    "props": {
+      "id": "menu-item-marcas",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/marcas",
+        "noFollow": true,
+        "tagTitle": "Marcas",
+        "text": "Marcas"
+      }
+    }
+  },
+
+  "menu-item#nuevos": {
+    "props": {
+      "id": "menu-item-nuevoos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Productos Nuevos",
+        "text": "Productos Nuevos"
+      }
+    }
+  },
+  "menu-item#destacados": {
+    "props": {
+      "id": "menu-item-destacados",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/",
+        "noFollow": true,
+        "tagTitle": "Productos Destacados",
+        "text": "Productos Destacados"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#footer-clothing": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#clothing",
+      "menu-item#shorts",
+      "menu-item#tank-tops",
+      "menu-item#shirts",
+      "menu-item#sweatshirt",
+      "menu-item#cropped"
+    ]
+  },
+
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#clothing-mobile",
+      "menu-item#sale-mobile"
+    ]
+  },
+
+  "menu-item#clothing-mobile": {
+    "props": {
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Clothing",
+        "text": "Clothing"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#clothing"]
+  },
+  "vtex.menu@2.x:submenu.accordion#clothing": {
+    "children": ["vtex.menu@2.x:menu#clothing-accordion"]
+  },
+
+  "vtex.menu@2.x:menu#clothing-accordion": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#shorts",
+      "menu-item#tank-tops",
+      "menu-item#shirts",
+      "menu-item#sweatshirt",
+      "menu-item#cropped"
+    ]
+  },
+
+
+  "menu-item#sale-mobile": {
+    "props": {
+      "itemProps": {
+        "tagTitle": "Sale",
+        "text": "Sale"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#sale"]
+  },
+  "vtex.menu@2.x:submenu.accordion#sale": {
+    "children": ["vtex.menu@2.x:menu#footer-sale-mobile"]
+  },
+
+  "vtex.menu@2.x:menu#footer-sale-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+
+    ]
+  },
+
+  "menu-item#clothing": {
+    "props": {
+      "id": "menu-item-category-clothing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/d",
+        "noFollow": true,
+        "tagTitle": "Clothing",
+        "text": "Clothing"
+      }
+    }
+  },
+
+  "menu-item#shorts": {
+    "props": {
+      "id": "menu-item-shorts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/shorts",
+        "noFollow": false,
+        "tagTitle": "Shorts",
+        "text": "Shorts"
+      }
+    }
+  },
+
+  "menu-item#tank-tops": {
+    "props": {
+      "id": "menu-item-tank-tops",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/tank-tops",
+        "noFollow": false,
+        "tagTitle": "Tank tops",
+        "text": "Tank tops"
+      }
+    }
+  },
+
+  "menu-item#shirts": {
+    "props": {
+      "id": "menu-item-shirts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/shirts",
+        "noFollow": false,
+        "tagTitle": "Shirts",
+        "text": "Shirts"
+      }
+    }
+  },
+
+  "menu-item#sweatshirt": {
+    "props": {
+      "id": "menu-item-sweat-shirts",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/sweatshirt",
+        "noFollow": false,
+        "tagTitle": "Sweatshirt",
+        "text": "Sweatshirt"
+      }
+    }
+  },
+
+  "menu-item#cropped": {
+    "props": {
+      "id": "menu-item-cropped",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/clothing/cropped",
+        "noFollow": false,
+        "tagTitle": "Cropped",
+        "text": "Cropped"
+      }
+    }
+  },
+  // menu para el quienes somos 
+  "vtex.menu@2.x:menu#quienes-somos": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#Quienes-Somos"
+    ]
+  },
+  "menu-item#Quienes-Somos": {
+    "props": {
+      "id": "menu-item-quienes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/quienes-somos",
+        "noFollow": false,
+        "tagTitle": "Quienes somos",
+        "text": "Quienes somos"
+      }
+    }
+  },
+  // mas info paginas
+  "vtex.menu@2.x:menu#mas-info": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#restablecer",
+      "menu-item#privacidad",
+      "menu-item#tyc",
+      "menu-item#corporativo",
+      "menu-item#datos",
+      "menu-item#retracto"
+    ]
+  },
+  "vtex.menu@2.x:menu#mas-info-2": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#faq"
+    ]
+  },
+  "menu-item#restablecer": {
+    "props": {
+      "id": "menu-item-quienes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/restablecer-contrasena",
+        "noFollow": false,
+        "tagTitle": "Restablecer contraseña",
+        "text": "Restablecer contraseña"
+      }
+    }
+  },
+  "menu-item#privacidad": {
+    "props": {
+      "id": "menu-item-quienes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/politica-privacidad",
+        "noFollow": false,
+        "tagTitle": "Politicas de privacidad",
+        "text": "Politicas de privacidad"
+      }
+    }
+  },
+  "menu-item#tyc": {
+    "props": {
+      "id": "menu-item-quienes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/terminos-y-condiciones",
+        "noFollow": false,
+        "tagTitle": "Terminos y condiciones",
+        "text": "Terminos y condiciones"
+      }
+    }
+  },
+  "menu-item#corporativo": {
+    "props": {
+      "id": "menu-item-corporativo",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/accesos-corporativos",
+        "noFollow": false,
+        "tagTitle": "Accesos corporativos",
+        "text": "Accesos corporativos"
+      }
+    }
+  },
+  "menu-item#datos": {
+    "props": {
+      "id": "menu-item-datos",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/proteccion-datos",
+        "noFollow": false,
+        "tagTitle": "Protección de datos",
+        "text": "Protección de datos"
+      }
+    }
+  },
+  "menu-item#retracto": {
+    "props": {
+      "id": "menu-item-retracto",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/derecho-de-retracto",
+        "noFollow": false,
+        "tagTitle": "Derecho de retracto",
+        "text": "Derecho de retracto"
+      }
+    }
+  },
+  "menu-item#faq": {
+    "props": {
+      "id": "menu-item-faq",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/faq",
+        "noFollow": false,
+        "tagTitle": "Faq",
+        "text": "Faq"
+      }
+    }
+  }
+}

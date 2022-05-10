@@ -1,0 +1,307 @@
+{
+    "vtex.menu@2.x:submenu#ofertas": {
+        "props": {
+          "width": "100%",
+          "blockClass": "menuofertas"
+        },
+        "children": [
+          "flex-layout.row#menu-ofertas"
+        ]
+      },
+      "flex-layout.row#menu-ofertas": {
+        "props": {
+          "blockClass": "menuofertas"
+        },
+        "children": [
+          "flex-layout.col#menu-ofertas-1",
+          "flex-layout.row#ofertas-destacadas"
+        ]
+      },
+      "flex-layout.col#menu-ofertas-1": {
+        "props": {
+            "width":"20%",
+            "blockClass": "menuofertas"
+        },
+        "children": [
+            "menu-item#ofertas-destacadas"
+        ]
+      },
+      "menu-item#ofertas-destacadas": {
+        "props": {
+          "id": "menu-item#ofertas-destacadas",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": ["category-item","activeCategory"],
+          "itemProps": {
+            "type": "internal",
+            "href": "/about-us",
+            "noFollow": true,
+            "tagTitle": "Ofertas por marca",
+            "text": "Ofertas por marca"
+          }
+        }
+      },
+      // ofertas destadas menu
+      "flex-layout.row#ofertas-destacadas": {
+        "children": [
+            "flex-layout.col#ofertas-columna1",
+            "flex-layout.col#ofertas-columna2",
+            "flex-layout.col#ofertas-destacadas"
+        ]
+      },
+    //   columna 1
+    "flex-layout.col#ofertas-columna1": {
+        "children": [
+            "menu-item#category-ofertas-aderma",
+            "menu-item#category-ofertas-almay",
+            "menu-item#category-ofertas-antioxidantech",
+            "menu-item#category-ofertas-avene",
+            "menu-item#category-ofertas-be",
+            "menu-item#category-ofertas-bioderma"
+        ],
+        "props":{
+            "width":"15%"
+        }
+    },
+    "menu-item#category-ofertas-aderma": {
+        "props": {
+            "id": "menu-item-category-aderma",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+              "type": "internal",
+              "href": "/home---decor/",
+              "noFollow": false,
+              "tagTitle": "Adarma",
+              "text": "Adarma"
+            }
+        }
+    },
+    "menu-item#category-ofertas-almay": {
+        "props": {
+            "id": "menu-item-category-almay",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+              "type": "internal",
+              "href": "/home---decor/",
+              "noFollow": false,
+              "tagTitle": "Almay",
+              "text": "Almay"
+            }
+        }
+    },
+    "menu-item#category-ofertas-antioxidantech": {
+        "props": {
+            "id": "menu-item-category-Antioxidantech",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+              "type": "internal",
+              "href": "/home---decor/",
+              "noFollow": false,
+              "tagTitle": "Antioxidantech",
+              "text": "Antioxidantech"
+            }
+        }
+    },
+    "menu-item#category-ofertas-avene": {
+        "props": {
+            "id": "menu-item-category-avene",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+              "type": "internal",
+              "href": "/home---decor/",
+              "noFollow": false,
+              "tagTitle": "Avene",
+              "text": "Avene"
+            }
+        }
+    },
+    "menu-item#category-ofertas-be": {
+        "props": {
+            "id": "menu-item-category-be",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+              "type": "internal",
+              "href": "/home---decor/",
+              "noFollow": false,
+              "tagTitle": "Be",
+              "text": "Be"
+            }
+        }
+    },
+    "menu-item#category-ofertas-bioderma": {
+        "props": {
+            "id": "menu-item-category-bioderma",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+              "type": "internal",
+              "href": "/home---decor/",
+              "noFollow": false,
+              "tagTitle": "Bioderma",
+              "text": "Bioderma"
+            }
+        }
+    },
+    //   columna 2
+    "flex-layout.col#ofertas-columna2": {
+        "children": [
+            "menu-item#category-ofertas-esthederm",
+            "menu-item#category-ofertas-eucarin",
+            "menu-item#category-ofertas-fagron",
+            "menu-item#category-ofertas-gakderna",
+            "menu-item#category-ofertas-genove",
+            "menu-item#category-ofertas-heliocare"
+        ],
+        "props":{
+            "width":"15%"
+        }
+    },
+    "menu-item#category-ofertas-esthederm": {
+        "props": {
+            "id": "menu-item-category-esthederm",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+              "type": "internal",
+              "href": "/home---decor/",
+              "noFollow": false,
+              "tagTitle": "Esthederm",
+              "text": "Esthederm"
+            }
+        }
+    },
+    "menu-item#category-ofertas-eucarin": {
+        "props": {
+            "id": "menu-item-category-eucarin",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+              "type": "internal",
+              "href": "/home---decor/",
+              "noFollow": false,
+              "tagTitle": "Eucarin",
+              "text": "Eucarin"
+            }
+        }
+    },
+    "menu-item#category-ofertas-fagron": {
+        "props": {
+            "id": "menu-item-category-fagron",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+              "type": "internal",
+              "href": "/home---decor/",
+              "noFollow": false,
+              "tagTitle": "Fagron",
+              "text": "Fagron"
+            }
+        }
+    },
+    "menu-item#category-ofertas-gakderna": {
+        "props": {
+            "id": "menu-item-category-gakderna",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+              "type": "internal",
+              "href": "/home---decor/",
+              "noFollow": false,
+              "tagTitle": "Gakderna",
+              "text": "Gakderna"
+            }
+        }
+    },
+    "menu-item#category-ofertas-genove": {
+        "props": {
+            "id": "menu-item-category-genove",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+              "type": "internal",
+              "href": "/home---decor/",
+              "noFollow": false,
+              "tagTitle": "Genove",
+              "text": "Genove"
+            }
+        }
+    },
+    "menu-item#category-ofertas-heliocare": {
+        "props": {
+            "id": "menu-item-category-heliocare",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "subcategory-item",
+            "itemProps": {
+              "type": "internal",
+              "href": "/home---decor/",
+              "noFollow": false,
+              "tagTitle": "Heliocare",
+              "text": "Heliocare"
+            }
+        }
+    },
+      "flex-layout.col#ofertas-destacadas": {
+        "children": [
+          "vtex.menu@2.x:menu#ofertas-destacadas-1"
+        ]
+      },
+      "vtex.menu@2.x:menu#ofertas-destacadas-1": {
+        "props": {
+          "orientation": "horizontal",
+          "blockclass": "menuofertasLv2"
+        },
+        "children": [
+          "image#ofertas-1",
+          "image#ofertas-2",
+          "image#ofertas-3"
+        ]
+      },
+      "image#ofertas-1": {
+        "props": {
+            "blockClass":"ofertas-meenu",
+          "src": "https://cutis.vteximg.com.br/arquivos/marca1-oferta.png"
+        }
+      },
+      "image#ofertas-2": {
+        "props": {
+            "blockClass":"ofertas-meenu",
+          "src": "https://cutis.vteximg.com.br/arquivos/marca2-oferta.png"
+        }
+      },
+      "image#ofertas-3": {
+        "props": {
+            "blockClass":"ofertas-meenu",
+          "src": "https://cutis.vteximg.com.br/arquivos/marca3-oferta.png"
+        }
+      }
+}

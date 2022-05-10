@@ -1,11 +1,12 @@
 .label::before{
     content: "";
-    background: url(https://cutis.vteximg.com.br/arquivos/UserAzul.png)no-repeat;
-    background-size: 100%;
+    background: url(https://cutis.vteximg.com.br/arquivos/nuevoLogoUserAzul.png) no-repeat;
+    background-size: 76%;
+    background-position: center;
     font-size: 10px;
     display: block;
     width: 24px;
-    height: 24px;
+    height: 26px;
     margin-top: 0;
     transition: all 40ms;
     margin-right: 5px;
@@ -30,6 +31,17 @@
 }
 .box {
     display: none;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--login) :global(.vtex-button__label){
+    transition: 400ms all;
+    padding: 0 19px 0 11px ;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--login) :global(.vtex-button__label):hover{
+    background: #F1F1F1;
+    border-radius: 5px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--login) :global(.vtex-button__label):hover .label::after{
+    color: #27AFE5;
 }
 .contentFormVisible {
     width: 71%;
@@ -73,11 +85,11 @@
     font-size: 15px;
     text-decoration: underline;
 }
-.formFooter :global(.vtex-button__label){
+.content--emailAndPassword .formFooter :global(.vtex-button__label){
     font-size: 0 !important;
     display: none;
 }
-.formFooter :global(.vtex-button)::before{
+.content--emailAndPassword .formFooter :global(.vtex-button)::before{
     content: "Iniciar sesión";
     font-size: 20px;
     text-transform: initial;
@@ -139,7 +151,7 @@
 }
 .accessCodeOptionBtn :global(.vtex-button)::before{
     content: "";
-    background: url(https://cutis.vteximg.com.br/arquivos/correo.png)no-repeat;
+    background: url(https://cutis.vteximg.com.br/arquivos/correo.png) no-repeat;
     background-size: 100%;
     display: block;
     width: 30px;
@@ -150,7 +162,7 @@
 }
 .googleOptionBtn :global(.vtex-button)::before{
     content: "";
-    background: url(https://cutis.vteximg.com.br/arquivos/flat-color-icons_google.png)no-repeat;
+    background: url(https://cutis.vteximg.com.br/arquivos/flat-color-icons_google.png) no-repeat;
     background-size: 100%;
     display: block;
     width: 30px;
@@ -162,7 +174,7 @@
 }
 .facebookOptionBtn :global(.vtex-button)::before{
     content: "";
-    background: url(https://cutis.vteximg.com.br/arquivos/facebookAzul.pn)no-repeat;
+    background: url(https://cutis.vteximg.com.br/arquivos/facebookAzul.png) no-repeat;
     background-size: 100%;
     display: block;
     width: 30px;
@@ -190,6 +202,56 @@
 
 :global(.vtex-button):hover{
     background: transparent;
+}
+.content--beginCreatePass {
+    min-height: 100%;
+    background: transparent;
+}
+.content--beginCreatePass .contentFormVisible {
+    width: 83%;
+}
+.content--beginCreatePass .formFooter {
+    padding: 24px 40px;
+}
+.content--beginCreatePass .optionsListItem:nth-child(2){
+    display: none;
+}
+.content--beginCreatePass .optionsListItem:last-child{
+    display: none !important;
+}
+.content--beginCreatePass .loginOptionsContainer{
+    bottom: -13px;
+}
+.content--emailVerification {
+    background: transparent;
+}
+.content--emailVerification .contentFormVisible{
+    width: 83%;
+}
+.content--emailVerification .formFooter {
+    padding: 24px 40px;
+}
+.content--emailVerification .optionsListItem:nth-child(1){
+    display: none;
+}
+:global(.vtex-modal__confirmation) :global(.vtex-button){
+    background: #27AFE5;
+    transition: 400ms all;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    padding: 0 !important;
+    border: 0;
+}
+:global(.vtex-modal__confirmation) :global(.vtex-button):hover{
+    background: #1B7BA1;
+}
+:global(.vtex-modal__confirmation) :global(.vtex-button__label){
+    padding: 6px 10px;
+}
+:global(.vtex-product-comparison-0-x-productSelectorContainer ) :global(.vtex-checkbox__input)[value="true"]::before{
+    background: url(/Arquivos/compararHoverBlue.png) no-repeat;
+    background-size: 100%;
 }
 @media (max-width: 600px) {
     .formTitle {

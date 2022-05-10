@@ -1,40 +1,71 @@
 {
   // sub Menu todas las categorias
-  "disclosure-layout#categoryAll": {
-    "children": ["disclosure-trigger#categoryAll","disclosure-content#categoryAll"],
-    "props": {
-      "blockClass": "subMneusM"
-    }
-  },
-  "disclosure-trigger#categoryAll": {
-    "children": ["menu-item#categoryMobile"],
-    "props": {
-      "blockClass": "subMneusMTrigger"
-    }
-  },
-  "disclosure-content#categoryAll": {
-    "children": ["disclosure-trigger#categoryAll","flex-layout.row#allCategorys"],
-    "props": {
-      "blockClass": "subMneusMContent"
-    }
-  },
   "flex-layout.row#allCategorys": {
     "children": [
-        "flex-layout.col#category1",
-        "flex-layout.col#category2",
-        "flex-layout.col#category3",
-        "flex-layout.col#category4",
-        "flex-layout.col#category5",
-        "flex-layout.col#category6",
-        "flex-layout.col#category7",
-        "flex-layout.col#category8",
-        "flex-layout.col#category9"
+      "disclosure-layout#categorySolares",
+      "disclosure-layout#categoryCapilar",
+      "disclosure-layout#categoryCorporal",
+      "disclosure-layout#categoryRostro",
+      "disclosure-layout#categoryMedicamento",
+      "disclosure-layout#categoryMaquillaje"
     ],
     "props": {
       "blockClass": "allCategorys"
     }
   },
   // Categpria 1
+  // subMenu de solares
+  "disclosure-layout#categorySolares": {
+    "children": ["disclosure-trigger#categorySolares","disclosure-content#categorySolares"],
+    "props": {
+      "blockClass": "subMneusM"
+    }
+  },
+  "disclosure-trigger#categorySolares": {
+    "children": ["flex-layout.col#category1"],
+    "props": {
+      "blockClass": "subMneusMTrigger"
+    }
+  },
+  "disclosure-trigger#categorySolares-1": {
+    "children": ["menu-item#category-apparel-solar-m"],
+    "props": {
+      "blockClass": "subMneusMTrigger"
+    }
+  },
+  "disclosure-content#categorySolares": {
+    "children": ["disclosure-trigger#categorySolares-1","flex-layout.row#allSolares"],
+    "props": {
+      "blockClass": "subMneusMContent"
+    }
+  },
+  "flex-layout.row#allSolares": {
+    "children": [
+      "menu-item#category-apparel-conColor",
+      "menu-item#category-apparel-sincolor",
+      "menu-item#category-apparel-conColorSolar"
+    ],
+    "props": {
+      "blockClass": "allSubcategorys"
+    }
+  },
+  // cierre del depliegue
+  "menu-item#category-apparel-solar-m": {
+    "props": {
+        "id": "menu-item-category-apparel-clothing",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": ["category-item","category-item-2"],
+        "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Solares",
+            "text": "Solares"
+        }
+    }
+  },
+  // imagegenes y titulo de la categoria
   "flex-layout.col#category1": {
     "children": [
       "image#categoryMenu1",
@@ -48,20 +79,70 @@
   },
   "image#categoryMenu1": {
     "props": {
-      "src": "https://storecomponents.vtexassets.com/arquivos/banner-infocard2.png",
-      "link": {
-        "url": "/"
-      },
+      "src": "https://cutis.vteximg.com.br/arquivos/solar-1.png",
       "blockClass":"categoryIMG"
     }
   },
   "rich-text#categoryMenu1": {
     "props": {
-      "text": "Categoria 1",
+      "text": "Solar",
       "blockClass": ["SubMenuItems"]
     }
   },
   // Categpria 2
+  // subMenu de solares
+  "disclosure-layout#categoryCapilar": {
+    "children": ["disclosure-trigger#categoryCapilar","disclosure-content#categoryCapilar"],
+    "props": {
+      "blockClass": "subMneusM"
+    }
+  },
+  "disclosure-trigger#categoryCapilar": {
+    "children": ["flex-layout.col#category2"],
+    "props": {
+      "blockClass": "subMneusMTrigger"
+    }
+  },
+  "disclosure-trigger#categoryCapilar-1": {
+    "children": ["menu-item#category-apparel-capilar-m"],
+    "props": {
+      "blockClass": "subMneusMTrigger"
+    }
+  },
+  "disclosure-content#categoryCapilar": {
+    "children": ["disclosure-trigger#categoryCapilar-1","flex-layout.row#allCapilar"],
+    "props": {
+      "blockClass": "subMneusMContent"
+    }
+  },
+  "flex-layout.row#allCapilar": {
+    "children": [
+      "menu-item#category-apparel-anticaida",
+      "menu-item#category-apparel-anticaspa",
+      "menu-item#category-apparel-reparadores",
+      "menu-item#category-apparel-cuero-sensible"
+    ],
+    "props": {
+      "blockClass": "allSubcategorys"
+    }
+  },
+  // cierre del depliegue
+  "menu-item#category-apparel-capilar-m": {
+    "props": {
+        "id": "menu-item-category-apparel-clothing",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": ["category-item","category-item-4"],
+        "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Capilar",
+            "text": "Capilar"
+        }
+    }
+  },
+  // imagegenes y titulo de la categoria
   "flex-layout.col#category2": {
     "children": [
       "image#categoryMenu2",
@@ -75,20 +156,73 @@
   },
   "image#categoryMenu2": {
     "props": {
-      "src": "https://storecomponents.vtexassets.com/arquivos/banner-infocard2.png",
-      "link": {
-        "url": "/"
-      },
+      "src": "https://cutis.vteximg.com.br/arquivos/Capilar-1.png",
       "blockClass":"categoryIMG"
     }
   },
   "rich-text#categoryMenu2": {
     "props": {
-      "text": "Categoria 2",
+      "text": "Capilar",
       "blockClass": ["SubMenuItems"]
     }
   },
   // Categpria 3
+  // subMenu de solares
+  "disclosure-layout#categoryCorporal": {
+    "children": ["disclosure-trigger#categoryCorporal","disclosure-content#categoryCorporal"],
+    "props": {
+      "blockClass": "subMneusM"
+    }
+  },
+  "disclosure-trigger#categoryCorporal": {
+    "children": ["flex-layout.col#category3"],
+    "props": {
+      "blockClass": "subMneusMTrigger"
+    }
+  },
+  "disclosure-trigger#categoryCorporal-1": {
+    "children": ["menu-item#category-apparel-corporal-m"],
+    "props": {
+      "blockClass": "subMneusMTrigger"
+    }
+  },
+  "disclosure-content#categoryCorporal": {
+    "children": ["disclosure-trigger#categoryCorporal-1","flex-layout.row#allCorporal"],
+    "props": {
+      "blockClass": "subMneusMContent"
+    }
+  },
+  "flex-layout.row#allCorporal": {
+    "children": [
+      "menu-item#category-apparel-acne-cor",
+      "menu-item#category-apparel-antiestris",
+      "menu-item#category-apparel-cicatrices",
+      "menu-item#category-apparel-desodorante",
+      "menu-item#category-apparel-hidratantes",
+      "menu-item#category-apparel-limpiadoras",
+      "menu-item#category-apparel-manos",
+      "menu-item#category-apparel-una"
+    ],
+    "props": {
+      "blockClass": "allSubcategorys"
+    }
+  },
+  // cierre del depliegue
+  "menu-item#category-apparel-corporal-m": {
+    "props": {
+        "id": "menu-item-category-apparel-clothing",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": ["category-item","category-item-5"],
+        "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Corporal",
+            "text": "Corporal"
+        }
+    }
+  },
   "flex-layout.col#category3": {
     "children": [
       "image#categoryMenu3",
@@ -102,20 +236,75 @@
   },
   "image#categoryMenu3": {
     "props": {
-      "src": "https://storecomponents.vtexassets.com/arquivos/banner-infocard2.png",
-      "link": {
-        "url": "/"
-      },
+      "src": "https://cutis.vteximg.com.br/arquivos/corporal-1.png",
       "blockClass":"categoryIMG"
     }
   },
   "rich-text#categoryMenu3": {
     "props": {
-      "text": "Categoria 3",
+      "text": "Corporal",
       "blockClass": ["SubMenuItems"]
     }
   },
   // Categpria 4
+  // subMenu de rostro
+  "disclosure-layout#categoryRostro": {
+    "children": ["disclosure-trigger#categoryRostro","disclosure-content#categoryRostro"],
+    "props": {
+      "blockClass": "subMneusM"
+    }
+  },
+  "disclosure-trigger#categoryRostro": {
+    "children": ["flex-layout.col#category4"],
+    "props": {
+      "blockClass": "subMneusMTrigger"
+    }
+  },
+  "disclosure-trigger#categoryRostro-1": {
+    "children": ["menu-item#category-apparel-rostro-m"],
+    "props": {
+      "blockClass": "subMneusMTrigger"
+    }
+  },
+  "disclosure-content#categoryRostro": {
+    "children": ["disclosure-trigger#categoryRostro-1","flex-layout.row#allRostro"],
+    "props": {
+      "blockClass": "subMneusMContent"
+    }
+  },
+  "flex-layout.row#allRostro": {
+    "children": [
+      "menu-item#category-apparel-hidratante",
+      "menu-item#category-apparel-exfoliante",
+      "menu-item#category-apparel-mascarillas",
+      "menu-item#category-apparel-limpiadora",
+      "menu-item#category-apparel-Despigmentante",
+      "menu-item#category-apparel-Antiedad",
+      "menu-item#category-apparel-Reparadores",
+      "menu-item#category-apparel-labiosRostro",
+      "menu-item#category-apparel-acne",
+      "menu-item#category-apparel-Imperfecciones"
+    ],
+    "props": {
+      "blockClass": "allSubcategorys"
+    }
+  },
+  // cierre del depliegue
+  "menu-item#category-apparel-rostro-m": {
+    "props": {
+        "id": "menu-item-category-apparel-clothing",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": ["category-item","category-item-1"],
+        "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Rostro",
+            "text": "Rostro"
+        }
+    }
+  },
   "flex-layout.col#category4": {
     "children": [
       "image#categoryMenu4",
@@ -129,20 +318,67 @@
   },
   "image#categoryMenu4": {
     "props": {
-      "src": "https://storecomponents.vtexassets.com/arquivos/banner-infocard2.png",
-      "link": {
-        "url": "/"
-      },
+      "src": "https://cutis.vteximg.com.br/arquivos/antiedad.png",
       "blockClass":"categoryIMG"
     }
   },
   "rich-text#categoryMenu4": {
     "props": {
-      "text": "Categoria 4",
+      "text": "Rostro",
       "blockClass": ["SubMenuItems"]
     }
   },
   // Categpria 5
+  // subMenu de medicamento
+  "disclosure-layout#categoryMedicamento": {
+    "children": ["disclosure-trigger#categoryMedicamento","disclosure-content#categoryMedicamento"],
+    "props": {
+      "blockClass": "subMneusM"
+    }
+  },
+  "disclosure-trigger#categoryMedicamento": {
+    "children": ["flex-layout.col#category5"],
+    "props": {
+      "blockClass": "subMneusMTrigger"
+    }
+  },
+  "disclosure-trigger#categoryMedicamento-1": {
+    "children": ["menu-item#category-apparel-medicamento-m"],
+    "props": {
+      "blockClass": "subMneusMTrigger"
+    }
+  },
+  "disclosure-content#categoryMedicamento": {
+    "children": ["disclosure-trigger#categoryMedicamento-1","flex-layout.row#allMedicamento"],
+    "props": {
+      "blockClass": "subMneusMContent"
+    }
+  },
+  "flex-layout.row#allMedicamento": {
+    "children": [
+      "menu-item#category-apparel-venta-libre",
+      "menu-item#category-apparel-formulados"
+    ],
+    "props": {
+      "blockClass": "allSubcategorys"
+    }
+  },
+  // cierre del depliegue
+  "menu-item#category-apparel-medicamento-m": {
+    "props": {
+        "id": "menu-item-category-apparel-clothing",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": ["category-item","category-item-6"],
+        "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Medicamentos",
+            "text": "Medicamentos"
+        }
+    }
+  },
   "flex-layout.col#category5": {
     "children": [
       "image#categoryMenu5",
@@ -156,20 +392,69 @@
   },
   "image#categoryMenu5": {
     "props": {
-      "src": "https://storecomponents.vtexassets.com/arquivos/banner-infocard2.png",
-      "link": {
-        "url": "/"
-      },
+      "src": "https://cutis.vteximg.com.br/arquivos/Medicamentos-1.png",
       "blockClass":"categoryIMG"
     }
   },
   "rich-text#categoryMenu5": {
     "props": {
-      "text": "Categoria 5",
+      "text": "Medicamentos",
       "blockClass": ["SubMenuItems"]
     }
   },
   // Categpria 6
+  // subMenu de maquillaje
+  "disclosure-layout#categoryMaquillaje": {
+    "children": ["disclosure-trigger#categoryMaquillaje","disclosure-content#categoryMaquillaje"],
+    "props": {
+      "blockClass": "subMneusM"
+    }
+  },
+  "disclosure-trigger#categoryMaquillaje": {
+    "children": ["flex-layout.col#category6"],
+    "props": {
+      "blockClass": "subMneusMTrigger"
+    }
+  },
+  "disclosure-trigger#categoryMaquillaje-1": {
+    "children": ["menu-item#category-apparel-maquillaje-m"],
+    "props": {
+      "blockClass": "subMneusMTrigger"
+    }
+  },
+  "disclosure-content#categoryMaquillaje": {
+    "children": ["disclosure-trigger#categoryMaquillaje-1","flex-layout.row#allMaquillaje"],
+    "props": {
+      "blockClass": "subMneusMContent"
+    }
+  },
+  "flex-layout.row#allMaquillaje": {
+    "children": [
+      "menu-item#category-apparel-labios",
+      "menu-item#category-apparel-ojos",
+      "menu-item#category-apparel-pestanas",
+      "menu-item#category-apparel-rostros"
+    ],
+    "props": {
+      "blockClass": "allSubcategorys"
+    }
+  },
+  // cierre del depliegue
+  "menu-item#category-apparel-maquillaje-m": {
+    "props": {
+        "id": "menu-item-category-apparel-clothing",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": ["category-item","category-item-3"],
+        "itemProps": {
+            "type": "internal",
+            "noFollow": false,
+            "tagTitle": "Maquillaje",
+            "text": "Maquillaje"
+        }
+    }
+  },
   "flex-layout.col#category6": {
     "children": [
       "image#categoryMenu6",
@@ -183,96 +468,13 @@
   },
   "image#categoryMenu6": {
     "props": {
-      "src": "https://storecomponents.vtexassets.com/arquivos/banner-infocard2.png",
-      "link": {
-        "url": "/"
-      },
+      "src": "https://cutis.vteximg.com.br/arquivos/maquillaje-1.png",
       "blockClass":"categoryIMG"
     }
   },
   "rich-text#categoryMenu6": {
     "props": {
-      "text": "Categoria 6",
-      "blockClass": ["SubMenuItems"]
-    }
-  },
-  // Categpria 7
-  "flex-layout.col#category7": {
-    "children": [
-      "image#categoryMenu7",
-      "rich-text#categoryMenu7"
-
-    ],
-    "props": {
-      "width":"50%",
-      "blockClass": "itemCategory"
-    }
-  },
-  "image#categoryMenu7": {
-    "props": {
-      "src": "https://storecomponents.vtexassets.com/arquivos/banner-infocard2.png",
-      "link": {
-        "url": "/"
-      },
-      "blockClass":"categoryIMG"
-    }
-  },
-  "rich-text#categoryMenu7": {
-    "props": {
-      "text": "Categoria 7",
-      "blockClass": ["SubMenuItems"]
-    }
-  },// Categpria 8
-  "flex-layout.col#category8": {
-    "children": [
-      "image#categoryMenu8",
-      "rich-text#categoryMenu8"
-
-    ],
-    "props": {
-      "width":"50%",
-      "blockClass": "itemCategory"
-    }
-  },
-  "image#categoryMenu8": {
-    "props": {
-      "src": "https://storecomponents.vtexassets.com/arquivos/banner-infocard2.png",
-      "link": {
-        "url": "/"
-      },
-      "blockClass":"categoryIMG"
-    }
-  },
-  "rich-text#categoryMenu8": {
-    "props": {
-      "text": "Categoria 8",
-      "blockClass": ["SubMenuItems"]
-    }
-  },
-  // Categpria 9
-  "flex-layout.col#category9": {
-    "children": [
-      "image#categoryMenu9",
-      "rich-text#categoryMenu9"
-
-    ],
-    "props": {
-      "width":"50%",
-      "blockClass": "itemCategory"
-    }
-  },
-  "image#categoryMenu9": {
-    "props": {
-      "src": "https://storecomponents.vtexassets.com/arquivos/banner-infocard2.png",
-      "link": {
-        "url": "/"
-      },
-      "blockClass":"categoryIMG"
-    }
-  },
-  "rich-text#categoryMenu9": {
-    "props": {
-      "text": "Categoria 9",
+      "text": "Maquillaje",
       "blockClass": ["SubMenuItems"]
     }
   }

@@ -28,7 +28,7 @@
   max-width: 20% !important;
 }
 .searchResultContainer {
-  padding: 0 100px;
+  padding: 0 40px;
 }
 .filterMessage {
   display: none;
@@ -44,7 +44,201 @@
 }
 .galleryItem {
   max-width: 20%!important;
-  padding: 20px 20px;
+  padding: 20px 15px;
+  min-height: 468px;
+}
+.buttonShowMore :global(.vtex-button){
+  background: #363636;
+  border: 0;
+  border-radius: 0;
+  padding: 8px 53px;
+  transition: 400ms all;
+  border-radius: 5px;
+}
+.buttonShowMore :global(.vtex-button):hover{
+  background: #27AFE5;
+}
+.buttonShowMore--layout {
+  margin-top: 30px;
+}
+.buttonShowMore :global(.vtex-button__label){
+  font-size: 0;
+}
+.buttonShowMore :global(.vtex-button__label)::before{
+  content: "Cargar más +";
+  font-size: 17px;
+  text-transform: initial;
+  padding: 3px 30px;
+
+}
+/* .filter__container--selectedFilters{
+  display: none;
+} */
+.filterTitleSpan{
+  color: #27AFE5;
+  font-weight: bold;
+}
+.filterItem{
+  margin-bottom: 8px;
+}
+.filter__container--selectedFilters .filterItem :global(.vtex-checkbox__label ){
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.filter__container--selectedFilters .filterItem :global(.vtex-checkbox__label )::before{
+  content: "X";
+  color: #27AFE5;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.filter__container--selectedFilters .filterItem :global(.vtex-checkbox__input){
+  display: none;
+}
+.filterItem :global(.vtex-checkbox__line-container){
+  align-items: center;
+}
+.filterItem :global(.vtex-checkbox__inner-container){
+  margin-right: 17px;
+}
+/* .filterTemplateOverflow :global(.vtex-slider__values-container){
+  display: none;
+} */
+.filter__container--textura .filterContent{
+  display: flex;
+  flex-wrap: wrap;
+}
+.filter__container--textura .filterItem{
+  width: 50%;
+}
+.filterItem :global(.vtex-checkbox__label){
+  font-size: 14px;
+  margin-left: 8px;
+  text-transform: lowercase;
+  color: #808080;
+}
+.filterTemplateOverflow::-webkit-scrollbar{
+  background: #D3D3D3;
+  width: 5px;
+  border-radius: 5px; 
+}
+.filterTemplateOverflow::-webkit-scrollbar-thumb{
+  background: #27AFE5;
+  border-radius: 5px;
+}
+.filter__container--tipo-de-presentacion .filterItem{
+  width: 95px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-top: 1px solid;
+  margin: 5px 5px;
+  border-radius: 5px;
+  border: 1px solid;
+  transition: 400ms all;
+}
+.filter__container--tipo-de-presentacion .filterItem:hover{
+  border: 1px solid #27AFE5;
+}
+.filter__container--tipo-de-presentacion .filterItem:hover :global(.vtex-checkbox__label){
+  color: #27AFE5;
+}
+.filter__container--tipo-de-presentacion :global(.vtex-checkbox__container){
+  display: none;
+}
+.filter__container--tipo-de-presentacion :global(.vtex-checkbox__label){
+  font-size: 13px;
+  margin: 0;
+}
+/* filtro momento de aplicacion */
+.filter__container--momento-de-aplicacion .filterContent{
+  display: flex;
+  flex-wrap: wrap;
+}
+.filter__container--momento-de-aplicacion .filterItem{
+  width: 50px;
+  margin-right: 10px;
+}
+.filterItem--cualquier-momento :global(.vtex-checkbox__line-container)::before{
+  content: "";
+  background: url(/arquivos/solLunaCategory.png);
+  background-size: cover;
+  display: block;
+  width: 50px;
+  height: 35px;
+}
+.filterItem--cualquier-momento :global(.vtex-checkbox__label){
+  display: none;
+}
+.filterItem--cualquier-momento :global(.vtex-checkbox__container ){
+  display: none;
+}
+/* noche */
+.filterItem--noche :global(.vtex-checkbox__line-container)::before{
+  content: "";
+  background: url(/arquivos/lunaCategory.png) no-repeat;
+  background-size: contain;
+  display: block;
+  width: 50px;
+  height: 35px;
+}
+.filterItem--noche :global(.vtex-checkbox__label){
+  display: none;
+}
+.filterItem :global(.vtex-checkbox__container ){
+  display: none;
+}
+/* POR AHOORA FILTROS ELIMINADOS */
+.filterItem--manana-y-noche {
+  display: none;
+}
+.filterItem--segun-prescripcion-medica {
+  display: none;
+}
+.filter__container--tipo-de-presentacion .filterContent{
+  display: flex;
+    flex-wrap: wrap;
+}
+.filterIcon {
+  color: #27AFE5;
+}
+:global(.vtex-slider__base-internal){
+  background: #27AFE5;
+}
+:global(.vtex-slider__selector){
+  background: #27AFE5;
+}
+.filter__container--brand :global(.vtex-checkbox__container){
+  display: none;
+}
+.filter__container--brand :global(.vtex-checkbox__label){
+  font-size: 14px;
+  text-transform: lowercase;
+  margin-bottom: 8px;
+  display: block;
+  color: #808080;
+}
+.filter__container--brand :global(.vtex-checkbox__label):hover{
+  color: #27AFE5;
+}
+.filter__container--brand .filterItem{
+  width: 50%;
+}
+.filter__container--brand .filterContent{
+  display: flex;
+  flex-wrap: wrap;
+}
+.galleryItem--grid :global(.vtex-product-summary-2-x-containerNormal):hover{
+  border: 1px solid;
+}
+.gallery--list {
+  padding: 0;
+}
+.galleryItem.galleryItem--list {
+  max-width: 25% !important;
+  border: 0;
 }
 @media (max-width: 700px) {
   .galleryItem {
@@ -54,5 +248,42 @@
   .searchResultContainer {
     padding: 0;
     overflow-x: hidden;
+  }
+  .orderBy--layout{
+    width: 185px !important;
+  }
+  .galleryItem {
+    min-height: 431px;
+  }
+  .totalProducts--layout {
+    display: none;
+  }
+  .orderByDropdown{
+    padding: 0;
+  }
+  .orderBy--layout{
+    border-radius: 0 !important;
+  }
+  .galleryItem.galleryItem--list{
+    max-width: 100% !important;
+    padding: 0 30px;
+  }
+  .galleryItem.galleryItem--list :global(.vtex-flex-layout-0-x-flexColChild--productInfo2) :global(.vtex-product-summary-2-x-currencyContainer){
+    font-size: 18px;
+  }
+  .galleryItem.galleryItem--list :global(.vtex-flex-layout-0-x-flexColChild--productInfo2) :global(.vtex-product-summary-2-x-price_listPrice) :global(.vtex-product-summary-2-x-currencyContainer){
+    font-size: 13px ;
+  }
+  .galleryItem.galleryItem--list :global(.vtex-flex-layout-0-x-flexColChild--productInfo2) :global(.vtex-product-summary-2-x-price_listPriceContainer){
+    margin-top: 4%;
+  }
+  .galleryItem.galleryItem--list :global(.vtex-flex-layout-0-x-flexColChild--productInfo2) :global(.vtex-button){
+    height: 49px;
+  }
+  .galleryItem.galleryItem--list :global(.vtex-flex-layout-0-x-flexColChild--productInfo2) :global(.vtex-product-summary-2-x-price_sellingPriceContainer){
+    margin-top: 3%;
+  }
+  .galleryItem--grid :global(.vtex-product-summary-2-x-containerNormal):hover{
+    border: 0px solid;
   }
 }

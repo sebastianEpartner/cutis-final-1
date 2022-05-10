@@ -19,7 +19,7 @@
     },
     "flex-layout.row#columnasCategorias1": {
         "props":{
-            "width": "80%",
+            "width": "94%",
             "blockClass":"categoriasMenu"
         },
         "children": [
@@ -90,6 +90,7 @@
     "flex-layout.col#banner1Categorias":{
         "title":"banner1",
         "props":{
+            "width":"20%",
             "blockclass": "categoriasMenu"
         },
         "children": [
@@ -100,7 +101,10 @@
     "image#categoriaDestacada": {
         "props": {
             "blockClass": "imagenMenuCategory",
-            "src": "https://cutis.vteximg.com.br/arquivos/MenuImage.png"
+            "src": "https://cutis.vteximg.com.br/arquivos/bannermenuOp1.png",
+            "link":{
+                "url":"/"
+            }
         }
     },
     "rich-text#title-bannerCategory": {

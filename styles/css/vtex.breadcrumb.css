@@ -1,0 +1,62 @@
+.term {
+    color: #27AFE5;
+    font-size: 11px;
+}
+.homeIcon{
+    display: none;
+}
+.homeLink::before{
+    content: "Home";
+    font-size: 11px;
+    text-decoration: underline;
+    color: #D3D3D3;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.link {
+    font-size: 12px !important;
+    text-decoration: underline;
+}
+.link {
+    color: #D3D3D3;
+    text-decoration: none;
+    font-size: 11px;
+    text-decoration: underline;
+}
+.link:hover {
+    color: black;
+}
+.caretIcon{
+    display: none;
+}
+/* breadcrumb productos  */
+:global(.vtex-flex-layout-0-x-flexRowContent--breadcrumb ){
+    padding: 0 40px;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--breadcrumb ) .arrow{
+    display: flex;
+    padding: 0;
+    align-items: center;
+    margin: 0 1px;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--breadcrumb ) .arrow::before {
+    content: "";
+    background: gray;
+    width: 4px;
+    height:4px;
+    border-radius: 50%;
+    display: inline-block;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--breadcrumb ) .caretIcon{
+    display: none;
+}
+@media (max-width: 600px) {
+    .container {
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+
+}

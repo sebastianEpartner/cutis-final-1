@@ -31,8 +31,7 @@
     "flex-layout.col#main-container.desktop": {
       "children": [
         "flex-layout.row#sub-container.desktop",
-        "flex-layout.row#sub-container.desktop-2",
-        "flex-layout.row#message.desktop"
+        "flex-layout.row#sub-container.desktop-2"
       ],
       "props": {
         "width": "grow"

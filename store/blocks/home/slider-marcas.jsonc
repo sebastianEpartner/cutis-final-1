@@ -2,7 +2,7 @@
     "rich-text#NUESTRAS-MARCAS": {
         "props": {
           "text": "## Nuestras marcas",
-          "blockClass": "shelfTitle"
+          "blockClass": ["shelfTitle","marcasTittles"]
         }
     },
     "list-context.image-list#marcas": {
@@ -12,23 +12,38 @@
             "images": [
                 {
                     "image": "https://cutis.vteximg.com.br/arquivos/larocheNew.png",
-                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/larocheNew.png"
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/larocheNew.png",
+                    "link":{
+                      "url":"/la-roche-posey"
+                    }
                 },
                 {
                     "image": "https://cutis.vteximg.com.br/arquivos/biodermNew.png",
-                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/biodermNew.png"
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/biodermNew.png",
+                    "link":{
+                      "url":"/bioderma"
+                    }
                 },
                 {
                     "image": "https://cutis.vteximg.com.br/arquivos/aveneNew.png",
-                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/aveneNew.png"
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/aveneNew.png",
+                    "link":{
+                      "url":"/avene"
+                    }
                 },
                 {
                     "image": "https://cutis.vteximg.com.br/arquivos/phanadermNew.png",
-                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/phanadermNew.png"
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/phanadermNew.png",
+                    "link":{
+                      "url":"/phanaderm"
+                    }
                 },
                 {
                     "image": "https://cutis.vteximg.com.br/arquivos/uriageNew.png",
-                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/uriageNew.png"
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/uriageNew.png",
+                    "link":{
+                      "url":"/uriage"
+                    }
                 },
                 {
                     "image": "https://cutis.vteximg.com.br/arquivos/phanadermNew.png",
@@ -49,8 +64,8 @@
         "props": {
             "itemsPerPage": {
             "desktop": 5,
-            "tablet": 5,
-            "phone": 4
+            "tablet": 3,
+            "phone": 3
             },
             "infinite": true,
             "showNavigationArrows": "desktopOnly",

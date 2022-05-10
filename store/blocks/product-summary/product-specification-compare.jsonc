@@ -1,0 +1,21 @@
+{
+    "product-summary.shelf.product-comparison#compare": {
+        "children": [
+            "flex-layout.row#close",
+            "add-to-list-btn",
+            "stack-layout#prodsum",
+            "flex-layout.row#productInfo2"
+        ],
+        "props":{
+            "blockClass":"comparar"
+        }
+    },
+    "flex-layout.row#productCompare": {
+        "children": [
+          "flex-layout.col#productInfo2"
+        ],
+        "props": {
+          "blockClass": ["ProductInfo2","preciosVitrine2"]
+        }
+    }
+}

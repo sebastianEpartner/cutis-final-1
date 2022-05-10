@@ -1,0 +1,141 @@
+{
+    "flex-layout.row#sticky-MenuFixed": {
+        "children": [
+            "flex-layout.col#cuenta",
+            "flex-layout.col#tiendas",
+            "flex-layout.col#kits",
+            "flex-layout.col#ofertas",
+            "flex-layout.col#wp"
+        ],
+        "props": {
+          "blockClass": "fixed-menu"
+        }
+    },
+    // cuenta
+    "flex-layout.col#cuenta": {
+        "props": {
+          "blockClass":"menu-item-fixed"
+        },
+        "children":[
+            "image#cuenta",
+            "rich-text#cuenta-fixed"
+        ]
+    },
+    "image#cuenta": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/user-mobile.png",
+          "maxHeight": 25,
+          "blockClass":"item-menu-fixed"
+        }
+    },
+    "rich-text#cuenta-fixed": {
+        "props": {
+          "text": "[Cuenta](/account)",
+          "blockClass": ["item-menu-fixed"]
+        }
+    },
+    // tiendas
+    "flex-layout.col#tiendas": {
+        "props": {
+          "blockClass":"menu-item-fixed"
+        },
+        "children":[
+            "image#tiendas",
+            "rich-text#tiendas-fixed"
+        ]
+    },
+    "image#tiendas": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/ubicacion-mobile.png",
+          "link":{
+            "url":"/account"
+          },
+          "maxHeight": 25,
+          "blockClass":"item-menu-fixed"
+        }
+    },
+    "rich-text#tiendas-fixed": {
+        "props": {
+          "text": "[Tiendas](/account)",
+          "blockClass": ["item-menu-fixed"]
+        }
+    },
+    // kits
+    "flex-layout.col#kits": {
+        "props": {
+          "blockClass":"menu-item-fixed"
+        },
+        "children":[
+            "image#kits",
+            "rich-text#kits-fixed"
+        ]
+    },
+    "image#kits": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/kits-mobile.png",
+          "link":{
+            "url":"/137?map=productClusterIds&order="
+          },
+          "maxHeight": 25,
+          "blockClass":"item-menu-fixed"
+        }
+    },
+    "rich-text#kits-fixed": {
+        "props": {
+          "text": "[Kits](/137?map=productClusterIds&order=)",
+          "blockClass": ["item-menu-fixed"]
+        }
+    },
+    // ofertas
+    "flex-layout.col#ofertas": {
+        "props": {
+          "blockClass":"menu-item-fixed"
+        },
+        "children":[
+            "image#ofertas",
+            "rich-text#ofertas-fixed"
+        ]
+    },
+    "image#ofertas": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/ofertas-mobile.png",
+          "link":{
+            "url":"/137?map=productClusterIds&order="
+          },
+          "maxHeight": 25,
+          "blockClass":"item-menu-fixed"
+        }
+    },
+    "rich-text#ofertas-fixed": {
+        "props": {
+          "text": "[ofertas](/137?map=productClusterIds&order=)",
+          "blockClass": ["item-menu-fixed","ofertas"]
+        }
+    },
+    // WP
+    "flex-layout.col#wp": {
+        "props": {
+          "blockClass":"menu-item-fixed"
+        },
+        "children":[
+            "image#wp",
+            "rich-text#wp-fixed"
+        ]
+    },
+    "image#wp": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/wp-mobile.png",
+          "link":{
+            "url":"/https://api.whatsapp.com/send?phone=573505388657"
+          },
+          "maxHeight": 25,
+          "blockClass":"item-menu-fixed"
+        }
+    },
+    "rich-text#wp-fixed": {
+        "props": {
+          "text": "[Wp](https://api.whatsapp.com/send?phone=573505388657)",
+          "blockClass": ["item-menu-fixed","wp"]
+        }
+    }
+}

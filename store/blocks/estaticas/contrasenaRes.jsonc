@@ -1,0 +1,136 @@
+{
+    "store.custom#contrasena": {
+        "children": [
+            "image#contrasenaImg",
+            "rich-text#contrasena",
+            "flex-layout.row#contrasena"
+        ]
+    },
+    // titulo de la pagina
+    "rich-text#contrasena": {
+        "props": {
+        "blockClass":"faqsTitulo",
+        "text": "## Reestablecer contraseñas"
+        }
+    },
+    "image#contrasenaImg": {
+        "props": {
+          "src": "https://cutis.vtexassets.com/arquivos/banner.png",
+          "blockClass": "faqsImg"
+        }
+    },
+    "flex-layout.row#contrasena": {
+        "props": {
+          "blockClass": "faq"
+        },
+        "children": [
+          "flex-layout.col#contrasena",
+          "flex-layout.col#contrasena-1"
+        ]
+    },
+     // Primera columna de los contrasenas
+     "flex-layout.col#contrasena": {
+        "props":{
+        "width":"30%",
+        "blockClass":"columna1"
+        },
+        "children": [
+            "disclosure-layout-group#contrasena"
+        ]
+    },
+    "disclosure-layout-group#contrasena": {
+        "children": [
+            "disclosure-layout#derechocontrasena"
+        ]
+    },
+    // primer disclousare
+    "disclosure-layout#derechocontrasena": {
+        "children": ["disclosure-trigger#derechocontrasena", "disclosure-content#derechocontrasena"]
+    },
+    "disclosure-trigger#derechocontrasena": {
+        "props": {
+            "blockClass": "question",
+        "as": "div"
+        },
+        "children": ["rich-text#contrasena-titulo"]
+    },
+    "disclosure-content#derechocontrasena": {
+        "props": {
+            "blockClass": "politicas-content"
+        },
+        "children": ["rich-text#contrasena-content"]
+    },
+    "rich-text#contrasena-titulo": {
+        "props": {
+            "text": "Restablecer contraseña"
+        }
+    },
+    "rich-text#contrasena-content": {
+        "props": {
+            "text": "Call us at the number (212) 1234-1234."
+        }
+    },
+    // columna 2
+    "flex-layout.col#contrasena-1": {
+        "props":{
+            "width":"70%",
+            "blockClass":"columna2"
+        },
+        "children": [
+            "flex-layout.col#contrasenaContent"
+        ]
+    },
+    // contenido del tab 1
+    "flex-layout.col#contrasenaContent": {
+        "children": [
+            "info-card#contrasena-1",
+            "info-card#contrasena-2",
+            "info-card#contrasena-3"
+        ],
+        "props": {
+            "blockClass": "politicaContenedor"
+        }
+    },
+    "info-card#contrasena-1": {
+        "props": {
+          "id": "info-card-contrasena-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://cutis.vteximg.com.br/arquivos/Group%201202.png",
+          "mobileImageUrl":"https://cutis.vteximg.com.br/arquivos/infocardHome.png",
+          "subhead": "Ejerce una acción protectora y\n restaurdora del equilibrio natural de\n la estructura dérmica\n",
+          "callToActionText": "Comprar ahora",
+          "callToActionUrl": "/sale/d",
+          "blockClass": "info-card-contrasena-1",
+          "textAlignment": "right"
+        }
+    },
+    "info-card#contrasena-2": {
+        "props": {
+          "id": "info-card-hcontrasena-1ome",
+          "isFullModeStyle": false,
+          "textPosition": "left",
+          "imageUrl": "https://cutis.vteximg.com.br/arquivos/Group%201202.png",
+          "mobileImageUrl":"https://cutis.vteximg.com.br/arquivos/infocardHome.png",
+          "subhead": "Ejerce una acción protectora y\n restaurdora del equilibrio natural de\n la estructura dérmica\n",
+          "callToActionText": "Comprar ahora",
+          "callToActionUrl": "/sale/d",
+          "blockClass": "info-card-contrasena-1",
+          "textAlignment": "left"
+        }
+    },
+    "info-card#contrasena-3": {
+        "props": {
+          "id": "info-card-contrasena-1",
+          "isFullModeStyle": false,
+          "textPosition": "right",
+          "imageUrl": "https://cutis.vteximg.com.br/arquivos/Group%201202.png",
+          "mobileImageUrl":"https://cutis.vteximg.com.br/arquivos/infocardHome.png",
+          "subhead": "Ejerce una acción protectora y\n restaurdora del equilibrio natural de\n la estructura dérmica\n",
+          "callToActionText": "Comprar ahora",
+          "callToActionUrl": "/sale/d",
+          "blockClass": "info-card-contrasena-1",
+          "textAlignment": "right"
+        }
+    }
+}

@@ -2,7 +2,7 @@
     padding: 0;
 }
 .submenu {
-    padding: 30px 100px 30px 127px;
+    padding: 30px 90px 30px 109px;
     align-items: center;
 }
 .submenu :global(.vtex-flex-layout-0-x-flexRow){
@@ -58,7 +58,7 @@
 }
 .styledLinkContent--category-item-1::before {
     content: "";
-    background: url(https://cutis.vteximg.com.br/arquivos/rostro.png)no-repeat;
+    background: url(https://batanew.vteximg.com.br/arquivos/RostroNewLogo.png) no-repeat;
     background-size: 100%;
     font-size: 10px;
     display: block;
@@ -67,12 +67,12 @@
     margin-top: 0;
     position: absolute;
     transition: all 40ms;
-    margin-left: -25px;
-    margin-right: 5px;
+    margin-left: -30px;
+    margin-right: 8px;
 }
 .styledLinkContent--category-item-2::before {
     content: "";
-    background: url(https://cutis.vteximg.com.br/arquivos/solar.png)no-repeat;
+    background: url(https://batanew.vteximg.com.br/arquivos/SolaresNewLogo.png) no-repeat;
     background-size: 100%;
     font-size: 10px;
     display: block;
@@ -81,12 +81,12 @@
     margin-top: 0;
     position: absolute;
     transition: all 40ms;
-    margin-left: -25px;
-    margin-right: 5px;
+    margin-left: -30px;
+    margin-right: 8px;
 }
 .styledLinkContent--category-item-3::before {
     content: "";
-    background: url(https://cutis.vteximg.com.br/arquivos/maquillaje.png)no-repeat;
+    background: url(https://batanew.vteximg.com.br/arquivos/MaquillajeNewLogo.png) no-repeat;
     background-size: 100%;
     font-size: 10px;
     display: block;
@@ -95,12 +95,12 @@
     position: absolute;
     margin-top: 0;
     transition: all 40ms;
-    margin-left: -25px;
-    margin-right: 5px;
+    margin-left: -30px;
+    margin-right: 8px;
 }
 .styledLinkContent--category-item-4::before {
     content: "";
-    background: url(https://cutis.vteximg.com.br/arquivos/capilar.png)no-repeat;
+    background: url(https://batanew.vteximg.com.br/arquivos/CapilarNewLogo.png) no-repeat;
     background-size: 100%;
     font-size: 10px;
     display: block;
@@ -109,12 +109,12 @@
     position: absolute;
     margin-top: 0;
     transition: all 40ms;
-    margin-left: -25px;
-    margin-right: 5px;
+    margin-left: -30px;
+    margin-right: 8px;
 }
 .styledLinkContent--category-item-5::before {
     content: "";
-    background: url(https://cutis.vteximg.com.br/arquivos/Corporal.png)no-repeat;
+    background: url(https://batanew.vteximg.com.br/arquivos/CorporalNewLogo.png) no-repeat;
     background-size: 100%;
     font-size: 10px;
     display: block;
@@ -123,12 +123,12 @@
     position: absolute;
     margin-top: 0;
     transition: all 40ms;
-    margin-left: -25px;
-    margin-right: 5px;
+    margin-left: -30px;
+    margin-right: 8px;
 }
 .styledLinkContent--category-item-6::before {
     content: "";
-    background: url(https://cutis.vteximg.com.br/arquivos/Medicamentos.png)no-repeat;
+    background: url(https://batanew.vteximg.com.br/arquivos/MedicamentosNewLogo.png) no-repeat;
     background-size: 100%;
     font-size: 10px;
     display: block;
@@ -137,8 +137,8 @@
     position: absolute;
     margin-top: 0;
     transition: all 40ms;
-    margin-left: -25px;
-    margin-right: 5px;
+    margin-left: -30px;
+    margin-right:8px;
 }
 .styledLinkContent--category-item {
     align-items: center;
@@ -159,12 +159,18 @@
     min-height: 290px;
     border: 0;
 }
+.submenu--menuMarcasLv2 .styledLinkContent:hover{
+    color: #27AFE5;
+}
+.menuItem--marcas-submenu--isOpen:hover{
+    margin: 0 0 310px 0;
+}
 .menuItem--category-item {
     z-index: 9999;
 }
 
 .menuContainerNav--menu{
-    padding: 0 100px;
+    padding: 0 45px;
 }
 .styledLinkContainer--menuPrinItems {
     margin-left: 0;
@@ -201,39 +207,84 @@
 }
 .styledLinkContainer--subMenuPrinItems::after{
     content: "";
-    background: url(https://cutis.vteximg.com.br/arquivos/felchaAbajo.png)no-repeat;
-    background-size: 100%;
+    background: url(https://cutis.vteximg.com.br/arquivos/flechaAbajoNormalNew.png) no-repeat;
+    background-size: 100% !important;
     font-size: 10px;
     display: block;
-    width: 11px;
-    height: 6px;
+    width: 14px;
+    height: 8px;
     margin-top: 0;
     transition: all 40ms;
     margin-left: 10px;
 }
 .menuItem--menuPrinItems {
-    padding: 10px 0;
+    padding: 9px 0;
     margin-right: 30px;
+    display: block;
+}
+.menuContainer--menu {
+    align-items: center;
 }
 .styledLinkContainer--menuPrinItems {
     padding: 5px;
     border-radius: 5px;
     transition: 400ms all;
 }
-.styledLinkContainer--menuPrinItems:hover .styledLinkContent--menuPrinItems {
+.menuItem--menuPrinItems--isOpen:hover .styledLinkContent--menuPrinItems {
     color: #27AFE5;
 }
-.styledLinkContainer--menuPrinItems:hover::after{
-    background: url(https://cutis.vteximg.com.br/arquivos/flechaArribaAzul.png)no-repeat;
+.menuItem--menuPrinItems--isOpen:hover .styledLinkContainer--menuPrinItems::after{
+    background: url(https://cutis.vteximg.com.br/arquivos/flechaArribaAzulNew.png) no-repeat;
 }
 .styledLinkContainer--ofertasLink {
     background: #E4F7FF;
+    padding: 0 20px;
 }
 .styledLinkContainer--ofertasLink::after{
-    background: url(https://cutis.vteximg.com.br/arquivos/flechaAzulMenu.png)no-repeat;
+    background: url(https://cutis.vteximg.com.br/arquivos/flechaAbajoAzulNew.png)   no-repeat;
 }
 .styledLinkContainer--ofertasLink .styledLinkContent--menuPrinItems {
     color: #27AFE5;
+    font-weight: bold;
+}
+.styledLinkContainer--subcategory-item {
+    padding: 2px 0 !important;
+}
+.styledLinkContainer--activeCategory {
+    background: #E4F7FF;
+    border-radius: 5px;
+    padding: 10px 0;
+}
+.styledLinkContent--activeCategory {
+    color: #27AFE5;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+}
+.submenu--menuofertas {
+    padding: 30px 100px;
+}
+/* estilos del menu marcas con hover */
+.styledLinkContent--subcategory-item {
+    display: block;
+    padding-right: 5px;
+    font-size: 14px;
+    word-break: break-word;
+    white-space: break-spaces;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--menuMarcas) .styledLinkContainer--category-item {
+    transition: 400ms all;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--menuMarcas) .styledLinkContainer--category-item:hover {
+    background: #E4F7FF;
+    color: #27AFE5;
+    padding-left: 15px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--menuMarcas) .styledLinkContainer--category-item:hover .styledLinkContent--category-item{
+    color: #27AFE5;
+    font-weight: bold;
 }
 @media (max-width: 700px) {
     .menuContainerNav{
@@ -278,8 +329,11 @@
         top: 11px;
         right: 14px;
         width: 10px;
-        height: 24px;
+        height: 20px;
         position: absolute;
+    }
+    .styledLinkContainer--itemsMarcas{
+        margin: 0;
     }
     .menuItem--itemsPrincipales.menuItem--ofertas .styledLinkContent--itemsPrincipales {
         color: #27AFE5;
@@ -292,5 +346,75 @@
         height: 100%;
         background: white;
         z-index: 99;
+    }
+    .styledLinkContent--subcategory-item {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .menuItem--category-item {
+        padding-left: 50px;
+        display: flex;
+        align-items: center;
+    }
+    .menuItem--category-item::before {
+        content: "";
+        background: url(/arquivos/flecha-menu-cerrar.png) no-repeat;
+        background-size: 100%;
+        display: block;
+        width: 11px;
+        position: absolute;
+        height: 20px;
+        margin-left: -55px;
+    }
+    .styledLinkContent--category-item {
+        color: #27AFE5;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .styledLinkContent--category-item-4::before {
+        width: 20px;
+        height: 20px;
+    }
+    .styledLinkContent--category-item-5::before {
+        width: 20px;
+        height: 20px;
+    }
+    .styledLinkContent--category-item-6::before {
+        width: 20px;
+        height: 20px;
+    }
+    .styledLinkContent--category-item-2::before {
+        width: 20px;
+        height: 20px;
+    }
+    :global(.vtex-disclosure-layout-1-x-content--menusPrincipal) .styledLinkContent--itemsPrincipales {
+        color: #27AFE5;
+        font-weight: bold;
+    }
+    :global(.vtex-disclosure-layout-1-x-content--menusPrincipal) .styledLinkContainer--itemsPrincipales::before {
+        left: -16px;
+        transform: rotate(0deg);
+        top: 10px;
+    }
+    :global(.vtex-disclosure-layout-1-x-content--menusPrincipal) .styledLinkContainer--itemsPrincipales::before {
+        background: url(/arquivos/flecha-menu-cerrar.png) no-repeat;
+        background-size: 100%;
+    }
+    .styledLinkContent--iniciarSes::before{
+        content: "";
+        background: url(https://cutis.vteximg.com.br/arquivos/nuevoLogoUserAzul.png) no-repeat;
+        background-size: cover;
+        display: block;
+        width: 13px;
+        height: 17px;
+        margin-right: 10px;
+    }
+    .styledLinkContent--iniciarSes{
+        align-items: center;
+    }
+    .styledLinkContainer--sinFlecha {
+        border-radius: 5px;
+        margin: 0;
+        padding: 5px 10px;
     }
 }

@@ -7,3 +7,23 @@
 .price{
     font-weight: bold;
 }
+.summarySmallContent .summaryItemContainer--totalizer:last-child {
+    font-size: 15px;
+    color: #27AFE5;
+}
+.summarySmallContent .summaryItemContainer--totalizer {
+    font-size: 13px;
+}
+@media (max-width: 600px) {
+    .summaryItemContainer--totalizer {
+        margin: 3px 0 0 0;
+        padding-bottom: 0;
+    }
+    .price--totalizer{
+        font-size: 12px;
+    }
+    .summaryItemLabel--totalizer {
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
+}

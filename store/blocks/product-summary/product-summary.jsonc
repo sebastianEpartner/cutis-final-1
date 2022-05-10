@@ -3,7 +3,8 @@
     "children": [
       "add-to-list-btn",
       "stack-layout#prodsum",
-      "flex-layout.row#productInfo"
+      "flex-layout.row#productInfo",
+      "product-comparison-block.selector"
     ]
   },
   "product-summary-sku-selector": {
@@ -53,8 +54,13 @@
   "product-summary-image#shelf": {
     "props": {
       "showBadge": false,
-      "aspectRatio": "1:1",
-      "maxHeight": 300
+      // "aspectRatio": "3:4",
+      "mainImageLabel":{
+        "label":"1"
+      },
+      "hoverImage":{
+        "label":"2"
+      }
     }
   },
   "vtex.product-highlights@2.x:product-highlights#new": {

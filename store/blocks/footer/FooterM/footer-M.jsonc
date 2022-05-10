@@ -4,7 +4,9 @@
             "flex-layout.row#1-footer-mobile",
             "tab-layout#footerM",
             "flex-layout.row#2-footer-mobile",
-            "flex-layout.row#3-footer-mobile"
+            "flex-layout.row#3-footer-mobile",
+            "rich-text#derechosReservados",
+            "flex-layout.row#sticky-MenuFixed"
         ]
     },
     "flex-layout.row#1-footer-mobile": {
@@ -49,6 +51,7 @@
             "paddingBottom": 4
         }
     },
+    // contenedor final copn los medios de pago y copyright
     "flex-layout.col#mediosPago-footer-mobile": {
         "children": [
             "flex-layout.col#footer-medios-mobile"
@@ -57,20 +60,81 @@
             "blockClass": "payment-methods"
         }
     },
+    // contenedor secundario
     "flex-layout.col#footer-medios-mobile": {
         "children": [
-            "rich-text#tituloMedios"
+            "rich-text#tituloMedios",
+            "image#pagosMobile",
+            "rich-text#tituloDesarrolladoPor",
+            "flex-layout.row#desarrollaadoPorImages"
         ],
         "props": {
           "blockClass": "mediosColumn"
         }
     },
+    // tiutulos medios de pago 
     "rich-text#tituloMedios": {
         "props": {
           "textAlignment": "LEFT",
           "textPosition": "LEFT",
           "text": "Medios de pago",
           "blockClass": "titulosFooter"
+        }
+    },
+    // imagen de medios de pago
+    "image#pagosMobile": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/mediosPagoMobileNew.png",
+          "blockClass": ["imagenFooter"],
+          "link":{
+            "url":"/"
+          }
+        }
+    },
+    // titulo desarrollado por
+    "rich-text#tituloDesarrolladoPor": {
+        "props": {
+          "textAlignment": "LEFT",
+          "textPosition": "LEFT",
+          "text": "Desarrollado por",
+          "blockClass": ["titulosFooter","ultimo-titulo"]
+        }
+    },
+    // imagenes desarrollado por
+    "flex-layout.row#desarrollaadoPorImages": {
+        "children": [
+            "image#ePartnerLogo",
+            "image#vtexlogo"
+        ],  
+        "props": {
+          "blockClass": "desarrollado"
+        }
+    },
+    "image#ePartnerLogo": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/epartner-logo.png",
+          "blockClass": ["logos"],
+          "link":{
+            "url":"/"
+          }
+        }
+    },
+    "image#vtexlogo": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/vtex-logo.png",
+          "blockClass": ["logos"],
+          "link":{
+            "url":"/"
+          }
+        }
+    },
+    // ultimo comentario derechos reservados
+    "rich-text#derechosReservados": {
+        "props": {
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "text": "Todos los derechos reservados",
+          "blockClass": ["derechosReservados"]
         }
     }
 }

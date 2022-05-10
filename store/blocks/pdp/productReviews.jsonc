@@ -1,4 +1,11 @@
 {
+  // titulo de los comentarios
+  "rich-text#shelf-reviews": {
+    "props": {
+      "text": "## Comentarios sobre el producto",
+      "blockClass": ["shelfTitle","comentarios"]
+    }
+  },
     "flex-layout.row#productReviews": {
         "props": {
           "marginTop": 4,

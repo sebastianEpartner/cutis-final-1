@@ -1,0 +1,11 @@
+.lowStockText--Disponibles {
+    color: red;
+}
+.lowStockHighlight--Disponibles {
+    color: red;
+}
+.container--Disponibles {
+    padding: 15px 0 0 0;
+    margin-top: 5px;
+    border-top: 1px solid #E7EEF1;
+}

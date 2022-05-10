@@ -56,7 +56,7 @@
     },
     "disclosure-content#derechocorporativos": {
         "props": {
-            "blockClass": "answer"
+            "blockClass": "contenidoPoliticas"
         },
         "children": ["rich-text#corporativos-content"]
     },

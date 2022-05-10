@@ -15,7 +15,7 @@
     "disclosure-content#braandAll": {
         "children": ["disclosure-trigger#braandAll","flex-layout.row#brandsM"],
         "props": {
-        "blockClass": "subMneusMContent"
+        "blockClass": ["subMneusMContent","menusPrincipal"]
         }
     },
     //  inicio de contenido 
@@ -49,72 +49,123 @@
         "props": {
             "images": [
                 {
-                    "image": "https://cutis.vteximg.com.br/arquivos/avene.png",
-                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/avene.png"
+                    "image": "https://epartner.vteximg.com.br/arquivos/avene.png",
+                    "mobileImage":"https://epartner.vteximg.com.br/arquivos/avene.png",
+                    "link":{
+                      "url":"/avene"
+                    }
                 },
                 {
-                    "image": "https://cutis.vteximg.com.br/arquivos/bioderma.png",
-                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/bioderma.png"
+                    "image": "https://epartner.vteximg.com.br/arquivos/bioderma.png",
+                    "mobileImage":  "https://epartner.vteximg.com.br/arquivos/bioderma.png",
+                    "link":{
+                      "url":"/bioderma"
+                    }
                 },
                 {
                     "image": "https://cutis.vteximg.com.br/arquivos/almay.png",
-                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/almay.png"
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/almay.png",
+                    "link":{
+                      "url":"/almay"
+                    }
                 },
                 {
                     "image": "https://cutis.vteximg.com.br/arquivos/uriage.png",
-                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/uriage.png"
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/uriage.png",
+                    "link":{
+                      "url":"/uriage"
+                    }
                 },
                 {
                     "image": "https://cutis.vteximg.com.br/arquivos/pharma.png",
-                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/pharma.png"
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/pharma.png",
+                    "link":{
+                      "url":"/pharma"
+                    }
                 },
                 {
                     "image": "https://cutis.vteximg.com.br/arquivos/laroche.png",
-                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/laroche.png"
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/laroche.png",
+                    "link":{
+                      "url":"/la-roche-posay"
+                    }
                 },
                 {
                     "image": "https://cutis.vteximg.com.br/arquivos/heliocare.png",
-                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/heliocare.png"
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/heliocare.png",
+                    "link":{
+                      "url":"/heliocare"
+                    }
                 },
                 {
                   "image": "https://cutis.vteximg.com.br/arquivos/be.png",
-                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/be.png"
+                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/be.png",
+                  "link":{
+                    "url":"/be"
+                  }
                 },
                 {
                   "image": "https://cutis.vteximg.com.br/arquivos/medihealth.png",
-                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/medihealth.png"
+                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/medihealth.png",
+                  "link":{
+                    "url":"/medihealth"
+                  }
                 },
                 {
                   "image": "https://cutis.vteximg.com.br/arquivos/saderma.png",
-                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/saderma.png"
+                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/saderma.png",
+                  "link":{
+                    "url":"/saderma"
+                  }
                 },
                 {
                   "image": "https://cutis.vteximg.com.br/arquivos/sesderma.png",
-                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/sesderma.png"
+                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/sesderma.png",
+                  "link":{
+                    "url":"/sesderma"
+                  }
                 },
                 {
                   "image": "https://cutis.vteximg.com.br/arquivos/isdin.png",
-                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/isdin.png"
+                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/isdin.png",
+                  "link":{
+                    "url":"/isdin"
+                  }
                 },
                 {
                   "image": "https://cutis.vteximg.com.br/arquivos/saderma.png",
-                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/saderma.png"
+                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/saderma.png",
+                  "link":{
+                    "url":"/saderma"
+                  }
                 },
                 {
                   "image": "https://cutis.vteximg.com.br/arquivos/vichy.png",
-                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/vichy.png"
+                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/vichy.png",
+                  "link":{
+                    "url":"/vichy"
+                  }
                 },
                 {
                   "image": "https://cutis.vteximg.com.br/arquivos/dhems.png",
-                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/dhems.png"
+                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/dhems.png",
+                  "link":{
+                    "url":"/dhems"
+                  }
                 },
                 {
                   "image": "https://cutis.vteximg.com.br/arquivos/eucarin.png",
-                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/eucarin.png"
+                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/eucarin.png",
+                  "link":{
+                    "url":"/eucarin"
+                  }
                 },
                 {
                   "image": "https://cutis.vteximg.com.br/arquivos/cetaph.png",
-                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/cetaph.png"
+                  "mobileImage": "https://cutis.vteximg.com.br/arquivos/cetaph.png",
+                  "link":{
+                    "url":"/cetaph"
+                  }
                 }
             ]
         }
@@ -127,8 +178,8 @@
             "phone": 4
             },
             "infinite": true,
-            "showNavigationArrows": "never",
-            "showPaginationDots": "never",
+            "showNavigationArrows": "always",
+            "showPaginationDots": "mobileOnly",
             "blockClass":[ "marcas-carousel","marcas-sliderMenu"]
         }
     },
@@ -159,23 +210,39 @@
     },
     "flex-layout.col#brandsColum1": {
         "children": [
-            "menu-item#brand1",
-            "menu-item#brand2",
-            "menu-item#brand3",
-            "menu-item#brand4",
-            "menu-item#brand5",
-            "menu-item#brand6",
-            "menu-item#brand7",
-            "menu-item#brand8",
-            "menu-item#brand9",
-            "menu-item#brand10"
+          "menu-item#brandAderma",
+          "menu-item#brandAlmay",
+          "menu-item#brandApiva",
+          "menu-item#brandAvene",
+          "menu-item#brandAntioxidantech",
+          "menu-item#brandAluenPharma",
+          "menu-item#brandBe",
+          "menu-item#brandBioderma",
+          "menu-item#brandCetaphil",
+          "menu-item#brandCerave",
+          "menu-item#brandDermasof",
+          "menu-item#brandDhems",
+          "menu-item#brandDucray",
+          "menu-item#brandDermifant",
+          "menu-item#brandEsthederm",
+          "menu-item#brandEucerin",
+          "menu-item#brandEndocore",
+          "menu-item#brandEpidermique",
+          "menu-item#brandFagron",
+          "menu-item#brandGalderma",
+          "menu-item#brandGenove",
+          "menu-item#brandHeliocare",
+          "menu-item#brandHidrisage",
+          "menu-item#brandHuden",
+          "menu-item#brandInbiotech",
+          "menu-item#brandIsdin"
         ],
         "props": {
           "width":"50%",
           "blockClass": "itemCategory"
         }
     },
-    "menu-item#brand1":{
+    "menu-item#brandAderma":{
         "props": {
           "id": "menu-item-brand-home",
           "type": "custom",
@@ -184,13 +251,14 @@
           "blockClass": "itemsMarcas",
           "itemProps": {
           "type": "internal",
+          "href":"/aderma",
           "noFollow": false,
-          "tagTitle": "Categoria 1",
-          "text": "Categaria 1"
+          "tagTitle": "Aderma",
+          "text": "Aderma"
           }
         }
     },
-    "menu-item#brand2":{
+    "menu-item#brandAlmay":{
         "props": {
           "id": "menu-item-brand-home",
           "type": "custom",
@@ -199,13 +267,14 @@
           "blockClass": "itemsMarcas",
           "itemProps": {
           "type": "internal",
+          "href":"/almay",
           "noFollow": false,
-          "tagTitle": "Categoria 2",
-          "text": "Categaria 2"
+          "tagTitle": "Almay",
+          "text": "Almay"
           }
         }
     },
-    "menu-item#brand3":{
+    "menu-item#brandApiva":{
         "props": {
           "id": "menu-item-brand-home",
           "type": "custom",
@@ -214,13 +283,14 @@
           "blockClass": "itemsMarcas",
           "itemProps": {
           "type": "internal",
+          "href":"/apiva",
           "noFollow": false,
-          "tagTitle": "Categoria 3",
-          "text": "Categaria 3"
+          "tagTitle": "Apiva",
+          "text": "Apiva"
           }
         }
     },
-    "menu-item#brand4":{
+    "menu-item#brandAvene":{
         "props": {
           "id": "menu-item-brand-home",
           "type": "custom",
@@ -229,13 +299,14 @@
           "blockClass": "itemsMarcas",
           "itemProps": {
           "type": "internal",
+          "href":"/avene",
           "noFollow": false,
-          "tagTitle": "Categoria 4",
-          "text": "Categaria 4"
+          "tagTitle": "Avene",
+          "text": "Avene"
           }
         }
     },
-    "menu-item#brand5":{
+    "menu-item#brandAntioxidantech":{
         "props": {
           "id": "menu-item-brand-home",
           "type": "custom",
@@ -244,13 +315,14 @@
           "blockClass": "itemsMarcas",
           "itemProps": {
           "type": "internal",
+          "href":"/antioxidantech",
           "noFollow": false,
-          "tagTitle": "Categoria 5",
-          "text": "Categaria 5"
+          "tagTitle": "Antioxidantech",
+          "text": "Antioxidantech"
           }
         }
     },
-    "menu-item#brand6":{
+    "menu-item#brandAluenPharma":{
         "props": {
           "id": "menu-item-brand-home",
           "type": "custom",
@@ -260,12 +332,13 @@
           "itemProps": {
           "type": "internal",
           "noFollow": false,
-          "tagTitle": "Categoria 6",
-          "text": "Categaria 6"
+          "href":"/aulen-pharma",
+          "tagTitle": "Aulen Pharma",
+          "text": "Aulen Pharma"
           }
         }
     },
-    "menu-item#brand7":{
+    "menu-item#brandBe":{
         "props": {
           "id": "menu-item-brand-home",
           "type": "custom",
@@ -274,13 +347,14 @@
           "blockClass": "itemsMarcas",
           "itemProps": {
           "type": "internal",
+          "href":"/be",
           "noFollow": false,
-          "tagTitle": "Categoria 7",
-          "text": "Categaria 7"
+          "tagTitle": "Be",
+          "text": "Be"
           }
         }
     },
-    "menu-item#brand8":{
+    "menu-item#brandBioderma":{
         "props": {
           "id": "menu-item-brand-home",
           "type": "custom",
@@ -289,13 +363,14 @@
           "blockClass": "itemsMarcas",
           "itemProps": {
           "type": "internal",
+          "href":"/bioderma",
           "noFollow": false,
-          "tagTitle": "Categoria 8",
-          "text": "Categaria 8"
+          "tagTitle": "Bioderma",
+          "text": "Bioderma"
           }
         }
     },
-    "menu-item#brand9":{
+    "menu-item#brandCetaphil":{
         "props": {
           "id": "menu-item-brand-home",
           "type": "custom",
@@ -304,13 +379,14 @@
           "blockClass": "itemsMarcas",
           "itemProps": {
           "type": "internal",
+          "href":"/cetaphil",
           "noFollow": false,
-          "tagTitle": "Categoria 9",
-          "text": "Categaria 9"
+          "tagTitle": "Cetaphil",
+          "text": "Cetaphil"
           }
         }
     },
-    "menu-item#brand10":{
+    "menu-item#brandCerave":{
         "props": {
           "id": "menu-item-brand-home",
           "type": "custom",
@@ -320,30 +396,299 @@
           "itemProps": {
           "type": "internal",
           "noFollow": false,
-          "tagTitle": "Categoria 10",
-          "text": "Categaria 10"
+          "href":"/cerave",
+          "tagTitle": "Cerave",
+          "text": "Cerave"
           }
         }
+    },
+    "menu-item#brandDermasof":{
+      "props": {
+        "id": "menu-item-brand-home",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "itemsMarcas",
+        "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "href":"/dermasof",
+        "tagTitle": "Dermasof",
+        "text": "Dermasof"
+        }
+      }
+    },
+    "menu-item#brandDhems":{
+      "props": {
+        "id": "menu-item-brand-home",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "itemsMarcas",
+        "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "href":"/dhems",
+        "tagTitle": "Dhems",
+        "text": "Dhems"
+        }
+      }
+    },
+    "menu-item#brandDucray":{
+      "props": {
+        "id": "menu-item-brand-home",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "itemsMarcas",
+        "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "href":"/ducray",
+        "tagTitle": "Ducray",
+        "text": "Ducray"
+        }
+      }
+    },
+    "menu-item#brandDermifant":{
+      "props": {
+        "id": "menu-item-brand-home",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "itemsMarcas",
+        "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "href":"/dermifant",
+        "tagTitle": "Dermifant",
+        "text": "Dermifant"
+        }
+      }
+    },
+    "menu-item#brandEsthederm":{
+      "props": {
+        "id": "menu-item-brand-home",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "itemsMarcas",
+        "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "href":"/esthederm",
+        "tagTitle": "Esthederm",
+        "text": "Esthederm"
+        }
+      }
+    },
+    "menu-item#brandEucerin":{
+      "props": {
+        "id": "menu-item-brand-home",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "itemsMarcas",
+        "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "href":"/eucerin",
+        "tagTitle": "Eucerin",
+        "text": "Eucerin"
+        }
+      }
+    },
+    "menu-item#brandEndocore":{
+      "props": {
+        "id": "menu-item-brand-home",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "itemsMarcas",
+        "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "href":"/endocore",
+        "tagTitle": "Endocore",
+        "text": "Endocore"
+        }
+      }
+    },
+    "menu-item#brandEpidermique":{
+      "props": {
+        "id": "menu-item-brand-home",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "itemsMarcas",
+        "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "href":"/epidermique",
+        "tagTitle": "Epidermique",
+        "text": "Epidermique"
+        }
+      }
+    },
+    "menu-item#brandFagron":{
+      "props": {
+        "id": "menu-item-brand-home",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "itemsMarcas",
+        "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "href":"/fagron",
+        "tagTitle": "Fagron",
+        "text": "Fagron"
+        }
+      }
+    },
+    "menu-item#brandGalderma":{
+      "props": {
+        "id": "menu-item-brand-home",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "itemsMarcas",
+        "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "href":"/galderma",
+        "tagTitle": "Galderma",
+        "text": "Galderma"
+        }
+      }
+    },
+    "menu-item#brandGenove":{
+      "props": {
+        "id": "menu-item-brand-home",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "itemsMarcas",
+        "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "href":"/genove",
+        "tagTitle": "Genove",
+        "text": "Genove"
+        }
+      }
+    },
+    "menu-item#brandHeliocare":{
+      "props": {
+        "id": "menu-item-brand-home",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "itemsMarcas",
+        "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "href":"/heliocare",
+        "tagTitle": "Heliocare",
+        "text": "Heliocare"
+        }
+      }
+    },
+    "menu-item#brandHidrisage":{
+      "props": {
+        "id": "menu-item-brand-home",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "itemsMarcas",
+        "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "href":"/hidrisage",
+        "tagTitle": "Hidrisage",
+        "text": "Hidrisage"
+        }
+      }
+    },
+    "menu-item#brandHuden":{
+      "props": {
+        "id": "menu-item-brand-home",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "itemsMarcas",
+        "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "href":"/huden",
+        "tagTitle": "Huden",
+        "text": "Huden"
+        }
+      }
+    },
+    "menu-item#brandInbiotech":{
+      "props": {
+        "id": "menu-item-brand-home",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "itemsMarcas",
+        "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "href":"/inbiotech",
+        "tagTitle": "Inbiotech",
+        "text": "IInbiotech"
+        }
+      }
+    },
+    "menu-item#brandIsdin":{
+      "props": {
+        "id": "menu-item-brand-home",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "itemsMarcas",
+        "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "href":"/isdin",
+        "tagTitle": "Isdin",
+        "text": "Isdin"
+        }
+      }
     },
     "flex-layout.col#brandsColum2": {
         "children": [
-            "menu-item#brand11",
-            "menu-item#brand12",
-            "menu-item#brand13",
-            "menu-item#brand14",
-            "menu-item#brand15",
-            "menu-item#brand16",
-            "menu-item#brand17",
-            "menu-item#brand18",
-            "menu-item#brand19",
-            "menu-item#brand20"
+          "menu-item#brandIsispharma",
+          "menu-item#brandKeracnyl",
+          "menu-item#brandLaForet",
+          "menu-item#brandLaRochePosay",
+          "menu-item#brandLiifetech",
+          "menu-item#brandMedihealth",
+          "menu-item#brandNoreva",
+          "menu-item#brandNovaderma",
+          "menu-item#brandPharmaderma",
+          "menu-item#brandPilopeptan",
+          "menu-item#brandQuideca",
+          "menu-item#brandQuifarma",
+          "menu-item#brandQuimiderm",
+          "menu-item#brandSaderma",
+          "menu-item#brandSensilis",
+          "menu-item#brandSiegfried",
+          "menu-item#brandSkinAllience",
+          "menu-item#brandSkinCeuticals",
+          "menu-item#brandSkindrug",
+          "menu-item#brandSuiphar",
+          "menu-item#brandSynbionyme",
+          "menu-item#brandVichy"
         ],
         "props": {
           "width":"50%",
           "blockClass": "itemCategory"
         }
     },
-    "menu-item#brand11":{
+    "menu-item#brandIsispharma":{
         "props": {
           "id": "menu-item-brand-home",
           "type": "custom",
@@ -352,13 +697,14 @@
           "blockClass": "itemsMarcas",
           "itemProps": {
           "type": "internal",
+          "href":"/isispharma",
           "noFollow": false,
-          "tagTitle": "Categoria 1",
-          "text": "Categaria 1"
+          "tagTitle": "Isispharma",
+          "text": "Isispharma"
           }
         }
     },
-    "menu-item#brand12":{
+    "menu-item#brandKeracnyl":{
         "props": {
           "id": "menu-item-brand-home",
           "type": "custom",
@@ -367,13 +713,14 @@
           "blockClass": "itemsMarcas",
           "itemProps": {
           "type": "internal",
+          "href":"/keracnyl",
           "noFollow": false,
-          "tagTitle": "Categoria 2",
-          "text": "Categaria 2"
+          "tagTitle": "Keracnyl",
+          "text": "Keracnyl"
           }
         }
     },
-    "menu-item#brand13":{
+    "menu-item#brandKlorane":{
         "props": {
           "id": "menu-item-brand-home",
           "type": "custom",
@@ -382,13 +729,14 @@
           "blockClass": "itemsMarcas",
           "itemProps": {
           "type": "internal",
+          "href":"/klorane",
           "noFollow": false,
-          "tagTitle": "Categoria 3",
-          "text": "Categaria 3"
+          "tagTitle": "Klorane",
+          "text": "Klorane"
           }
         }
     },
-    "menu-item#brand14":{
+    "menu-item#brandLaForet":{
         "props": {
           "id": "menu-item-brand-home",
           "type": "custom",
@@ -397,13 +745,14 @@
           "blockClass": "itemsMarcas",
           "itemProps": {
           "type": "internal",
+          "href":"/la-foret",
           "noFollow": false,
-          "tagTitle": "Categoria 4",
-          "text": "Categaria 4"
+          "tagTitle": "La foret",
+          "text": "La foret"
           }
         }
     },
-    "menu-item#brand15":{
+    "menu-item#brandLaRochePosay":{
         "props": {
           "id": "menu-item-brand-home",
           "type": "custom",
@@ -412,13 +761,14 @@
           "blockClass": "itemsMarcas",
           "itemProps": {
           "type": "internal",
+          "href":"/la-roche-posay",
           "noFollow": false,
-          "tagTitle": "Categoria 5",
-          "text": "Categaria 5"
+          "tagTitle": "La roche Posay",
+          "text": "La Roche Posay"
           }
         }
     },
-    "menu-item#brand16":{
+    "menu-item#brandLiifetech":{
         "props": {
           "id": "menu-item-brand-home",
           "type": "custom",
@@ -427,13 +777,14 @@
           "blockClass": "itemsMarcas",
           "itemProps": {
           "type": "internal",
+          "href":"/lifetech",
           "noFollow": false,
-          "tagTitle": "Categoria 6",
-          "text": "Categaria 6"
+          "tagTitle": "Lifetech",
+          "text": "Lifetech"
           }
         }
     },
-    "menu-item#brand17":{
+    "menu-item#brandMedihealth":{
         "props": {
           "id": "menu-item-brand-home",
           "type": "custom",
@@ -442,13 +793,30 @@
           "blockClass": "itemsMarcas",
           "itemProps": {
           "type": "internal",
+          "href":"/medihealth",
           "noFollow": false,
-          "tagTitle": "Categoria 7",
-          "text": "Categaria 7"
+          "tagTitle": "Medihealth",
+          "text": "Medihealth"
           }
         }
     },
-    "menu-item#brand18":{
+    "menu-item#brandNoreva":{
+      "props": {
+        "id": "menu-item-brand-home",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "itemsMarcas",
+        "itemProps": {
+        "type": "internal",
+        "href":"/noreva",
+        "noFollow": false,
+        "tagTitle": "Noreva",
+        "text": "Noreva"
+        }
+      }
+    },
+    "menu-item#brandNovaderma":{
         "props": {
           "id": "menu-item-brand-home",
           "type": "custom",
@@ -457,13 +825,14 @@
           "blockClass": "itemsMarcas",
           "itemProps": {
           "type": "internal",
+          "href":"/novaderma",
           "noFollow": false,
-          "tagTitle": "Categoria 8",
-          "text": "Categaria 8"
+          "tagTitle": "Novaderma",
+          "text": "Novaderma"
           }
         }
     },
-    "menu-item#brand19":{
+    "menu-item#brandPharmaderma":{
         "props": {
           "id": "menu-item-brand-home",
           "type": "custom",
@@ -472,13 +841,14 @@
           "blockClass": "itemsMarcas",
           "itemProps": {
           "type": "internal",
+          "href":"/pharmaderma",
           "noFollow": false,
-          "tagTitle": "Categoria 9",
-          "text": "Categaria 9"
+          "tagTitle": "Pharmaderma",
+          "text": "Pharmaderma"
           }
         }
     },
-    "menu-item#brand20":{
+    "menu-item#brandPilopeptan":{
         "props": {
           "id": "menu-item-brand-home",
           "type": "custom",
@@ -487,9 +857,234 @@
           "blockClass": "itemsMarcas",
           "itemProps": {
           "type": "internal",
+          "href":"/pilopeptan",
           "noFollow": false,
-          "tagTitle": "Categoria 10",
-          "text": "Categaria 10"
+          "tagTitle": "Pilopeptan",
+          "text": "Pilopeptan"
+          }
+        }
+    },
+    "menu-item#brandQuideca":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "href":"/quideca",
+          "noFollow": false,
+          "tagTitle": "Quideca",
+          "text": "Quideca"
+          }
+        }
+    },
+    "menu-item#brandQuifarma":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "href":"/quifarma",
+          "noFollow": false,
+          "tagTitle": "Quifarma",
+          "text": "Quifarma"
+          }
+        }
+    },
+    "menu-item#brandQuimiderm":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "href":"/quimiderm",
+          "noFollow": false,
+          "tagTitle": "Quimiderma",
+          "text": "Quimiderma"
+          }
+        }
+    },
+    "menu-item#brandSaderma":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "href":"/saderma",
+          "noFollow": false,
+          "tagTitle": "Saderma",
+          "text": "Saderma"
+          }
+        }
+    },
+    "menu-item#brandSensilis":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "href":"/sensilis",
+          "noFollow": false,
+          "tagTitle": "Sensilis",
+          "text": "Sensilis"
+          }
+        }
+    },
+    "menu-item#brandSesderma":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "href":"/sesderma",
+          "noFollow": false,
+          "tagTitle": "Sesderma",
+          "text": "Sesderma"
+          }
+        }
+    },
+    "menu-item#brandSiegfried":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "href":"/siegfried",
+          "noFollow": false,
+          "tagTitle": "Siegfried",
+          "text": "Siegfried"
+          }
+        }
+    },
+    "menu-item#brandSkinAllience":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "href":"/skin-allience",
+          "noFollow": false,
+          "tagTitle": "Skin allience",
+          "text": "Skin allience"
+          }
+        }
+    },
+    "menu-item#brandSkinCeuticals":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "href":"/skin-ceuticals",
+          "noFollow": false,
+          "tagTitle": "Skin ceuticals",
+          "text": "Skin ceuticals"
+          }
+        }
+    },
+    "menu-item#brandSkindrug":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "href":"/skindrug",
+          "noFollow": false,
+          "tagTitle": "Skindrug",
+          "text": "Skindrug"
+          }
+        }
+    },
+    "menu-item#brandSuiphar":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "href":"/suiphar",
+          "noFollow": false,
+          "tagTitle": "Suiphar",
+          "text": "Suiphar"
+          }
+        }
+    },
+    "menu-item#brandSynbionyme":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "href":"/sinbionyme",
+          "noFollow": false,
+          "tagTitle": "Sinbionyme",
+          "text": "Sinbionyme"
+          }
+        }
+    },
+    "menu-item#brandUriage":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "href":"/uriage",
+          "noFollow": false,
+          "tagTitle": "Uriage",
+          "text": "Uriage"
+          }
+        }
+    },
+    "menu-item#brandVichy":{
+        "props": {
+          "id": "menu-item-brand-home",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "blockClass": "itemsMarcas",
+          "itemProps": {
+          "type": "internal",
+          "href":"/vichy",
+          "noFollow": false,
+          "tagTitle": "Vichy",
+          "text": "Vichy"
           }
         }
     }

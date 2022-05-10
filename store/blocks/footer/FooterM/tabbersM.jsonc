@@ -61,7 +61,7 @@
     },
     "tab-content.item#tabbersfooterM-1": {
       "children": [
-        "vtex.menu@2.x:menu#Products"
+        "vtex.menu@2.x:menu#quienes-somos"
       ],
       "props": {
         "tabId": "tabbersfooterM-1",
@@ -70,7 +70,8 @@
     },
     "tab-content.item#tabbersfooterM-2": {
       "children": [
-        "vtex.menu@2.x:menu#Products"
+        "vtex.menu@2.x:menu#Products",
+        "vtex.menu@2.x:menu#footer-bags"
       ],
       "props": {
         "tabId": "tabbersfooterM-2",
@@ -79,7 +80,8 @@
     },
     "tab-content.item#tabbersfooterM-3": {
       "children": [
-        "vtex.menu@2.x:menu#Products"
+        "vtex.menu@2.x:menu#mas-info",
+        "vtex.menu@2.x:menu#mas-info-2"
       ],
       "props": {
         "tabId": "tabbersfooterM-3", 

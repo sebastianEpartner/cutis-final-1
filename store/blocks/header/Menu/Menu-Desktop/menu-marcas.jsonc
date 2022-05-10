@@ -7,15 +7,15 @@
         "children": [
           "flex-layout.row#menu-more"
         ]
-      },
-      "flex-layout.row#menu-more": {
-        "props": {
+    },
+    "flex-layout.row#menu-more": {
+      "props": {
           "blockClass": "menuMarcas"
-        },
-        "children": [
-          "flex-layout.col#menu-more-1"
-        ]
       },
+      "children": [
+          "flex-layout.col#menu-more-1"
+      ]
+    },
       "flex-layout.col#menu-more-1": {
         "props": {
           "blockClass": "menuMarcas"
@@ -59,13 +59,13 @@
           "type": "custom",
           "iconId": null,
           "highlight": false,
-          "blockClass": "category-item",
+          "blockClass":["category-item","marcas-submenu"],
           "itemProps": {
             "type": "internal",
             "href": "/faq",
             "noFollow": true,
-            "tagTitle": "Todas Marcas",
-            "text": "Todas Marcas"
+            "tagTitle": "Todas las marcas",
+            "text": "Todas las marcas"
           }
         },
         "blocks": [
@@ -127,82 +127,130 @@
       },
       "image#marca-1": {
         "props": {
-          "src": "https://cutis.vteximg.com.br/arquivos/avene.png"
+          "src": "https://cutis.vteximg.com.br/arquivos/avene.png",
+          "link":{
+            "url":"/avene"
+          }
         }
       },
       "image#marca-2": {
         "props": {
-          "src": "https://cutis.vteximg.com.br/arquivos/bioderma.png"
+          "src": "https://cutis.vteximg.com.br/arquivos/bioderma.png",
+          "link":{
+            "url":"/bioderma"
+          }
         }
       },
       "image#marca-3": {
         "props": {
-          "src": "https://cutis.vteximg.com.br/arquivos/almay.png"
+          "src": "https://cutis.vteximg.com.br/arquivos/almay.png",
+          "link":{
+            "url":"/almay"
+          }
         }
       },
       "image#marca-4": {
         "props": {
-          "src": "https://cutis.vteximg.com.br/arquivos/uriage.png"
+          "src": "https://cutis.vteximg.com.br/arquivos/uriage.png",
+          "link":{
+            "url":"/uriage"
+          }
         }
       },
       "image#marca-5": {
         "props": {
-          "src": "https://cutis.vteximg.com.br/arquivos/pharma.png"
+          "src": "https://cutis.vteximg.com.br/arquivos/pharma.png",
+          "link":{
+            "url":"/pharma"
+          }
         }
       },
       "image#marca-6": {
         "props": {
-          "src": "https://cutis.vteximg.com.br/arquivos/laroche.png"
+          "src": "https://cutis.vteximg.com.br/arquivos/laroche.png",
+          "link":{
+            "url":"/la-roche-posay"
+          }
         }
       },
       "image#marca-7": {
         "props": {
-          "src": "https://cutis.vteximg.com.br/arquivos/heliocare.png"
+          "src": "https://cutis.vteximg.com.br/arquivos/heliocare.png",
+          "link":{
+            "url":"/heliocare"
+          }
         }
       },
       "image#marca-8": {
         "props": {
-          "src": "https://cutis.vteximg.com.br/arquivos/be.png"
+          "src": "https://cutis.vteximg.com.br/arquivos/be.png",
+          "link":{
+            "url":"/be"
+          }
         }
       },
       "image#marca-9": {
         "props": {
-          "src": "https://cutis.vteximg.com.br/arquivos/medihealth.png"
+          "src": "https://cutis.vteximg.com.br/arquivos/medihealth.png",
+          "link":{
+            "url":"/medihealth"
+          }
         }
       },
       "image#marca-10": {
         "props": {
-          "src": "https://cutis.vteximg.com.br/arquivos/saderma.png"
+          "src": "https://cutis.vteximg.com.br/arquivos/saderma.png",
+          "link":{
+            "url":"/saderma"
+          }
         }
       },
       "image#marca-11": {
         "props": {
-          "src": "https://cutis.vteximg.com.br/arquivos/sesderma.png"
+          "src": "https://cutis.vteximg.com.br/arquivos/sesderma.png",
+          "link":{
+            "url":"/sesderma"
+          }
         }
       },
       "image#marca-12": {
         "props": {
-          "src": "https://cutis.vteximg.com.br/arquivos/isdin.png"
+          "src": "https://cutis.vteximg.com.br/arquivos/isdin.png",
+          "link":{
+            "url":"/isdin"
+          }
         }
       },
       "image#marca-13": {
         "props": {
-          "src": "https://cutis.vteximg.com.br/arquivos/vichy.png"
+          "src": "https://cutis.vteximg.com.br/arquivos/vichy.png",
+          "link":{
+            "url":"/vichy"
+          }
         }
       },
       "image#marca-14": {
         "props": {
-          "src": "https://cutis.vteximg.com.br/arquivos/dhems.png"
+          "src": "https://cutis.vteximg.com.br/arquivos/dhems.png",
+          "link":{
+            "url":"/dhems"
+          }
         }
       },
       "image#marca-15": {
         "props": {
-          "src": "https://cutis.vteximg.com.br/arquivos/eucarin.png"
+          "src": "https://cutis.vteximg.com.br/arquivos/eucarin.png",
+          "link":{
+            "url":"/eucarin"
+          }
         }
       },
       "image#marca-16": {
         "props": {
-          "src": "https://cutis.vteximg.com.br/arquivos/cetaph.png"
+          "src": "https://cutis.vteximg.com.br/arquivos/cetaph.png",
+          "link":{
+            "url":"/cetaph"
+          }
         }
       },
       
@@ -210,7 +258,7 @@
   "vtex.menu@2.x:submenu#marcas-all": {
     "props": {
         "width": "100%",
-        "blockClass": "menuMarcasLv2"
+        "blockClass": ["menuMarcasLv2","marcas-submenu"]
     },
     "children": [
         "flex-layout.row#marcas-all"
@@ -227,7 +275,7 @@
   },
   "flex-layout.row#marcas-premium-columnas": {
     "props":{
-        "width": "60%",
+        "width": "70%",
         "blockclass":"categoriasMenu"
     },
     "children": [
@@ -286,7 +334,11 @@
   },
   "image#marca-all": {
     "props": {
-      "src": "https://cutis.vteximg.com.br/arquivos/todasLasMarcas.png"
+      "blockClass": ["imagenMenuCategory","marcas-menu"],
+      "src": "https://cutis.vteximg.com.br/arquivos/bannerMenu-2.png",
+      "link":{
+        "url":"/"
+      }
     }
   },
   // COlumnas en la del primer sub menu CATEGORIAS
@@ -296,11 +348,18 @@
         "blockclass": "ColumnasMenuCategoria"
     },
     "children": [
-        "menu-item#category-marcas-premium-1",
-        "menu-item#category-marcas-premium-2",
-        "menu-item#category-marcas-premium-3",
-        "menu-item#category-marcas-premium-4",
-        "menu-item#category-marcas-premium-5"     
+      "menu-item#category-marcas-premium-aderma",
+      "menu-item#category-marcas-premium-almay",
+      "menu-item#category-marcas-premium-apiva",
+      "menu-item#category-marcas-premium-avene",
+      "menu-item#category-marcas-premium-antioxidantech",
+      "menu-item#category-marcas-premium-aulen",
+      "menu-item#category-marcas-premium-be",
+      "menu-item#category-marcas-premium-cetaphil",
+      "menu-item#category-marcas-premium-cerave",
+      "menu-item#category-marcas-premium-dermasof",
+      "menu-item#category-marcas-premium-dhems",
+      "menu-item#category-marcas-premium-ducray"
     ]
 },
 "vtex.menu@2.x:menu#marcas-premium-2": {
@@ -309,11 +368,19 @@
         "blockclass": "ColumnasMenuCategoria"
     },
     "children": [
-      "menu-item#category-marcas-premium-1",
-      "menu-item#category-marcas-premium-2",
-      "menu-item#category-marcas-premium-3",
-      "menu-item#category-marcas-premium-4",
-      "menu-item#category-marcas-premium-5"
+      "menu-item#category-marcas-premium-dermifant",
+      "menu-item#category-marcas-premium-esthederm",
+      "menu-item#category-marcas-premium-eucerin",
+      "menu-item#category-marcas-premium-endocare",
+      "menu-item#category-marcas-premium-epidermique",
+      "menu-item#category-marcas-premium-fagron",
+      "menu-item#category-marcas-premium-galderma",
+      "menu-item#category-marcas-premium-genove",
+      "menu-item#category-marcas-premium-heeliocare",
+      "menu-item#category-marcas-premium-hidrisage",
+      "menu-item#category-marcas-premium-huden",
+      "menu-item#category-marcas-premium-inbiotech",
+      "menu-item#category-marcas-premium-isdin"
     ]
   },
   "vtex.menu@2.x:menu#marcas-premium-3": {
@@ -322,11 +389,19 @@
           "blockclass": "ColumnasMenuCategoria"
       },
       "children": [
-        "menu-item#category-marcas-premium-1",
-        "menu-item#category-marcas-premium-2",
-        "menu-item#category-marcas-premium-3",
-        "menu-item#category-marcas-premium-4",
-        "menu-item#category-marcas-premium-5"
+        "menu-item#category-marcas-premium-isispharma",
+        "menu-item#category-marcas-premium-keracnyl",
+        "menu-item#category-marcas-premium-klorane",
+        "menu-item#category-marcas-premium-laForet",
+        "menu-item#category-marcas-premium-laRochePosay",
+        "menu-item#category-marcas-premium-lifetech",
+        "menu-item#category-marcas-premium-medihealth",
+        "menu-item#category-marcas-premium-noreva",
+        "menu-item#category-marcas-premium-novaderma",
+        "menu-item#category-marcas-premium-pharmaderma",
+        "menu-item#category-marcas-premium-pilopeptan",
+        "menu-item#category-marcas-premium-quideca",
+        "menu-item#category-marcas-premium-quifarma"
       ]
   },
   "vtex.menu@2.x:menu#marcas-premium-4": {
@@ -335,86 +410,786 @@
           "blockclass": "ColumnasMenuCategoria"
       },
       "children": [
-        "menu-item#category-marcas-premium-1",
-        "menu-item#category-marcas-premium-2",
-        "menu-item#category-marcas-premium-3",
-        "menu-item#category-marcas-premium-4",
-        "menu-item#category-marcas-premium-5"
+        "menu-item#category-marcas-premium-quimiderm",
+        "menu-item#category-marcas-premium-saderma",
+        "menu-item#category-marcas-premium-sensilis",
+        "menu-item#category-marcas-premium-sesderma",
+        "menu-item#category-marcas-premium-siegfried",
+        "menu-item#category-marcas-premium-skin-allience",
+        "menu-item#category-marcas-premium-skin-ceuticals",
+        "menu-item#category-marcas-premium-skindrug",
+        "menu-item#category-marcas-premium-suiphar",
+        "menu-item#category-marcas-premium-synbionyme",
+        "menu-item#category-marcas-premium-uriage",
+        "menu-item#category-marcas-premium-vichy"
       ]
   },
-  "menu-item#category-marcas-premium-1": {
+  "menu-item#category-marcas-premium-aderma": {
     "props": {
-        "id": "menu-item-category-apparel-clothing",
+        "id": "menu-item-category-apparel-aderma",
         "type": "custom",
         "iconId": null,
         "highlight": false,
         "itemProps": {
             "type": "internal",
-            "href": "/apparel---accessories/clothing/",
+            "href": "/aderma",
             "noFollow": false,
-            "tagTitle": "Marca 1",
-            "text": "Marca 1"
+            "tagTitle": "Aderma",
+            "text": "Aderma"
         }
     }
   },
-  "menu-item#category-marcas-premium-2": {
+  "menu-item#category-marcas-premium-almay": {
       "props": {
-          "id": "menu-item-category-apparel-accessories",
+          "id": "menu-item-category-apparel-almay",
           "type": "custom",
           "iconId": null,
           "highlight": false,
           "itemProps": {
           "type": "internal",
-          "href": "/apparel---accessories/accessories/",
+          "href": "/almay",
           "noFollow": false,
-          "tagTitle": "Marca 2",
-          "text": "Marca 2"
+          "tagTitle": "Almay",
+          "text": "Almay"
           }
       }
   },
-  "menu-item#category-marcas-premium-3": {
+  "menu-item#category-marcas-premium-apiva": {
       "props": {
-          "id": "menu-item-category-apparel-eyeglasses",
+          "id": "menu-item-category-apparel-apiva",
           "type": "custom",
           "iconId": null,
           "highlight": false,
           "itemProps": {
           "type": "internal",
-          "href": "/apparel---accessories/eyeglasses/",
+          "href": "/apiva",
           "noFollow": false,
-          "tagTitle": "Marca 3",
-          "text": "Marca 3"
+          "tagTitle": "Apiva",
+          "text": "Apiva"
           }
       }
   },
-  "menu-item#category-marcas-premium-4": {
+  "menu-item#category-marcas-premium-avene": {
           "props": {
-              "id": "menu-item-category-apparel-category4",
+              "id": "menu-item-category-apparel-avene",
               "type": "custom",
               "iconId": null,
               "highlight": false,
               "itemProps": {
               "type": "internal",
-              "href": "/apparel---accessories/eyeglasses/",
+              "href": "/avene",
               "noFollow": false,
-              "tagTitle": "Marca 4",
-              "text": "Marca 4"
+              "tagTitle": "Avene",
+              "text": "Avene"
               }
           }
   },
-  "menu-item#category-marcas-premium-5": {
+  "menu-item#category-marcas-premium-antioxidantech": {
       "props": {
-          "id": "menu-item-category-apparel-category5",
+          "id": "menu-item-category-apparel-antioxidantech",
           "type": "custom",
           "iconId": null,
           "highlight": false,
           "itemProps": {
           "type": "internal",
-          "href": "/apparel---accessories/eyeglasses/",
+          "href": "/antioxidantech",
           "noFollow": false,
-          "tagTitle": "Marca 5",
-          "text": "Marca 5"
+          "tagTitle": "Antioxidantech",
+          "text": "Antioxidantech"
           }
       }
+  },
+  "menu-item#category-marcas-premium-aulen": {
+      "props": {
+          "id": "menu-item-category-apparel-aulen",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+          "type": "internal",
+          "href": "/aulen-pharma",
+          "noFollow": false,
+          "tagTitle": "Aulen pharma",
+          "text": "Aulen pharma"
+          }
+      }
+  },
+  "menu-item#category-marcas-premium-be": {
+      "props": {
+          "id": "menu-item-category-apparel-be",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+          "type": "internal",
+          "href": "/be",
+          "noFollow": false,
+          "tagTitle": "Be",
+          "text": "Be"
+          }
+      }
+  },
+  "menu-item#category-marcas-premium-bioderma": {
+      "props": {
+          "id": "menu-item-category-apparel-bioderma",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+          "type": "internal",
+          "href": "/bioderma",
+          "noFollow": false,
+          "tagTitle": "Bioderma",
+          "text": "Bioderma"
+          }
+      }
+  },
+  "menu-item#category-marcas-premium-cetaphil": {
+      "props": {
+          "id": "menu-item-category-apparel-cetaphil",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+          "type": "internal",
+          "href": "/cetaphil",
+          "noFollow": false,
+          "tagTitle": "Cetaphil",
+          "text": "Cetaphil"
+          }
+      }
+  },
+  "menu-item#category-marcas-premium-cerave": {
+      "props": {
+          "id": "menu-item-category-apparel-cerave",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+          "type": "internal",
+          "href": "/cerave",
+          "noFollow": false,
+          "tagTitle": "Cerave",
+          "text": "Cerave"
+          }
+      }
+  },
+  "menu-item#category-marcas-premium-dermasof": {
+      "props": {
+          "id": "menu-item-category-apparel-dermasof",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+          "type": "internal",
+          "href": "/dermasof",
+          "noFollow": false,
+          "tagTitle": "Dermasof",
+          "text": "Dermasof"
+          }
+      }
+  },
+  "menu-item#category-marcas-premium-dhems": {
+      "props": {
+          "id": "menu-item-category-apparel-dhems",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+          "type": "internal",
+          "href": "/dhems",
+          "noFollow": false,
+          "tagTitle": "Dhems",
+          "text": "Dhems"
+          }
+      }
+  },
+  "menu-item#category-marcas-premium-ducray": {
+      "props": {
+          "id": "menu-item-category-apparel-ducray",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+          "type": "internal",
+          "href": "/ducray",
+          "noFollow": false,
+          "tagTitle": "Ducray",
+          "text": "Ducray"
+          }
+      }
+  },
+  // segunda columna
+  "menu-item#category-marcas-premium-dermifant": {
+    "props": {
+        "id": "menu-item-category-apparel-dermifant",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/dermifant",
+        "noFollow": false,
+        "tagTitle": "Dermifant",
+        "text": "Dermifant"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-esthederm": {
+    "props": {
+        "id": "menu-item-category-apparel-esthederm",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/esthederm",
+        "noFollow": false,
+        "tagTitle": "Esthederm",
+        "text": "Esthederm"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-eucerin": {
+    "props": {
+        "id": "menu-item-category-apparel-eucerin",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/eucerin",
+        "noFollow": false,
+        "tagTitle": "Eucerin",
+        "text": "Eucerin"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-endocare": {
+    "props": {
+        "id": "menu-item-category-apparel-endocare",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/endocare",
+        "noFollow": false,
+        "tagTitle": "Endocare",
+        "text": "Endocare"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-epidermique": {
+    "props": {
+        "id": "menu-item-category-apparel-epidermique",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/epidermique",
+        "noFollow": false,
+        "tagTitle": "Epidermique",
+        "text": "Epidermique"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-fagron": {
+    "props": {
+        "id": "menu-item-category-apparel-fagron",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/fagron",
+        "noFollow": false,
+        "tagTitle": "Fagron",
+        "text": "Fagron"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-galderma": {
+    "props": {
+        "id": "menu-item-category-apparel-galderma",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/galderma",
+        "noFollow": false,
+        "tagTitle": "Galderma",
+        "text": "Galderma"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-genove": {
+    "props": {
+        "id": "menu-item-category-apparel-genove",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/genove",
+        "noFollow": false,
+        "tagTitle": "Genove",
+        "text": "Genove"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-heeliocare": {
+    "props": {
+        "id": "menu-item-category-apparel-heliocare",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/heliocare",
+        "noFollow": false,
+        "tagTitle": "Heliocare",
+        "text": "Heliocare"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-hidrisage": {
+    "props": {
+        "id": "menu-item-category-apparel-hidrisage",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/hidrisage",
+        "noFollow": false,
+        "tagTitle": "Hidrisage",
+        "text": "Hidrisage"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-huden": {
+    "props": {
+        "id": "menu-item-category-apparel-huden",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/huden",
+        "noFollow": false,
+        "tagTitle": "Huden",
+        "text": "Huden"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-inbiotech": {
+    "props": {
+        "id": "menu-item-category-apparel-inbiotech",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/inbiotech",
+        "noFollow": false,
+        "tagTitle": "Inbiotech",
+        "text": "Inbiotech"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-isdin": {
+    "props": {
+        "id": "menu-item-category-apparel-isdin",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/isdin",
+        "noFollow": false,
+        "tagTitle": "Isdin",
+        "text": "Isdin"
+        }
+    }
+  },
+  // columna 3
+  "menu-item#category-marcas-premium-isispharma": {
+    "props": {
+        "id": "menu-item-category-apparel-isispharma",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/isispharma",
+        "noFollow": false,
+        "tagTitle": "Isispharma",
+        "text": "Isispharma"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-keracnyl": {
+    "props": {
+        "id": "menu-item-category-apparel-keracnyl",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/keracnyl",
+        "noFollow": false,
+        "tagTitle": "Keracnyl",
+        "text": "Keracnyl"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-klorane": {
+    "props": {
+        "id": "menu-item-category-apparel-klorane",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/klorane",
+        "noFollow": false,
+        "tagTitle": "Klorane",
+        "text": "Klorane"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-laForet": {
+    "props": {
+        "id": "menu-item-category-apparel-laForet",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/la-foret",
+        "noFollow": false,
+        "tagTitle": "La foret",
+        "text": "La foret"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-laRochePosay": {
+    "props": {
+        "id": "menu-item-category-apparel-larocheposay",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/la-roche-posay",
+        "noFollow": false,
+        "tagTitle": "La Roche Posay",
+        "text": "La Roche Posay"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-lifetech": {
+    "props": {
+        "id": "menu-item-category-apparel-lifetech",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/lifetech",
+        "noFollow": false,
+        "tagTitle": "Lifetech",
+        "text": "Lifetech"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-medihealth": {
+    "props": {
+        "id": "menu-item-category-apparel-medihealth",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/medihealth",
+        "noFollow": false,
+        "tagTitle": "Medihealth",
+        "text": "Medihealth"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-noreva": {
+    "props": {
+        "id": "menu-item-category-apparel-noreva",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/noreva",
+        "noFollow": false,
+        "tagTitle": "Noreva",
+        "text": "Noreva"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-novaderma": {
+    "props": {
+        "id": "menu-item-category-apparel-novaderma",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/novaderma",
+        "noFollow": false,
+        "tagTitle": "Novaderma",
+        "text": "Novaderma"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-pharmaderma": {
+    "props": {
+        "id": "menu-item-category-apparel-pharmaderma",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/pharmaderma",
+        "noFollow": false,
+        "tagTitle": "Pharmaderma",
+        "text": "Pharmaderma"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-pilopeptan": {
+    "props": {
+        "id": "menu-item-category-apparel-pilopeptan",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/pilopeptan",
+        "noFollow": false,
+        "tagTitle": "Pilopeptan",
+        "text": "Pilopeptan"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-quideca": {
+    "props": {
+        "id": "menu-item-category-apparel-quideca",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/quideca",
+        "noFollow": false,
+        "tagTitle": "Quideca",
+        "text": "Quideca"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-quifarma": {
+    "props": {
+        "id": "menu-item-category-apparel-quifarma",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/quifarma",
+        "noFollow": false,
+        "tagTitle": "Quifarma",
+        "text": "Quifarma"
+        }
+    }
+  },
+  // columan 4
+  "menu-item#category-marcas-premium-quimiderm": {
+    "props": {
+        "id": "menu-item-category-apparel-quimiderm",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/quimiderm",
+        "noFollow": false,
+        "tagTitle": "Quimiderm",
+        "text": "Quimiderm"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-saderma": {
+    "props": {
+        "id": "menu-item-category-apparel-saderma",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/saderma",
+        "noFollow": false,
+        "tagTitle": "Saderma",
+        "text": "Saderma"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-sensilis": {
+    "props": {
+        "id": "menu-item-category-apparel-sensilis",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/sensilis",
+        "noFollow": false,
+        "tagTitle": "Sensilis",
+        "text": "Sensilis"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-sesderma": {
+    "props": {
+        "id": "menu-item-category-apparel-sesderma",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/sesderma",
+        "noFollow": false,
+        "tagTitle": "Sesderma",
+        "text": "Sesderma"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-siegfried": {
+    "props": {
+        "id": "menu-item-category-apparel-sigfried",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/sigfried",
+        "noFollow": false,
+        "tagTitle": "Sigfried",
+        "text": "Sigfried"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-skin-allience": {
+    "props": {
+        "id": "menu-item-category-apparel-skin",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/skin-allience",
+        "noFollow": false,
+        "tagTitle": "Skin allience",
+        "text": "Skin allience"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-skin-ceuticals": {
+    "props": {
+        "id": "menu-item-category-apparel-skin-ceuticals",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/skin-ceuticals",
+        "noFollow": false,
+        "tagTitle": "Skin ceuticals",
+        "text": "Skin ceuticals"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-skindrug": {
+    "props": {
+        "id": "menu-item-category-apparel-skindrug",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/skindrug",
+        "noFollow": false,
+        "tagTitle": "Skindrug",
+        "text": "Skindrugs"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-suiphar": {
+    "props": {
+        "id": "menu-item-category-apparel-suiphar",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/suiphar",
+        "noFollow": false,
+        "tagTitle": "Suiphar",
+        "text": "Suiphar"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-synbionyme": {
+    "props": {
+        "id": "menu-item-category-apparel-synbionyme",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/synbionyme",
+        "noFollow": false,
+        "tagTitle": "Synbionyme",
+        "text": "Synbionyme"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-uriage": {
+    "props": {
+        "id": "menu-item-category-apparel-uriage",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/uriage",
+        "noFollow": false,
+        "tagTitle": "Uriage",
+        "text": "Uriage"
+        }
+    }
+  },
+  "menu-item#category-marcas-premium-vichy": {
+    "props": {
+        "id": "menu-item-category-apparel-vichy",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+        "type": "internal",
+        "href": "/vichy",
+        "noFollow": false,
+        "tagTitle": "Vichy",
+        "text": "Vichy"
+        }
+    }
   }
 }

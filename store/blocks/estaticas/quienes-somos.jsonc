@@ -16,7 +16,8 @@
       "flex-layout.row#mosaico-quienes-somos",
       "info-card#mision",
       "info-card#vision",
-      "flex-layout.row#sliderInfo"
+      "flex-layout.row#sliderInfo",
+      "flex-layout.row#footer-quienesSomos"
     ]
   },
   // Imagenes de cabecera 
@@ -272,6 +273,66 @@
     "props": {
       "text": "Mantente radiante con nuestra linea de maquillaje.",
       "blockClass": "contenidoInfocards"
+    }
+  },
+  // final del quienes somos
+  "flex-layout.row#footer-quienesSomos": {
+    "props":{
+      "blockClass":"contendor-footer"
+    },
+    "children": [
+      "flex-layout.col#footerQuinesSomos"
+    ]
+  },
+  "flex-layout.col#footerQuinesSomos": {
+    "children": [
+
+      "flex-layout.row#explorar-button"
+    ]
+  },
+  // redes sociales de para quienes somos
+  "image#cards-facebook-": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/facebook.png",
+      "link":{
+        "url":{}
+      }
+    }
+  },
+  "image#cards-linkedin-": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/linkedinLogo.png",
+      "link":{
+        "url":{}
+      }
+    }
+  },
+  "image#cards-youtube-": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/youtube.png",
+      "link":{
+        "url":{}
+      }
+    }
+  },
+  "image#cards-instagram-": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/instagramLago.png",
+      "link":{
+        "url":{}
+      }
+    }
+  },
+  // explorar 
+  "flex-layout.row#explorar-button": {
+    "children": [
+      "rich-text#explorar-button"
+    ]
+  },
+  "rich-text#explorar-button": {
+    "props": {
+      "text": "[Explorar productos](/)",
+      "blockClass": "button-cards"
     }
   }
 }

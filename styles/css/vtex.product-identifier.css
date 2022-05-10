@@ -1,6 +1,7 @@
 .product-identifier--productReference {
-  margin-bottom: 1rem;
+  margin-bottom: 5px;
   color: #D3D3D3;
+  display: block;
 }
 .product-identifier__label{
   font-size: 0;

@@ -1,0 +1,158 @@
+.drawerContainer--comparison{
+    z-index: 9999;
+}
+.removeAllWrapper :global(.vtex-button__label){
+    color: #27AFE5;
+    border: 1px solid #27AFE5;
+    border-radius: 5px;
+    padding: 13px !important;
+    transition: 400ms all;
+}
+.removeAllWrapper :global(.vtex-button__label):hover{
+    color: #1B7BA1;
+    border: 1px solid #1B7BA1;
+}
+.drawer--comparison{
+    display: none;
+}
+.productSummaryRowContainer .fieldNameCol {
+    opacity: 0;
+}
+.title {
+    background: transparent;
+    color: #27AFE5;
+    font-size: 18px;
+}
+.rowContainer {
+    background-color: transparent;
+}
+.removeAllWrapper :global(.vtex-button):hover{
+    border: 0;
+}
+.compareProductButtonWrapper :global(.vtex-button){
+    transition: 400ms all;
+    border-radius: 5px;
+}
+.compareProductButtonWrapper :global(.vtex-button):hover{
+    background: #1B7BA1;
+}
+.productSelectorContainer {
+    position: absolute;
+    top: 49px;
+    right: 10px;
+    z-index: 9;
+}
+.productSelectorContainer :global(.vtex-checkbox__input)::before{
+    content: "";
+    background: url(/Arquivos/comparanoHover.png) no-repeat;
+    width: 32px;
+    height: 33px;
+    display: block;
+    background-size: 100%;
+    position: absolute;
+    margin-left: -8px;
+    margin-top: -9px;
+}
+.productSelectorContainer :global(.vtex-checkbox__input):hover::before{
+    background: url(/Arquivos/compararHoverBlue.png) no-repeat;
+    background-size: 100%;
+}
+.productSelectorContainer :global(.vtex-checkbox__label){
+    display: none;
+}
+.productSelectorContainer :global(.vtex-checkbox__input)::after{
+    content: "Comparar";
+    font-size: 11px;
+    opacity: 0;
+    transition: 400ms all;
+    background: #F6F9E8;
+    padding: 5px 5px;
+    position: absolute;
+    margin-top: 21px;
+    margin-left: -23px;
+    visibility: hidden;
+    border-radius: 5px;
+}
+.productSelectorContainer :global(.vtex-checkbox__input):hover::after {
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+}
+:global(.vtex-wish-list-1-x-wishlistIcon )::after{
+    content: "Favoritos";
+    font-size: 11px;
+    opacity: 0;
+    width: 51px;
+    color: black;
+    transition: 400ms all;
+    background: #F6F9E8;
+    padding: 5px 5px;
+    position: absolute;
+    margin-top: 21px;
+    margin-left: -29px;
+    visibility: hidden;
+    border-radius: 5px;
+}
+:global(.vtex-wish-list-1-x-wishlistIcon ):hover::after{
+    opacity: 1;
+    visibility: visible;
+    z-index: 999;
+}
+:global(.vtex-checkbox__inner-container ){
+    display: none;
+}
+:global(.vtex-checkbox__input){
+    opacity: 1 !important;
+}
+:global(.vtex-checkbox__box-wrapper){
+    display: none;
+}
+.drawerTitleInnerContainer {
+    font-weight: bold;
+    color: #27AFE5;
+}
+.drawerContainer--comparison .expandCollapseButton--comparison {
+    display: none;
+} 
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--comparison-page) .productSummaryRowContainer :global(.vtex-slider-layout-0-x-slide--comparison-page ){
+    width: 100% !important;
+}
+.productSummaryRowContainer :global(.vtex-slider-layout-0-x-slideChildrenContainer){
+    width: 280px;
+}
+ :global(.vtex-product-summary-2-x-container--comparar) :global(.vtex-flex-layout-0-x-flexColChild--productInfo2):last-child{
+    height: 52px !important;
+}  
+:global(.vtex-product-summary-2-x-container--comparar) :global(.vtex-flex-layout-0-x-flexRow--ProductInfo2){
+    height: 100% !important;
+}
+:global(.vtex-product-summary-2-x-container--comparar) :global(.vtex-product-summary-2-x-productPriceClass ){
+    height: 118%;
+}
+:global(.vtex-product-summary-2-x-container--comparar) :global(.vtex-flex-layout-0-x-flexRowContent--priceInfo){
+    height: 100%;
+}
+:global(.vtex-product-summary-2-x-container--comparar) :global(.vtex-flex-layout-0-x-flexColChild--productInfo2) :global(.vtex-button){
+    height: 100%;
+}
+.closeButtonContainer::before{
+    content: "X";
+    font-size: 15px;
+    color: #27AFE5;
+    font-weight: bold;
+    margin-left: 56px;
+    position: absolute;
+    margin-right: -8px;
+    z-index: 999;
+}
+.closeButton .closeIcon{
+    display: none;
+}
+@media (max-width: 600px) {
+    .productSelectorContainer {
+        display: none;
+    }
+    :global(.vtex-wish-list-1-x-wishlistIcon ):hover::after{
+        display: none;
+    }
+}

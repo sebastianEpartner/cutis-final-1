@@ -13,6 +13,58 @@
 }
 .sliderContainer{
     padding: 0 !important;
+    max-width: 100%;
+}
+.shelfContentContainer--shelf {
+    padding: 0 40px;
+}
+.slide--shelf {
+    padding: 0 20px;
+}
+/* estilos de las flechas */
+.caretIcon--shelf{
+    display: none;
+}
+.arrowLeft--shelf::before {
+    content: "";
+    background: url(https://cutis.vteximg.com.br/arquivos/eva_arrow-ios-back-outline.png) no-repeat;
+    background-size: 100% !important;
+    display: block;
+    width: 39px;
+    height: 39px;
+    transition: all 40ms;
+    left: -20px;
+    position: absolute;
+    transition: 400ms all;
+}
+.arrowRight--shelf::before {
+    content: "";
+    background: url(https://cutis.vteximg.com.br/arquivos/desk-arrow-2.png) no-repeat;
+    background-size: 100% !important;
+    display: block;
+    width: 39px;
+    height: 39px;
+    margin-top: 0;
+    transition: all 40ms;
+    margin-right: 5px;
+    position: absolute;
+    left: -20px;
+    transition: 400ms all;
+}
+.arrowLeft--shelf:hover::before {
+    background: url(https://cutis.vteximg.com.br/arquivos/desk-arrow-hover-2.png) no-repeat;
+}
+.arrowRight--shelf:hover::before {
+    background: url(https://cutis.vteximg.com.br/arquivos/eva_arrow-ios-back-outline-1.png) no-repeat;
+}
+.shelfContentContainer--vitrinaCarrito {
+    padding: 0 0px !important;
+}
+.slide--shelf :global(.vtex-product-summary-2-x-containerNormal):hover {
+    border: 1px solid;
+}
+.slide--shelf :global(.vtex-product-summary-2-x-containerNormal) {
+    min-height: 364px;
 }
 @media (max-width: 600px) {
     .sliderContainer {
@@ -32,5 +84,21 @@
     }
     .paragraph--tituloVitrinaDestacada{
         display: none;
+    }
+    .shelfContentContainer--shelf {
+        padding: 0 10px;
+    }
+    .slide.slide--shelf {
+        padding: 0 0px;
+    }
+    .sliderContainer--vitrinaCarrito .slide--shelf{
+        width: 8.33333% !important;
+      }
+    .container{
+        padding: 0 20px;
+        margin: 0 0 20px 0;
+    }
+    .relatedProducts--shelf .slide.slide--shelf{
+        padding: 0 5px;
     }
 }

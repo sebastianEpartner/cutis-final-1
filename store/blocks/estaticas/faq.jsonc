@@ -16,7 +16,7 @@
   // iamgenes en el top
   "image#faqsImg": {
     "props": {
-      "src": "https://cutis.vtexassets.com/arquivos/banner.png",
+      "src": "https://cutis.vtexassets.com/arquivos/banner-principal-desk-faqs.png",
       "blockClass": "faqsImg"
     }
   },
@@ -179,13 +179,55 @@
       "rich-text#devolver1",
       "rich-text#devolver2",
       "rich-text#devolver3",
-      "rich-text#devolver4",
-      "rich-text#devolver5"
-    ],
-    "props": {
-      "blockClass": "politicaContenedor"
+      "disclosure-layout#mediosPago",
+      "rich-text#devolver6",
+      "rich-text#devolver7",
+      "rich-text#devolver8",
+      "rich-text#devolver9",
+      "rich-text#devolver10",
+      "rich-text#devolver11",
+      "rich-text#devolver13",
+      "rich-text#devolver14",
+      "rich-text#devolver15",
+      "rich-text#devolver16",
+      "rich-text#devolver17"
+    ]
+  },
+  // primer disclosure
+  "disclosure-layout#mediosPago": {
+    "children": ["disclosure-trigger#mediosPago", "disclosure-content#mediosPago"],
+    "props":{
+      "blockClass":"faqs-disclosure"
     }
   },
+  "disclosure-trigger#mediosPago": {
+    "children": ["rich-text#medias"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  "disclosure-content#mediosPago": {
+    "children": ["rich-text#mediosPago2"],
+    "props":{
+      "blockClass":"faqs-disclosure"
+    }
+  },
+  // trigger
+  "rich-text#medias": {
+    "props": {
+      "text": "¿PUEDO USAR MÚLTIPLES MEDIOS DE PAGO?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  // contenido
+  "rich-text#mediosPago2": {
+    "props": {
+      "text": "Si, puedes utilizar diferentes métodos de pago: Tarjetas crédito: American Express, VISA Diners, MasterCard, Tarjetas débito, Baloto, Efecty, PSE. También puedes pagar a través de Pago Referenciado a los Bancos (Bancolombia, Banco de Bogotá, Banco de Occidente) Matrix Red de Apuestas y Giros (GANA-GANA, GANA, PAGA TODO, JER, APUESTAS UNIDAS, ACERTEMOS, APUESTAS CUCUTA 75, LA PERLA, SU CHANCE).",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+
+  // contenido viejo
   "rich-text#devolver1": {
     "props": {
       "text": "FAQ´S",
@@ -204,15 +246,75 @@
       "blockClass": ["tituloFaqs"]
     }
   },
-  "rich-text#devolver4": {
+  "rich-text#devolver6": {
     "props": {
-      "text": "¿PUEDO USAR MÚLTIPLES MEDIOS DE PAGO?",
+      "text": "¿ME PUEDO RETRACTAR DE MI COMPRA?",
       "blockClass": ["tituloFaqs"]
     }
   },
-  "rich-text#devolver5": {
+  "rich-text#devolver7": {
     "props": {
-      "text": " Si, puedes utilizar diferentes métodos de pago: Tarjetas crédito: American Express, VISA Diners, MasterCard, Tarjetas débito, Baloto, Efecty, PSE. También puedes pagar a través de Pago Referenciado a los Bancos (Bancolombia, Banco de Bogotá, Banco de Occidente) Matrix Red de Apuestas y Giros (GANA-GANA, GANA, PAGA TODO, JER, APUESTAS UNIDAS, ACERTEMOS, APUESTAS CUCUTA 75, LA PERLA, SU CHANCE).",
+      "text": "De acuerdo con el derecho de retracto consagrado por la ley 1480 art. 47, puedes hacerlo en un plazo máximo de 5 días hábiles contados a partir de la entrega del producto. Además, deberás devolverlo en las mismas condiciones en que lo recibiste. Los costos de transporte y demás que conlleve a la devolución serán cubiertos por el consumidor.",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver8": {
+    "props": {
+      "text": "¿POR QUÉ ME HA SALIDO UN MENSAJE DE ERROR AL REALIZAR MI PEDIDO?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver9": {
+    "props": {
+      "text": "Asegúrate de haber completado todos los pasos del proceso de tramitación del pedido antes de hacer clic en el botón 'comprar ahora'. El botón 'comprar ahora' es el último paso del proceso y, si lo pulsas antes de haber completado todos los pasos anteriores, puede generar un mensaje de error. Sin embargo, si has completado todos los pasos del proceso de tramitación del pedido y aun así has recibido un mensaje de error, contáctanos para que podamos ayudarte.",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver10": {
+    "props": {
+      "text": "¿POR QUÉ HA SIDO RECHAZADO MI PEDIDO?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver11": {
+    "props": {
+      "text": "Por favor, comprueba que hayas introducido todos tus datos correctamente en la página de tramitación del pedido. Si el pago no se ha realizado correctamente, pero todos los datos son correctos, es posible que la entidad emisora de tu tarjeta haya denegado el pago. Ponte en contacto con ellos o prueba con una tarjeta distinta u otro método de pago.",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver12": {
+    "props": {
+      "text": "¿POR QUÉ NO PASA NADA CUANDO HAGO CLIC EN 'COMPRAR AHORA'?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver13": {
+    "props": {
+      "text": "Podría tratarse de un error de conexión. Por favor, cierra la página web, borra el historial de tu navegador y asegúrate de tener habilitadas las cookies y las ventanas emergentes.",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver14": {
+    "props": {
+      "text": "¿POR QUÉ NO PUEDO ENCONTRAR MI TALLA?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver15": {
+    "props": {
+      "text": "Si la talla que buscas tiene un ícono de sobre al lado, es porque el artículo está agotado en esa talla. Cuando no queda ninguna talla de una prenda, el pondrá 'Lo sentimos, actualmente este producto está agotado'. Reponemos regularmente las existencias de la temporada actual y todos los días actualizamos nuestro sitio web según la disponibilidad en nuestro stock.",
+      "blockClass": ["contenidofaqs"]
+    }
+  },
+  "rich-text#devolver16": {
+    "props": {
+      "text": "¿CÓMO TENGO QUE LAVAR O LIMPIAR MI ARTÍCULO?",
+      "blockClass": ["tituloFaqs"]
+    }
+  },
+  "rich-text#devolver17": {
+    "props": {
+      "text": "Las instrucciones sobre el lavado o limpieza de cada artículo se indican en la pestaña 'Instrucciones de cuidado'. Todos los artículos llevan una etiqueta impresa con instrucciones detalladas de cómo lavarlo o limpiarlo. ¿POR QUÉ ESTÁ AGRIETADO MI ESTAMPADO? Muchos de los estampados de nuestros artículos están diseñados para que se agrieten y se destiñan, esto forma parte del estilo vintage y desgastado que define a Diesel. Con el paso del tiempo y el uso continuo, el efecto será cada vez más desgastado. ¿DÓNDE INTRODUZCO MI CUPÓN DE DESCUENTO? Al momento de ir al carrito de compras, debes ingresar el código en la opción Cupón de descuento específicamente en el campo Código y dale clic al botón Ingresar. ¿POR QUÉ NO FUNCIONA MI CÓDIGO PROMOCIONAL? Por favor, copia y pega el código para que coincida exactamente. Si has introducido el código correctamente pero no funciona, por favor contáctanos. ¿POR QUÉ NO HE RECIBIDO NINGÚN CORREO DE CONFIRMACIÓN? Todos los mensajes de notificación se envían a la dirección de correo electrónico que se indicó a la hora de hacer el pedido. Si la dirección que introdujiste no es correcta, no recibirás los mensajes. No olvides mirar también en las carpetas de correo no deseado de esa dirección de correo electrónico.Si aun así no has recibido ningún mensaje, contáctanos. ¿HACEN ENVÍOS A OTRO PAÍS? No, actualmente solo hacemos envíos a Colombia. ¿PUEDO BORRAR UN ARTÍCULO DE MI CARRITO? Para borrar un artículo del carrito, no tienes más que hacer clic en el icono de la bolsa de la esquina superior derecha de la página y hacer clic en el botón 'X' al lado del artículo. ¿PUEDO HACER UN PEDIDO POR TELÉFONO? No podemos aceptar pedidos por teléfono, pero si necesitas ayuda por favor contáctanos. ENTREGA ¿CUÁNTO TARDARÁ EN LLEGAR MI PEDIDO? Intentamos entregar los pedidos lo antes posible. Sin embargo, el tiempo de entrega será de 5 a 15 días hábiles y empieza a partir de que el pedido fue aprobado (un pedido es aprobado cuando la entidad bancaria acepta el pago). En la página de tramitación del pedido se indica un plazo de entrega aproximado. El plazo de entrega dependerá del destino del envío.",
       "blockClass": ["contenidofaqs"]
     }
   },

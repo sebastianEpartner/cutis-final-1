@@ -1,0 +1,9 @@
+{
+    "store.custom#tiendas": {
+        "children": [
+            "image#retraactoImg",
+            "rich-text#retracto",
+            "flex-layout.row#retracto"
+        ]
+    }
+}

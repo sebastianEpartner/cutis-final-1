@@ -16,7 +16,7 @@
       "responsive-layout.phone#promocionesCategory"
     ],
     "props": {
-      "width":"40%",
+      "width":"42%",
       "blockClass": "columna1SearchShelf"
     }
   },
@@ -27,7 +27,10 @@
   "image#vitrinaDestacadaSearch": {
     "props": {
       "src": "https://cutis.vteximg.com.br/arquivos/promocionesdelmes.png",
-      "blockClass": "imgInfoProduct"
+      "blockClass": "imgInfoProduct",
+      "link":{
+        "url":"/"
+      }
     }
   },
   "responsive-layout.phone#promocionesCategory": {
@@ -35,7 +38,7 @@
   },
   "image#vitrinaDestacadaSearchM": {
     "props": {
-      "src": "https://cutis.vteximg.com.br/arquivos/promocionesMobile.png",
+      "src": "https://epartner.vteximg.com.br/arquivos/Group%201252.png",
       "blockClass": "imgInfoProduct"
     }
   },
@@ -46,7 +49,7 @@
     ],
     "props": {
       "paddingLeft": "20px",
-      "width":"60%",
+      "width":"58%",
       "blockClass": "columna2SearchShelf"
     }
   },
@@ -63,8 +66,8 @@
       },
       "infinite": true,
       "fullWidth": false,
-      "blockClass": "shelf",
-      "showPaginationDots":"false",
+      "blockClass":[ "shelf","promo-Mes"],
+      "showPaginationDots":"mobileOnly",
       "showNavigationArrows": "desktopOnly"
     }
   }

@@ -56,18 +56,71 @@
     },
     "disclosure-content#derechoRetracto": {
         "props": {
-            "blockClass": "answer"
+            "blockClass": "contenidoPoliticas"
         },
-        "children": ["rich-text#retracto-content"]
+        "children": [
+            "rich-text#retracto-content-1",
+            "rich-text#retracto-content-2",
+            "rich-text#retracto-content-3",
+            "rich-text#retracto-content-4",
+            "rich-text#retracto-content-5",
+            "rich-text#retracto-content-6",
+            "rich-text#retracto-content-7",
+            "rich-text#retracto-content-8"
+        ]
     },
     "rich-text#retracto-titulo": {
         "props": {
             "text": "Derecho al retracto"
         }
     },
-    "rich-text#retracto-content": {
+    // contenido de los terminos y condiciones
+    "rich-text#retracto-content-1": {
         "props": {
-            "text": "Call us at the number (212) 1234-1234."
+            "text": "[Terminos y condiciones](/terminos-y-condiciones)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#retracto-content-2": {
+        "props": {
+            "text": "[Restablecer contraseña](/restablecer-contrasena)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#retracto-content-3": {
+        "props": {
+            "text": "[Politica de privacidad](/politica-privacidad)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#retracto-content-4": {
+        "props": {
+            "text": "[Accesos corporativos](/accesos-corporativos)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#retracto-content-5": {
+        "props": {
+            "text": "[Protección de datos](/proteccion-datos)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#retracto-content-6": {
+        "props": {
+            "text": "[Derecho al retracto](/derecho-de-retracto)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#retracto-content-7": {
+        "props": {
+            "text": "[Faqs](/faq)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#retracto-content-8": {
+        "props": {
+            "text": "[Quienes somos](/quienes-somos)",
+            "blockClass":"link-politicas"
         }
     },
     // columna 2

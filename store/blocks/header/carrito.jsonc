@@ -31,13 +31,13 @@
       "blocks": ["product-summary.shelf#3"],
       "props": {
         "id": "coleccion7",
+        "blockClass": ["vitrinaCarrito","shelf"],
         "productList": {
           "maxItems": 1,
           "itemsPerPage": 1,
           "minItemsPerPage": 1,
           "scroll": "BY_PAGE",
           "arrows": true,
-          "blockClass": "vitrinaCarrito",
           "showPaginationDots": "never"
         }
       }

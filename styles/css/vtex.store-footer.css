@@ -11,7 +11,6 @@
 }
 
 .footerLayout {
-  padding: 0 100px;
   position: relative;
   margin-top: 60px;
   background: white;
@@ -22,12 +21,66 @@
 .socialNetworkLink {
   margin-bottom: 10px;
 }
+/* ajuestes para los iconos de redes sociales */
+.socialNetworkImage {
+  display: none;
+}
+.socialNetworkLink--facebook::before {
+  content: "";
+  background: url(https://cutis.vteximg.com.br/arquivos/facebook.png) no-repeat;
+  background-size: 100%;
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+.socialNetworkLink--youtube::before {
+  content: "";
+  background: url(https://cutis.vteximg.com.br/arquivos/youtube-no-hover.png) no-repeat;
+  background-size: 100%;
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+.socialNetworkLink--instagram::before {
+  content: "";
+  background: url(https://cutis.vteximg.com.br/arquivos/instagramLago.png) no-repeat;
+  background-size: 100%;
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+.socialNetworkLink--twitter::before {
+  content: "";
+  background: url(https://cutis.vteximg.com.br/arquivos/linkedinLogo.png) no-repeat;
+  background-size: 100%;
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+/* hover en los logos de redes sociales */
+.socialNetworkLink--facebook:hover::before {
+  background: url(https://cutis.vteximg.com.br/arquivos/facebook-hover.png) no-repeat;
+  background-size: 100%;
+}
+.socialNetworkLink--youtube:hover::before {
+  background: url(https://cutis.vteximg.com.br/arquivos/youtube.png) no-repeat;
+  background-size: 100%;
+}
+.socialNetworkLink--instagram:hover::before {
+  background: url(https://cutis.vteximg.com.br/arquivos/instagram-hover.png) no-repeat;
+  background-size: 100%;
+}
+.socialNetworkLink--twitter:hover::before {
+  background: url(https://cutis.vteximg.com.br/arquivos/linkedin-hover.png) no-repeat;
+  background-size: 100%;
+}
 @media (max-width: 600px) {
   .footerLayout {
     padding: 0 0px;
     margin-top: 287px;
     padding-top: 47px;
-    background: #EBEBEB;
+    background: white;
+    padding-bottom: 50px;
   }
   .socialNetworksContainer {
     display: flex;

@@ -1,0 +1,115 @@
+{
+    // contenedor del 404
+    "flex-layout.col#404Container": {
+        "children": [
+            "info-card#404",
+            "rich-text#404-categoria",
+            "slider-layout#text-test",
+            "rich-text#vitrine-404",
+            "list-context.product-list#404-vitrine",
+            "rich-text#NUESTRAS-MARCAS",
+            "list-context.image-list#marcas"
+        ],
+        "props": {
+            "blockClass":"404-container"
+        }
+    },
+    // banner principal
+    "info-card#404": {
+        "props": {
+          "id": "info-card-404",
+          "isFullModeStyle": true,
+          "textPosition": "left",
+          "imageUrl": "https://cutis.vteximg.com.br/arquivos/banner.png",
+          "headline": "UPS PÁGINA NO ENCONTRADA",
+          "subhead": "Parece que no se pudo encontrar la página solicitada \n\n Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500",
+          "callToActionUrl": "/sale/d",
+          "blockClass": "info-card-404",
+          "textAlignment": "center"
+        }
+    },
+    // titulo categorias mas buscadas
+    "rich-text#404-categoria": {
+        "props": {
+          "text": "## CATEGORIAS MÁS BUSCADAS",
+          "blockClass": ["shelfTitle","categoriasTittle"]
+        }
+    },
+    // slider categorias
+    "slider-layout#text-test": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 6,
+            "tablet": 4,
+            "phone": 3
+          },
+          "infinite": true,
+          "showNavigationArrows": "mobileOnly",
+          "blockClass": "categoryCarousel-404"
+        },
+        "children": ["rich-text#categoria-1", "rich-text#categoria-2", "rich-text#categoria-3","rich-text#categoria-4", "rich-text#categoria-5","rich-text#categoria-6"]
+    },
+    
+    "rich-text#categoria-1": {
+        "props": {
+            "blockClass":"category-404-item",
+            "text": "[Rostro](/rostro)"
+        }
+    },
+    "rich-text#categoria-2": {
+        "props": {
+            "blockClass":"category-404-item",
+            "text": "[Solares](/solares)"
+        }
+    },
+    "rich-text#categoria-3": {
+        "props": {
+            "blockClass":"category-404-item",
+            "text": "[Maquillaje](/maquillaje)"
+        }
+    },
+    "rich-text#categoria-4": {
+        "props": {
+            "blockClass":"category-404-item",
+            "text": "[Capilar](/capilar)"
+        }
+    },
+    "rich-text#categoria-5": {
+        "props": {
+            "blockClass":"category-404-item",
+            "text": "[Corporal](/corporal)"
+        }
+    },
+    "rich-text#categoria-6": {
+        "props": {
+            "blockClass":"category-404-item",
+            "text": "[Medicamentos](/medicamentos)"
+        }
+    },
+    // titulo de la vitrina
+    "rich-text#vitrine-404": {
+        "props": {
+          "text": "## PRODUCTOS MÁS BUSCADOS",
+          "blockClass": "shelfTitle"
+        }
+    },
+    // vitrina del 404
+    "list-context.product-list#404-vitrine": {
+        "blocks": ["product-summary.shelf#2"],
+        "children": ["slider-layout#404-vitrine"]
+    },
+    "slider-layout#404-vitrine": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 3,
+            "phone": 2
+          },
+          "infinite": true,
+          "fullWidth": false,
+          "blockClass":[ "shelf","404-shelf"],
+          "showPaginationDots":"false",
+          "showNavigationArrows": "desktopOnly"
+        }
+    }
+}

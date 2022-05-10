@@ -56,18 +56,71 @@
     },
     "disclosure-content#derechoDatos": {
         "props": {
-            "blockClass": "answer"
+            "blockClass": "contenidoPoliticas"
         },
-        "children": ["rich-text#datos-content"]
+        "children": [
+            "rich-text#datos-content-1",
+            "rich-text#datos-content-2",
+            "rich-text#datos-content-3",
+            "rich-text#datos-content-4",
+            "rich-text#datos-content-5",
+            "rich-text#datos-content-6",
+            "rich-text#datos-content-7",
+            "rich-text#datos-content-8"
+        ]
     },
     "rich-text#datos-titulo": {
         "props": {
             "text": "Protección de datos"
         }
     },
-    "rich-text#datos-content": {
+    // contenido de los terminos y condiciones
+    "rich-text#datos-content-1": {
         "props": {
-            "text": "Call us at the number (212) 1234-1234."
+            "text": "[Terminos y condiciones](/terminos-y-condiciones)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#datos-content-2": {
+        "props": {
+            "text": "[Restablecer contraseña](/restablecer-contrasena)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#datos-content-3": {
+        "props": {
+            "text": "[Politica de privacidad](/politica-privacidad)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#datos-content-4": {
+        "props": {
+            "text": "[Accesos corporativos](/accesos-corporativos)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#datos-content-5": {
+        "props": {
+            "text": "[Protección de datos](/proteccion-datos)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#datos-content-6": {
+        "props": {
+            "text": "[Derecho al retracto](/derecho-de-retracto)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#datos-content-7": {
+        "props": {
+            "text": "[Faqs](/faq)",
+            "blockClass":"link-politicas"
+        }
+    },
+    "rich-text#datos-content-8": {
+        "props": {
+            "text": "[Quienes somos](/quienes-somos)",
+            "blockClass":"link-politicas"
         }
     },
     // columna 2

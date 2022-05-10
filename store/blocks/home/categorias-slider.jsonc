@@ -6,10 +6,10 @@
                 "tablet": 1,
                 "phone": 1
             },
-            "autoplay":{
-                "timeout": 3000,
-                "stopOnHover": true
-            },
+            // "autoplay":{
+            //     "timeout": 3000,
+            //     "stopOnHover": true
+            // },
             "infinite": true,
             "blockClass": "carousel",
             "showPaginationDots":"mobileOnly",
@@ -23,12 +23,52 @@
     // Primer SLIDE
     "flex-layout.row#categoriaSlide1": {
         "children": [
-            "flex-layout.col#categoriaSlide1-1",
-            "flex-layout.col#categoriaSlide1-2"
+          "flex-layout.col#responsive-slider",
+          "flex-layout.col#categoriaSlide1-2"
         ],
         "props": {
           "blockClass": "slideCategory"
         }
+    },
+    // contenedor de los responsive
+    "flex-layout.col#responsive-slider": {
+      "children": [
+        "responsive-layout.mobile#categoriaSlider1",
+        "responsive-layout.desktop#categoriaSlider1"
+      ],
+      "props": {
+        "blockClass": "responsiveSlider"
+      }
+    },
+    // estructura mobile
+    "responsive-layout.mobile#categoriaSlider1": {
+      "children": [
+        "flex-layout.row#categoriaSlide1-1-m",
+        "flex-layout.col#categoriaSlide1-1-m"
+      ]
+    },
+    "flex-layout.row#categoriaSlide1-1-m": {
+      "children": [
+          "rich-text#slideCate-title",
+          "rich-text#slideCate-text"
+      ],
+      "props": {
+        "blockClass": "slideColumn1"
+      }
+    },
+    "flex-layout.col#categoriaSlide1-1-m": {
+      "children": [
+          "flex-layout.row#categoriaSlide1-img-COLUMN1"
+      ],
+      "props": {
+        "blockClass": "slideColumn1"
+      }
+    },
+    // estructura para desk
+    "responsive-layout.desktop#categoriaSlider1": {
+      "children": [
+        "flex-layout.col#categoriaSlide1-1"
+      ]
     },
     "flex-layout.col#categoriaSlide1-1": {
         "children": [
@@ -49,133 +89,329 @@
     },
     "rich-text#slideCate-text": {
         "props": {
-          "text": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.\n Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500",
+          "text": "Tenemos los mejores productos para el cuidado y belleza de tu piel",
           "blockClass": "contenidoSlideCategory"
         }
     },
     // Imagenes columna 1
     "flex-layout.row#categoriaSlide1-img-COLUMN1": {
         "children": [
-            "image#slide1category-1",
-            "image#slide2category-2"
+          "flex-layout.col#imagenCategoria1",
+          "flex-layout.col#imagenCategoria2"
         ],
         "props": {
           "blockClass": "imagesColumn1"
         }
+    },
+    // imagen uno de categorias
+    "flex-layout.col#imagenCategoria1": {
+      "children": [
+        "image#slide1category-1",
+        "rich-text#tituloSliderCategorias",
+        "image#slide1category-1-hover"
+      ],
+      "props": {
+        "blockClass": "imagenCategoriaColumn"
+      }
+    },
+    "rich-text#tituloSliderCategorias": {
+      "props": {
+        "text": "[Cuidado facial](/)",
+        "blockClass": ["categoriasTitulo"]
+      }
     },
     "image#slide1category-1": {
         "props": {
-          "src": "https://cutis.vtexassets.com/arquivos/categoria1-home.png",
+          "src": "https://cutis.vtexassets.com/arquivos/categoria-facil.png",
           "blockClass": ["slideCategoryColumn1","bannerSlides"],
           "link":{
             "url":"/"
           }
         }
-    },
-    "image#slide2category-2": {
-        "props": {
-          "src": "https://cutis.vtexassets.com/arquivos/categoria2-home.png",
-          "blockClass": ["slideCategoryColumn1","bannerSlides"],
-          "link":{
-            "url":"/"
-          }
+  },
+  "image#slide1category-1-hover": {
+      "props": {
+        "src": "https://cutis.vtexassets.com/arquivos/facial-icono.png",
+        "blockClass": ["hoverImage"],
+        "link":{
+          "url":"/"
         }
-    },
-    // Columna 2
+      }
+  },
+  // imagen dos de categorias
+  "flex-layout.col#imagenCategoria2": {
+    "children": [
+      "image#slide2category-2",
+      "rich-text#tituloSliderCategorias-2",
+      "image#slide1category-2-hover"
+    ],
+    "props": {
+      "blockClass": "imagenCategoriaColumn"
+    }
+  },
+  "rich-text#tituloSliderCategorias-2": {
+    "props": {
+      "text": "[Cuidado capilar](/)",
+      "blockClass": ["categoriasTitulo"]
+    }
+  },
+  "image#slide2category-2": {
+      "props": {
+        "src": "https://cutis.vtexassets.com/arquivos/categoria-capilar.png",
+        "blockClass": ["slideCategoryColumn1","bannerSlides"],
+        "link":{
+          "url":"/"
+        }
+      }
+  },
+  "image#slide1category-2-hover": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/capilar-icono.png",
+      "blockClass": ["hoverImage"],
+      "link":{
+        "url":"/"
+      }
+    }
+  },
+  // Columna 2
     "flex-layout.col#categoriaSlide1-2": {
         "children": [
-            "image#imageColumn-2"
+          "flex-layout.col#imagen-3"
         ],
         "props": {
           "blockClass": "slideColumn2"
         }
     },
-    "image#imageColumn-2": {
-        "props": {
-          "src": "https://cutis.vtexassets.com/arquivos/principalCategoria.png",
-          "blockClass": ["slideCategoryColumn2","bannerSlides"],
-          "link":{
-            "url":"/"
-          }
-        }
-    },
-    // SEGUNDA SLIDE
-    "flex-layout.row#categoriaSlide2": {
-        "children": [
-            "flex-layout.col#categoriaSlide2-1",
-            "flex-layout.col#categoriaSlide2-2"
-        ],
-        "props": {
-          "blockClass": "slideCategory"
-        }
-    },
-    "flex-layout.col#categoriaSlide2-1": {
-        "children": [
-            "rich-text#slide2Cate-title",
-            "rich-text#slide2Cate-text",
-            "flex-layout.row#categoriaSlide2-img-COLUMN1"
-        ],
-        "props": {
-          "blockClass": "slideColumn1"
-        }
-    },
-    // columna 1
-    "rich-text#slide2Cate-title": {
-        "props": {
-          "text": "Soy una categoria",
-          "blockClass": "tituloSlideCategory"
-        }
-    },
-    "rich-text#slide2Cate-text": {
-        "props": {
-          "text": "Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto.\n Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500",
-          "blockClass": "contenidoSlideCategory"
-        }
-    },
-    // Imagenes columna 1
-    "flex-layout.row#categoriaSlide2-img-COLUMN1": {
-        "children": [
-            "image#slide2category-1",
-            "image#slide2category-3"
-        ],
-        "props": {
-          "blockClass": "imagesColumn1"
-        }
-    },
-    "image#slide2category-1": {
-        "props": {
-          "src": "https://storecomponents.vtexassets.com/arquivos/banner-infocard2.png",
-          "blockClass": ["slideCategoryColumn1","bannerSlides"],
-          "link":{
-            "url":"/"
-          }
-        }
-    },
-    "image#slide2category-3": {
-        "props": {
-          "src": "https://storecomponents.vtexassets.com/arquivos/banner-infocard2.png",
-          "blockClass": ["slideCategoryColumn1","bannerSlides"],
-          "link":{
-            "url":"/"
-          }
-        }
-    },
-    // Columna 2
-    "flex-layout.col#categoriaSlide2-2": {
-        "children": [
-            "image#image2Column-2"
-        ],
-        "props": {
-          "blockClass": "slideColumn2"
-        }
-    },
-    "image#image2Column-2": {
-        "props": {
-          "src": "https://storecomponents.vtexassets.com/arquivos/banner-infocard2.png",
-          "blockClass": ["slideCategoryColumn2","bannerSlides"],
-          "link":{
-            "url":"/"
-          }
-        }
+    // imagen dos de categorias
+  "flex-layout.col#imagen-3": {
+    "children": [
+      "image#imageColumn-2",
+      "rich-text#imagen-3",
+      "image#slide1category-3-hover"
+    ],
+    "props": {
+      "blockClass": ["imagenCategoriaColumn","column2categorySlide"]
     }
+  },
+  "rich-text#imagen-3": {
+    "props": {
+      "text": "[Cuidado corporal](/)",
+      "blockClass": ["categoriasTitulo"]
+    }
+  },
+  "image#imageColumn-2": {
+      "props": {
+        "src": "https://cutis.vtexassets.com/arquivos/principalCategoria.png",
+        "blockClass": ["slideCategoryColumn2","bannerSlides"],
+        "link":{
+          "url":"/"
+        }
+      }
+  },
+  "image#slide1category-3-hover": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/corporal-icono.png",
+      "blockClass": ["hoverImage","hoverColumn2"],
+      "link":{
+        "url":"/"
+      }
+    }
+  },
+  // SEGUNDA SLIDE
+  "flex-layout.row#categoriaSlide2": {
+    "children": [
+      "flex-layout.col#responsive-slider2",
+      "flex-layout.col#categoriaSlide2-2"
+    ],
+    "props": {
+      "blockClass": "slideCategory"
+    }
+  },
+  // contenedor de los responsive
+  "flex-layout.col#responsive-slider2": {
+    "children": [
+      "responsive-layout.mobile#categoriaSlider2",
+      "responsive-layout.desktop#categoriaSlider2"
+    ],
+    "props": {
+      "blockClass": "responsiveSlider"
+    }
+  },
+  // estructura mobile
+  "responsive-layout.mobile#categoriaSlider2": {
+    "children": [
+      "flex-layout.row#categoriaSlide2-1-m",
+      "flex-layout.col#categoriaSlide2-1-m"
+    ]
+  },
+  "flex-layout.row#categoriaSlide2-1-m": {
+    "children": [
+        "rich-text#slideCate-title",
+        "rich-text#slideCate-text"
+    ],
+    "props": {
+      "blockClass": "slideColumn1"
+    }
+  },
+  "flex-layout.col#categoriaSlide2-1-m": {
+    "children": [
+        "flex-layout.row#categoriaSlide2-img-COLUMN1"
+    ],
+    "props": {
+      "blockClass": "slideColumn1"
+    }
+  },
+  // estructura para desk
+  "responsive-layout.desktop#categoriaSlider2": {
+    "children": [
+      "flex-layout.col#categoriaSlide2-1"
+    ]
+  },
+  "flex-layout.col#categoriaSlide2-1": {
+      "children": [
+          "rich-text#slideCate-title-2",
+          "rich-text#slideCate-text-2",
+          "flex-layout.row#categoriaSlide2-img-COLUMN1"
+      ],
+      "props": {
+        "blockClass": "slideColumn1"
+      }
+  },
+  // columna 1
+  "rich-text#slideCate-title-2": {
+      "props": {
+        "text": "Conoce nuestras categorías",
+        "blockClass": "tituloSlideCategory"
+      }
+  },
+  "rich-text#slideCate-text-2": {
+      "props": {
+        "text": "Tenemos los mejores productos para el cuidado y belleza de tu piel",
+        "blockClass": "contenidoSlideCategory"
+      }
+  },
+  // Imagenes columna 1
+  "flex-layout.row#categoriaSlide2-img-COLUMN1": {
+      "children": [
+        "flex-layout.col#imagenCategoria1-2",
+        "flex-layout.col#imagenCategoria2-2"
+      ],
+      "props": {
+        "blockClass": "imagesColumn1"
+      }
+  },
+  // imagen uno de categorias
+  "flex-layout.col#imagenCategoria1-2": {
+    "children": [
+      "image#slide1category-1slide-2",
+      "rich-text#tituloSliderCategorias-slide2",
+      "image#slide1category-1-hover-slide-2"
+    ],
+    "props": {
+      "blockClass": "imagenCategoriaColumn"
+    }
+  },
+  "rich-text#tituloSliderCategorias-slide2": {
+    "props": {
+      "text": "[Maquilllaje](/maquillaje)",
+      "blockClass": ["categoriasTitulo"]
+    }
+  },
+  "image#slide1category-1slide-2": {
+      "props": {
+        "src": "https://epartner.vtexassets.com/arquivos/categoria-maquillaje.png",
+        "blockClass": ["slideCategoryColumn1","bannerSlides"],
+        "link":{
+          "url":"/maquillaje"
+        }
+      }
+  },
+  "image#slide1category-1-hover-slide-2": {
+    "props": {
+      "src": "https://epartner.vtexassets.com/arquivos/maquillaje-icono.png",
+      "blockClass": ["hoverImage"],
+      "link":{
+        "url":"/maquillaje"
+      }
+    }
+  },
+  // imagen dos de categorias
+  "flex-layout.col#imagenCategoria2-2": {
+    "children": [
+      "image#slide2category-slide-2",
+      "rich-text#tituloSliderCategorias-slide-2",
+      "image#slide1category-2-hover-slide-2"
+    ],
+    "props": {
+      "blockClass": "imagenCategoriaColumn"
+    }
+  },
+  "rich-text#tituloSliderCategorias-slide-2": {
+    "props": {
+      "text": "[Solar](/solar)",
+      "blockClass": ["categoriasTitulo"]
+    }
+  },
+  "image#slide2category-slide-2": {
+    "props": {
+      "src": "https://epartner.vtexassets.com/arquivos/categoria-solar.png",
+      "blockClass": ["slideCategoryColumn1","bannerSlides"],
+      "link":{
+        "url":"/solar"
+      }
+    }
+  },
+  "image#slide1category-2-hover-slide-2": {
+    "props": {
+      "src": "https://epartner.vtexassets.com/arquivos/solar-icono.png",
+      "blockClass": ["hoverImage"],
+      "link":{
+        "url":"/solar"
+      }
+    }
+  },
+  // Columna 2
+  "flex-layout.col#categoriaSlide2-2": {
+      "children": [
+        "flex-layout.col#imagen-3-2"
+      ],
+      "props": {
+        "blockClass": "slideColumn2"
+      }
+  },
+  // imagen dos de categorias
+  "flex-layout.col#imagen-3-2": {
+    "children": [
+      "image#imageColumn-2-2",
+      "rich-text#imagen-3-2",
+      "image#slide1category-3-hover"
+    ],
+    "props": {
+      "blockClass": ["imagenCategoriaColumn","column2categorySlide"]
+    }
+  },
+  "rich-text#imagen-3-2": {
+    "props": {
+      "text": "[Medicamentos](/medicamentos)",
+      "blockClass": ["categoriasTitulo"]
+    }
+  },
+  "image#imageColumn-2-2": {
+    "props": {
+      "src": "https://epartner.vtexassets.com/arquivos/categoria-medicamentos-desk.png",
+      "blockClass": ["slideCategoryColumn2","bannerSlides"],
+      "link":{
+        "url":"/medicamentos"
+      }
+    }
+  },
+  "image#slide1category-3-hover-2": {
+    "props": {
+      "src": "https://epartner.vtexassets.com/arquivos/medicamentos-icono.png",
+      "blockClass": ["hoverImage","hoverColumn2"],
+      "link":{
+        "url":"/medicamentos"
+      }
+    }
+  }
 }

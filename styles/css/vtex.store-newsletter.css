@@ -10,10 +10,8 @@
     border-radius: 0;
     margin-bottom: 10px;
 }
-
 .emailInputContainer :global(.vtex-styleguide-9-x-input){
     background: rgba(249,249,249,0.5);
-    border: 1px solid;
 }
 .emailInputContainer :global(.vtex-input-prefix__group){
     width: 70%;
@@ -32,7 +30,8 @@
     height: 50px;
     background: #27AFE5;
     border: 0;
+    transition: 400ms all;
 }
 .formSubmitContainer :global(.vtex-button):hover{
-    background: #27AFE5;
+    background: #1B7BA1;
 }

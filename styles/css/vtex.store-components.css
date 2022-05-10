@@ -8,15 +8,32 @@
   font-size: 12px;
   text-decoration: underline;
 }
-
+.searchBarIcon--clear {
+  padding: 0;
+}
+.closeIcon{
+  color: white;
+}
+.searchBarContainer :global(.vtex-styleguide-9-x-input){
+  width: 93%;
+}
+.imageElement--imagenMenuCategory {
+  width: 100%;
+}
 .infoCardContainer--info-card-home {
-  max-width: 1520px;
+  max-width: 1574px;
   margin: 0 auto;
   background: url(/arquivos/imagenFondoPrueba.png) no-repeat;
-  background-size: 100%;
+  background-size: 104%;
   padding: 0px;
+  height: 100% !important;
 }
-
+.infoCardContainer--info-card-contrasena-1 {
+  margin-bottom: 30px;
+}
+.infoCardCallActionContainer--info-card-contrasena-1 {
+  display: none;
+}
 .newsletter {
   background-color: #03054e;
   max-width: 1528px;
@@ -81,7 +98,18 @@
 .infoCardContainer--info-card-example.infoCardContainer--segundoBanner {
   margin-left: 10px;
 }
-
+.productImagesThumb  {
+  height: 100%!important;
+}
+.thumbImg {
+  width: 100%;
+  margin: 0 20px 0 0;
+  border-radius: 10px;
+  border: 1px solid #D3D3D3;
+}
+.imageElement--imgfooter {
+  width:95px;
+}
 @media only screen and (min-width: 640px) {
   .newsletter .container {
     padding: 140px;
@@ -154,8 +182,9 @@
 }
 
 .searchBarContainer{
-  width: 500px;
-  margin: 0 140px;
+  width: 544px;
+  margin: 0 105px;
+  padding: 0;
 }
 .infoCardContainer--Mio {
   width: 100%;
@@ -198,39 +227,100 @@
   height: 100%;
 }
 
-.imageElement--imgInfoProduct {
-  height: 100%;
+:global(.vtex-flex-layout-0-x-flexRowContent--searchVitrinadest) .imageElement--imgInfoProduct {
   border-radius: 5px;
+  width: 100%;
+  transition: 400ms all;
 }
+:global(.vtex-flex-layout-0-x-flexRowContent--searchVitrinadest) .imageElementLink--imgInfoProduct{
+  display: block;
+  overflow: hidden;
+  height: 100%;
+  border-radius: 10px;
+  width: 100%;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--searchVitrinadest) .imageElement--imgInfoProduct:hover{
+  transform: scale(1.05);
+}
+/* estilos de los thumbs */
 .carouselGaleryThumbs {
   position: absolute;
-  bottom: 43px;
-  width: 70%;
-  left: 20%;
+  bottom: 3px;
+  max-width: 350px;
+  margin: 0 auto;
 }
+.carouselGaleryCursor{
+  display: flex;
+  justify-content: center;
+}
+.productImagesThumbCaret .caretIcon{
+  display: none;
+}
+.productImagesThumbCaret{
+  background: transparent;
+}
+.carouselGaleryThumbs .gradientBaseRight::before {
+  content: "";
+  background: url(https://cutis.vteximg.com.br/arquivos/desk-arrow-2.png) no-repeat;
+  background-size: 100% !important;
+  display: block;
+  width: 39px;
+  height: 39px;
+  margin-top: 0;
+  transition: all 40ms;
+  margin-left: 20px;
+  transition: 400ms all;
+}
+.carouselGaleryThumbs .gradientBaseLeft::before{
+  content: "";
+  background: url(https://cutis.vteximg.com.br/arquivos/eva_arrow-ios-back-outline.png) no-repeat;
+  background-size: 100% !important;
+  display: block;
+  width: 39px;
+  height: 39px;
+  transition: all 40ms;
+  margin-left: -10px;
+  transition: 400ms all;
+}
+.gradientBaseLeft:hover::before {
+  background: url(https://cutis.vteximg.com.br/arquivos/desk-arrow-hover-2.png) no-repeat;
+}
+.gradientBaseRight:hover::before {
+  background: url(https://cutis.vteximg.com.br/arquivos/eva_arrow-ios-back-outline-1.png) no-repeat;
+}
+/* fin estilos thumbs */
 .productImagesThumb {
   margin: 8px;
 }
-:global(.vtex-wish-list-1-x-wishlistIconContainer--addListProduct){
-  position: relative;
-}
 .imageElement--imgCategoriaSlider{
-  height: 95%;
+  height: 93%;
   border-radius: 5px;
 }
 .logoImage--logo {
-  width: 85px;
+  width: 87px;
+  margin: 5px 0;
 }
 .searchBarInnerContainer :global(.vtex-input-prefix__group){
   border-radius: 20px;
+  height: 44px !important;
 }
 .searchIcon{
   color: white;
 }
 .searchBarInnerContainer :global(.vtex-input__suffix){
-  background: #27AFE5;
+  background: rgb(39, 175, 229);
   border-radius: 50%;
-  padding: 0 9px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  transition: 400ms all;
+}
+.searchBarInnerContainer :global(.vtex-input__suffix):hover{
+  background: #1B7BA1;
+}
+.searchBarInnerContainer :global(.vtex-input__suffix) .suffixWrapper{
+  justify-content: center;
 }
 .searchBarIcon--search {
   padding: 0;
@@ -245,7 +335,7 @@
   filter: brightness(0.5);
 }
 .infoCardContainer--info-card-home {
-  margin: 0 100px;
+  padding: 0 40px;
   border-radius: 10px;
 }
 .imageElement--imgSucces {
@@ -254,6 +344,9 @@
 }
 .productBrand--quickview {
   color: #27AFE5;
+}
+:global(.vtex-flex-layout-0-x-flexRow--main-Product) .container{
+  max-width: 100%;
 }
 /* quienes somos estilos */
 .infoCardContainer--info-card-quienes-somos {
@@ -292,7 +385,7 @@
   display: none;
 }
 .infoCardContainer--info-card-mision {
-  margin: 0 260px;
+  margin: 40px 260px 0 260px;
   padding: 0;
 }
 .infoCardContainer--info-card-vision {
@@ -331,7 +424,7 @@
   width: 100%;
 }
 .infoCardImage--info-card-home {
-  margin-left: 18px;
+  width: 100%;
 }
 .infoCardHeadline--info-card-home {
   font-size: 25px;
@@ -342,9 +435,10 @@
   background: #27AFE5;
   transition: 400ms all;
   border: 0;
+  padding: 0 22px;
 }
 .infoCardTextContainer--info-card-home {
-  padding: 40px;
+  padding: 80px;
 }
 
 .infoCardCallActionContainer--info-card-home :global(.vtex-button):hover{
@@ -363,7 +457,174 @@
 .imageElement--imgBanner-2:hover {
   transform: scale(1.05);
 }
+.imageElementLink--hoverImage{
+  position: absolute;
+  width: 84%;
+  top: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -10px;
+  opacity: 0;
+  visibility: hidden;
+  transition:400ms all ;
+}
+.imageElementLink--hoverImage.imageElementLink--hoverColumn2{
+  width: 100%;
+  margin-top: -20px;
+}
+.imageElement--hoverImage {
+  width: 145px;
+  height: 145px;
+}
+.imageElementLink--hoverImage {
+  width: 84%;
+  height: 90%;
+}
+:global(.vtex-flex-layout-0-x-flexCol--imagenCategoriaColumn):hover .imageElementLink--hoverImage{
+  opacity: 1;
+  visibility: visible;
+}
+:global(.vtex-flex-layout-0-x-flexCol--imagenCategoriaColumn):hover .imageElement--slideCategoryColumn1{
+  filter: brightness(0.8);
+}
+:global(.vtex-flex-layout-0-x-flexCol--imagenCategoriaColumn):hover .imageElement--slideCategoryColumn2{
+  filter: brightness(0.8);
+}
+.imageElementLink--imagen2-1{
+  margin-right: 5px;
+  width: 100%;
+}
+.imageElementLink--imagen2-2{
+  margin-left: 5px;
+}
+.infoCardCallActionContainer--info-card-home :global(.vtex-button__label){
+  text-transform: capitalize;
+  font-size: 18px;
+}
+.imageElement--ofertas-meenu {
+  width: 27%;
+}
+.productImagesContainer--carousel {
+  position: relative;
+}
+/* .productImagesContainer--carousel .carouselContainer::before {
+  content: "";
+  background: url(/arquivos/zoom-product.png) no-repeat;
+  background-size: 100%;
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 99;
+} */
+.carouselGaleryThumbs .swiper-slide {
+  height: auto;
+  width: 80px !important;
+}
+.productDescriptionTitle {
+  display: none;
+}
+.productDescriptionTitle .content {
+  text-align: center;
+}
+.imageElementLink--imagenMenuCategory{
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+.imageElementLink--imagenMenuCategory.imageElementLink--marcas-menu{
+  overflow: hidden;
+  width: 79%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.imageElement--imagenMenuCategory {
+  transition: 400ms all;
+}
+.imageElement--imagenMenuCategory:hover {
+  transform: scale(1.07);
+}
+.productImagesThumb {
+  opacity: 0.5;
+}
+.productImagesThumbActive {
+  opacity: 1;
+}
+.imageElementLink--imagenesSlider{
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+  width: 130px;
+  height: 130px;
+}
+.imageElement--imagenesSlider{
+  border-radius: 50%;
+  transition: 400ms all;
+}
+:global(.vtex-flex-layout-0-x-flexCol--categoriasSlider):hover .imageElement--imagenesSlider{
+  transform: scale(1.05);
+}
+:global(.vtex-flex-layout-0-x-flexCol--categoriasSlider):hover :global(.vtex-rich-text-0-x-link--tittleSlider){
+  color: #1B7BA1;
+}
+.imageElement--slideCategoryColumn2 {
+  width: 100%;
+}
+.imageElement--cuidadoPiel {
+  width: 100%;
+  height: 100%;
+}
+:global(.vtex-flex-layout-0-x-flexRow--breadcrumb) .container {
+  max-width: 100%;
+}
+/* estilos de los logos de marcas */
+.productBrandContainer{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.productBrandName{
+  text-decoration: none;
+  color: #808080;
+}
+.productBrandNameLink{
+  text-decoration: none;
+}
+.imageElement--imgInfoProduct {
+  width: 100%;
+}
+.carouselContainer--zoomImages .carouselGaleryThumbs--zoomImages {
+  display: none !important;
+}
+.imageElement--favoritos-image {
+  width: 20%;
+  margin: 0 5px 0 12px!important;
+}
+.imageElementLink--favoritos-image{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.imageElementLink--favoritos-image::after{
+  content: "Favoritos";
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+}
+.imageElementLink--favoritos-image:hover ::after{
+  color: #27AFE5 !important;
+}
 @media (max-width: 600px) {
+  .imageElementLink--favoritos-image::after{
+    display: none;
+  }
   .imageElement--LupaImagen {
     width: 21px;
     max-height: 20px;
@@ -386,7 +647,7 @@
     height: 540px;
   }
   .imageElement--slideCategoryColumn1 {
-    width: 95%;
+    width: 97%;
   }
   .imageElement--imgInfoProduct {
     width: 100%;
@@ -398,11 +659,23 @@
   }
   .imageElement--categoryIMG {
     border-radius: 5px;
+    width: 100%;
+    margin: 3px;
   }
   .productNameContainer {
     color: #808080;
     font-weight: bold;
     font-size: 19px;
+  }
+  :global(.vtex-disclosure-layout-1-x-content--menuOfertas ) .imageElementLink--categoryIMG{
+    display: flex;
+    justify-content: center;
+  }
+  :global(.vtex-disclosure-layout-1-x-content--menuOfertas ) .imageElement--categoryIMG{
+    border-radius: 5px;
+    width: 77%;
+    margin: 3px;
+    box-shadow: 0px 0px 20px rgb(0 0 0 / 5%);
   }
   .logoImage {
     margin-left: -15px;
@@ -414,15 +687,115 @@
     width: 100%;
   }
   .infoCardContainer--info-card-home{
-    margin: 0;
+    margin: 40px 0;
   }
   .imageElement--imgfooter {
-    width: 53%;
+    width: 38%;
   }
   .logoLink{
     margin-left: 2px;
   }
   .infoCardImage--info-card-home{
     margin-left: 0;
+  }
+  .imageElementLink--imagen2-1{
+    margin: 0;
+  }
+  :global(.vtex-store__template){
+    overflow-x: hidden;
+  }
+  .imageElement--hoverImage {
+    width: 95px;
+    height: 95px;
+  }
+  .imageElementLink--hoverImage {
+    width: 97%;
+    height: 86%;
+  }
+  .infoCardContainer--info-card-home{
+    max-width: 100%;
+    background-size: cover;
+    padding: 0px;
+  }
+  .infoCardSubhead--info-card-home {
+    text-align: center;
+  }
+  .infoCardHeadline--info-card-home {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #363636;
+  }
+  .infoCardTextContainer--info-card-home {
+    justify-content: center;
+    padding: 30px 30px;
+  }
+  .infoCardCallActionContainer--info-card-home {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .imageElementLink--imagenFooter{
+    margin-bottom: 30px;
+    display: block;
+    padding: 0 20px;
+  }
+  .imageElement--logos {
+    padding: 0 10px;
+  }
+  :global(.vtex-tab-layout-0-x-contentItem ) .productDescriptionContainer{
+    text-align: center;
+  }
+  :global(.vtex-product-availability-0-x-container--Disponibles ){
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  :global(.vtex-product-availability-0-x-lowStockHighlight){
+    font-weight: 100;
+  }
+  .carouselGaleryThumbs{
+    display: block!important;
+    position: absolute;
+    z-index: 999999;
+    top: 10px;
+  }
+  .carouselGaleryThumbs .productImagesThumb {
+    height: 80px !important;
+  }
+  .thumbImg {
+    width: 95%;
+  }
+  .imageElement--imagenesSlider {
+    max-width: 98px;
+  }
+  .imageElementLink--imagenesSlider{
+    display: flex;
+    justify-content: center;
+  }
+  .imageElementLink--imagenesSlider{
+    width: 90px;
+    height: 90px;
+  }
+  .imageElement--imgInfoProductM {
+    height: 100%;
+    transform: scaleX(1.3);
+    padding-left: 14px;
+  }
+  .infoCardContainer--info-card-home {
+    margin: 50px 0 20px 0;
+  }
+  .imageElement--imgCategoriaSlider{
+    transform: scaleX(1.4);
+    border-radius: 10px;
+    height: 100%;
+  }
+  .resultsList {
+    margin-top: 10px;
+  }
+  .imageElement--favoritos-image {
+    width: 28px;
+    margin: 0 12px!important;
   }
 }

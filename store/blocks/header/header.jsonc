@@ -14,15 +14,22 @@
 
 
   "flex-layout.row#2-desktop": {
-    "children": ["notification.bar#home"],
+    "children": ["rich-text#header-top-1","rich-text#header-top-2"],
     "props": {
+      "blockClass":"header-top",
       "fullWidth": "true"
     }
   },
-  "notification.bar#home": {
+  "rich-text#header-top-1": {
     "props": {
-      "blockClass": "barNotification",
-      "content": "Suscribite y obtén 10% de descuento. "
+      "text": "Suscribite y obtén 10% de descuento.",
+      "blockClass": ["header-top"]
+    }
+  },
+  "rich-text#header-top-2": {
+    "props": {
+      "text": "[Unete Ya](/)",
+      "blockClass": ["header-top","headertopLink"]
     }
   },
   "flex-layout.col#spacer": {
@@ -47,6 +54,7 @@
       "flex-layout.col#logo-desktop",
       "flex-layout.col#search-desktop",
       "flex-layout.col#login-desktop",
+      "flex-layout.col#fwavoritos",
       "minicart.v2"
     ]
   }, 
@@ -54,12 +62,12 @@
     "props":{
       "hasGoogleOneTap":"true",
       "isInitialScreenOptionOnly":"false",
-      "accountOptionLinks":"/login?returnUrl=%2F"
+      "accountOptionLinks":"/login?returnUrl=%2FAccount"
     }
   },
   "link#login": {
     "props": {
-      "href": "/login?returnUrl=%2F"
+      "href": "/login?returnUrl=%2FAccount"
     },
     "children":["login"]
   },
@@ -79,7 +87,7 @@
   "flex-layout.col#logo-desktop": {
     "props": {
       "blockClass":"logo",
-      "width":"20%",
+      "width":"22%",
       "verticalAlign": "middle"
     },
     "children": ["logo#desktop"]
@@ -87,7 +95,7 @@
   "flex-layout.col#search-desktop": {
     "props": {
       "blockClass":"searchBar",
-      "width":"63%",
+      "width":"54%",
       "verticalAlign": "middle"
     },
     "children": ["search-bar"]
@@ -106,11 +114,28 @@
     },
     "children": ["vtex.menu@2.x:menu#category-menu"]
   },
+  "flex-layout.col#fwavoritos": {
+    "props": {
+      "blockClass":"favoritos",
+      "width":"9%",
+      "verticalAlign": "middle"
+    },
+    "children": ["image#favoritosLogo"]
+  },
+  "image#favoritosLogo": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/favoritosNew.png",
+      "blockClass": "favoritos-image",
+      "link":{
+        "url":"/Account#/wishlist"
+      }
+    }
+  },
   "logo#desktop": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://cutis.vteximg.com.br/arquivos/cutisLogo.png",
+      "url": "https://cutis.vteximg.com.br/arquivos/logoAzulAjustado.png",
       "width": "180px",
       "blockClass":"logo"
     }
@@ -129,6 +154,7 @@
       // "flex-layout.col#spacer",
       "flex-layout.col#spacer",
       "disclosure-layout#lupa",
+      "image#favoritosLogo",
       "minicart.v2"
     ],
     "props": {
@@ -150,8 +176,22 @@
       "blockClass": "lupaTrigger"
     }
   },
+  // cierre del buscador
+  "disclosure-trigger#cierreBuscador": {
+    "children": ["rich-text#cierreBuscardor"],
+    "props": {
+      "blockClass": "cierreBuscador"
+    }
+  },
+  "rich-text#cierreBuscardor": {
+    "props": {
+      "text": "X",
+      "blockClass": ["cierreBuscador"]
+    }
+  },
+  // contenido 
   "disclosure-content#lupa": {
-    "children": ["search-bar"],
+    "children": ["disclosure-trigger#cierreBuscador","search-bar"],
     "props": {
       "blockClass": "lupaContent"
     }
@@ -170,13 +210,18 @@
     }
   },
   "drawer": {
-    "children": ["menu#drawer"]
+    "children": ["menu#drawer"],
+    "props":{
+      "backdropMode":"none",
+      "blockClass":"menu-m",
+      "slideDirection":"leftToRight"
+    }
   },
   "logo#mobile": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://cutis.vteximg.com.br/arquivos/cutisLogo.png",
+      "url": "https://cutis.vteximg.com.br/arquivos/logo-azultexto.png",
       "width": "70"
     }
   },

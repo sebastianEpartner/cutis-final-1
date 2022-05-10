@@ -24,15 +24,31 @@
             "blockClass": ["tituloFiltro","tituloFiltro2"]
         }
     },
+    "disclosure-trigger#filtros2": {
+        "children": ["rich-text#filtroTitulo2"],
+            "props": {
+            "blockClass": ["filtroCierreAll"]
+        }
+    },
+    "rich-text#filtroTitulo2": {
+        "props": {
+            "text": "Filtro",
+            "blockClass": ["tituloFiltro","tituloFiltro2"]
+        }
+    },
     "disclosure-content#filtros": {
-        "children": ["flex-layout.col#contenedorFiltros"],
+        "children": [
+            "disclosure-trigger#filtros2",
+            "flex-layout.col#contenedorFiltros"
+        ],
         "props": {
             "blockClass": "filtroContent"
         }
     },
     "flex-layout.col#contenedorFiltros": {
         "children": [
-            "disclosure-trigger#filtros1","filter-navigator.v3"
+            "disclosure-trigger#filtros1",
+            "filter-navigator.v3"
         ],
         "props": {
           "blockClass": "filtroContent"

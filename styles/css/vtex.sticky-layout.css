@@ -1,3 +1,6 @@
 .wrapper--stuck  :global(.vtex-store-components-3-x-logoLink){
     transform: scale(1) !important;
 }
+@media (max-width: 600px) {
+
+}

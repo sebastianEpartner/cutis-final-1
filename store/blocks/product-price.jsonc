@@ -17,7 +17,8 @@
       "preserveLayoutOnMobile": true,
       "preventHorizontalStretch": true,
       "marginBottom": 2,
-      "marginTop": 5
+      "marginTop": 5,
+      "blockClass":"descuento"
     },
     "children": [
       "product-list-price",

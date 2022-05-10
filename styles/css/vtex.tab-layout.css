@@ -11,9 +11,12 @@
 .listContainer--tabbersHome {
     justify-content: flex-start;
 }
-
+/* footer tabbers */
 .contentItem--footersColumn :global(.vtex-menu-2-x-menuContainerNav){
-    width: 38%;
+    width: 47%;
+}
+.contentItem--footersColumn :global(.vtex-menu-2-x-styledLinkContent ){
+    font-size: 13px;
 }
 .listItem--tabberFooter :global(.vtex-button__label){
     color: #B8B8B8;
@@ -35,6 +38,10 @@
     background: transparent;
     border: 0;
 }
+.listItem--tabberFooter  {
+    width: 100%;
+}
+/* tab category */
 .listContainer--tabbersCategory {
     margin-bottom: 20px;
 }
@@ -43,14 +50,13 @@
     border: 0;
 }
 .listContainer--tabbersCategory .listItem  :global(.vtex-button__label){
-    color: white;
+    color: transparent;
     font-size: 15px;
     padding: 50px;
     text-transform: capitalize;
 }
 .container--product{
     margin: 0 100px;
-    border: 1px solid #D3D3D3;
     border-radius: 18px;
     overflow: hidden;
 }
@@ -58,21 +64,42 @@
     width: 33.33% !important;
     margin: 0;
     padding: 0;
+    border-top: 1px solid #D3D3D3;
     border-bottom: 1px solid #D3D3D3;
     border-left: 1px solid #D3D3D3;
-
+}
+.container--product .listItem--detail {
+    width: 33.33% !important;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #D3D3D3;
+    border-bottom: 1px solid #D3D3D3;
+    border-right: 1px solid #D3D3D3;
 }
 .container--product .listItem :global(.vtex-button) {
     width: 100%;
+    border-radius: 0;
+}
+.container--product .listItemActive :global(.vtex-button) {
+    background: #363636;
+    border: 0;
+}
+.container--product .listItem :global(.vtex-button__label) {
+    color: #808080;
+    text-transform: initial;
+}
+.container--product .listItemActive :global(.vtex-button__label) {
+    color: white;
+    font-weight: bold;
 }
 .container--product .contentContainer {
-    padding: 20px 30px;
+    padding: 0px 30px 20px 30px;
 }
 .contentItem--tabbersVitrina {
-    padding: 0 100px;
+    padding: 0 40px;
 }
 .listContainer--tabbersCategory .listItem{
-    width: 13.8%;
+    width: 15%;
     padding: 0;
 }
 .listContainer--tabbersCategory .listItem :global(.vtex-button){
@@ -82,7 +109,7 @@
     background: #27AFE5 !important;
 }
 .listContainer--tabbersCategory .listItem :global(.vtex-button){
-    background: white;
+    background: transparent;
     border: 1px solid #E7EEF1;
 }
 .listContainer--tabbersCategory .listItem :global(.vtex-button__label){
@@ -100,15 +127,23 @@
 .listContainer--tabbersCategory .listItem  :global(.vtex-button):hover :global(.vtex-button__label){
     color: white;
 }
+.container--home{
+    margin-bottom: 40px;
+}
+.container--product{
+    margin-bottom: 40px;
+}
 @media (max-width: 600px) {
     .listItem--tabberFooter :global(.vtex-button__label){
         text-transform: capitalize;
         padding: 0;
+        font-size: 13px;
     }
     .listItemActive--tabberFooter :global(.vtex-button__label){
         text-transform: capitalize;
-        font-size: 35px;
+        font-size: 18px;
         padding: 0;
+        font-weight: 500;
     }
     .listContainer--tabbersHome{
         flex-wrap: initial;
@@ -116,7 +151,7 @@
     .contentItem--footersColumn :global(.vtex-menu-2-x-menuContainerNav){
         width: 100%;
         justify-content: center;
-        display: flex;
+        display: block;
         text-align: center;
     }
     .listItem  {
@@ -150,5 +185,28 @@
         width: 100%;
         padding: 0;
     }
-
+    .listContainer--tabbersCategory {
+        margin-bottom: 40px;
+    }
+    .listItemActive--tabberFooter :global(.vtex-button){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .contentItem--footersColumn :global(.vtex-menu-2-x-styledLinkContainer){
+        margin: 0;
+    }
+    .contentItem--footersColumn :global(.vtex-menu-2-x-styledLinkContent ){
+        justify-content: center !important;
+    }
+    .container--product{
+        margin: 0 10px;
+    }
+    .container--product .contentContainer{
+        padding: 8px 0px;
+    }
+    .container--product{
+        margin: 10px 0 30px 0;
+    }
 }

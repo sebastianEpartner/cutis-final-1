@@ -23,11 +23,11 @@
           "itemsPerPage": {
             "desktop": 1,
             "tablet": 4,
-            "phone": 2
+            "phone": 3
           },
           "infinite": true,
           "blockClass": "categoriasCarousel",
-          "showPaginationDots":"true",
+          "showPaginationDots":"mobileOnly",
           "showNavigationArrows": "never"
         },
         "children": [
@@ -114,47 +114,82 @@
     },
     "tab-content.item#tabsCatego1": {
         "children": [
-            "list-context.product-list#demo1"
+            "list-context.product-list#demo1",
+            "rich-text#categoriaRsotro"
         ],
         "props": {
             "tabId": "home2",
             "blockClass": "tabbersVitrina"
         }
     },
+    "rich-text#categoriaRsotro": {
+        "props": {
+          "text": "[Ir a Rostro](/rostro)",
+          "blockClass": ["categoriasTabbers"]
+        }
+    },
     "tab-content.item#tabsCatego2": {
         "children": [
-            "list-context.product-list#demo2"
+            "list-context.product-list#demo2",
+            "rich-text#categoriaSolar"
         ],
         "props": {
             "tabId": "home3",
             "blockClass": "tabbersVitrina"
         }
     },
+    "rich-text#categoriaSolar": {
+        "props": {
+          "text": "[Ir a Solar](/solares)",
+          "blockClass": ["categoriasTabbers"]
+        }
+    },
     "tab-content.item#tabsCatego3": {
         "children": [
-            "list-context.product-list#demo3"
+            "list-context.product-list#demo3",
+            "rich-text#categoriaMaquillaje"
         ],
         "props": {
             "tabId": "home4", 
             "blockClass": "tabbersVitrina"
         }
     },
+    "rich-text#categoriaMaquillaje": {
+        "props": {
+          "text": "[Ir a Maquillaje](/maquillaje)",
+          "blockClass": ["categoriasTabbers"]
+        }
+    },
     "tab-content.item#tabsCatego4": {
         "children": [
-            "list-context.product-list#demo4"
+            "list-context.product-list#demo4",
+            "rich-text#categoriaCapilar"
         ],
         "props": {
             "tabId": "home5", 
             "blockClass": "tabbersVitrina"
         }
     },
+    "rich-text#categoriaCapilar": {
+        "props": {
+          "text": "[Ir a Capilar](/capilar)",
+          "blockClass": ["categoriasTabbers"]
+        }
+    },
     "tab-content.item#tabsCatego5": {
         "children": [
-            "list-context.product-list#demo5"
+            "list-context.product-list#demo5",
+            "rich-text#categoriaCorporal"
         ],
         "props": {
             "tabId": "home6", 
             "blockClass": "tabbersVitrina"
+        }
+    },
+    "rich-text#categoriaCorporal": {
+        "props": {
+          "text": "[Ir a Corporal](/corporal)",
+          "blockClass": ["categoriasTabbers"]
         }
     },
     "tab-content.item#tabsCatego6": {
@@ -166,11 +201,18 @@
             "blockClass": "tabbersVitrina"
         }
     },
+    "rich-text#categoriaMedicamentos": {
+        "props": {
+          "text": "[Ir a Medicamentos](/medicamentos)",
+          "blockClass": ["categoriasTabbers"]
+        }
+    },
+    // vitrinas para los tabbers
     "list-context.product-list#demo1": {
         "blocks": ["product-summary.shelf#2"],
         "children": ["slider-layout#demo-products-1"]
-      },
-      "slider-layout#demo-products-1": {
+    },
+    "slider-layout#demo-products-1": {
         "props": {
           "itemsPerPage": {
             "desktop": 5,

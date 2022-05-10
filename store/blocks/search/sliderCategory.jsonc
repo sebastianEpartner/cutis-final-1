@@ -1,36 +1,4 @@
 {
-    "list-context.image-list#categorysSearch": {
-        "children": ["slider-layout#categorysSearch"],
-        "props": {
-            "height": 720,
-            "images": [
-                {
-                    "image": "https://cutis.vteximg.com.br/arquivos/rostroCategory.png",
-                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/rostroCategory.png"
-                },
-                {
-                    "image": "https://cutis.vteximg.com.br/arquivos/solaresCategory.png",
-                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/solaresCategory.png"
-                },
-                {
-                    "image": "https://cutis.vteximg.com.br/arquivos/maquillajeCategory.png",
-                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/maquillajeCategory.png"
-                },
-                {
-                    "image": "https://cutis.vteximg.com.br/arquivos/capilarCategory.png",
-                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/capilarCategory.png"
-                },
-                {
-                    "image": "https://cutis.vteximg.com.br/arquivos/corporalCategory.png",
-                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/corporalCategory.png"
-                },
-                {
-                    "image": "https://cutis.vteximg.com.br/arquivos/medicamentosCategory.png",
-                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/medicamentosCategory.png"
-                }
-            ]
-        }
-    },
     "slider-layout#categorysSearch": {
         "props": {
             "itemsPerPage": {
@@ -39,9 +7,216 @@
             "phone": 3
             },
             "infinite": true,
-            "showNavigationArrows": "always",
-            "showPaginationDots": "never",
+            "showNavigationArrows": "mobileOnly",
+            "showPaginationDots": "mobileOnly",
             "blockClass": "category-carousel"
+        },
+        "children": [
+            "flex-layout.row#categoria-1-slider",
+            "flex-layout.row#categoria-2-slider",
+            "flex-layout.row#categoria-3-slider",
+            "flex-layout.row#categoria-4-slider",
+            "flex-layout.row#categoria-5-slider",
+            "flex-layout.row#categoria-6-slider"
+        ]
+    },
+    // columnas del slider -1
+    "flex-layout.row#categoria-1-slider": {
+        "children": [
+            "flex-layout.col#categoria-1-slider"
+        ],
+        "props": {
+          "blockClass": "categoriasSlider"
+        }
+    },
+    "flex-layout.col#categoria-1-slider": {
+        "children": [
+            "image#categroia-1-slider",
+            "rich-text#categoria-1-slider"
+        ],
+        "props": {
+          "blockClass": "categoriasSlider"
+        }
+    },
+    "image#categroia-1-slider": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/rostroCategoriasNew.png",
+          "blockClass": ["imagenesSlider"],
+          "link":{
+            "url":"/rostro"
+          }
+        }
+    },
+    "rich-text#categoria-1-slider": {
+        "props": {
+          "text": "[Rostro](/rostro)",
+          "blockClass": ["tittleSlider"]
+        }
+    },
+    // columnas del slider -2
+    "flex-layout.row#categoria-2-slider": {
+        "children": [
+            "flex-layout.col#categoria-2-slider"
+        ],
+        "props": {
+          "blockClass": "categoriasSlider"
+        }
+    },
+    "flex-layout.col#categoria-2-slider": {
+        "children": [
+            "image#categroia-2-slider",
+            "rich-text#categoria-2-slider"
+        ],
+        "props": {
+          "blockClass": "categoriasSlider"
+        }
+    },
+    "image#categroia-2-slider": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/solaresCategoriasNew.png",
+          "blockClass": ["imagenesSlider"],
+          "link":{
+            "url":"/solares"
+          }
+        }
+    },
+    "rich-text#categoria-2-slider": {
+        "props": {
+          "text": "[Solares](/solares)",
+          "blockClass": ["tittleSlider"]
+        }
+    },
+    // columnas del slider -3
+    "flex-layout.row#categoria-3-slider": {
+        "children": [
+            "flex-layout.col#categoria-3-slider"
+        ],
+        "props": {
+          "blockClass": "categoriasSlider"
+        }
+    },
+    "flex-layout.col#categoria-3-slider": {
+        "children": [
+            "image#categroia-3-slider",
+            "rich-text#categoria-3-slider"
+        ],
+        "props": {
+          "blockClass": "categoriasSlider"
+        }
+    },
+    "image#categroia-3-slider": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/maquillajeCategoriasNew.png",
+          "blockClass": ["imagenesSlider"],
+          "link":{
+            "url":"/maquillaje"
+          }
+        }
+    },
+    "rich-text#categoria-3-slider": {
+        "props": {
+          "text": "[Maquillaje](/maquillaje)",
+          "blockClass": ["tittleSlider"]
+        }
+    },
+    // columnas del slider -4
+    "flex-layout.row#categoria-4-slider": {
+        "children": [
+            "flex-layout.col#categoria-4-slider"
+        ],
+        "props": {
+          "blockClass": "categoriasSlider"
+        }
+    },
+    "flex-layout.col#categoria-4-slider": {
+        "children": [
+            "image#categroia-4-slider",
+            "rich-text#categoria-4-slider"
+        ],
+        "props": {
+          "blockClass": "categoriasSlider"
+        }
+    },
+    "image#categroia-4-slider": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/CapilarCategoriasNew.png",
+          "blockClass": ["imagenesSlider"],
+          "link":{
+            "url":"/capilar"
+          }
+        }
+    },
+    "rich-text#categoria-4-slider": {
+        "props": {
+          "text": "[Capilar](/capilar)",
+          "blockClass": ["tittleSlider"]
+        }
+    },    
+    // columnas del slider -5
+    "flex-layout.row#categoria-5-slider": {
+        "children": [
+            "flex-layout.col#categoria-5-slider"
+        ],
+        "props": {
+          "blockClass": "categoriasSlider"
+        }
+    },
+    "flex-layout.col#categoria-5-slider": {
+        "children": [
+            "image#categroia-5-slider",
+            "rich-text#categoria-5-slider"
+        ],
+        "props": {
+          "blockClass": "categoriasSlider"
+        }
+    },
+    "image#categroia-5-slider": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/corporalCategoriasNew.png",
+          "blockClass": ["imagenesSlider"],
+          "link":{
+            "url":"/corporal"
+          }
+        }
+    },
+    "rich-text#categoria-5-slider": {
+        "props": {
+          "text": "[Corporal](/corporal)",
+          "blockClass": ["tittleSlider"]
+        }
+    },
+    // columnas del slider -6
+    "flex-layout.row#categoria-6-slider": {
+        "children": [
+            "flex-layout.col#categoria-6-slider"
+        ],
+        "props": {
+          "blockClass": "categoriasSlider"
+        }
+    },
+    "flex-layout.col#categoria-6-slider": {
+        "children": [
+            "image#categroia-6-slider",
+            "rich-text#categoria-6-slider"
+        ],
+        "props": {
+          "blockClass": "categoriasSlider"
+        }
+    },
+    "image#categroia-6-slider": {
+        "props": {
+          "src": "https://cutis.vteximg.com.br/arquivos/medicamentoCategoriasNew.png",
+          "blockClass": ["imagenesSlider"],
+          "link":{
+            "url":"/medicamentos"
+          }
+        }
+    },
+    "rich-text#categoria-6-slider": {
+        "props": {
+          "text": "[Medicamentos](/medicamentos)",
+          "blockClass": ["tittleSlider"]
         }
     }
+
 }

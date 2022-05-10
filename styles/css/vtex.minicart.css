@@ -1,6 +1,6 @@
 .minicartIconContainer::before{
     content: "";
-    background: url(https://cutis.vteximg.com.br/arquivos/carritoAzul.png)no-repeat;
+    background: url(https://cutis.vteximg.com.br/arquivos/carritoNewLogoCart.png) no-repeat;
     background-size: 100%;
     font-size: 10px;
     display: block;
@@ -34,7 +34,15 @@
     margin-left: -32px;
     position: absolute;
     padding: 14px;
+    margin-top: 9px;
     background: white;
+    transition: 400ms all;
+}
+.opened .closeIconButton:hover .closeIcon{
+    color: #27AFE5;
+}
+.opened .closeIconButton:hover{
+    box-shadow: 0 0 30px #00000059;
 }
 .childrenContainer {
     margin-top: 13px;
@@ -44,8 +52,9 @@
     padding: 0 40px;
 }
 .minicartProductListContainer {
-    margin: 0 20px;
-    width: 90%;
+    padding: 0 20px;
+    width: 100%;
+    height: 1213px;
 }
 .minicartCheckoutButton--finalizarPedido :global(.vtex-button__label){
     font-size: 0;
@@ -93,22 +102,31 @@
     font-size: 35px;
     content: "Mi carrito";
     color: #27AFE5;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     display: block;
 }
 .minicartCheckoutButton--finalizarPedido :global(.vtex-button){
     background: #27AFE5;
     border: 0;
     text-transform: initial;
+    transition: 400ms all;
+}
+.minicartCheckoutButton--finalizarPedido :global(.vtex-button):hover{
+    background: #1B7BA1;
 }
 .minicartCheckoutButton--verCarrito :global(.vtex-button){
     background: white;
     border: 1px solid #27AFE5;
     text-transform: initial;
     color: white;
+    transition: 400ms all;
 }
-.minicartCheckoutButton--verCarrito :global(.vtex-button__label){
-    color: white;
+.minicartCheckoutButton--verCarrito :global(.vtex-button):hover{
+    border: 1px solid #1B7BA1;
+    color: #1B7BA1;
+}
+.minicartCheckoutButton--verCarrito :global(.vtex-button):hover :global(.vtex-button__label)::before{
+    color: #1B7BA1 !important;
 }
 .minicartProductListContainer--rowProduct::-webkit-scrollbar{
    background: #D3D3D3;
@@ -118,4 +136,55 @@
 .minicartProductListContainer--rowProduct::-webkit-scrollbar-thumb{
     background: #27AFE5;
     border-radius: 5px;
+}
+.minicartContainer {
+    background: #E4F7FF;
+    border-radius: 5px;
+    transition: 400ms all;
+}
+.minicartContainer:hover {
+    background: #aee7ff;
+}
+.overlay {
+    background: #004b72 ;
+}
+.minicartContainer :global(.vtex-button__label){
+    padding: 0 5px 0 8px;
+}
+
+@media (max-width: 600px) {
+    .drawer.opened {
+        max-width: 58%!important;
+        width: 90% !important;
+        min-width: 90% !IMPORTANT;
+    }
+    .minicartProductListContainer {
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    .minicartWrapperContainer {
+        margin-right: 5px;
+    }
+    .minicartCheckoutButton--finalizarPedido :global(.vtex-button__label)::before{
+        font-size: 14px;
+    }
+    .minicartCheckoutButton--verCarrito :global(.vtex-button__label)::before{
+        font-size: 14px;
+    }
+    .minicartCheckoutButton--finalizarPedido :global(.vtex-button__label){
+        padding: 0;
+    }
+    .minicartSummary--rowProduct {
+        padding-top: 5px;
+    }
+    .childrenContainer {
+        margin-top: 6px;
+        height: 100%;
+    }
+    .minicartTitle::before {        
+        font-size: 18px;
+        margin-bottom: 0;
+        margin-top: 10px;
+    }
 }

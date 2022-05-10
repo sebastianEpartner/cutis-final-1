@@ -8,9 +8,7 @@
       "menu-item#category",
       "menu-item#marcas",
       "menu-item#category-kits",
-      "menu-item#category-hombre",
-      "menu-item#category-mujer",
-      "menu-item#category-ninos",
+      "menu-item#category-medicamentos",
       "menu-item#category-ofertas" 
     ]
   },
@@ -69,7 +67,7 @@
         }
     }
   },
-  "menu-item#category-hombre": {
+  "menu-item#category-medicamentos": {
     "props": {
         "id": "menu-item-category-home",
         "type": "custom",
@@ -78,42 +76,10 @@
         "blockClass":["menuPrinItems"],
         "itemProps": {
         "type": "internal",
-        "href": "/home---decor/",
+        "href": "/medicamentos",
         "noFollow": false,
-        "tagTitle": "Hombre",
-        "text": "Hombre"
-        }
-    }
-  },
-  "menu-item#category-mujer": {
-    "props": {
-        "id": "menu-item-category-home",
-        "type": "custom",
-        "iconId": null,
-        "highlight": false,
-        "blockClass":["menuPrinItems"],
-        "itemProps": {
-        "type": "internal",
-        "href": "/home---decor/",
-        "noFollow": false,
-        "tagTitle": "Mujer",
-        "text": "Mujer"
-        }
-    }
-  },
-  "menu-item#category-ninos": {
-    "props": {
-        "id": "menu-item-category-home",
-        "type": "custom",
-        "iconId": null,
-        "highlight": false,
-        "blockClass":["menuPrinItems"],
-        "itemProps": {
-        "type": "internal",
-        "href": "/home---decor/",
-        "noFollow": false,
-        "tagTitle": "Niños",
-        "text": "Niños"
+        "tagTitle": "Medicamentos",
+        "text": "Medicamentos"
         }
     }
   },
@@ -131,6 +97,9 @@
           "tagTitle": "Ofertas",
           "text": "Ofertas"
         }
-    }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#ofertas"
+    ]
   }
 }

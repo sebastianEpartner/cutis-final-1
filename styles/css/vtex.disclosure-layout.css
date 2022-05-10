@@ -5,8 +5,19 @@
     border-radius: 5px;
     cursor: pointer;
     width: 52%!important;
-    margin-left: 13px;
+    margin-left: 0px;
     padding: 8px 0;
+}
+.trigger--fitroTrigger2--visible{
+    margin: 0;
+}
+.trigger--filtroCierreAll--visible{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    position: absolute;
+    z-index: 0;
 }
 .content--filtroContent--visible{
     position: fixed;
@@ -14,7 +25,7 @@
     z-index: 99999;
     height: 100%;
     left: 0px;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 75, 114, 0.5);
     width: 100% !important;
     opacity: 1;
     transition: 1s all;
@@ -35,6 +46,7 @@
     top: 10px;
     right: 20px;
     cursor: pointer;
+    color: #27AFE5;
 }
 .trigger--question {
     background: white;
@@ -47,7 +59,7 @@
 }
 .trigger--question::after{
     content: "";
-    background: url(/arquivos/flechaAbajoFaqs.png)no-repeat;
+    background: url(/arquivos/flechaAbajoFaqs.png) no-repeat;
     background-size: 100%;
     width: 13px;
     height: 9px;
@@ -57,7 +69,7 @@
 }
 
 .trigger--question--visible::after{
-    background: url(/arquivos/flechaAzulFaqs.png)no-repeat;
+    background: url(/arquivos/flechaAzulFaqs.png) no-repeat;
 }
 .trigger--question--visible :global(.vtex-rich-text-0-x-paragraph){
     color: #27AFE5;
@@ -66,6 +78,9 @@
     margin-left: 25px;
     font-size: 15px;
     font-weight: 400 !important;
+}
+.content--filtroContent--visible :global(.vtex-rich-text-0-x-container--tituloFiltro2){
+    justify-content: flex-start;
 }
 @media (max-width: 600px) {
     .trigger--subMneusMTrigger{
@@ -97,16 +112,48 @@
         position: absolute;
         width: 100%;
         left: 0;
-        top: 78%;
+        top: 7px;
         background: white;
         padding: 7px 10px;
+        z-index: 99999;
     }
     .trigger--lupaTrigger {
         height: 31px;
         background: transparent;
         border: 0;
+        margin-right: 5px;
     }
     .trigger--subMneusMTrigger {
         background: #F7F9FB;
+    }
+    .content--subMneusMContent--visible{
+        padding: 0 0px;
+        margin-top: 67px;
+        height: 97%
+    }
+    .content--subMneusMContent--visible.content--menusPrincipal--visible{
+        padding: 0 ;
+    }
+    .trigger--ofertas {
+        background: #E4F7FF;
+    }
+    .trigger--cierreBuscador {
+        background: #27AFE5;
+        height: 40px;
+        width: 40px;
+        border: 0;
+        display: flex;
+        justify-content: center;
+        border-radius: 50%;
+        align-items: center;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .content--subMneusMContent--visible{
+        padding: 0 20px;
+    }
+    .content--subMneusMContent.content--menuOfertas--visible{
+        padding: 0;
     }
 }

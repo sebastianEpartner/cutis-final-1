@@ -87,3 +87,22 @@
 .paper--product-gifts {
   padding: 1.5rem;
 }
+
+.triggerContainer--zoom {
+  position: absolute;
+  width: 25px !important;
+  top: 17px;
+  right: 14px;
+  z-index: 99;
+}
+.container--zoom .headerContainer {
+  border: 0;
+  position: absolute;
+  right: 0;
+}
+@media (max-width: 600px) {
+  .container--zoom .paperNotFullScreen {
+    margin: 0;
+    width: 100%;
+  }
+}

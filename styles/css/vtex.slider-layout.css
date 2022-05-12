@@ -225,6 +225,9 @@
 .productSpecificationValue--comparison-page{
   font-size: 14px;
 }
+.sliderLayoutContainer--vitrinaGigante .slide--shelf {
+  margin-bottom: 0;
+}
 @media (max-width: 600px) {
   :global(.vtex-account__page-body) .slide--shelf {
     width: auto !important;

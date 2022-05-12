@@ -323,7 +323,7 @@
     "props": {
       "paddingLeft": "20px",
       "width":"79%",
-      "blockClass": "column2vitrinaDestacado2"
+      "blockClass": ["column2vitrinaDestacado2"]
     }
   },
   "rich-text#vitrinaDestacada1": {
@@ -473,7 +473,7 @@
     "props": {
       "paddingLeft": "20px",
       "width":"50%",
-      "blockClass": "column2vitrinaDestacado2"
+      "blockClass": ["column2vitrinaDestacado2","vitrinaGrande"]
     }
   },
   "list-context.product-list#vitrineDest3": {

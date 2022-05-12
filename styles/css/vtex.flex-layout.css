@@ -832,7 +832,7 @@
 .flexCol--column2vitrinaDestacado2 :global(.vtex-slider-layout-0-x-slide--shelf) {
   margin-bottom: 9px;
   padding: 0;
-  margin: 0 20px;
+  margin: 0px 15px 15px 15px;
 }
 .flexRowContent--menuMarcasLv2 :global(.vtex-menu-2-x-styledLinkContent){
   font-size: 14px;
@@ -863,6 +863,9 @@
 }
 .flexCol--column2vitrinaDestacado2  .flexColChild--column2vitrinaDestacado2 {
   height: auto !important;
+}
+.flexColChild--column2vitrinaDestacado2.flexColChild--vitrinaGrande   {
+  height: 98% !important;
 }
 @media (max-width: 600px) {
   .flexRow--vitrinadestacada1-1{

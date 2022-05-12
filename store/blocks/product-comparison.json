@@ -6,7 +6,7 @@
     },
     "comparison-page": {
         "children": ["slider-layout-group#comparison-page"]
-      },
+    },
     "slider-layout-group#comparison-page": {
         "children": [
           "product-comparison-block.product-summary-row",

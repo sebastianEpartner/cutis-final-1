@@ -72,7 +72,7 @@
     padding:0 40px ;
 }
 .formFooter {
-    padding: 0 40px;
+    padding: 22px 40px;
 }
 .formFooter :global(.vtex-button){
     background: #27AFE5;
@@ -252,6 +252,17 @@
 :global(.vtex-product-comparison-0-x-productSelectorContainer ) :global(.vtex-checkbox__input)[value="true"]::before{
     background: url(/Arquivos/compararHoverBlue.png) no-repeat;
     background-size: 100%;
+}
+.contentAlwaysWithOptions {
+    background: transparent;
+}
+.optionsListItem:nth-child(2) {
+    display: none;
+}
+.profile {
+    font-size: 15px;
+    text-transform: initial;
+    margin-top: 2px;
 }
 @media (max-width: 600px) {
     .formTitle {

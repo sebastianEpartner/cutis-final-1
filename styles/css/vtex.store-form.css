@@ -1,0 +1,8 @@
+.formSubmitButton--enviar-input :global(.vtex-button) {
+    width: 100%;
+}
+.formSubmitButton--enviar-input :global(.vtex-button):hover {
+    background: #e4f7ff;
+    color: #2cb1e6;
+    font-weight: bold;
+}

@@ -55,6 +55,15 @@
 .removeButtonContainer:hover {
     background: #F1F1F1;
 }
+.currencyDecimal {
+    display: none;
+}
+
+.currencyFraction {
+    display: none;
+}
+
+
 @media (max-width: 600px) {
     .productImageContainer {
         width: 50px !important;

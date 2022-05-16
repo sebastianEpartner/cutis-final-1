@@ -19,6 +19,9 @@
   width: auto !important;
   align-self: center
 }
+.orderByOptionsContainer {
+  z-index: 999;
+}
 
 .galleryItem--list {
   border-bottom: 1px #E7E9EE solid;
@@ -240,6 +243,24 @@
   max-width: 25% !important;
   border: 0;
 }
+
+.filter__container--priceRange .filterTitleSpan {
+  font-size: 0;
+}
+
+.filter__container--priceRange .filterTitleSpan::after {
+  content: "Rango de precio";
+  font-size: 15px;
+}
+
+.filter__container--category-1 .filterTitleSpan {
+  font-size: 0;
+}
+.filter__container--category-1 .filterTitleSpan::after {
+  content: "Subcategorias";
+  font-size: 16px;
+}
+
 @media (max-width: 700px) {
   .galleryItem {
     max-width: 50%!important;

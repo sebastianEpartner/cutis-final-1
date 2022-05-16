@@ -21,12 +21,7 @@
 .flexColChild--column-newsletter :global(.vtex-store-components-3-x-imageElement--imgfooter ){
   width: 140px;
 }
-.flexRow--mediosPagos .stretchChildrenWidth:first-child{
-  width: 25% !important;
-}
-.flexRow--mediosPagos .stretchChildrenWidth:last-child{
-  width: 75% !important;
-}
+
 @media screen and (min-width: 40em) {
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
@@ -867,6 +862,285 @@
 .flexColChild--column2vitrinaDestacado2.flexColChild--vitrinaGrande   {
   height: 98% !important;
 }
+.flexCol--bannersFooter {
+  flex-direction: column-reverse;
+}
+.flexColChild--header-tiendas {
+  text-align: right;
+}
+
+.flexColChild--header-tiendas {
+  padding: 9px 7px;
+  border-radius: 5px;
+  margin-right: -10px;
+  transition: 400ms all;
+}
+
+.flexColChild--header-tiendas:hover {
+  background-color: #F1F1F1;
+}
+
+
+
+/*ESTILOS CONTACTO*/
+
+.flexRow--contacto-form-box :global(.vtex-store-components-3-x-container) {
+  max-width: 100%;
+}
+.flexRowContent--contacto-form-box {
+  padding: 0 100px;
+}
+
+.flexRowContent--contacto-form-box .stretchChildrenWidth:first-child {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 5px;
+}
+
+.flexRowContent--contacto-form .stretchChildrenWidth:first-child {
+  padding: 0;
+  margin: 0;
+  width: 45% !important;
+}
+
+.flexRowContent--contacto-form-5 {
+  flex-wrap: wrap;
+}
+
+.flexRowContent--contacto-form-5 .stretchChildrenWidth {
+  width: 100% !important;
+}
+
+.flexRowContent--contacto-form {
+  justify-content: space-around;
+}
+
+.flexRow--contacto-form-4.flexRow--contacto-form .flexRowContent--contacto-form-4.flexRowContent--contacto-form {
+  justify-content: flex-start;
+  padding-left: 1%;
+}
+
+.flexRow--contacto-form-4.flexRow--contacto-form .flexRowContent--contacto-form-4.flexRowContent--contacto-form .stretchChildrenWidth {
+  width: 46% !important;
+}
+
+.flexRow--contacto-form-5.flexRow--contacto-form .flexRowContent--contacto-form-5.flexRowContent--contacto-form .stretchChildrenWidth {
+  width: 100% !important;
+  padding: 1%;
+}
+
+.flexRowContent--contacto-form-5.flexRowContent--contacto-form :global(.vtex-textarea__input) {
+  background: #f7f9fb;
+}
+
+.flexRowContent--contacto-form-1 {
+  margin: 0px 0 20px;
+}
+.flexRowContent--contacto-form-2 {
+  margin: 20px 0;
+}
+.flexRowContent--contacto-form-3 {
+  margin: 20px 0;
+}
+.flexRowContent--contacto-form-4 {
+  margin: 20px 0;
+}
+.flexRowContent--contacto-form-5 {
+  margin: 15px 0;
+}
+
+
+.flexRowContent--contacto-form :global(.vtex-input__label) {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.flexRowContent--contacto-form :global(.vtex-dropdown__label) {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.flexRowContent--contacto-form :global(.vtex-textarea__label) {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+
+
+
+/*IDENTIFIVACIÓN*/
+.flexRowContent--contacto-form-1.flexRowContent--contacto-form .stretchChildrenWidth:first-child :global(.vtex-input) :global(.vtex-input-prefix__group) {
+  background: #f7f9fb;
+}
+
+.flexRowContent--contacto-form-1.flexRowContent--contacto-form .stretchChildrenWidth:first-child :global(.vtex-input) :global(.vtex-input-prefix__group)::before {
+  content: "";
+  width: 40px;
+  height: 100%;
+  background-image: url(https://cutis.vteximg.com.br/arquivos/contacto-id.png);
+  background-size: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.flexRowContent--contacto-form-1.flexRowContent--contacto-form .stretchChildrenWidth:first-child :global(.vtex-input) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-hideDecorators) {
+  background: #f7f9fb;
+  padding: 0;
+}
+
+
+/*NOMBRE*/
+.flexRowContent--contacto-form-1.flexRowContent--contacto-form .stretchChildrenWidth:last-child :global(.vtex-input) :global(.vtex-input-prefix__group) {
+  background: #f7f9fb;
+}
+
+.flexRowContent--contacto-form-1.flexRowContent--contacto-form .stretchChildrenWidth:last-child :global(.vtex-input) :global(.vtex-input-prefix__group)::before {
+  content: "";
+  width: 40px;
+  height: 100%;
+  background-image: url(https://cutis.vteximg.com.br/arquivos/contacto-user.png);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.flexRowContent--contacto-form-1.flexRowContent--contacto-form .stretchChildrenWidth:last-child :global(.vtex-input) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-hideDecorators) {
+  background: #f7f9fb;
+  padding: 0;
+}
+
+
+/*GENERO*/
+.flexRowContent--contacto-form-2.flexRowContent--contacto-form .stretchChildrenWidth:last-child :global(.vtex-input) :global(.vtex-input-prefix__group) {
+  background: #f7f9fb;
+}
+
+.flexRowContent--contacto-form-2.flexRowContent--contacto-form .stretchChildrenWidth:last-child :global(.vtex-input) :global(.vtex-input-prefix__group)::before {
+  content: "";
+  width: 40px;
+  height: 100%;
+  background-image: url(https://cutis.vteximg.com.br/arquivos/contacto-mail.png);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.flexRowContent--contacto-form-2.flexRowContent--contacto-form .stretchChildrenWidth:last-child :global(.vtex-input) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-hideDecorators) {
+  background: #f7f9fb;
+  padding: 0;
+}
+
+
+/*CELULAR*/
+.flexRowContent--contacto-form-3.flexRowContent--contacto-form .stretchChildrenWidth:first-child :global(.vtex-input) :global(.vtex-input-prefix__group) {
+  background: #f7f9fb;
+}
+
+.flexRowContent--contacto-form-3.flexRowContent--contacto-form .stretchChildrenWidth:first-child :global(.vtex-input) :global(.vtex-input-prefix__group)::before {
+  content: "";
+  width: 40px;
+  height: 100%;
+  background-image: url(https://cutis.vteximg.com.br/arquivos/contacto-telefono.png);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.flexRowContent--contacto-form-3.flexRowContent--contacto-form .stretchChildrenWidth:first-child :global(.vtex-input) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-hideDecorators) {
+  background: #f7f9fb;
+  padding: 0;
+}
+
+
+/*CIUDAD*/
+.flexRowContent--contacto-form-3.flexRowContent--contacto-form .stretchChildrenWidth:last-child :global(.vtex-input) :global(.vtex-input-prefix__group) {
+  background: #f7f9fb;
+}
+
+.flexRowContent--contacto-form-3.flexRowContent--contacto-form .stretchChildrenWidth:last-child :global(.vtex-input) :global(.vtex-input-prefix__group)::before {
+  content: "";
+  width: 40px;
+  height: 100%;
+  background-image: url(https://cutis.vteximg.com.br/arquivos/contacto-ubicacion.png);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.flexRowContent--contacto-form-3.flexRowContent--contacto-form .stretchChildrenWidth:last-child :global(.vtex-input) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-hideDecorators) {
+  background: #f7f9fb;
+  padding: 0;
+}
+
+
+
+/*GENERO*/
+.flexRowContent--contacto-form-2 .stretchChildrenWidth :global(.vtex-dropdown) :global(.vtex-dropdown__container) {
+  background: #f7f9fb;
+  display: flex;
+}
+
+.flexRowContent--contacto-form-2 .stretchChildrenWidth :global(.vtex-dropdown) :global(.vtex-dropdown__container) :global(.vtex-dropdown__caption) {
+  color: #979899;
+}
+
+.flexRowContent--contacto-form-2 .stretchChildrenWidth :global(.vtex-dropdown) :global(.vtex-dropdown__container) :global(.vtex-dropdown__arrow) {
+  color: #27afe5;
+}
+
+.flexRowContent--contacto-form-2 .stretchChildrenWidth :global(.vtex-dropdown) :global(.vtex-dropdown__container)::before {
+  content: "";
+  width: 40px;
+  height: 100%;
+  background-image: url(https://cutis.vteximg.com.br/arquivos/contacto-genero.png);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;}
+
+.flexRowContent--contacto-form-2 .stretchChildrenWidth :global(.vtex-dropdown) :global(.vtex-dropdown__container) :global(.vtex-dropdown__button) {
+  padding: 0 10px 0 0;
+}
+
+
+
+/*ASUNTO*/
+.flexRowContent--contacto-form-4 .stretchChildrenWidth :global(.vtex-dropdown) :global(.vtex-dropdown__container) {
+  background: #f7f9fb;
+  display: flex;
+}
+
+.flexRowContent--contacto-form-4 .stretchChildrenWidth :global(.vtex-dropdown) :global(.vtex-dropdown__container) :global(.vtex-dropdown__caption) {
+  color: #979899;
+}
+
+.flexRowContent--contacto-form-4 .stretchChildrenWidth :global(.vtex-dropdown) :global(.vtex-dropdown__container) :global(.vtex-dropdown__arrow) {
+  color: #27afe5;
+}
+
+.flexRowContent--contacto-form-4 .stretchChildrenWidth :global(.vtex-dropdown) :global(.vtex-dropdown__container)::before {
+  content: "";
+  width: 40px;
+  height: 100%;
+  background-image: url(https://cutis.vteximg.com.br/arquivos/contacto-contacto-asunto.png);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;}
+
+.flexRowContent--contacto-form-4 .stretchChildrenWidth :global(.vtex-dropdown) :global(.vtex-dropdown__container) :global(.vtex-dropdown__button) {
+  padding: 0 10px 0 0;
+}
+.flexColChild--bannersFooter:first-child {
+  width: 90%;
+  justify-content: space-around;
+  margin: 0 0 0 auto;
+}
+
+
+
+
+
+
+
 @media (max-width: 600px) {
   .flexRow--vitrinadestacada1-1{
     padding: 0 10px;
@@ -1265,4 +1539,10 @@
     align-items: center;
     width: 100%;
   } */
+  .flexRowContent--contacto-form-box {padding: 0;}
+
+ .flexRowContent--contacto-form .stretchChildrenWidth:first-child {width: 100% !important;margin: 0 0 10px;}
+
+ .flexRow--contacto-form-4.flexRow--contacto-form .flexRowContent--contacto-form-4.flexRowContent--contacto-form .stretchChildrenWidth {width: 100% !important;}
+
 }

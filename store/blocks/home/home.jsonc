@@ -14,6 +14,7 @@
       "flex-layout.row#vitrinaDestacada",
       "flex-layout.row#Bannerdos",
       "rich-text#shelf-tittle-Vitrinafinal",
+      "rich-text#vitrinaRutina",
       "responsive-layout.desktop#vitrinaTres",
       "responsive-layout.mobile#vitrinaTres",
       "info-card#home",
@@ -448,8 +449,14 @@
   },
   "rich-text#shelf-tittle-Vitrinafinal": {
     "props": {
-      "text": "## Rutinas destacados",
+      "text": "## KITS destacados",
       "blockClass": ["shelfTitle","decorativo"]
+    }
+  },
+  "rich-text#vitrinaRutina": {
+    "props": {
+      "text": "Conoce todos nuestros productos para el cuidado facial",
+      "blockClass": ["contenidoSlideCategory","vitrinaRutina"]
     }
   },
   // VITRINA TRES PRODUCTOS

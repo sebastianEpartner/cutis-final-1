@@ -1,0 +1,9 @@
+.cancelBtn {
+    display: none;
+}
+.font {
+    color: #134cd8;
+}
+:global(.vtex-my-orders-app-3-x-cancelBtn) {
+    display: none;
+}

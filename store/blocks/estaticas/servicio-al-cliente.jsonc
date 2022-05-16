@@ -1,0 +1,216 @@
+{
+    "store.custom#servicio-al-cliente": {
+      "blocks": [ 
+          "rich-text#shelf-tittle-servicioalcliente",
+          "rich-text#shelf-sub-tittle-servicioalcliente", 
+          "rich-text#shelf-texto-servicioalcliente",
+          "flex-layout.row#contacto-box-form-titulo"
+        ]
+    },
+
+
+
+    "rich-text#shelf-tittle-servicioalcliente": {
+        "props": {
+          "text": "## Servicio Al Cliente",
+          "blockClass": ["shelfTitle","decorativo", "servicio-al-cliente-titulo"]
+        }
+      },
+      "rich-text#shelf-sub-tittle-servicioalcliente": {
+        "props": {
+          "text": "#### ¡Nos encanta cuidar tu piel!",
+          "blockClass": ["servicio-al-cliente-subtitulo"]
+        }
+      },
+      "rich-text#shelf-texto-servicioalcliente": {
+        "props": {
+          "text": "Tus inquietudes y comentarios serán atendidos oportunamente.",
+          "blockClass": ["servicio-al-cliente-texto"]
+        }
+      },
+
+
+      "flex-layout.row#contacto-box-form-titulo": {
+        "props":{
+        "blockClass":["contacto-form-1","contacto-form-box"]
+        },
+        "children": [
+            "form#Servicio-al-cliente",
+            "image#servicioAlClienteImageInfo"
+        ]
+    },
+
+    "image#servicioAlClienteImageInfo": {
+        "props": {
+          "src": "https://cutis.vtexassets.com/arquivos/contacto-banner-desk.png",
+          "blockClass": "servicioAlClienteImageInfo"
+        }
+      },
+    
+    "form#Servicio-al-cliente": {
+      "props": {
+        "entity": "SC",
+        "width":"60%",
+        "schema": "v1",
+        "blockClass": "NEWS-LETTER-POP"
+      },
+      "children": [
+        "flex-layout.row#contacto-form-1",
+        "flex-layout.row#contacto-form-2",
+        "flex-layout.row#contacto-form-3",
+        "flex-layout.row#contacto-form-4",
+        "flex-layout.row#contacto-form-5"
+
+      ],
+      "blocks": ["form-success"]
+    },
+    
+    
+    "form-success": {
+       "props": {
+          "blockClass": ["envio-news"]
+          },
+      "children": [
+        "rich-text#successSubmit"
+      ]
+    },
+    "rich-text#successSubmit": {
+      "props": {
+        "text": "¡Tu registro ha sido enviado con éxito! \n Nos contrataremos contigo lo antes posible.",
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "blockClass": ["envio-news","shelfTitle"]
+      }
+    },
+
+    //linea1
+    "flex-layout.row#contacto-form-1": {
+        "props":{
+        "blockClass":["contacto-form-1","contacto-form"]
+        },
+        "children": [
+            "form-input.text#identificacion",
+            "form-input.text#nombre"
+        ]
+    },
+    //linea2
+    "flex-layout.row#contacto-form-2": {
+        "props":{
+        "blockClass":["contacto-form-2","contacto-form"]
+        },
+        "children": [
+            "form-field-group#genero",
+            "form-input.text#email"
+        ]
+    },
+    //linea3
+    "flex-layout.row#contacto-form-3": {
+            "props":{
+            "blockClass":["contacto-form-3","contacto-form"]
+            },
+            "children": [
+                "form-input.text#celular",
+                "form-input.text#ciudad"
+            ]
+        },
+    //linea4
+    "flex-layout.row#contacto-form-4": {
+        "props":{
+        "blockClass":["contacto-form-4","contacto-form"]
+        },
+        "children": [
+            "form-field-group#asunto"
+        ]
+    },
+    //linia5
+    "flex-layout.row#contacto-form-5": {
+        "props":{
+        "blockClass":["contacto-form-5","contacto-form"]
+        },
+        "children": [
+            "form-input.textarea#mensaje",
+            "form-input.checkbox#acepto",
+            "form-submit#enviar"
+        ]
+    },
+    
+    
+        
+    
+    
+    /*campos input para el fommulario*/
+    
+    "form-input.text#identificacion": {
+        "props": {
+          "pointer": "#/properties/identificacion",
+          "placeholder": "Identificación",
+          "blockClass": "news-nombre-input"
+        }
+      },
+    "form-input.text#nombre": {
+      "props": {
+        "pointer": "#/properties/nombre",
+        "placeholder": "Nombre",
+        "blockClass": "news-nombre-input"
+      }
+    },
+    "form-field-group#genero": {
+        "props": {
+          "pointer": "#/properties/genero",
+          "placeholder": "Seleccione...",
+          "blockClass": "news-genero-input"
+        }
+     },
+     "form-input.text#email": {
+        "props": {
+          "pointer": "#/properties/email",
+          "placeholder": "email",
+          "blockClass": "news-email-input"
+        }
+      },
+      "form-input.text#celular": {
+        "props": {
+          "pointer": "#/properties/celular",
+          "placeholder": "Teléfono",
+          "blockClass": "news-celular-input"
+        }
+      },
+    "form-input.text#ciudad": {
+      "props": {
+        "pointer": "#/properties/ciudad",
+        "placeholder": "Ciudad",
+        "blockClass": "news-ciudad-input"
+      }
+    },
+
+    "form-field-group#asunto": {
+        "props": {
+          "pointer": "#/properties/asunto",
+          "placeholder": "Seleccione...",
+          "blockClass": "news-genero-input"
+        }
+     },
+     "form-input.textarea#mensaje":{
+        "props": {
+            "pointer": "#/properties/mensaje",
+            "label": "Mensaje",
+            "blockClass": "enviar-input"
+          }
+     },
+    
+     "form-submit#enviar": {
+      "props": {
+        "label": "Enviar",
+        "blockClass": "enviar-input"
+      }
+    },
+    "form-input.checkbox#acepto": {
+      "props": {
+        "pointer": "#/properties/acepto",
+        "label": "Acepto la Politica de tratamiento de datos y los Términos y Condiciones*"
+      }
+    }
+    
+    
+    
+    }

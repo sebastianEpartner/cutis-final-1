@@ -225,7 +225,7 @@
   },
   // flex row medios de pagos
   "flex-layout.row#footer-3-desktop": {
-    "children": ["rich-text#reservados","image#medios"],
+    "children": ["rich-text#reservados","image#hechopor", "image#medios"],
     "props": {
       "blockClass": "mediosPagos"
     }
@@ -236,9 +236,15 @@
       "blockClass": "footer"
     }
   },
+  "image#hechopor": {
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/hechopor.png",
+      "blockClass": ["Hechopor"]
+    }
+  },
   "image#medios": {
     "props": {
-      "src": "https://cutis.vtexassets.com/arquivos/pagosFinal.png",
+      "src": "https://cutis.vteximg.com.br/arquivos/footer-general-pagos.png",
       "blockClass": ["pagosMedios"]
     }
   },

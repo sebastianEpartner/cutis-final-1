@@ -11,24 +11,24 @@
             "height": 720,
             "images": [
                 {
-                    "image": "https://cutis.vteximg.com.br/arquivos/larocheNew.png",
-                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/larocheNew.png",
+                    "image": "https://cutis.vteximg.com.br/arquivos/slider-pharmaderm.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/slider-pharmaderm.png",
                     "link":{
-                      "url":"/la-roche-posey"
+                      "url":"/pharmaderm"
                     }
                 },
                 {
-                    "image": "https://cutis.vteximg.com.br/arquivos/biodermNew.png",
-                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/biodermNew.png",
+                    "image": "https://cutis.vteximg.com.br/arquivos/slider-noreva.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/slider-noreva.png",
                     "link":{
-                      "url":"/bioderma"
+                      "url":"/noreva"
                     }
                 },
                 {
-                    "image": "https://cutis.vteximg.com.br/arquivos/aveneNew.png",
-                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/aveneNew.png",
+                    "image": "https://cutis.vteximg.com.br/arquivos/slider-mediahealth.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/slider-mediahealth.png",
                     "link":{
-                      "url":"/avene"
+                      "url":"/mediahealth"
                     }
                 },
                 {
@@ -39,23 +39,53 @@
                     }
                 },
                 {
-                    "image": "https://cutis.vteximg.com.br/arquivos/uriageNew.png",
-                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/uriageNew.png",
+                    "image": "https://cutis.vteximg.com.br/arquivos/slider-larocheposay.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/slider-larocheposay.png",
                     "link":{
-                      "url":"/uriage"
+                      "url":"/larocheposay"
                     }
                 },
                 {
-                    "image": "https://cutis.vteximg.com.br/arquivos/phanadermNew.png",
-                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/phanadermNew.png"
+                    "image": "https://cutis.vteximg.com.br/arquivos/slider-isdin.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/slider-isdin.png",
+                    "link":{
+                        "url":"/isdin"
+                      }
                 },
                 {
-                    "image": "https://cutis.vteximg.com.br/arquivos/phanadermNew.png",
-                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/phanadermNew.png"
+                    "image": "https://cutis.vteximg.com.br/arquivos/slider-heliocare-1.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/slider-heliocare-1.png",
+                    "link":{
+                        "url":"/heliocare"
+                      }
                 },
                 {
-                    "image": "https://cutis.vteximg.com.br/arquivos/aveneNew.png",
-                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/aveneNew.png"
+                    "image": "https://cutis.vteximg.com.br/arquivos/slider-heliocare.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/slider-heliocare.png",
+                    "link":{
+                        "url":"/heliocare"
+                      }
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/slider-eucerin.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/slider-eucerin.png",
+                    "link":{
+                        "url":"/eucerin"
+                      }
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/slider-dhems.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/slider-dhems.png",
+                    "link":{
+                        "url":"/dhems"
+                      }
+                },
+                {
+                    "image": "https://cutis.vteximg.com.br/arquivos/slider-bioderma.png",
+                    "mobileImage": "https://cutis.vteximg.com.br/arquivos/slider-bioderma.png",
+                    "link":{
+                        "url":"/bioderma"
+                      }
                 }
             ]
         }

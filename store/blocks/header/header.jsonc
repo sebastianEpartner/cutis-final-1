@@ -53,6 +53,7 @@
     "children": [
       "flex-layout.col#logo-desktop",
       "flex-layout.col#search-desktop",
+      "flex-layout.col#tiendas-desktop",
       "flex-layout.col#login-desktop",
       "flex-layout.col#fwavoritos",
       "minicart.v2"
@@ -63,6 +64,13 @@
       "hasGoogleOneTap":"true",
       "isInitialScreenOptionOnly":"false",
       "accountOptionLinks":"/login?returnUrl=%2FAccount"
+    }
+  },
+  "link#Tiendas": {
+    "props": {
+      "blockClass": "nuestras-tiendas",
+      "label": "Nuestras Tiendas",
+      "href": "/nuestras-tiendas"
     }
   },
   "link#login": {
@@ -87,7 +95,7 @@
   "flex-layout.col#logo-desktop": {
     "props": {
       "blockClass":"logo",
-      "width":"22%",
+      "width":"10%",
       "verticalAlign": "middle"
     },
     "children": ["logo#desktop"]
@@ -95,10 +103,18 @@
   "flex-layout.col#search-desktop": {
     "props": {
       "blockClass":"searchBar",
-      "width":"54%",
+      "width":"52%",
       "verticalAlign": "middle"
     },
     "children": ["search-bar"]
+  },
+  "flex-layout.col#tiendas-desktop": {
+    "props": {
+      "blockClass":"header-tiendas",
+      "width":"12%",
+      "verticalAlign": "middle"
+    },
+    "children": ["link#Tiendas"]
   },
   "flex-layout.col#login-desktop": {
     "props": {
@@ -117,7 +133,7 @@
   "flex-layout.col#fwavoritos": {
     "props": {
       "blockClass":"favoritos",
-      "width":"9%",
+      "width":"10%",
       "verticalAlign": "middle"
     },
     "children": ["image#favoritosLogo"]
@@ -135,7 +151,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://cutis.vteximg.com.br/arquivos/logoAzulAjustado.png",
+      "url": "https://cutis.vteximg.com.br/arquivos/logo-final.png",
       "width": "180px",
       "blockClass":"logo"
     }
@@ -221,7 +237,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://cutis.vteximg.com.br/arquivos/logo-azultexto.png",
+      "url": "https://cutis.vteximg.com.br/arquivos/logo-final.png",
       "width": "70"
     }
   },

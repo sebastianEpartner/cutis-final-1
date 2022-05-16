@@ -227,7 +227,7 @@
             "href": "/rostro/acne",
             "noFollow": false,
             "tagTitle": "Acné",
-            "text": "Acné rostro"
+            "text": "Acné"
             }
         }
     },
@@ -275,7 +275,7 @@
             "href": "/rostro/despigmentante",
             "noFollow": false,
             "tagTitle": "Despigmentante rostro",
-            "text": "Despigmentante rostro"
+            "text": "Despigmentante"
             }
         }
     },
@@ -307,7 +307,7 @@
             "href": "/rostro/hidratante",
             "noFollow": false,
             "tagTitle": "Hidratante rostro",
-            "text": "Hidratante rostro"
+            "text": "Hidratante"
             }
         }
     },
@@ -338,8 +338,8 @@
             "type": "internal",
             "href": "/rostro/limpiadora",
             "noFollow": false,
-            "tagTitle": "Limpiadora rostro",
-            "text": "Limpiadora rostro"
+            "tagTitle": "Limpiadora",
+            "text": "Limpiadora"
             }
         }
     },

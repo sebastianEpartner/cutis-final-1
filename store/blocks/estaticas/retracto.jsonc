@@ -15,7 +15,7 @@
     },
     "image#retraactoImg": {
         "props": {
-          "src": "https://cutis.vtexassets.com/arquivos/banner.png",
+          "src": "https://cutis.vtexassets.com/arquivos/banner-principal-desk-faqs.png",
           "blockClass": "faqsImg"
         }
     },

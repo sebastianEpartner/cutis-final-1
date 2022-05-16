@@ -256,14 +256,17 @@
 .contentAlwaysWithOptions {
     background: transparent;
 }
-.optionsListItem:nth-child(2) {
-    display: none;
-}
+
 .profile {
     font-size: 15px;
     text-transform: initial;
     margin-top: 2px;
 }
+.container {
+    float: inherit;
+    justify-content: center;
+}
+
 @media (max-width: 600px) {
     .formTitle {
         font-size: 20px;

@@ -82,7 +82,7 @@
     },
     "rich-text#kits-fixed": {
         "props": {
-          "text": "[Kits](/137?map=productClusterIds&order=)",
+          "text": "[Kits](/143?map=productClusterIds&order=)",
           "blockClass": ["item-menu-fixed"]
         }
     },
@@ -100,7 +100,7 @@
         "props": {
           "src": "https://cutis.vteximg.com.br/arquivos/ofertas-mobile.png",
           "link":{
-            "url":"/137?map=productClusterIds&order="
+            "url":"/145?map=productClusterIds&order="
           },
           "maxHeight": 25,
           "blockClass":"item-menu-fixed"
@@ -108,7 +108,7 @@
     },
     "rich-text#ofertas-fixed": {
         "props": {
-          "text": "[ofertas](/137?map=productClusterIds&order=)",
+          "text": "[ofertas](/145?map=productClusterIds&order=)",
           "blockClass": ["item-menu-fixed","ofertas"]
         }
     },

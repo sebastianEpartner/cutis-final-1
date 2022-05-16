@@ -13,6 +13,9 @@
 .menuLinks{
     background: white;
 }
+.dataEntryChildren {
+    color: #979797;
+}
 :global(.vtex-account) {
     padding: 0 100px;
     position: relative;

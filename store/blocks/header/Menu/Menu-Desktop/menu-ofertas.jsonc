@@ -73,7 +73,7 @@
             "blockClass": "subcategory-item",
             "itemProps": {
               "type": "internal",
-              "href": "/home---decor/",
+              "href": "/145?initialMap=productClusterIds&initialQuery=145&map=brand,productClusterIds&order=&query=/aderma/145&searchState",
               "noFollow": false,
               "tagTitle": "Adarma",
               "text": "Adarma"
@@ -89,7 +89,7 @@
             "blockClass": "subcategory-item",
             "itemProps": {
               "type": "internal",
-              "href": "/home---decor/",
+              "href": "/145?initialMap=productClusterIds&initialQuery=145&map=brand,productClusterIds&order=&query=/almay/145&searchState",
               "noFollow": false,
               "tagTitle": "Almay",
               "text": "Almay"
@@ -105,7 +105,7 @@
             "blockClass": "subcategory-item",
             "itemProps": {
               "type": "internal",
-              "href": "/home---decor/",
+              "href": "/145?initialMap=productClusterIds&initialQuery=145&map=brand,productClusterIds&order=&query=/antioxidantech/145&searchState",
               "noFollow": false,
               "tagTitle": "Antioxidantech",
               "text": "Antioxidantech"
@@ -121,7 +121,7 @@
             "blockClass": "subcategory-item",
             "itemProps": {
               "type": "internal",
-              "href": "/home---decor/",
+              "href": "/145?initialMap=productClusterIds&initialQuery=145&map=brand,productClusterIds&order=&query=/avene/145&searchState",
               "noFollow": false,
               "tagTitle": "Avene",
               "text": "Avene"
@@ -137,7 +137,7 @@
             "blockClass": "subcategory-item",
             "itemProps": {
               "type": "internal",
-              "href": "/home---decor/",
+              "href": "/145?initialMap=productClusterIds&initialQuery=145&map=brand,productClusterIds&order=&query=/be/145&searchState",
               "noFollow": false,
               "tagTitle": "Be",
               "text": "Be"
@@ -153,7 +153,7 @@
             "blockClass": "subcategory-item",
             "itemProps": {
               "type": "internal",
-              "href": "/home---decor/",
+              "href": "/145?initialMap=productClusterIds&initialQuery=145&map=brand,productClusterIds&order=&query=/bioderma/145&searchState",
               "noFollow": false,
               "tagTitle": "Bioderma",
               "text": "Bioderma"
@@ -183,7 +183,7 @@
             "blockClass": "subcategory-item",
             "itemProps": {
               "type": "internal",
-              "href": "/home---decor/",
+              "href": "/145?initialMap=productClusterIds&initialQuery=145&map=brand,productClusterIds&order=&query=/epidermique/145&searchState",
               "noFollow": false,
               "tagTitle": "Esthederm",
               "text": "Esthederm"
@@ -199,7 +199,7 @@
             "blockClass": "subcategory-item",
             "itemProps": {
               "type": "internal",
-              "href": "/home---decor/",
+              "href": "/145?initialMap=productClusterIds&initialQuery=145&map=brand,productClusterIds&order=&query=/eucerin/145&searchState",
               "noFollow": false,
               "tagTitle": "Eucarin",
               "text": "Eucarin"
@@ -215,7 +215,7 @@
             "blockClass": "subcategory-item",
             "itemProps": {
               "type": "internal",
-              "href": "/home---decor/",
+              "href": "/145?initialMap=productClusterIds&initialQuery=145&map=brand,productClusterIds&order=&query=/fagron/145&searchState",
               "noFollow": false,
               "tagTitle": "Fagron",
               "text": "Fagron"
@@ -231,7 +231,7 @@
             "blockClass": "subcategory-item",
             "itemProps": {
               "type": "internal",
-              "href": "/home---decor/",
+              "href": "/145?initialMap=productClusterIds&initialQuery=145&map=brand,productClusterIds&order=&query=/galderma/145&searchState",
               "noFollow": false,
               "tagTitle": "Gakderna",
               "text": "Gakderna"
@@ -247,7 +247,7 @@
             "blockClass": "subcategory-item",
             "itemProps": {
               "type": "internal",
-              "href": "/home---decor/",
+              "href": "/145?initialMap=productClusterIds&initialQuery=145&map=brand,productClusterIds&order=&query=/genove/145&searchState",
               "noFollow": false,
               "tagTitle": "Genove",
               "text": "Genove"
@@ -263,7 +263,7 @@
             "blockClass": "subcategory-item",
             "itemProps": {
               "type": "internal",
-              "href": "/home---decor/",
+              "href": "/145?initialMap=productClusterIds&initialQuery=145&map=brand,productClusterIds&order=&query=/heliocare/145&searchState",
               "noFollow": false,
               "tagTitle": "Heliocare",
               "text": "Heliocare"
@@ -288,20 +288,29 @@
       },
       "image#ofertas-1": {
         "props": {
-            "blockClass":"ofertas-meenu",
-          "src": "https://cutis.vteximg.com.br/arquivos/marca1-oferta.png"
+          "blockClass":"ofertas-meenu",
+          "src": "https://cutis.vteximg.com.br/arquivos/marca1-oferta.png",
+          "link":{
+            "url":"/145?initialMap=productClusterIds&initialQuery=145&map=brand,productClusterIds&order=&query=/dhems/145&searchState"
+          }
         }
       },
       "image#ofertas-2": {
         "props": {
-            "blockClass":"ofertas-meenu",
-          "src": "https://cutis.vteximg.com.br/arquivos/marca2-oferta.png"
+          "blockClass":"ofertas-meenu",
+          "src": "https://cutis.vteximg.com.br/arquivos/marca2-oferta.png",
+          "link":{
+            "url":"/145?initialMap=productClusterIds&initialQuery=145&map=brand,productClusterIds&order=&query=/novaderma/145&searchState"
+          }
         }
       },
       "image#ofertas-3": {
         "props": {
             "blockClass":"ofertas-meenu",
-          "src": "https://cutis.vteximg.com.br/arquivos/marca3-oferta.png"
+          "src": "https://cutis.vteximg.com.br/arquivos/marca3-oferta.png",
+          "link":{
+            "url":"/145?initialMap=productClusterIds&initialQuery=145&map=brand,productClusterIds&order=&query=/bioderma/145&searchState"
+          }
         }
       }
 }

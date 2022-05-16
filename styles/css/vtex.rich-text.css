@@ -448,6 +448,63 @@
 .paragraph--contenidoSlideCategory {
   margin-bottom: 20px;
 }
+.paragraph--contenidoSlideCategory.paragraph--vitrinaRutina {
+  margin: 0 auto;
+}
+
+.wrapper--contenidoSlideCategory.wrapper--vitrinaRutina {
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+
+
+/*ESTILOS CONTACTO*/
+.container--servicio-al-cliente-subtitulo {
+  padding: 0 100px;
+}
+
+.container--servicio-al-cliente-texto {
+  padding: 0 100px;
+}
+
+.headingLevel2--servicio-al-cliente-titulo::before {
+  content: "a";
+  width: 52px;
+  color: transparent;
+  position: relative;
+  display: block;
+  height: 100%;
+  background: url(https://cutis.vteximg.com.br/arquivos/contacto-title.png);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.headingLevel2--servicio-al-cliente-titulo {
+  display: flex;
+}
+
+.paragraph--envio-news {
+  color: #27AFE5;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.headingLevel4--servicio-al-cliente-subtitulo {
+  margin: 0;
+  color: #27afe5;
+}
+
+.paragraph--servicio-al-cliente-texto {
+  font-size: 20px;
+}
+
+
+
+
 @media (max-width: 600px) {
   .container--titulosFooter {
     justify-content: center;
@@ -588,4 +645,21 @@
     margin: 3px 0;
     line-height: 16px;
   }
+.headingLevel4--servicio-al-cliente-subtitulo {
+  font-size: 20px;
+  margin: 10px 0 0;
+}
+.paragraph--servicio-al-cliente-texto {
+  font-size: 15px;
+}
+.container--servicio-al-cliente-texto {
+  padding: 0 5%;
+}
+.container--servicio-al-cliente-subtitulo {
+  padding: 0 5%;
+}
+.headingLevel2--servicio-al-cliente-titulo::before {
+  width: 35px;
+}
+
 }

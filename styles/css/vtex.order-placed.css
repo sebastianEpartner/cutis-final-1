@@ -64,3 +64,12 @@
 .orderPaymentItem :global(.vtex-button):hover{
     background: #27AFE5;
 }
+.cancelOrderButton {
+    display: none;
+}
+:global(.vtex-my-orders-app-3-x-cancelBtn) {
+    display: none;
+}
+:global(.vtex-my-orders-app-3-x-orderProductShipping) {
+    display: none;
+}

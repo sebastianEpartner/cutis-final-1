@@ -23,7 +23,7 @@
     },
     "rich-text#vitrineTittle": {
       "props": {
-        "text": "PRODUCTOS QUE TE PODRIAN INTERESAR",
+        "text": "¡Te Puede Interesar!",
         "blockClass": ["tituloCheckout"]
       }
     },

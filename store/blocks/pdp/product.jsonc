@@ -243,7 +243,7 @@
       "sku-selector",
       "product-quantity",
       "product-assembly-options",
-      "product-availability",
+      //"product-availability",
       "flex-layout.row#buy-button",
       "image#imagenProducto"
     ]
@@ -329,7 +329,7 @@
   },
   "rich-text#relacionados1": {
     "props": {
-      "text": "## Completa tu rutina",
+      "text": "## Recomendados para ti",
       "blockClass": ["shelfTitle","decorativo"]
     }
   },

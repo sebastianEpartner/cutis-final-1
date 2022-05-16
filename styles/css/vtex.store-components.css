@@ -182,9 +182,10 @@
 }
 
 .searchBarContainer{
-  width: 544px;
+  width: 75%;
   margin: 0 105px;
   padding: 0;
+  max-width: 100%;
 }
 .infoCardContainer--Mio {
   width: 100%;
@@ -303,6 +304,7 @@
 .searchBarInnerContainer :global(.vtex-input-prefix__group){
   border-radius: 20px;
   height: 44px !important;
+  justify-content: space-between;
 }
 .searchIcon{
   color: white;
@@ -504,7 +506,7 @@
   font-size: 18px;
 }
 .imageElement--ofertas-meenu {
-  width: 27%;
+  width: 80%;
 }
 .productImagesContainer--carousel {
   position: relative;
@@ -605,12 +607,13 @@
 }
 .imageElement--favoritos-image {
   width: 20%;
-  margin: 0 5px 0 12px!important;
+  margin: 0 3px 0 0px!important;
 }
 .imageElementLink--favoritos-image{
   display: flex;
   align-items: center;
   text-decoration: none;
+  justify-content: center;
 }
 .imageElementLink--favoritos-image::after{
   content: "Favoritos";
@@ -621,6 +624,42 @@
 .imageElementLink--favoritos-image:hover ::after{
   color: #27AFE5 !important;
 }
+.imageElementLink.imageElementLink--Whast::BEFORE {
+  content: "AYUDA";
+  background: yellow;
+  padding: 5px 13px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  margin: 5px;
+  box-shadow: -3px 4px 16px 13px rgb(0 0 0 / 3%);
+}
+.imageElementLink.imageElementLink--Whast {
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  color: black;
+  font-weight: 900;
+}
+
+/*ESTILOS CONTACTO*/
+.imageElement--servicioAlClienteImageInfo {
+  margin: auto;
+  max-width: 95%;
+  height: fit-content;
+}
+
+.imageElement--Hechopor {
+  width: 40%;
+}
+.imageElement--pagosMedios {
+  width: 80%;
+  height: min-content;
+  margin: 0 0 0 auto;
+
+}
+
+
 @media (max-width: 600px) {
   .imageElementLink--favoritos-image::after{
     display: none;
@@ -798,4 +837,8 @@
     width: 28px;
     margin: 0 12px!important;
   }
+  .imageElement--servicioAlClienteImageInfo {
+    display: none;
+  }
+
 }

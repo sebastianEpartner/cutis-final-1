@@ -31,5 +31,8 @@
   },
   "store.custom#product-comparison-list": {
     "path": "/product-comparison"
+  },
+  "store.custom#servicio-al-cliente":{
+    "path": "/contact"
   }
 }

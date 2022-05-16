@@ -116,7 +116,7 @@
     },
     "rich-text#tituloSliderCategorias": {
       "props": {
-        "text": "[Cuidado facial](/)",
+        "text": "[Cuidado del rostro](/)",
         "blockClass": ["categoriasTitulo"]
       }
     },
@@ -210,7 +210,7 @@
   },
   "image#slide1category-3-hover": {
     "props": {
-      "src": "https://cutis.vtexassets.com/arquivos/corporal-icono.png",
+      "src": "https://cutis.vteximg.com.br/arquivos/icon-Group.png",
       "blockClass": ["hoverImage","hoverColumn2"],
       "link":{
         "url":"/"
@@ -313,7 +313,7 @@
   },
   "rich-text#tituloSliderCategorias-slide2": {
     "props": {
-      "text": "[Maquilllaje](/maquillaje)",
+      "text": "[Maquillaje Dermocosmètico](/maquillaje)",
       "blockClass": ["categoriasTitulo"]
     }
   },
@@ -348,7 +348,7 @@
   },
   "rich-text#tituloSliderCategorias-slide-2": {
     "props": {
-      "text": "[Solar](/solar)",
+      "text": "[Protecciòn solar](/solar)",
       "blockClass": ["categoriasTitulo"]
     }
   },

@@ -92,7 +92,7 @@
         "blockClass":["menuPrinItems","subMenuPrinItems","ofertasLink"],
         "itemProps": {
           "type": "internal",
-          "href": "/home---decor/",
+          "href": "/145?map=productClusterIds&order=",
           "noFollow": false,
           "tagTitle": "Ofertas",
           "text": "Ofertas"

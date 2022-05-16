@@ -25,7 +25,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  padding: 94% 0 0 0;
+  padding: 70% 0 0 0;
 }
 .stackItem--nocheDiaFlag :global(.vtex-product-highlights-2-x-productHighlightWrapper--collection){
   display: none;

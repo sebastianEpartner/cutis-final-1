@@ -123,7 +123,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/kits",
+        "href": "/143?map=productClusterIds&order=",
         "noFollow": true,
         "tagTitle": "Kits",
         "text": "Kits"
@@ -396,7 +396,8 @@
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#faq"
+      "menu-item#faq",
+      "menu-item#servicio-al-cliente"
     ]
   },
   "menu-item#restablecer": {
@@ -501,6 +502,21 @@
         "noFollow": false,
         "tagTitle": "Faq",
         "text": "Faq"
+      }
+    }
+  },
+    "menu-item#servicio-al-cliente": {
+    "props": {
+      "id": "menu-item-faq",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contact",
+        "noFollow": false,
+        "tagTitle": "Servicio Al Cliente",
+        "text": "Servicio Al Cliente"
       }
     }
   }

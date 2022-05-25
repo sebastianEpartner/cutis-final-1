@@ -313,7 +313,7 @@
   },
   "rich-text#tituloSliderCategorias-slide2": {
     "props": {
-      "text": "[Maquillaje Dermocosmètico](/maquillaje)",
+      "text": "[Maquillaje Dermocosmético](/maquillaje)",
       "blockClass": ["categoriasTitulo"]
     }
   },
@@ -348,7 +348,7 @@
   },
   "rich-text#tituloSliderCategorias-slide-2": {
     "props": {
-      "text": "[Protecciòn solar](/solar)",
+      "text": "[Protección solar](/solar)",
       "blockClass": ["categoriasTitulo"]
     }
   },

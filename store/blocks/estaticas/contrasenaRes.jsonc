@@ -10,7 +10,7 @@
     "rich-text#contrasena": {
         "props": {
         "blockClass":"faqsTitulo",
-        "text": "## Reestablecer contraseñas"
+        "text": "## Restablecer contraseñas"
         }
     },
     "image#contrasenaImg": {
@@ -67,7 +67,7 @@
     },
     "rich-text#contrasena-content": {
         "props": {
-            "text": "Call us at the number (212) 1234-1234."
+            "text": ""
         }
     },
     // columna 2
@@ -83,12 +83,79 @@
     // contenido del tab 1
     "flex-layout.col#contrasenaContent": {
         "children": [
-            "info-card#contrasena-1",
-            "info-card#contrasena-2",
-            "info-card#contrasena-3"
+            "rich-text#contrasena1",
+            "rich-text#contrasena2",
+            "rich-text#contrasena3",
+            "rich-text#contrasena4",
+            "rich-text#contrasena5",
+            "rich-text#contrasena6",
+            "rich-text#contrasena7",
+            "rich-text#contrasena8",
+            "rich-text#contrasena9",
+            "rich-text#contrasena10"
         ],
         "props": {
             "blockClass": "politicaContenedor"
+        }
+    },
+    "rich-text#contrasena1": {
+        "props": {
+            "text": "Para reestablecer su contraseña debe realizar los siguientes pasos:",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#contrasena2": {
+        "props": {
+            "text": "Paso 1",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#contrasena3": {
+        "props": {
+            "text": "- Ingresar al en lance www.cutis.com.co/login",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#contrasena4": {
+        "props": {
+            "text": "-  Dar click en olvide mi contraseña",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#contrasena5": {
+        "props": {
+            "text": "Paso 2",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#contrasena6": {
+        "props": {
+            "text": "-  Una vez realizado el cambio de contraseña desde el link enviado al correo ingresar nuevamente a www.cutis.com.co/login",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#contrasena7": {
+        "props": {
+            "text": "-  Ingresar con su correo electrónico y nueva contraseña",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#contrasena8": {
+        "props": {
+            "text": "-   Disfrutar de todos nuestros productos",
+            "blockClass": ["contenidofaqs"]
+        }
+    },
+    "rich-text#contrasena9": {
+        "props": {
+            "text": "Paso 3",
+            "blockClass": ["tituloFaqs"]
+        }
+    },
+    "rich-text#contrasena10": {
+        "props": {
+            "text": "- Ingresar su correo electrónico para enviarle un correo electrónico donde podrá reestablecer su contraseña",
+            "blockClass": ["contenidofaqs"]
         }
     },
     "info-card#contrasena-1": {

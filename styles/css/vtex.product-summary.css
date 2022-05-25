@@ -111,6 +111,9 @@
 .currencyDecimal:last-child{
   display: none;
 }
+.currencyDecimal{
+  display: none;
+}
 .currencyFraction:last-child{
   display: none;
 }
@@ -132,6 +135,9 @@
   max-height: 100%;
   width: 90%;
   margin: 0 14px;
+}
+.element.element--vitrineCarrito:hover .hoverImage{
+  margin: 0 0;
 }
 :global(.vtex-search-result-3-x-gallery--list) .imageNormal {
   max-height: 23.56rem;

@@ -241,6 +241,7 @@
       "rich-text#infoProductStep2",
       "rich-text#infoProductStep1",
       "rich-text#infoProductStep3",
+      "rich-text#infoProductStep4",
       "rich-text#infoProductCallAction"
     ],
     "props": {
@@ -271,9 +272,15 @@
       "blockClass": ["contenidoSlideCategory", "infoProductContent"]
     }
   },
+  "rich-text#infoProductStep4": {
+    "props": {
+      "text": "Paso 4 \nCombínalo con tu rutina de belleza habitual, siempre sobre la piel limpia, justo antes de las texturas en gel o crema. ¡Y no olvides usar protector solar!",
+      "blockClass": ["contenidoSlideCategory", "infoProductContent"]
+    }
+  },
   "rich-text#infoProductCallAction": {
     "props": {
-      "text": "[Comprar producto ahora](/)",
+      "text": "[Comprar producto ahora](/sesvitamin-c-liposomal-serum/p)",
       "blockClass": ["contenidoSlideCategory", "infoProductContent"]
     }
   },

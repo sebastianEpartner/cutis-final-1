@@ -22,7 +22,7 @@
         "blockClass":["menuPrinItems","subMenuPrinItems"],
         "itemProps": {
         "type": "internal",
-        "href": "/apparel---accessories/",
+        // "href": "/",
         "noFollow": false,
         "tagTitle": "Categorias",
         "text": "Categorías"
@@ -41,7 +41,7 @@
       "blockClass":["menuPrinItems","subMenuPrinItems"],
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        // "href": "#",
         "noFollow": true,
         "tagTitle": "Marcas",
         "text": "Marcas"
@@ -73,7 +73,7 @@
         "type": "custom",
         "iconId": null,
         "highlight": false,
-        "blockClass":["menuPrinItems"],
+        "blockClass":["menuPrinItems","subMenuPrinItems"],
         "itemProps": {
         "type": "internal",
         "href": "/medicamentos",
@@ -81,7 +81,10 @@
         "tagTitle": "Medicamentos",
         "text": "Medicamentos"
         }
-    }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#medicamentos"
+    ]
   },
   "menu-item#category-ofertas": {
     "props": {

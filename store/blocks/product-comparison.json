@@ -10,7 +10,7 @@
     "slider-layout-group#comparison-page": {
         "children": [
           "product-comparison-block.product-summary-row",
-          "product-comparison-block.grouped-product-specifications"
+          "flex-layout.row#info"
         ]
       },
       "product-comparison-block.product-summary-row": {
@@ -19,6 +19,22 @@
       "list-context.comparison-product-summary-slider#comparison-page": {
         "blocks": ["product-summary.shelf.product-comparison#compare"],
         "children": ["slider-layout#comparison-page-product-summary"]
+      },
+      "flex-layout.row#info": {
+        "props": {
+          "blockClass": "infoComparison"
+        },
+        "children": [
+          "flex-layout.col#info-comparison"
+        ]
+      },
+      "flex-layout.col#info-comparison": {
+        "children": [
+          "product-comparison-block.grouped-product-specifications"
+        ],
+        "props":{
+          "blockClass":"comparison-page"
+        }
       },
       "product-summary.shelf.product-comparison#comparison-page": {
         "children": [

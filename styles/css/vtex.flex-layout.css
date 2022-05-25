@@ -256,6 +256,7 @@
 .flexRowContent--main-header {
   align-items: center;
 }
+
 .flexRow--minicart-footer{
   margin: 0 20px;
   box-shadow: 0 0 0 ;
@@ -848,7 +849,7 @@
   transition: 400ms all;
   border-radius: 5px;
   width: 90%;
-  padding: 10px 0;
+  padding: 6px 0;
 }
 .flexColChild--favoritos:hover {
   background: #F1F1F1;
@@ -930,7 +931,8 @@
 }
 
 .flexRowContent--contacto-form-5.flexRowContent--contacto-form :global(.vtex-textarea__input) {
-  background: #f7f9fb;
+  background: #f9f9f9;
+  border: 0 !important;
 }
 
 .flexRowContent--contacto-form-1 {
@@ -970,7 +972,9 @@
 
 /*IDENTIFIVACIÓN*/
 .flexRowContent--contacto-form-1.flexRowContent--contacto-form .stretchChildrenWidth:first-child :global(.vtex-input) :global(.vtex-input-prefix__group) {
-  background: #f7f9fb;
+  background: #f9f9f9;
+  border: 0 !important;
+  border: 0;
 }
 
 .flexRowContent--contacto-form-1.flexRowContent--contacto-form .stretchChildrenWidth:first-child :global(.vtex-input) :global(.vtex-input-prefix__group)::before {
@@ -984,14 +988,16 @@
 }
 
 .flexRowContent--contacto-form-1.flexRowContent--contacto-form .stretchChildrenWidth:first-child :global(.vtex-input) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-hideDecorators) {
-  background: #f7f9fb;
+  background: #f9f9f9;
+  border: 0;
   padding: 0;
 }
 
 
 /*NOMBRE*/
 .flexRowContent--contacto-form-1.flexRowContent--contacto-form .stretchChildrenWidth:last-child :global(.vtex-input) :global(.vtex-input-prefix__group) {
-  background: #f7f9fb;
+  background: #f9f9f9;
+  border: 0;
 }
 
 .flexRowContent--contacto-form-1.flexRowContent--contacto-form .stretchChildrenWidth:last-child :global(.vtex-input) :global(.vtex-input-prefix__group)::before {
@@ -1005,14 +1011,16 @@
 }
 
 .flexRowContent--contacto-form-1.flexRowContent--contacto-form .stretchChildrenWidth:last-child :global(.vtex-input) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-hideDecorators) {
-  background: #f7f9fb;
+  background: #f9f9f9;
+  border: 0;
   padding: 0;
 }
 
 
 /*GENERO*/
 .flexRowContent--contacto-form-2.flexRowContent--contacto-form .stretchChildrenWidth:last-child :global(.vtex-input) :global(.vtex-input-prefix__group) {
-  background: #f7f9fb;
+  background: #f9f9f9;
+  border: 0;
 }
 
 .flexRowContent--contacto-form-2.flexRowContent--contacto-form .stretchChildrenWidth:last-child :global(.vtex-input) :global(.vtex-input-prefix__group)::before {
@@ -1026,14 +1034,17 @@
 }
 
 .flexRowContent--contacto-form-2.flexRowContent--contacto-form .stretchChildrenWidth:last-child :global(.vtex-input) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-hideDecorators) {
-  background: #f7f9fb;
+  background: #f9f9f9;
   padding: 0;
+  border: 0;
 }
 
 
 /*CELULAR*/
 .flexRowContent--contacto-form-3.flexRowContent--contacto-form .stretchChildrenWidth:first-child :global(.vtex-input) :global(.vtex-input-prefix__group) {
-  background: #f7f9fb;
+  background: #f9f9f9;
+  border: 0;
+
 }
 
 .flexRowContent--contacto-form-3.flexRowContent--contacto-form .stretchChildrenWidth:first-child :global(.vtex-input) :global(.vtex-input-prefix__group)::before {
@@ -1047,14 +1058,16 @@
 }
 
 .flexRowContent--contacto-form-3.flexRowContent--contacto-form .stretchChildrenWidth:first-child :global(.vtex-input) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-hideDecorators) {
-  background: #f7f9fb;
+  background: #f9f9f9;
   padding: 0;
+  border: 0;
 }
 
 
 /*CIUDAD*/
 .flexRowContent--contacto-form-3.flexRowContent--contacto-form .stretchChildrenWidth:last-child :global(.vtex-input) :global(.vtex-input-prefix__group) {
-  background: #f7f9fb;
+  background: #f9f9f9;
+  border: 0;
 }
 
 .flexRowContent--contacto-form-3.flexRowContent--contacto-form .stretchChildrenWidth:last-child :global(.vtex-input) :global(.vtex-input-prefix__group)::before {
@@ -1068,16 +1081,18 @@
 }
 
 .flexRowContent--contacto-form-3.flexRowContent--contacto-form .stretchChildrenWidth:last-child :global(.vtex-input) :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-hideDecorators) {
-  background: #f7f9fb;
+  background: #f9f9f9;
   padding: 0;
+  border: 0;
 }
 
 
 
 /*GENERO*/
 .flexRowContent--contacto-form-2 .stretchChildrenWidth :global(.vtex-dropdown) :global(.vtex-dropdown__container) {
-  background: #f7f9fb;
+  background: #f9f9f9;
   display: flex;
+  border: 0;
 }
 
 .flexRowContent--contacto-form-2 .stretchChildrenWidth :global(.vtex-dropdown) :global(.vtex-dropdown__container) :global(.vtex-dropdown__caption) {
@@ -1105,8 +1120,9 @@
 
 /*ASUNTO*/
 .flexRowContent--contacto-form-4 .stretchChildrenWidth :global(.vtex-dropdown) :global(.vtex-dropdown__container) {
-  background: #f7f9fb;
+  background: #f9f9f9;
   display: flex;
+  border: 0;
 }
 
 .flexRowContent--contacto-form-4 .stretchChildrenWidth :global(.vtex-dropdown) :global(.vtex-dropdown__container) :global(.vtex-dropdown__caption) {
@@ -1117,14 +1133,33 @@
   color: #27afe5;
 }
 
-.flexRowContent--contacto-form-4 .stretchChildrenWidth :global(.vtex-dropdown) :global(.vtex-dropdown__container)::before {
+.flexRowContent--contacto-form-4 .stretchChildrenWidth:first-child :global(.vtex-dropdown) :global(.vtex-dropdown__container)::before {
   content: "";
   width: 40px;
   height: 100%;
   background-image: url(https://cutis.vteximg.com.br/arquivos/contacto-contacto-asunto.png);
   background-size: 70%;
   background-position: center;
-  background-repeat: no-repeat;}
+  background-repeat: no-repeat;
+}
+.flexRowContent--contacto-form-4 .stretchChildrenWidth:last-child :global(.vtex-dropdown) :global(.vtex-dropdown__container)::before {
+  content: "";
+  width: 40px;
+  height: 100%;
+  background-image: url(https://cutis.vteximg.com.br/arquivos/canalventa.png);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.flexRow--contacto-form-4.flexRow--tienda .flexRowContent--contacto-form-4 .stretchChildrenWidth :global(.vtex-dropdown) :global(.vtex-dropdown__container)::before {
+  content: "";
+  width: 40px;
+  height: 100%;
+  background-image: url(https://cutis.vteximg.com.br/arquivos/tienda.png);
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 .flexRowContent--contacto-form-4 .stretchChildrenWidth :global(.vtex-dropdown) :global(.vtex-dropdown__container) :global(.vtex-dropdown__button) {
   padding: 0 10px 0 0;
@@ -1134,9 +1169,25 @@
   justify-content: space-around;
   margin: 0 0 0 auto;
 }
-
-
-
+.flexColChild--login:last-child {
+  position: absolute;
+  top: 40%;
+  background: white;
+  width: 178px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px rgb(0 0 0 /7%);
+  transition: 400ms all;
+  opacity: 0;
+  visibility: hidden;
+}
+.flexCol--login:hover .flexColChild--login  {
+  opacity: 1;
+  visibility: visible;
+}
+:global(.vtex-sticky-layout-0-x-wrapper--stuck) .flexColChild--login:last-child {
+  top: 65%;
+}
 
 
 

@@ -18,7 +18,10 @@
       "preventHorizontalStretch": true,
       "marginBottom": 2,
       "marginTop": 5,
-      "blockClass":"descuento"
+      "blockClass":"descuento",
+      "markers":[
+        "discount","highlight"
+      ]
     },
     "children": [
       "product-list-price",

@@ -77,7 +77,9 @@
     "props": {
       "href": "/login?returnUrl=%2FAccount"
     },
-    "children":["login"]
+    "children":[
+      "login"
+    ]
   },
   "flex-layout.row#5-desktop": {
     "children": ["flex-layout.col#category-menu"],
@@ -122,7 +124,28 @@
       "width":"12%",
       "verticalAlign": "middle"
     },
-    "children": ["link#login"]
+    "children": ["link#login","flex-layout.col#login-options"]
+  },
+  "flex-layout.col#login-options":{
+    "props":{
+      "blockClass":"login-options"
+    },
+    "children":[
+      "rich-text#login-link",
+      "rich-text#registro-link"
+    ]
+  },
+  "rich-text#login-link": {
+    "props": {
+      "text": "[Iniciar sesión](/login)",
+      "blockClass":"login-options"
+    }
+  },
+  "rich-text#registro-link": {
+    "props": {
+      "text": "[Registrarse](/login)",
+      "blockClass":"login-options"
+    }
   },
   "flex-layout.col#category-menu": {
     "props": {
@@ -238,7 +261,7 @@
       "title": "Logo",
       "href": "/",
       "url": "https://cutis.vteximg.com.br/arquivos/logo-final.png",
-      "width": "70"
+      "width": "90"
     }
   },
   "responsive-layout.phone": {

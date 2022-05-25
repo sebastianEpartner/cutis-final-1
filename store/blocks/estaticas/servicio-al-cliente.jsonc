@@ -119,8 +119,17 @@
         "blockClass":["contacto-form-4","contacto-form"]
         },
         "children": [
-            "form-field-group#asunto"
+            "form-field-group#asunto",
+            "form-field-group#canl-venta"
         ]
+    },
+    "flex-layout.row#contacto-form-6": {
+      "props":{
+      "blockClass":["contacto-form-4","contacto-form", "tienda"]
+      },
+      "children": [
+          "form-field-group#tienda"
+      ]
     },
     //linia5
     "flex-layout.row#contacto-form-5": {
@@ -190,6 +199,20 @@
           "blockClass": "news-genero-input"
         }
      },
+     "form-field-group#canl-venta": {
+      "props": {
+        "pointer": "#/properties/canalventa",
+        "placeholder": "Seleccione...",
+        "blockClass": "news-genero-input"
+      }
+   },
+   "form-field-group#tienda": {
+      "props": {
+        "pointer": "#/properties/tienda",
+        "placeholder": "Seleccione...",
+        "blockClass": "news-genero-input"
+      }
+    },
      "form-input.textarea#mensaje":{
         "props": {
             "pointer": "#/properties/mensaje",

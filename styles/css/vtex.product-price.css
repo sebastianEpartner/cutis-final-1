@@ -90,6 +90,28 @@
 .savings{
   display: none;
 }
+@media (min-width: 1400px) {
+  :global(.vtex-flex-layout-0-x-flexColChild--productRightColumn) .savings{
+    display: block;
+    color: #27AFE5;
+    border: 1px solid #27AFE5;
+    border-radius: 5px;
+    padding: 15px;
+    position: absolute;
+    right: 20%;
+    margin-top: 18px;
+  }
+}
+:global(.vtex-flex-layout-0-x-flexColChild--productRightColumn) .savings{
+  display: block;
+  color: #27AFE5;
+  border: 1px solid #27AFE5;
+  border-radius: 5px;
+  padding: 15px;
+  position: absolute;
+  right: 14%;
+  margin-top: 18px;
+}
 .installments{
   display: none;
 }

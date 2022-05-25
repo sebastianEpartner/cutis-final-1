@@ -1,0 +1,69 @@
+{
+    "vtex.menu@2.x:submenu#medicamentos": {
+        "props": {
+          "width": "100%",
+          "blockClass": "menuMarcas"
+        },
+        "children": [
+          "flex-layout.row#menu-medicamentos"
+        ]
+    },
+    "flex-layout.row#menu-medicamentos": {
+      "props": {
+          "blockClass": "menuMarcas"
+      },
+      "children": [
+          "flex-layout.col#menu-medicamentos-1"
+      ]
+    },
+    "flex-layout.col#menu-medicamentos-1": {
+        "props": {
+            "blockClass": "menuMarcas"
+        },
+        "children": [
+            "vtex.menu@2.x:menu#medicamentos"
+        ]
+    },
+    "vtex.menu@2.x:menu#medicamentos": {
+        "props": {
+            "orientation": "vertical",
+            "blockclass": "menuMarcas"
+        },
+        "children": [
+            "menu-item#medicamentos-destacadas",
+            "menu-item#medicamentos-all"
+        ]
+    },
+    "menu-item#medicamentos-destacadas": {
+        "props": {
+            "id": "menu-item#medicamentos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass": "category-item",
+            "itemProps": {
+            "type": "internal",
+            "href": "/medicamentos/Formulados",
+            "noFollow": true,
+            "tagTitle": "Formuladas",
+            "text": "Formulados"
+            }
+        }
+    },
+    "menu-item#medicamentos-all": {
+        "props": {
+            "id": "menu-item#medicamentos",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "blockClass":["category-item","medicamentos-submenu"],
+            "itemProps": {
+            "type": "internal",
+            "href": "/medicamentos/venta-libre",
+            "noFollow": true,
+            "tagTitle": "Venta libre",
+            "text": "Venta libre"
+            }
+        }
+    }
+}

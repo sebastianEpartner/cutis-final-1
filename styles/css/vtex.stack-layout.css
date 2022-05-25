@@ -25,7 +25,15 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  padding: 70% 0 0 0;
+  padding: 90% 0 0 0;
+}
+@media (min-width: 1900px) {
+  :global(.vtex-flex-layout-0-x-flexColChild--column2vitrinaDestacado2) .stackItem--nocheDiaFlag{
+    padding: 70% 0 0 0;
+  }
+  :global(.vtex-shelf-1-x-relatedProducts--shelf) .stackItem--nocheDiaFlag{
+    padding: 65% 0 0 0;
+  }
 }
 .stackItem--nocheDiaFlag :global(.vtex-product-highlights-2-x-productHighlightWrapper--collection){
   display: none;

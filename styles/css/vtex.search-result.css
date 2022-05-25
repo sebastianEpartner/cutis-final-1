@@ -164,6 +164,23 @@
   width: 50px;
   margin-right: 10px;
 }
+/* mañana */
+.filterItem--manana :global(.vtex-checkbox__line-container)::before{
+  content: "";
+  background: url(/arquivos/mananaSolesito.png) no-repeat;
+  background-position: center;
+  background-size: 100%;
+  display: block;
+  width: 50px;
+  height: 35px;
+}
+.filterItem--manana :global(.vtex-checkbox__label){
+  display: none;
+}
+.filterItem--manana :global(.vtex-checkbox__container ){
+  display: none;
+}
+/* sol y luna */
 .filterItem--cualquier-momento :global(.vtex-checkbox__line-container)::before{
   content: "";
   background: url(/arquivos/solLunaCategory.png);
@@ -257,6 +274,13 @@
   font-size: 0;
 }
 .filter__container--category-1 .filterTitleSpan::after {
+  content: "Subcategorias";
+  font-size: 16px;
+}
+.filter__container--category-2 .filterTitleSpan {
+  font-size: 0;
+}
+.filter__container--category-2 .filterTitleSpan::after {
   content: "Subcategorias";
   font-size: 16px;
 }

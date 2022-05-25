@@ -32,16 +32,28 @@
 .box {
     display: none;
 }
-:global(.vtex-flex-layout-0-x-flexColChild--login) :global(.vtex-button__label){
-    transition: 400ms all;
-    padding: 0 19px 0 11px ;
+:global(.vtex-flex-layout-0-x-flexColChild--login) :global(.vtex-button__label)  {
+    padding: 0 !important;
 }
-:global(.vtex-flex-layout-0-x-flexColChild--login) :global(.vtex-button__label):hover{
+:global(.vtex-flex-layout-0-x-flexColChild--login) :global(.vtex-button__label) .label {
+    padding: 10px 19px 10px 19px;
+    margin-left: 15px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--login) :global(.vtex-button__label) .label {
     background: #F1F1F1;
     border-radius: 5px;
 }
-:global(.vtex-flex-layout-0-x-flexColChild--login) :global(.vtex-button__label):hover .label::after{
+:global(.vtex-flex-layout-0-x-flexColChild--login) :global(.vtex-button__label) .label::after{
     color: #27AFE5;
+}
+:global(.vtex-flex-layout-0-x-flexRow):global(.vtex-flex-layout-0-x-flexRow--contacto-form-4) :global(.vtex-flex-layout-0-x-flexRowContent):global(.vtex-flex-layout-0-x-flexRowContent--contacto-form-4) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):nth-child(2){
+    margin-left: 19px;
+    width: 50% !important;
+}
+@media (min-width: 1900px) {
+    :global(.vtex-flex-layout-0-x-flexRowContent--main-header) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):nth-child(2){
+        width: 89% !important;
+    }
 }
 .contentFormVisible {
     width: 71%;
@@ -266,6 +278,84 @@
     float: inherit;
     justify-content: center;
 }
+:global(.vtex-search-result-3-x-orderByOptionsContainer) :global(.vtex-search-result-3-x-orderByOptionItem):nth-child(2){
+    font-size: 0%;
+}
+:global(.vtex-search-result-3-x-orderByOptionsContainer) :global(.vtex-search-result-3-x-orderByOptionItem):nth-child(2)::before{
+    content: "Los más vendidos";
+    font-size: 1rem;
+}
+/* free shiping */
+:global(.vtexeurope-minicart-freeshipping-bar-1-x-freigthScaleContainer){
+    box-shadow: 0 0 0 0;
+    padding: 0 10px;
+    border: 0;
+
+}
+:global(.vtexeurope-minicart-freeshipping-bar-1-x-barContainer){
+    background: #27AFE5;
+    border: 1px solid #d3d3d3;
+}
+:global(.vtexeurope-minicart-freeshipping-bar-1-x-text1){
+    display: none;
+}
+:global(.vtexeurope-minicart-freeshipping-bar-1-x-sliderText){
+    text-align: left;
+}
+:global(.vtexeurope-minicart-freeshipping-bar-1-x-currencyDecimal){
+    display: none;
+}
+:global(.vtexeurope-minicart-freeshipping-bar-1-x-currencyFraction){
+    display: none;
+}
+.inputContainer div div span {
+    color: red;
+}
+.eyeSightIcon{
+    color: gray;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--comparison-page) > div:nth-child(2) {
+    display: none;
+}
+:global(.vtex-my-orders-app-3-x-orderHeaderValue) div{
+    display: none;
+}
+:global(.vtex-my-orders-app-3-x-orderBody) div:last-child a svg{
+    display: none;
+}
+.profile:hover :global(.vtex-flex-layout-0-x-flexColChild--login):last-child{
+    display: none;
+}
+:global(.vtex-my-orders-app-3-x-orderHeader) div:last-child div:last-child span{
+    color: white !important;
+}
+:global(.vtex-my-orders-app-3-x-orderHeader) div:last-child div:last-child div{
+    background: #808080;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--infoProductColumn):nth-child(3) :global(.vtex-rich-text-0-x-wrapper--infoProductContent)::before{
+    content: "";
+    background: url(/arquivos/Paso2New.png) no-repeat;
+    background-size: 100%;
+    width: 37px;
+    height: 38px;
+    margin-right: 10px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--infoProductColumn):nth-child(2) :global(.vtex-rich-text-0-x-wrapper--infoProductContent)::before{
+  content: "";
+  background: url(/arquivos/Paso1New.png) no-repeat;
+  background-size: 100%;
+  width: 37px;
+  height: 38px;
+  margin-right: 10px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--infoProductColumn):nth-child(5) :global(.vtex-rich-text-0-x-wrapper--infoProductContent)::before{
+    content: "";
+    background: url(/arquivos/icono.png) no-repeat;
+    background-size: 100%;
+    width: 37px;
+    height: 38px;
+    margin-right: 10px;
+}
 
 @media (max-width: 600px) {
     .formTitle {
@@ -274,5 +364,24 @@
     }
     .contentFormVisible {
         width: 100%;
+    }
+    :global(.vtex-flex-layout-0-x-flexRow):global(.vtex-flex-layout-0-x-flexRow--contacto-form-4) :global(.vtex-flex-layout-0-x-flexRowContent):global(.vtex-flex-layout-0-x-flexRowContent--contacto-form-4) :global(.vtex-flex-layout-0-x-stretchChildrenWidth):nth-child(2){
+        margin-left: 0px;
+        width: 100% !important;
+    }
+    :global(.vtex-stack-layout-0-x-stackItem--nocheDiaFlag){
+        padding: 100% 0 0 0 !important;
+    }
+    :global(.vtex-flex-layout-0-x-flexColChild--infoProductColumn):nth-child(3) :global(.vtex-rich-text-0-x-wrapper--infoProductContent)::before{
+        width: 43px;
+        height: 38px;
+    }
+    :global(.vtex-flex-layout-0-x-flexColChild--infoProductColumn):nth-child(2) :global(.vtex-rich-text-0-x-wrapper--infoProductContent)::before{
+      width: 43px;
+      height: 38px;
+    }
+    :global(.vtex-flex-layout-0-x-flexColChild--infoProductColumn):nth-child(5) :global(.vtex-rich-text-0-x-wrapper--infoProductContent)::before{
+        width: 43px;
+        height: 38px;
     }
 }

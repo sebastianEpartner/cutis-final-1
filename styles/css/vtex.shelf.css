@@ -66,6 +66,12 @@
 .slide--shelf :global(.vtex-product-summary-2-x-containerNormal) {
     min-height: 364px;
 }
+.arrowLeft.arrowLeft--vitrinaCarrito {
+    top: 33%;
+}
+.arrowRight.arrowRight--vitrinaCarrito {
+    top: 33%;
+}
 @media (max-width: 600px) {
     .sliderContainer {
         padding: 0 0 0 !important;

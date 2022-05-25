@@ -66,11 +66,11 @@
       "pointer": "#/properties/name"
     }
   },
-  "form-input.text#email": {
-    "props": {
-      "pointer": "#/properties/email"
-    }
-  },
+  // "form-input.text#email": {
+  //   "props": {
+  //     "pointer": "#/properties/email"
+  //   }
+  // },
   "form-input.textarea#message": {
     "props": {
       "pointer": "#/properties/message"

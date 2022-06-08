@@ -186,9 +186,6 @@
   .productHighlightText[data-highlight-id="137"]::before{
     margin-left: -3px;
   }
-  .productHighlightWrapper--collection[data-highlight-id="141"]:hover {
-    background: red;
-  }
   .productHighlightText[data-highlight-id="139"]:hover::after {
     opacity: 0;
     visibility: hidden;
@@ -213,5 +210,8 @@
     opacity: 0;
     visibility: hidden;
     z-index: 999;
+  }
+  .productHighlightWrapper--collection{
+    background: transparent !important;
   }
 }

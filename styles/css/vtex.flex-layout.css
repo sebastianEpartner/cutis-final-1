@@ -1359,9 +1359,21 @@
   }
   .flexRowContent--preciosVitrine2 .stretchChildrenWidth:first-child   {
     width: 100% !important;
+    height: 103%;
+    align-items: center;
+  }
+  .flexRow--ProductInfo2 {
+    position: relative;
+    height: 100%;
+  }
+  .flexColChild.flexColChild--productInfo2:last-child {
+    height: 50px !important;
   }
   .flexRowContent--preciosVitrine2 .stretchChildrenWidth:nth-child(2n){
     width: 77% !important;
+  }
+  .flexRowContent--ProductInfo2 {
+    height: 100%;
   }
   .flexRowContent--preciosVitrine2 .stretchChildrenWidth:nth-child(3n){
     width: 0% !important;

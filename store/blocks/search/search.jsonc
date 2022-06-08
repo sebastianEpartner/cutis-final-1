@@ -63,7 +63,7 @@
   "search-result-layout.desktop.product-comparison#search": {
     "children": [
       "slider-layout#categorysSearch",
-      "flex-layout.row#vitrinaDestacadaSearch",
+      // "flex-layout.row#vitrinaDestacadaSearch",
       "flex-layout.row#vitrineCategory",
       "flex-layout.row#searchbread",
       "flex-layout.row#searchtitle",
@@ -165,7 +165,7 @@
   "search-result-layout.mobile": {
     "children": [
       "slider-layout#categorysSearch",
-      "flex-layout.row#vitrinaDestacadaSearch",
+      // "flex-layout.row#vitrinaDestacadaSearch",
       "flex-layout.row#vitrineCategory",
       "flex-layout.row#searchbread",
       "flex-layout.row#searchtitle",

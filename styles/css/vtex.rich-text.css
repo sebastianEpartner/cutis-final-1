@@ -111,7 +111,7 @@
 }
 .paragraph--category-404-item:hover{
   background: #27AFE5;
-  border: 0; 
+  border: 0;
 }
 .paragraph--category-404-item:hover .link--category-404-item{
   color: white;
@@ -194,7 +194,7 @@
 }
 .wrapper--tituloFiltro2 .paragraph--tituloFiltro{
   font-size: 23px;
-  color:#27AFE5; 
+  color:#27AFE5;
 }
 .paragraph--tituloVitrinaDestacada{
   color:#27AFE5;
@@ -301,7 +301,7 @@
 }
 .paragraph--header-top{
   color: black;
-  font-size: 11px; 
+  font-size: 11px;
   margin: 8px 0;
 }
 .container--header-top {
@@ -555,7 +555,7 @@
     font-size:20px;
     margin: 10px 0;
     font-weight: 600;
-  }  
+  }
   .paragraph--SubMenuItems {
     margin-top: 0;
     text-align: center;
@@ -678,3 +678,10 @@
     font-size: 18px !important;
   }
 }
+
+.paragraph.paragraph--titleCategory {    padding: 7px 23px 7px 7px;
+  margin: 0;
+  font-size: 12px;
+  min-width: 105px;
+}
+.paragraph.paragraph--contenCate {font-size: 12px;margin: 0;padding: 10px 0 7px 17px;text-decoration: underline;}

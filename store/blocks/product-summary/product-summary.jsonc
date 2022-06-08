@@ -10,7 +10,9 @@
   "product-summary-sku-selector": {
     "props":{
       "displayMode": "select",
-      "initialSelection":"empty"
+      "initialSelection":"empty",
+      "showVariationsLabels": "none",
+      "visibility":"more-than-one"
     }
   },
   "flex-layout.col#productRating": {

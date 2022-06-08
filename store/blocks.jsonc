@@ -12,12 +12,32 @@
     "blocks": ["order-placed"]
   },
   "store.account": {
-    "blocks": ["my-account"],
+    "blocks": [
+      "responsive-layout.desktop#imagen-login",
+      "responsive-layout.mobile#imagen-login",
+      "my-account"],
     "parent": {
       "challenge": "challenge.profile"
     }
   },
-
+  "responsive-layout.desktop#imagen-login": {
+    "children": ["image#image-login"]
+  },
+  "responsive-layout.mobile#imagen-login": {
+    "children": ["image#image-login-m"]
+  },
+  "image#image-login":{
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/accountBanner.png",
+      "blockClass": "login-image"
+    }
+  },
+  "image#image-login-m":{
+    "props": {
+      "src": "https://cutis.vteximg.com.br/arquivos/accountBanner.png",
+      "blockClass": "login-image"
+    }
+  },
   "store.login": {
     "blocks": ["login-content#default"]
   },

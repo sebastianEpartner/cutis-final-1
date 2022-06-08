@@ -58,7 +58,7 @@
       "flex-layout.col#fwavoritos",
       "minicart.v2"
     ]
-  }, 
+  },
   "login":{
     "props":{
       "hasGoogleOneTap":"true",
@@ -108,8 +108,73 @@
       "width":"52%",
       "verticalAlign": "middle"
     },
-    "children": ["search-bar"]
+    "children": ["disclosure-layout#category","search-bar"]
   },
+  //Barra discluse
+  "disclosure-layout#category": {
+    "children": ["disclosure-trigger#category", "disclosure-content#category"]
+  },
+  "disclosure-trigger#category": {
+    "children": ["rich-text#category"],
+    "props": {
+      "blockClass":"titleCategoryF"
+    }
+  },
+  "disclosure-content#category": {
+    "children": ["rich-text#categoryC", "rich-text#categoryC1", "rich-text#categoryC2","rich-text#categoryC3", "rich-text#categoryC4", "rich-text#categoryC5"],
+    "props": {
+      "blockClass":"contCategoryF"
+    }
+  },
+  "rich-text#category": {
+    "props": {
+      "text": "Todas las categorías",
+      "blockClass":"titleCategory"
+    }
+  },
+  "rich-text#categoryC": {
+    "props": {
+      "text": "Rostro",
+      "blockClass":["contenCate", "Rostro"]
+    }
+  },
+  "rich-text#categoryC1": {
+    "props": {
+      "text": "Solares",
+      "blockClass":["contenCate", "Solares"]
+    }
+  },
+  "rich-text#categoryC2": {
+    "props": {
+      "text": "Maquillaje",
+      "blockClass":["contenCate", "Maquillaje"]
+    }
+  },
+  "rich-text#categoryC3": {
+    "props": {
+      "text": "Capilar",
+      "blockClass":["contenCate", "Capilar"]
+    }
+  },
+  "rich-text#categoryC4": {
+    "props": {
+      "text": "Corporal",
+      "blockClass":["contenCate", "Corporal"]
+    }
+  },
+  "rich-text#categoryC5": {
+    "props": {
+      "text": "Medicamentos",
+      "blockClass":["contenCate", "Medicamentos"]
+    }
+  },
+
+
+
+
+  //Cierre Barra disclousure
+
+
   "flex-layout.col#tiendas-desktop": {
     "props": {
       "blockClass":"header-tiendas",
@@ -228,7 +293,7 @@
       "blockClass": ["cierreBuscador"]
     }
   },
-  // contenido 
+  // contenido
   "disclosure-content#lupa": {
     "children": ["disclosure-trigger#cierreBuscador","search-bar"],
     "props": {
@@ -275,7 +340,7 @@
   },
   "flex-layout.row#optionBar": {
     "children": [
-        
+
     ],
     "props": {
       "blockClass": "optionBar"

@@ -20,6 +20,12 @@
       "blockClass": "faqsImg"
     }
   },
+  "image#faqsImgM": {
+    "props": {
+      "src": "https://cutis.vtexassets.com/arquivos/banner-principal-desk-faqs.png",
+      "blockClass": "faqsImgM"
+    }
+  },
   "flex-layout.row#faq": {
     "props": {
       "blockClass": "faq"
@@ -42,12 +48,10 @@
 
   "disclosure-layout-group#group": {
     "children": [
-      "disclosure-layout#first",
-      "disclosure-layout#second",
-      "disclosure-layout#third",
-      "disclosure-layout#fourth"
+      "disclosure-layout#first"
     ]
   },
+
   // primer disclousare
   "disclosure-layout#first": {
     "children": ["disclosure-trigger#first", "disclosure-content#first"]

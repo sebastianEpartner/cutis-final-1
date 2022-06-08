@@ -19,7 +19,6 @@
 :global(.vtex-account) {
     padding: 0 100px;
     position: relative;
-    padding-top: 160px;
 }
 :global(.vtex-account) :global(.vtex-button ){
     background: #27AFE5;
@@ -39,16 +38,6 @@
 }
 :global(.vtex-button__label ){
     text-transform: capitalize;
-}
-:global(.vtex-account)::before {
-    content: "";
-    background: url(/arquivos/accountBanner.png);
-    display: block;
-    background-size: cover;
-    width: 100%;
-    height: 22%;
-    position: absolute;
-    top: 0px;
 }
 .boxContainerFooter{
     position: absolute;
@@ -88,17 +77,6 @@
     :global(.vtex-account) {
         padding: 0 10px;
         padding-top: 205px;
-    }
-    :global(.vtex-account)::before {
-        content: "";
-        background: url(/arquivos/accountBanner.png);
-        display: block;
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        height: 13%;
-        position: absolute;
-        top: 0px;
     }
 
 }

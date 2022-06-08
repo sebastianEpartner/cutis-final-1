@@ -157,3 +157,15 @@
         padding: 0;
     }
 }
+
+
+.trigger--titleCategoryF  {background: #F9F9F9;border: none;margin: 4px 0 0 0;border-radius: 25px;}
+
+.content--contCategoryF {border-radius: 21px;background: #f9f9f9;}
+
+
+.trigger.trigger--titleCategoryF.trigger--visible.trigger--titleCategoryF--visible::before {background: url(https://cutis.vteximg.com.br/arquivos/flechaArribaAzulNew.png) no-repeat;background-size: 100%;position: absolute;right: 4%;display: block;width: 10px;content: "";height: 10px;top: 7%;}
+
+.trigger.trigger--titleCategoryF.trigger--hidden.trigger--titleCategoryF--hidden::before {background: url(https://cutis.vteximg.com.br/arquivos/flechaArribaAzulNew.png) no-repeat;background-size: 100%;position: absolute;right: 4%;display: block;width: 10px;content: "";transform: rotate(180deg);height: 10px;top: 31%;}
+
+.trigger.trigger--titleCategoryF.trigger--hidden.trigger--titleCategoryF--hidden {position: relative;}

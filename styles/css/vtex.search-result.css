@@ -11,7 +11,9 @@
   background-color: #3F3F40;
   color: #FFFFFF;
 }
-
+.filter__container--tipo-de-presentacion:nth-child(2n){
+  display: none;
+}
 .galleryLayoutSwitcher {
   border-radius: 4px 4px 4px 4px;
   justify-content: center;
@@ -32,6 +34,9 @@
 }
 .searchResultContainer {
   padding: 0 40px;
+}
+.filter__container--category-1{
+  display: none;
 }
 .filterMessage {
   display: none;

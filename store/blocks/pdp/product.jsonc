@@ -248,6 +248,7 @@
       "image#imagenProducto"
     ]
   },
+  
   "vtex.store-components:product-brand#productTheme": {
     "props": {
       "displayMode": "logo",
@@ -279,6 +280,7 @@
   "sku-selector": {
     "props": {
       "variationsSpacing": 3,
+      "blockClass":"selector-new",
       "showValueNameForImageVariation": true
     }
   },

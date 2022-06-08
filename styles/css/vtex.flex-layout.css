@@ -4,7 +4,7 @@
 }
 .flexRowContent--main-header {
   padding: 0 100px !important;
-} 
+}
 .flexRowContent--header-top {
   background: #F6F9E8;
 }
@@ -377,7 +377,7 @@
   display: none;
 }
 .flexRowContent--preciosVitrine2 .stretchChildrenWidth:nth-child(2n) .flexCol--productInfo3  {
-  max-height: 111px; 
+  max-height: 111px;
 
 }
 .flexRowContent--preciosVitrine2 {
@@ -473,7 +473,7 @@
 .flexCol--filtroContent::-webkit-scrollbar{
   background: #D3D3D3;
   width: 5px;
-  border-radius: 5px; 
+  border-radius: 5px;
 }
 .flexCol--filtroContent::-webkit-scrollbar-thumb{
    background: #27AFE5;
@@ -594,7 +594,7 @@
   margin: 5px 0;
   color: #D3D3D3;
   display: block;
-} 
+}
 .flexColChild--productCountCol {
   width: 100%;
 }
@@ -730,7 +730,7 @@
 .flexCol--columna2::-webkit-scrollbar{
   background: #D3D3D3;
   width: 5px;
-  border-radius: 5px; 
+  border-radius: 5px;
 }
 .flexCol--columna2::-webkit-scrollbar-thumb{
    background: #27AFE5;
@@ -1326,7 +1326,7 @@
     display: flex;
   }
   .flexColChild--productInfo2 :global(.vtex-product-summary-2-x-price_sellingPriceContainer){
-    
+
     justify-content: center;
     margin-left: 0px;
     margin-top: 0;
@@ -1596,4 +1596,32 @@
 
  .flexRow--contacto-form-4.flexRow--contacto-form .flexRowContent--contacto-form-4.flexRowContent--contacto-form .stretchChildrenWidth {width: 100% !important;}
 
+}
+/*Buscador */
+.flexColChild.flexColChild--searchBar:first-child {position: absolute;right: 17%;z-index: 99;top: 0;}
+
+.flexCol.flexCol--searchBar {position: relative;}
+
+.flexColChild--404-container :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf){
+  padding: 0 40px !important;
+}
+.flexColChild--404-container :global(.vtex-slider-layout-0-x-sliderRightArrow--shelf){
+  margin-right: 0px;
+}
+.flexColChild--404-container :global(.vtex-slider-layout-0-x-sliderLeftArrow--shelf)::before{
+  margin-right: 0px;
+}
+:global(.vtex-my-account-1-x-boxContainer){
+  position: relative;
+}
+:global(.vtex-my-account-1-x-boxContainer) :global(.vtex-button__label):hover{
+  color: white;
+}
+@media (min-width: 1700px) {
+  .flexColChild--404-container :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf){
+    padding: 0 10px !important;
+  }
+  .flexColChild.flexColChild--searchBar:first-child {
+    right: 20%;
+  }
 }

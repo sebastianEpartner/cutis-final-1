@@ -210,7 +210,7 @@
   },
   "image#slide1category-3-hover": {
     "props": {
-      "src": "https://cutis.vteximg.com.br/arquivos/icon-Group.png",
+      "src": "https://cutis.vteximg.com.br/arquivos/corporal_icon_new.png",
       "blockClass": ["hoverImage","hoverColumn2"],
       "link":{
         "url":"/"
@@ -384,7 +384,7 @@
     "children": [
       "image#imageColumn-2-2",
       "rich-text#imagen-3-2",
-      "image#slide1category-3-hover"
+      "image#slide1category-3-hover-2"
     ],
     "props": {
       "blockClass": ["imagenCategoriaColumn","column2categorySlide"]
@@ -398,7 +398,7 @@
   },
   "image#imageColumn-2-2": {
     "props": {
-      "src": "https://epartner.vtexassets.com/arquivos/categoria-medicamentos-desk.png",
+      "src": "https://cutis.vtexassets.com/arquivos/categoria-corporal-desk-grande.png",
       "blockClass": ["slideCategoryColumn2","bannerSlides"],
       "link":{
         "url":"/medicamentos"

@@ -16,6 +16,12 @@
     font-size: 15px;
     color: black;
 }
+:global(.vtex-account__order-details) img[alt="EFECTY"]{
+    display: none;
+}
+:global(.vtex-account__order-details) > div section section button{
+    display: none;
+}
 .label {
     font-size: 0;
     display: flex;

@@ -2,7 +2,8 @@
     // contenedor del 404
     "flex-layout.col#404Container": {
         "children": [
-            "info-card#404",
+            "responsive-layout.desktop#imagen-404",
+            "responsive-layout.mobile#imagen-404",
             "rich-text#404-categoria",
             "slider-layout#text-test",
             "rich-text#vitrine-404",
@@ -14,18 +15,22 @@
             "blockClass":"404-container"
         }
     },
-    // banner principal
-    "info-card#404": {
+    "responsive-layout.desktop#imagen-404": {
+        "children": ["image#image-404"]
+    },
+    "responsive-layout.mobile#imagen-404": {
+        "children": ["image#image-404-m"]
+    },
+    "image#image-404":{
         "props": {
-          "id": "info-card-404",
-          "isFullModeStyle": true,
-          "textPosition": "left",
-          "imageUrl": "https://cutis.vteximg.com.br/arquivos/banner.png",
-          "headline": "UPS PÁGINA NO ENCONTRADA",
-          "subhead": "Parece que no se pudo encontrar la página solicitada \n\n Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500",
-          "callToActionUrl": "/sale/d",
-          "blockClass": "info-card-404",
-          "textAlignment": "center"
+            "src": "https://cutis.vteximg.com.br/arquivos/404-cutis.png",
+            "blockClass": "404-image"
+        }
+    },
+    "image#image-404-m":{
+        "props": {
+            "src": "https://cutis.vteximg.com.br/arquivos/404-desktop-cutis.png",
+            "blockClass": "404-image"
         }
     },
     // titulo categorias mas buscadas

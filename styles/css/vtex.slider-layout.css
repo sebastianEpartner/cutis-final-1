@@ -7,6 +7,7 @@
 }
 .paginationDot{
   height: 3px !important;
+  background: #d3d3d3;
 }
 .paginationDotsContainer {
   margin-top: .5rem;

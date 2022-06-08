@@ -209,4 +209,7 @@
     .container--product{
         margin: 10px 0 30px 0;
     }
+    .listItem--tabberFooter{
+        text-align: center;
+    }
 }

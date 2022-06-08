@@ -677,6 +677,11 @@
   .headingLevel2--servicio-al-cliente-titulo {
     font-size: 18px !important;
   }
+
+  .paragraph--titulosInfoProduct{
+    margin-bottom: 20px!important;
+    text-transform: uppercase;
+  }
 }
 
 .paragraph.paragraph--titleCategory {    padding: 7px 23px 7px 7px;

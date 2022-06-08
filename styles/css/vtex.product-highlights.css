@@ -217,4 +217,7 @@
   :global(.vtex-flex-layout-0-x-flexColChild--productInfo3) .productHighlightWrapper--collection[data-highlight-id="142"]{
     display: none;
   }
+  :global(.vtex-flex-layout-0-x-flexColChild--productInfo3) .productHighlightWrapper--collection[data-highlight-id="141"]{
+    display: none;
+  }
 }
